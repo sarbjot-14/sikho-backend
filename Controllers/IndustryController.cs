@@ -12,12 +12,12 @@ namespace sikho_backend.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class IndustriesController : Controller
+    public class IndustryController : Controller
     {
-        private readonly ILogger<IndustriesController> _logger;
+        private readonly ILogger<IndustryController> _logger;
         private readonly APIDbContext _context;
 
-        public IndustriesController(ILogger<IndustriesController> logger, APIDbContext context)
+        public IndustryController(ILogger<IndustryController> logger, APIDbContext context)
         {
             _logger = logger;
             _context = context;
@@ -25,7 +25,7 @@ namespace sikho_backend.Controllers
 
        // GET: api/Industry
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Industry>>> GetIndustries()
+        public async Task<ActionResult<IEnumerable<Industry>>> GetIndustry()
         {
             return await _context.Industries.ToListAsync();
         }
