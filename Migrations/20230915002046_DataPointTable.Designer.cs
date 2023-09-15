@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using sikho_backend.Models;
 
@@ -11,9 +12,11 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    partial class APIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230915002046_DataPointTable")]
+    partial class DataPointTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,10 +36,6 @@ namespace sikho_backend.Migrations
                     b.Property<int>("IndustryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("type")
                         .HasColumnType("int");
 
@@ -49,24 +48,6 @@ namespace sikho_backend.Migrations
                     b.HasIndex("IndustryId");
 
                     b.ToTable("Companies");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            IndustryId = 1,
-                            name = "Waymo",
-                            type = 0,
-                            website_link = "https://waymo.com/"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            IndustryId = 1,
-                            name = "Cruise",
-                            type = 0,
-                            website_link = "https://getcruise.com/"
-                        });
                 });
 
             modelBuilder.Entity("sikho_backend.Models.DataPoint", b =>
@@ -99,7 +80,7 @@ namespace sikho_backend.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("DataPoints");
+                    b.ToTable("DataPoint");
                 });
 
             modelBuilder.Entity("sikho_backend.Models.Industry", b =>
@@ -118,9 +99,6 @@ namespace sikho_backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("type")
-                        .HasColumnType("int");
-
                     b.Property<string>("unit_title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -128,24 +106,6 @@ namespace sikho_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Industries");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            cost_title = "Average Cost per Ride",
-                            revenue_title = "Estimated Total Sales",
-                            type = 0,
-                            unit_title = "Trips Completed"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            cost_title = "Sales per Location",
-                            revenue_title = "Estimated Total Sales",
-                            type = 1,
-                            unit_title = "Number of Locations"
-                        });
                 });
 
             modelBuilder.Entity("sikho_backend.Models.Company", b =>

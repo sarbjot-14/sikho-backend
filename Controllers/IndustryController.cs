@@ -27,7 +27,8 @@ namespace sikho_backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Industry>>> GetIndustry()
         {
-            return await _context.Industries.ToListAsync();
+          
+            return  await _context.Industries.ToListAsync();
         }
 
         // GET: api/Industry/5
