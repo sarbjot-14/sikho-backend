@@ -13,5 +13,6 @@ namespace sikho_backend.Models
         }
 
         public DbSet<Industry> Industries {get; set;}
+        public DbSet<Company> Companies {get; set;}
     }
 }

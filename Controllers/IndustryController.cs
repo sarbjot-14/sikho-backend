@@ -49,7 +49,7 @@ namespace sikho_backend.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutIndustry(int id, Industry industry)
         {
-            if (id != industry.IndustryId)
+            if (id != industry.Id)
             {
                 return BadRequest();
             }
@@ -83,7 +83,7 @@ namespace sikho_backend.Controllers
             _context.Industries.Add(industry);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetIndustry", new { id = industry.IndustryId }, industry);
+            return CreatedAtAction("GetIndustry", new { id = industry.Id }, industry);
         }
 
         // DELETE: api/Industry/5
@@ -105,7 +105,7 @@ namespace sikho_backend.Controllers
         [NonAction]
         internal bool IndustryExists(int id)
         {
-            return _context.Industries.Any(e => e.IndustryId == id);
+            return _context.Industries.Any(e => e.Id == id);
         }
     }
 }

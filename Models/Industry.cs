@@ -10,11 +10,20 @@ namespace sikho_backend.Models
     public class Industry
     {
 
-        [Key]
-        public int IndustryId {get; set;}
+        public int Id {get; set;}
+        public ICollection<Company> Companies {get; set;} = new List<Company>();
+        
+        [Required]
+        public string unit_title  {get; set;} = string.Empty;
 
-        [Column(TypeName ="nvarchar(250)")]
-        public string Name {get; set;}
+         [Required]
+        public string cost_title {get; set;} = string.Empty;
+
+        [Required]
+        public string revenue_title {get; set;} = string.Empty;
+
+
+
 
     
         
