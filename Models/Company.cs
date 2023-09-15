@@ -16,7 +16,7 @@ namespace sikho_backend.Models
     {
        
 
-        public Company(int Id, int industryId,  string name,  string website_link, CompanyTypes type) 
+        public Company(int Id, int industryId,  string name,  string website_link, CompanyTypes type, string image_link, string video_link) 
         {
             this.Id = Id;
             
@@ -24,6 +24,8 @@ namespace sikho_backend.Models
             this.name =name;
             this.website_link = website_link;
             this.type = type;
+            this.image_link = image_link;
+            this.video_link = video_link;
    
         }
  
@@ -35,10 +37,14 @@ namespace sikho_backend.Models
         public string name {get; set;} = string.Empty;
         [Required]
         public string website_link {get; set;} = string.Empty;
+   
         
         [Required]
         public CompanyTypes type {get; set;} = CompanyTypes.Automatic;
         public ICollection<DataPoint> DataPoints {get; set;} = new List<DataPoint>();
-
+     [Required]
+        public string image_link {get; set;} = string.Empty;
+        [Required]
+        public string video_link {get; set;} = string.Empty;
     }
 }
