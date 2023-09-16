@@ -20,8 +20,8 @@ namespace sikho_backend.Models
 
        
         public string? cost_source {get; set;} 
-        public int? cost {get;set;}
+        public double? cost {get;set;}
 
-        public DateTime? year {get;set;}
+        public int year {get;set;}
     }
 }

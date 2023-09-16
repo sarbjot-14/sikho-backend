@@ -64,7 +64,7 @@ namespace sikho_backend.Migrations
                             Id = 1,
                             IndustryId = 1,
                             image_link = "https://lh3.googleusercontent.com/J0ugh3MHXa6tgOeXoP0aS27NCHNURCHOl-bTqgLW2R8ACZFn2FxwTJWn9DGHA4tG7h6zvxiZrndU_HKwzXpJDbDvSrqQJWR3ItKz5fud=rw-w2880-e365",
-                            name = "Waylmo",
+                            name = "Waymo",
                             type = 2,
                             video_link = "https://www.youtube.com/embed/uKfAJDEkstg",
                             website_link = "https://waymo.com/"
@@ -142,8 +142,8 @@ namespace sikho_backend.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("cost")
-                        .HasColumnType("int");
+                    b.Property<double?>("cost")
+                        .HasColumnType("float");
 
                     b.Property<string>("cost_source")
                         .HasColumnType("nvarchar(max)");
@@ -154,14 +154,156 @@ namespace sikho_backend.Migrations
                     b.Property<string>("units_source")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("year")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("year")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CompanyId");
 
                     b.ToTable("DataPoints");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CompanyId = 1,
+                            units = 10000,
+                            units_source = "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ",
+                            year = 2020
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CompanyId = 1,
+                            units = 30000,
+                            units_source = "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CompanyId = 1,
+                            cost = 30.0,
+                            cost_source = "https://www.emergingtechbrew.com/stories/2021/07/16/spent-two-days-riding-waymos-driverless-taxis-felt-surprisingly-normal",
+                            units = 40000,
+                            units_source = "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CompanyId = 2,
+                            cost = 20.0,
+                            cost_source = "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco",
+                            units = 2783,
+                            units_source = "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CompanyId = 3,
+                            units = 3,
+                            units_source = "https://www.sec.gov/Archives/edgar/data/1830909/000147793223001263/sixdbytes_1k.html",
+                            year = 2020
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CompanyId = 3,
+                            units = 3,
+                            units_source = "https://www.sec.gov/Archives/edgar/data/1830909/000164460023000042/BlendidARandFinancials2.pdf",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CompanyId = 3,
+                            units = 9,
+                            units_source = "https://www.startengine.com/offering/blendid ",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CompanyId = 4,
+                            units = 2,
+                            units_source = "https://cafexapp.com/ ",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CompanyId = 4,
+                            units = 3,
+                            units_source = "https://cafexapp.com/ ",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CompanyId = 5,
+                            cost = 0.0,
+                            cost_source = "https://www.startengine.com/offering/artly",
+                            units = 0,
+                            units_source = "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment",
+                            year = 2020
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CompanyId = 5,
+                            cost = 10000.0,
+                            cost_source = "https://www.startengine.com/offering/artly",
+                            units = 3,
+                            units_source = "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment ",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CompanyId = 5,
+                            cost = 101000.0,
+                            cost_source = "https://www.startengine.com/offering/artly ",
+                            units = 9,
+                            units_source = "https://www.startengine.com/offering/artly",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CompanyId = 6,
+                            cost = 101000.0,
+                            cost_source = "https://www.startengine.com/offering/artly ",
+                            units = 12,
+                            units_source = "https://www.makrshakr.com/locations ",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CompanyId = 6,
+                            units = 14,
+                            units_source = "https://www.makrshakr.com/locations ",
+                            year = 2022
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CompanyId = 7,
+                            units = 1,
+                            units_source = "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
+                            year = 2021
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CompanyId = 7,
+                            units = 10,
+                            units_source = "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
+                            year = 2022
+                        });
                 });
 
             modelBuilder.Entity("sikho_backend.Models.Industry", b =>

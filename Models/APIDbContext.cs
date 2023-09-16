@@ -23,11 +23,19 @@ namespace sikho_backend.Models
                 
             }
 
-                using (StreamReader r = new StreamReader("Data/companyData.json")){
+            using (StreamReader r = new StreamReader("Data/companyData.json")){
                 string mockJson = r.ReadToEnd();
                 var companyData = JsonSerializer.Deserialize<List<Company>>(mockJson);
       
                 modelBuilder.Entity<Company>().HasData(companyData);
+                
+            }
+
+            using (StreamReader r = new StreamReader("Data/datapointsData.json")){
+                string mockJson = r.ReadToEnd();
+                var datapointData = JsonSerializer.Deserialize<List<DataPoint>>(mockJson);
+      
+                modelBuilder.Entity<DataPoint>().HasData(datapointData);
                 
             }
 
