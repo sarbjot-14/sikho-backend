@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "type": 1,
+    "unit_title": "Trips Completed",
+    "cost_title": "Average Cost per Trip",
+    "revenue_title": "Estimated Total Sales"
+  },
+  {
+    "Id": 2,
+    "type": 2,
+    "unit_title": "Number of Locations",
+    "cost_title": "Sales per Location",
+    "revenue_title": "Estimated Total Sales"
+  }
+]

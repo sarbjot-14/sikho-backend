@@ -12,8 +12,8 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20230915002046_DataPointTable")]
-    partial class DataPointTable
+    [Migration("20230916001359_TestingCompany")]
+    partial class TestingCompany
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,8 +36,20 @@ namespace sikho_backend.Migrations
                     b.Property<int>("IndustryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("image_link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("type")
                         .HasColumnType("int");
+
+                    b.Property<string>("video_link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("website_link")
                         .IsRequired()
@@ -48,6 +60,28 @@ namespace sikho_backend.Migrations
                     b.HasIndex("IndustryId");
 
                     b.ToTable("Companies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IndustryId = 1,
+                            image_link = "https://lh3.googleusercontent.com/J0ugh3MHXa6tgOeXoP0aS27NCHNURCHOl-bTqgLW2R8ACZFn2FxwTJWn9DGHA4tG7h6zvxiZrndU_HKwzXpJDbDvSrqQJWR3ItKz5fud=rw-w2880-e365",
+                            name = "Waylmo",
+                            type = 2,
+                            video_link = "https://www.youtube.com/embed/uKfAJDEkstg",
+                            website_link = "https://waymo.com/"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IndustryId = 1,
+                            image_link = "https://images.ctfassets.net/95kuvdv8zn1v/5o4wKdIkXUT7V2WZQciD9b/9007ad36565c4b0f4600a42f96b0adc5/brand_assets_icon_f3f5f8_bg.png?fit=fill&f=center&fm=jpg",
+                            name = "Cruise",
+                            type = 2,
+                            video_link = "https://www.youtube.com/embed/HfcAsfmYbUA",
+                            website_link = "https://getcruise.com/"
+                        });
                 });
 
             modelBuilder.Entity("sikho_backend.Models.DataPoint", b =>
@@ -80,7 +114,7 @@ namespace sikho_backend.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("DataPoint");
+                    b.ToTable("DataPoints");
                 });
 
             modelBuilder.Entity("sikho_backend.Models.Industry", b =>
@@ -99,6 +133,9 @@ namespace sikho_backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("type")
+                        .HasColumnType("int");
+
                     b.Property<string>("unit_title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -106,6 +143,24 @@ namespace sikho_backend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Industries");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            cost_title = "Average Cost per Trip",
+                            revenue_title = "Estimated Total Sales",
+                            type = 1,
+                            unit_title = "Trips Completed"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            cost_title = "Sales per Location",
+                            revenue_title = "Estimated Total Sales",
+                            type = 2,
+                            unit_title = "Number of Locations"
+                        });
                 });
 
             modelBuilder.Entity("sikho_backend.Models.Company", b =>

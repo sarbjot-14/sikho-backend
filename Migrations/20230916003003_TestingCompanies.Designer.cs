@@ -12,8 +12,8 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20230915022734_Seed")]
-    partial class Seed
+    [Migration("20230916003003_TestingCompanies")]
+    partial class TestingCompanies
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,12 +36,20 @@ namespace sikho_backend.Migrations
                     b.Property<int>("IndustryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("image_link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("type")
                         .HasColumnType("int");
+
+                    b.Property<string>("video_link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("website_link")
                         .IsRequired()
@@ -58,16 +66,20 @@ namespace sikho_backend.Migrations
                         {
                             Id = 1,
                             IndustryId = 1,
-                            name = "Waymo",
-                            type = 0,
+                            image_link = "https://lh3.googleusercontent.com/J0ugh3MHXa6tgOeXoP0aS27NCHNURCHOl-bTqgLW2R8ACZFn2FxwTJWn9DGHA4tG7h6zvxiZrndU_HKwzXpJDbDvSrqQJWR3ItKz5fud=rw-w2880-e365",
+                            name = "Waylmo",
+                            type = 2,
+                            video_link = "https://www.youtube.com/embed/uKfAJDEkstg",
                             website_link = "https://waymo.com/"
                         },
                         new
                         {
                             Id = 2,
                             IndustryId = 1,
+                            image_link = "https://images.ctfassets.net/95kuvdv8zn1v/5o4wKdIkXUT7V2WZQciD9b/9007ad36565c4b0f4600a42f96b0adc5/brand_assets_icon_f3f5f8_bg.png?fit=fill&f=center&fm=jpg",
                             name = "Cruise",
-                            type = 0,
+                            type = 2,
+                            video_link = "https://www.youtube.com/embed/HfcAsfmYbUA",
                             website_link = "https://getcruise.com/"
                         });
                 });
@@ -136,9 +148,9 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 1,
-                            cost_title = "Average Cost per Ride",
+                            cost_title = "Average Cost per Trip",
                             revenue_title = "Estimated Total Sales",
-                            type = 0,
+                            type = 1,
                             unit_title = "Trips Completed"
                         },
                         new
@@ -146,7 +158,7 @@ namespace sikho_backend.Migrations
                             Id = 2,
                             cost_title = "Sales per Location",
                             revenue_title = "Estimated Total Sales",
-                            type = 1,
+                            type = 2,
                             unit_title = "Number of Locations"
                         });
                 });
