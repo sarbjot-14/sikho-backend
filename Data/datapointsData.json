@@ -23,9 +23,27 @@
     "cost": 30,
     "year": 2022
   },
-
   {
     "Id": 4,
+    "CompanyId": 2,
+    "units_source": "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ",
+    "units": null,
+    "cost_source": "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco",
+    "cost": null,
+    "year": 2020
+  },
+  {
+    "Id": 5,
+    "CompanyId": 2,
+    "units_source": "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ",
+    "units": null,
+    "cost_source": "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco",
+    "cost": null,
+    "year": 2021
+  },
+
+  {
+    "Id": 6,
     "CompanyId": 2,
     "units_source": "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ",
     "units": 2783,
@@ -35,43 +53,50 @@
   },
 
   {
-    "Id": 5,
+    "Id": 7,
     "CompanyId": 3,
     "units_source": "https://www.sec.gov/Archives/edgar/data/1830909/000147793223001263/sixdbytes_1k.html",
     "units": 3,
     "year": 2020
   },
   {
-    "Id": 6,
+    "Id": 8,
     "CompanyId": 3,
     "units_source": "https://www.sec.gov/Archives/edgar/data/1830909/000164460023000042/BlendidARandFinancials2.pdf",
     "units": 3,
     "year": 2021
   },
   {
-    "Id": 7,
+    "Id": 9,
     "CompanyId": 3,
     "units_source": "https://www.startengine.com/offering/blendid ",
     "units": 9,
     "year": 2022
   },
+  {
+    "Id": 21,
+    "CompanyId": 4,
+    "units_source": "https://cafexapp.com/ ",
+    "units": 0,
+    "year": 2020
+  },
 
   {
-    "Id": 8,
+    "Id": 10,
     "CompanyId": 4,
     "units_source": "https://cafexapp.com/ ",
     "units": 2,
     "year": 2021
   },
   {
-    "Id": 9,
+    "Id": 11,
     "CompanyId": 4,
     "units_source": "https://cafexapp.com/ ",
     "units": 3,
     "year": 2022
   },
   {
-    "Id": 10,
+    "Id": 12,
     "CompanyId": 5,
     "units_source": "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment",
     "units": 0,
@@ -80,7 +105,7 @@
     "year": 2020
   },
   {
-    "Id": 11,
+    "Id": 13,
     "CompanyId": 5,
     "units_source": "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment ",
     "units": 3,
@@ -89,7 +114,7 @@
     "year": 2021
   },
   {
-    "Id": 12,
+    "Id": 14,
     "CompanyId": 5,
     "units_source": "https://www.startengine.com/offering/artly",
     "units": 9,
@@ -98,33 +123,46 @@
     "year": 2022
   },
   {
-    "Id": 13,
+    "Id": 15,
+    "CompanyId": 6,
+    "units_source": "https://www.makrshakr.com/locations ",
+    "units": null,
+    "cost_source": "https://www.startengine.com/offering/artly ",
+    "cost": null,
+    "year": 2020
+  },
+  {
+    "Id": 16,
     "CompanyId": 6,
     "units_source": "https://www.makrshakr.com/locations ",
     "units": 12,
-    "cost_source": "https://www.startengine.com/offering/artly ",
-    "cost": 101000,
+
     "year": 2021
   },
   {
-    "Id": 14,
+    "Id": 17,
     "CompanyId": 6,
     "units_source": "https://www.makrshakr.com/locations ",
     "units": 14,
     "year": 2022
   },
   {
-    "Id": 15,
+    "Id": 18,
     "CompanyId": 7,
     "units_source": "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
     "units": 1,
     "year": 2021
   },
   {
-    "Id": 16,
+    "Id": 19,
     "CompanyId": 7,
     "units_source": "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
     "units": 10,
     "year": 2022
+  },
+  {
+    "Id": 20,
+    "CompanyId": 7,
+    "year": 2020
   }
 ]

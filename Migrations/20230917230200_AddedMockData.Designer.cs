@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using sikho_backend.Models;
 
@@ -11,9 +12,11 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    partial class APIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230917230200_AddedMockData")]
+    partial class AddedMockData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -242,14 +245,6 @@ namespace sikho_backend.Migrations
                         },
                         new
                         {
-                            Id = 21,
-                            CompanyId = 4,
-                            units = 0,
-                            units_source = "https://cafexapp.com/ ",
-                            year = 2020
-                        },
-                        new
-                        {
                             Id = 10,
                             CompanyId = 4,
                             units = 2,
@@ -335,12 +330,6 @@ namespace sikho_backend.Migrations
                             units = 10,
                             units_source = "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
                             year = 2022
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CompanyId = 7,
-                            year = 2020
                         });
                 });
 
