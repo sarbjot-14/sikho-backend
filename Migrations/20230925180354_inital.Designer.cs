@@ -12,8 +12,8 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20230918014621_Fixed")]
-    partial class Fixed
+    [Migration("20230925180354_inital")]
+    partial class inital
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,7 +247,7 @@ namespace sikho_backend.Migrations
                         {
                             Id = 21,
                             CompanyId = 4,
-                            units = 2,
+                            units = 0,
                             units_source = "https://cafexapp.com/ ",
                             year = 2020
                         },
@@ -309,8 +309,6 @@ namespace sikho_backend.Migrations
                         {
                             Id = 16,
                             CompanyId = 6,
-                            cost = 101000.0,
-                            cost_source = "https://www.startengine.com/offering/artly ",
                             units = 12,
                             units_source = "https://www.makrshakr.com/locations ",
                             year = 2021
@@ -343,8 +341,6 @@ namespace sikho_backend.Migrations
                         {
                             Id = 20,
                             CompanyId = 7,
-                            units = 10,
-                            units_source = "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market",
                             year = 2020
                         });
                 });

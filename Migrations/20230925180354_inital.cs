@@ -7,7 +7,7 @@
 namespace sikho_backend.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class inital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -107,19 +107,24 @@ namespace sikho_backend.Migrations
                     { 1, 1, null, null, 10000, "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ", 2020 },
                     { 2, 1, null, null, 30000, "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ", 2021 },
                     { 3, 1, 30.0, "https://www.emergingtechbrew.com/stories/2021/07/16/spent-two-days-riding-waymos-driverless-taxis-felt-surprisingly-normal", 40000, "https://techcrunch.com/2022/02/10/fewer-autonomous-vehicle-companies-in-california-drive-millions-more-miles-in-testing/ ", 2022 },
-                    { 4, 2, 20.0, "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco", 2783, "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ", 2022 },
-                    { 5, 3, null, null, 3, "https://www.sec.gov/Archives/edgar/data/1830909/000147793223001263/sixdbytes_1k.html", 2020 },
-                    { 6, 3, null, null, 3, "https://www.sec.gov/Archives/edgar/data/1830909/000164460023000042/BlendidARandFinancials2.pdf", 2021 },
-                    { 7, 3, null, null, 9, "https://www.startengine.com/offering/blendid ", 2022 },
-                    { 8, 4, null, null, 2, "https://cafexapp.com/ ", 2021 },
-                    { 9, 4, null, null, 3, "https://cafexapp.com/ ", 2022 },
-                    { 10, 5, 0.0, "https://www.startengine.com/offering/artly", 0, "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment", 2020 },
-                    { 11, 5, 10000.0, "https://www.startengine.com/offering/artly", 3, "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment ", 2021 },
-                    { 12, 5, 101000.0, "https://www.startengine.com/offering/artly ", 9, "https://www.startengine.com/offering/artly", 2022 },
-                    { 13, 6, 101000.0, "https://www.startengine.com/offering/artly ", 12, "https://www.makrshakr.com/locations ", 2021 },
-                    { 14, 6, null, null, 14, "https://www.makrshakr.com/locations ", 2022 },
-                    { 15, 7, null, null, 1, "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market", 2021 },
-                    { 16, 7, null, null, 10, "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market", 2022 }
+                    { 4, 2, null, "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco", null, "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ", 2020 },
+                    { 5, 2, null, "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco", null, "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ", 2021 },
+                    { 6, 2, 20.0, "https://www.theverge.com/2022/6/23/23180156/cruise-driverless-vehicle-charge-riders-san-francisco", 2783, "https://www.theverge.com/2023/1/31/23579426/cruise-waymo-cpuc-trips-growth-robotaxi-sf ", 2022 },
+                    { 7, 3, null, null, 3, "https://www.sec.gov/Archives/edgar/data/1830909/000147793223001263/sixdbytes_1k.html", 2020 },
+                    { 8, 3, null, null, 3, "https://www.sec.gov/Archives/edgar/data/1830909/000164460023000042/BlendidARandFinancials2.pdf", 2021 },
+                    { 9, 3, null, null, 9, "https://www.startengine.com/offering/blendid ", 2022 },
+                    { 10, 4, null, null, 2, "https://cafexapp.com/ ", 2021 },
+                    { 11, 4, null, null, 3, "https://cafexapp.com/ ", 2022 },
+                    { 12, 5, 0.0, "https://www.startengine.com/offering/artly", 0, "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment", 2020 },
+                    { 13, 5, 10000.0, "https://www.startengine.com/offering/artly", 3, "https://www.businesswire.com/news/home/20220926005763/en/Artly-the-Friendly-Barista-Bot-is-Coming-to-a-Neighborhood-Near-You-Having-Closed-Its-Series-Pre-A-Investment ", 2021 },
+                    { 14, 5, 101000.0, "https://www.startengine.com/offering/artly ", 9, "https://www.startengine.com/offering/artly", 2022 },
+                    { 15, 6, null, "https://www.startengine.com/offering/artly ", null, "https://www.makrshakr.com/locations ", 2020 },
+                    { 16, 6, null, null, 12, "https://www.makrshakr.com/locations ", 2021 },
+                    { 17, 6, null, null, 14, "https://www.makrshakr.com/locations ", 2022 },
+                    { 18, 7, null, null, 1, "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market", 2021 },
+                    { 19, 7, null, null, 10, "https://www.tastetoronto.com/news/torontos-robo-cafe-opens-second-location-in-kensington-market", 2022 },
+                    { 20, 7, null, null, null, null, 2020 },
+                    { 21, 4, null, null, 0, "https://cafexapp.com/ ", 2020 }
                 });
 
             migrationBuilder.CreateIndex(

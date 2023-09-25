@@ -306,8 +306,6 @@ namespace sikho_backend.Migrations
                         {
                             Id = 16,
                             CompanyId = 6,
-                            cost = 101000.0,
-                            cost_source = "https://www.startengine.com/offering/artly ",
                             units = 12,
                             units_source = "https://www.makrshakr.com/locations ",
                             year = 2021
