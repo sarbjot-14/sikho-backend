@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using CsvHelper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using sikho_backend.Models;
+using sikho_backend.Utilities;
 
 namespace sikho_backend.Controllers
 {
@@ -26,6 +28,8 @@ namespace sikho_backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Company>>> GetCompany()
         {
+            // CustomCsvReader reader = new CustomCsvReader();
+            // reader.readOccupationData();
           
             return  await _context.Companies.ToListAsync();
         }

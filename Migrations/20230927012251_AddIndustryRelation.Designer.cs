@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using sikho_backend.Models;
 
@@ -11,9 +12,11 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    partial class APIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230927012251_AddIndustryRelation")]
+    partial class AddIndustryRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -396,8 +399,9 @@ namespace sikho_backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("at_risk")
-                        .HasColumnType("int");
+                    b.Property<string>("at_risk")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("currently_employed")
                         .HasColumnType("decimal(12, 3)");
@@ -428,7 +432,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 1,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.0m,
                             decade_change_percentage = -17m,
                             education_requirement = "High school diploma or equivalent",
@@ -439,7 +443,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 2,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.1m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -450,7 +454,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 3,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.8m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -461,7 +465,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 4,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.3m,
                             decade_change_percentage = -2.3m,
                             education_requirement = "No formal educational credential",
@@ -472,7 +476,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 5,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.1m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -483,7 +487,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 6,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 165.6m,
                             decade_change_percentage = -43.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -494,7 +498,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 7,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 48.4m,
                             decade_change_percentage = -12.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -505,7 +509,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 8,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.5m,
                             decade_change_percentage = -2.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -516,7 +520,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 9,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 161.4m,
                             decade_change_percentage = -35.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -527,7 +531,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 10,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.8m,
                             decade_change_percentage = -6.5m,
                             education_requirement = "No formal educational credential",
@@ -538,7 +542,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 11,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.3m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -549,7 +553,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 12,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 0.6m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -560,7 +564,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 13,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 511.1m,
                             decade_change_percentage = -108.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -571,7 +575,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 14,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.1m,
                             decade_change_percentage = -0.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -582,7 +586,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 15,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 97.7m,
                             decade_change_percentage = -20.1m,
                             education_requirement = "No formal educational credential",
@@ -593,7 +597,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 16,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.5m,
                             decade_change_percentage = -2.8m,
                             education_requirement = "No formal educational credential",
@@ -604,7 +608,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 17,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 50.9m,
                             decade_change_percentage = -9.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -615,7 +619,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 18,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.4m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -626,7 +630,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 19,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 0.4m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -637,7 +641,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 20,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.6m,
                             decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -648,7 +652,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 21,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 132.8m,
                             decade_change_percentage = -24.2m,
                             education_requirement = "Some college, no degree",
@@ -659,7 +663,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 22,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 54.5m,
                             decade_change_percentage = -9.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -670,7 +674,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 23,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 9.7m,
                             decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -681,7 +685,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 24,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.4m,
                             decade_change_percentage = -1m,
                             education_requirement = "No formal educational credential",
@@ -692,7 +696,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 25,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.7m,
                             decade_change_percentage = -4.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -703,7 +707,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 26,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.1m,
                             decade_change_percentage = -1.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -714,7 +718,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 27,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 165.4m,
                             decade_change_percentage = -27.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -725,7 +729,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 28,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 59.6m,
                             decade_change_percentage = -9.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -736,7 +740,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 29,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 41.4m,
                             decade_change_percentage = -6.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -747,7 +751,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 30,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 91.1m,
                             decade_change_percentage = -14.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -758,7 +762,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 31,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.4m,
                             decade_change_percentage = -5.8m,
                             education_requirement = "No formal educational credential",
@@ -769,7 +773,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 32,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.9m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "No formal educational credential",
@@ -780,7 +784,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 33,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 141.9m,
                             decade_change_percentage = -21.6m,
                             education_requirement = "No formal educational credential",
@@ -791,7 +795,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 34,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.9m,
                             decade_change_percentage = -5.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -802,7 +806,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 35,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.9m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -813,7 +817,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 36,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 364.1m,
                             decade_change_percentage = -52.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -824,7 +828,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 37,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 46.6m,
                             decade_change_percentage = -6.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -835,7 +839,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 38,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 31.6m,
                             decade_change_percentage = -4.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -846,7 +850,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 39,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.7m,
                             decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -857,7 +861,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 40,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 742.0m,
                             decade_change_percentage = -101.6m,
                             education_requirement = "No formal educational credential",
@@ -868,7 +872,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 41,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.9m,
                             decade_change_percentage = -4.6m,
                             education_requirement = "No formal educational credential",
@@ -879,7 +883,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 42,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.5m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "Associate's degree",
@@ -890,7 +894,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 43,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.2m,
                             decade_change_percentage = -5.3m,
                             education_requirement = "Bachelor's degree",
@@ -901,7 +905,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 44,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.2m,
                             decade_change_percentage = -4m,
                             education_requirement = "High school diploma or equivalent",
@@ -912,7 +916,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 45,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.4m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -923,7 +927,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 46,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.3m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "No formal educational credential",
@@ -934,7 +938,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 47,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.1m,
                             decade_change_percentage = -2.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -945,7 +949,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 48,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.6m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -956,7 +960,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 49,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.8m,
                             decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -967,7 +971,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 50,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2030.2m,
                             decade_change_percentage = -235.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -978,7 +982,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 51,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.0m,
                             decade_change_percentage = -3.2m,
                             education_requirement = "Bachelor's degree",
@@ -989,7 +993,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 52,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 115.0m,
                             decade_change_percentage = -13m,
                             education_requirement = "No formal educational credential",
@@ -1000,7 +1004,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 53,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 147.4m,
                             decade_change_percentage = -16.6m,
                             education_requirement = "Bachelor's degree",
@@ -1011,7 +1015,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 54,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.1m,
                             decade_change_percentage = -2.8m,
                             education_requirement = "No formal educational credential",
@@ -1022,7 +1026,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 55,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.2m,
                             decade_change_percentage = -2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1033,7 +1037,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 56,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 92.7m,
                             decade_change_percentage = -10.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1044,7 +1048,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 57,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.2m,
                             decade_change_percentage = -3.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1055,7 +1059,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 58,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.8m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1066,7 +1070,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 59,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 184.8m,
                             decade_change_percentage = -20.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1077,7 +1081,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 60,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.9m,
                             decade_change_percentage = -2m,
                             education_requirement = "No formal educational credential",
@@ -1088,7 +1092,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 61,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.3m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -1099,7 +1103,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 62,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 96.4m,
                             decade_change_percentage = -10.4m,
                             education_requirement = "Some college, no degree",
@@ -1110,7 +1114,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 63,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.1m,
                             decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1121,7 +1125,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 64,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.8m,
                             decade_change_percentage = -1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1132,7 +1136,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 65,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3345.8m,
                             decade_change_percentage = -348.1m,
                             education_requirement = "No formal educational credential",
@@ -1143,7 +1147,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 66,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.1m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1154,7 +1158,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 67,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 175.4m,
                             decade_change_percentage = -17.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1165,7 +1169,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 68,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 209.7m,
                             decade_change_percentage = -20.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1176,7 +1180,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 69,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.1m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "No formal educational credential",
@@ -1187,7 +1191,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 70,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 75.0m,
                             decade_change_percentage = -7.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1198,7 +1202,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 71,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.0m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1209,7 +1213,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 72,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.9m,
                             decade_change_percentage = -3.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1220,7 +1224,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 73,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.7m,
                             decade_change_percentage = -1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1231,7 +1235,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 74,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.0m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1242,7 +1246,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 75,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.5m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1253,7 +1257,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 76,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 193.0m,
                             decade_change_percentage = -17.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1264,7 +1268,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 77,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.0m,
                             decade_change_percentage = -1.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -1275,7 +1279,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 78,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.2m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1286,7 +1290,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 79,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 43.7m,
                             decade_change_percentage = -3.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1297,7 +1301,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 80,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.3m,
                             decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1308,7 +1312,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 81,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.0m,
                             decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1319,7 +1323,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 82,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 155.5m,
                             decade_change_percentage = -13.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1330,7 +1334,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 83,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.7m,
                             decade_change_percentage = -5.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -1341,7 +1345,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 84,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.5m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -1352,7 +1356,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 85,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 862.9m,
                             decade_change_percentage = -72.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1363,7 +1367,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 86,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.9m,
                             decade_change_percentage = -2.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1374,7 +1378,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 87,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 215.1m,
                             decade_change_percentage = -17.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1385,7 +1389,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 88,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 280.0m,
                             decade_change_percentage = -23m,
                             education_requirement = "Bachelor's degree",
@@ -1396,7 +1400,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 89,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.7m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1407,7 +1411,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 90,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 181.8m,
                             decade_change_percentage = -14.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1418,7 +1422,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 91,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.4m,
                             decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1429,7 +1433,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 92,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.7m,
                             decade_change_percentage = -1.5m,
                             education_requirement = "Associate's degree",
@@ -1440,7 +1444,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 93,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.3m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1451,7 +1455,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 94,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 494.4m,
                             decade_change_percentage = -38m,
                             education_requirement = "Bachelor's degree",
@@ -1462,7 +1466,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 95,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 65.3m,
                             decade_change_percentage = -4.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1473,7 +1477,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 96,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1500.4m,
                             decade_change_percentage = -111.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1484,7 +1488,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 97,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 378.5m,
                             decade_change_percentage = -28.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1495,7 +1499,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 98,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.4m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -1506,7 +1510,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 99,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 111.4m,
                             decade_change_percentage = -8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1517,7 +1521,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 100,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 49.6m,
                             decade_change_percentage = -3.6m,
                             education_requirement = "Associate's degree",
@@ -1528,7 +1532,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 101,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.9m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -1539,7 +1543,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 102,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1405.8m,
                             decade_change_percentage = -94m,
                             education_requirement = "High school diploma or equivalent",
@@ -1550,7 +1554,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 103,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 314.5m,
                             decade_change_percentage = -21m,
                             education_requirement = "No formal educational credential",
@@ -1561,7 +1565,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 104,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 74.8m,
                             decade_change_percentage = -5m,
                             education_requirement = "No formal educational credential",
@@ -1572,7 +1576,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 105,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.0m,
                             decade_change_percentage = -0.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1583,7 +1587,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 106,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2668.2m,
                             decade_change_percentage = -175.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -1594,7 +1598,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 107,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.9m,
                             decade_change_percentage = -1.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -1605,7 +1609,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 108,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 124.8m,
                             decade_change_percentage = -7.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -1616,7 +1620,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 109,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.9m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Bachelor's degree",
@@ -1627,7 +1631,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 110,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1735.8m,
                             decade_change_percentage = -108.3m,
                             education_requirement = "Some college, no degree",
@@ -1638,7 +1642,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 111,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 137.4m,
                             decade_change_percentage = -8.4m,
                             education_requirement = "No formal educational credential",
@@ -1649,7 +1653,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 112,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 78.6m,
                             decade_change_percentage = -4.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -1660,7 +1664,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 113,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.5m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1671,7 +1675,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 114,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.0m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -1682,7 +1686,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 115,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 82.9m,
                             decade_change_percentage = -4.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1693,7 +1697,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 116,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.4m,
                             decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
@@ -1704,7 +1708,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 117,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.4m,
                             decade_change_percentage = -1.1m,
                             education_requirement = "No formal educational credential",
@@ -1715,7 +1719,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 118,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2982.9m,
                             decade_change_percentage = -162.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1726,7 +1730,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 119,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 120.2m,
                             decade_change_percentage = -6.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1737,7 +1741,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 120,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 34.0m,
                             decade_change_percentage = -1.9m,
                             education_requirement = "Postsecondary nondegree award",
@@ -1748,7 +1752,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 121,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.2m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1759,7 +1763,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 122,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 199.4m,
                             decade_change_percentage = -10.5m,
                             education_requirement = "No formal educational credential",
@@ -1770,7 +1774,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 123,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.1m,
                             decade_change_percentage = -1.3m,
                             education_requirement = "No formal educational credential",
@@ -1781,7 +1785,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 124,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1567.2m,
                             decade_change_percentage = -80.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -1792,7 +1796,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 125,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.1m,
                             decade_change_percentage = -1.5m,
                             education_requirement = "No formal educational credential",
@@ -1803,7 +1807,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 126,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 0.5m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -1814,7 +1818,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 127,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.6m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -1825,7 +1829,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 128,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 107.6m,
                             decade_change_percentage = -5.2m,
                             education_requirement = "Associate's degree",
@@ -1836,7 +1840,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 129,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 931.8m,
                             decade_change_percentage = -44.8m,
                             education_requirement = "No formal educational credential",
@@ -1847,7 +1851,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 130,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 72.8m,
                             decade_change_percentage = -3.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -1858,7 +1862,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 131,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 922.9m,
                             decade_change_percentage = -42.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -1869,7 +1873,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 132,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 35.4m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1880,7 +1884,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 133,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 38.0m,
                             decade_change_percentage = -1.7m,
                             education_requirement = "No formal educational credential",
@@ -1891,7 +1895,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 134,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 73.0m,
                             decade_change_percentage = -3.2m,
                             education_requirement = "Bachelor's degree",
@@ -1902,7 +1906,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 135,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.6m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -1913,7 +1917,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 136,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.9m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -1924,7 +1928,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 137,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.8m,
                             decade_change_percentage = -2.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -1935,7 +1939,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 138,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 206.2m,
                             decade_change_percentage = -8.3m,
                             education_requirement = "No formal educational credential",
@@ -1946,7 +1950,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 139,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 122.1m,
                             decade_change_percentage = -4.9m,
                             education_requirement = "Bachelor's degree",
@@ -1957,7 +1961,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 140,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.7m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -1968,7 +1972,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 141,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.4m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -1979,7 +1983,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 142,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 595.4m,
                             decade_change_percentage = -23m,
                             education_requirement = "High school diploma or equivalent",
@@ -1990,7 +1994,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 143,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.2m,
                             decade_change_percentage = -2.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2001,7 +2005,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 144,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.2m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "Bachelor's degree",
@@ -2012,7 +2016,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 145,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 49.0m,
                             decade_change_percentage = -1.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2023,7 +2027,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 146,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.4m,
                             decade_change_percentage = -1.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2034,7 +2038,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 147,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 35.3m,
                             decade_change_percentage = -1.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -2045,7 +2049,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 148,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.8m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "Master's degree",
@@ -2056,7 +2060,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 149,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 167.9m,
                             decade_change_percentage = -6.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2067,7 +2071,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 150,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.4m,
                             decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2078,7 +2082,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 151,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.5m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -2089,7 +2093,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 152,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.1m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2100,7 +2104,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 153,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 72.5m,
                             decade_change_percentage = -2.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -2111,7 +2115,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 154,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.8m,
                             decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2122,7 +2126,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 155,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.5m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2133,7 +2137,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 156,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 58.5m,
                             decade_change_percentage = -1.9m,
                             education_requirement = "Bachelor's degree",
@@ -2144,7 +2148,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 157,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.5m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2155,7 +2159,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 158,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 259.0m,
                             decade_change_percentage = -8.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2166,7 +2170,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 159,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.3m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -2177,7 +2181,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 160,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.9m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "No formal educational credential",
@@ -2188,7 +2192,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 161,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2194.1m,
                             decade_change_percentage = -68.6m,
                             education_requirement = "No formal educational credential",
@@ -2199,7 +2203,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 162,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 329.0m,
                             decade_change_percentage = -10.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -2210,7 +2214,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 163,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 74.8m,
                             decade_change_percentage = -2.2m,
                             education_requirement = "Bachelor's degree",
@@ -2221,7 +2225,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 164,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 47.2m,
                             decade_change_percentage = -1.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2232,7 +2236,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 165,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 231.4m,
                             decade_change_percentage = -6.5m,
                             education_requirement = "Bachelor's degree",
@@ -2243,7 +2247,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 166,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.6m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -2254,7 +2258,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 167,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 43.7m,
                             decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2265,7 +2269,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 168,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 58.5m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -2276,7 +2280,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 169,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.1m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2287,7 +2291,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 170,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 15.2m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Associate's degree",
@@ -2298,7 +2302,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 171,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 257.7m,
                             decade_change_percentage = -6.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -2309,7 +2313,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 172,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.6m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2320,7 +2324,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 173,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 31.5m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -2331,7 +2335,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 174,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 125.5m,
                             decade_change_percentage = -3m,
                             education_requirement = "Bachelor's degree",
@@ -2342,7 +2346,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 175,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 447.1m,
                             decade_change_percentage = -10.2m,
                             education_requirement = "No formal educational credential",
@@ -2353,7 +2357,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 176,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.2m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -2364,7 +2368,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 177,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.1m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2375,7 +2379,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 178,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.3m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2386,7 +2390,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 179,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.1m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "No formal educational credential",
@@ -2397,7 +2401,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 180,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 523.5m,
                             decade_change_percentage = -11.3m,
                             education_requirement = "No formal educational credential",
@@ -2408,7 +2412,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 181,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 364.4m,
                             decade_change_percentage = -8m,
                             education_requirement = "High school diploma or equivalent",
@@ -2419,7 +2423,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 182,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.2m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -2430,7 +2434,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 183,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.4m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -2441,7 +2445,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 184,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3765.6m,
                             decade_change_percentage = -79.1m,
                             education_requirement = "No formal educational credential",
@@ -2452,7 +2456,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 185,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.9m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2463,7 +2467,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 186,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 945.9m,
                             decade_change_percentage = -18.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -2474,7 +2478,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 187,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.7m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "Master's degree",
@@ -2485,7 +2489,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 188,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 105.7m,
                             decade_change_percentage = -2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2496,7 +2500,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 189,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.3m,
                             decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2507,7 +2511,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 190,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.6m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2518,7 +2522,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 191,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.8m,
                             decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
@@ -2529,7 +2533,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 192,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 39.2m,
                             decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -2540,7 +2544,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 193,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.4m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
@@ -2551,7 +2555,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 194,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.6m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2562,7 +2566,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 195,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 142.4m,
                             decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2573,7 +2577,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 196,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.0m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2584,7 +2588,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 197,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1155.9m,
                             decade_change_percentage = -14.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -2595,7 +2599,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 198,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 184.4m,
                             decade_change_percentage = -2.3m,
                             education_requirement = "No formal educational credential",
@@ -2606,7 +2610,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 199,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 60.0m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -2617,7 +2621,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 200,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.9m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "Associate's degree",
@@ -2628,7 +2632,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 201,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 131.6m,
                             decade_change_percentage = -1.6m,
                             education_requirement = "No formal educational credential",
@@ -2639,7 +2643,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 202,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.6m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2650,7 +2654,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 203,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 214.8m,
                             decade_change_percentage = -2.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -2661,7 +2665,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 204,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 39.9m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Associate's degree",
@@ -2672,7 +2676,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 205,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 659.6m,
                             decade_change_percentage = -6.6m,
                             education_requirement = "No formal educational credential",
@@ -2683,7 +2687,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 206,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 247.1m,
                             decade_change_percentage = -2.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -2694,7 +2698,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 207,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 81.1m,
                             decade_change_percentage = -0.8m,
                             education_requirement = "No formal educational credential",
@@ -2705,7 +2709,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 208,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.6m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -2716,7 +2720,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 209,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.6m,
                             decade_change_percentage = -0.5m,
                             education_requirement = "Bachelor's degree",
@@ -2727,7 +2731,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 210,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.8m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2738,7 +2742,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 211,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 53.6m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -2749,7 +2753,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 212,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 35.2m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "No formal educational credential",
@@ -2760,7 +2764,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 213,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.2m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2771,7 +2775,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 214,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 47.9m,
                             decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -2782,7 +2786,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 215,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 113.0m,
                             decade_change_percentage = -0.6m,
                             education_requirement = "Bachelor's degree",
@@ -2793,7 +2797,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 216,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.3m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "No formal educational credential",
@@ -2804,7 +2808,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 217,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.6m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2815,7 +2819,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 218,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 171.0m,
                             decade_change_percentage = -0.4m,
                             education_requirement = "Bachelor's degree",
@@ -2826,7 +2830,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 219,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 88.0m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "Bachelor's degree",
@@ -2837,7 +2841,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 220,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 82.8m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
@@ -2848,7 +2852,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 221,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.5m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2859,7 +2863,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 222,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.9m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2870,7 +2874,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 223,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 126.2m,
                             decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -2881,7 +2885,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 224,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 194.7m,
                             decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
@@ -2892,7 +2896,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 225,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.1m,
                             decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
@@ -2903,7 +2907,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 226,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.1m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2914,7 +2918,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 227,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.3m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -2925,7 +2929,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 228,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 456.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2936,7 +2940,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 229,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.2m,
                             decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
@@ -2947,7 +2951,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 230,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.5m,
                             decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
@@ -2958,7 +2962,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 231,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.2m,
                             decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
@@ -2969,7 +2973,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 232,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 49.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -2980,7 +2984,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 233,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 39.5m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -2991,7 +2995,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 234,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1298.9m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Some college, no degree",
@@ -3002,7 +3006,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 235,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1238.8m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "No formal educational credential",
@@ -3013,7 +3017,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 236,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.1m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -3024,7 +3028,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 237,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 48.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3035,7 +3039,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 238,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Associate's degree",
@@ -3046,7 +3050,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 239,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 100.7m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
@@ -3057,7 +3061,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 240,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.0m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -3068,7 +3072,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 241,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.5m,
                             decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
@@ -3079,7 +3083,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 242,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 681.7m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3090,7 +3094,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 243,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.1m,
                             decade_change_percentage = 0m,
                             education_requirement = "Associate's degree",
@@ -3101,7 +3105,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 244,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.2m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3112,7 +3116,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 245,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.1m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Associate's degree",
@@ -3123,7 +3127,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 246,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1068.8m,
                             decade_change_percentage = 3.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3134,7 +3138,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 247,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.2m,
                             decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
@@ -3145,7 +3149,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 248,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.9m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -3156,7 +3160,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 249,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 73.0m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -3167,7 +3171,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 250,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 123.4m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
@@ -3178,7 +3182,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 251,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 153.2m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
@@ -3189,7 +3193,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 252,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 357.5m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -3200,7 +3204,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 253,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 412.8m,
                             decade_change_percentage = 2m,
                             education_requirement = "No formal educational credential",
@@ -3211,7 +3215,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 254,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.8m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3222,7 +3226,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 255,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 31.5m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
@@ -3233,7 +3237,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 256,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 41.1m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
@@ -3244,7 +3248,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 257,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.0m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
@@ -3255,7 +3259,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 258,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 75.8m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
@@ -3266,7 +3270,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 259,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 107.1m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Associate's degree",
@@ -3277,7 +3281,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 260,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 139.9m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -3288,7 +3292,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 261,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 172.4m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3299,7 +3303,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 262,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 266.7m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
@@ -3310,7 +3314,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 263,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.0m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
@@ -3321,7 +3325,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 264,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.6m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Bachelor's degree",
@@ -3332,7 +3336,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 265,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1344.3m,
                             decade_change_percentage = 9.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3343,7 +3347,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 266,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1425.0m,
                             decade_change_percentage = 10m,
                             education_requirement = "Bachelor's degree",
@@ -3354,7 +3358,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 267,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.1m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3365,7 +3369,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 268,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.2m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3376,7 +3380,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 269,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.7m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -3387,7 +3391,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 270,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.5m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -3398,7 +3402,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 271,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 48.7m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -3409,7 +3413,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 272,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 102.5m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
@@ -3420,7 +3424,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 273,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 625.5m,
                             decade_change_percentage = 5.1m,
                             education_requirement = "Bachelor's degree",
@@ -3431,7 +3435,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 274,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.0m,
                             decade_change_percentage = 0m,
                             education_requirement = "Associate's degree",
@@ -3442,7 +3446,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 275,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.8m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
@@ -3453,7 +3457,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 276,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 35.9m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -3464,7 +3468,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 277,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.8m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Associate's degree",
@@ -3475,7 +3479,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 278,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 291.6m,
                             decade_change_percentage = 2.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -3486,7 +3490,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 279,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 956.3m,
                             decade_change_percentage = 8.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -3497,7 +3501,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 280,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 0.8m,
                             decade_change_percentage = 0m,
                             education_requirement = "Doctoral or professional degree",
@@ -3508,7 +3512,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 281,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 10.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -3519,7 +3523,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 282,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 75.6m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -3530,7 +3534,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 283,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 266.1m,
                             decade_change_percentage = 2.6m,
                             education_requirement = "No formal educational credential",
@@ -3541,7 +3545,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 284,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1072.3m,
                             decade_change_percentage = 11.1m,
                             education_requirement = "Bachelor's degree",
@@ -3552,7 +3556,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 285,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.4m,
                             decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
@@ -3563,7 +3567,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 286,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.5m,
                             decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
@@ -3574,7 +3578,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 287,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.2m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -3585,7 +3589,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 288,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.9m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3596,7 +3600,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 289,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.8m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
@@ -3607,7 +3611,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 290,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.3m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -3618,7 +3622,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 291,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 34.2m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -3629,7 +3633,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 292,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 43.7m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -3640,7 +3644,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 293,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.8m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
@@ -3651,7 +3655,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 294,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 103.8m,
                             decade_change_percentage = 1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -3662,7 +3666,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 295,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 300.4m,
                             decade_change_percentage = 3.3m,
                             education_requirement = "Master's degree",
@@ -3673,7 +3677,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 296,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.2m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3684,7 +3688,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 297,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -3695,7 +3699,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 298,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.8m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -3706,7 +3710,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 299,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 41.6m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -3717,7 +3721,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 300,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 70.1m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -3728,7 +3732,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 301,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 153.3m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3739,7 +3743,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 302,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 173.5m,
                             decade_change_percentage = 2.1m,
                             education_requirement = "No formal educational credential",
@@ -3750,7 +3754,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 303,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -3761,7 +3765,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 304,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.9m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
@@ -3772,7 +3776,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 305,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.8m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -3783,7 +3787,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 306,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.2m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Master's degree",
@@ -3794,7 +3798,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 307,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 123.0m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -3805,7 +3809,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 308,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2382.9m,
                             decade_change_percentage = 29.9m,
                             education_requirement = "No formal educational credential",
@@ -3816,7 +3820,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 309,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.5m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -3827,7 +3831,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 310,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.0m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
@@ -3838,7 +3842,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 311,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.7m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -3849,7 +3853,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 312,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.7m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -3860,7 +3864,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 313,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 275.3m,
                             decade_change_percentage = 3.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3871,7 +3875,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 314,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 358.8m,
                             decade_change_percentage = 4.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3882,7 +3886,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 315,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 431.8m,
                             decade_change_percentage = 6.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -3893,7 +3897,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 316,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.7m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -3904,7 +3908,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 317,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
@@ -3915,7 +3919,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 318,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.1m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -3926,7 +3930,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 319,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 108.4m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "No formal educational credential",
@@ -3937,7 +3941,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 320,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 109.5m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -3948,7 +3952,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 321,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 114.4m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -3959,7 +3963,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 322,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 114.0m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -3970,7 +3974,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 323,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 195.4m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -3981,7 +3985,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 324,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 372.4m,
                             decade_change_percentage = 5.5m,
                             education_requirement = "No formal educational credential",
@@ -3992,7 +3996,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 325,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3410.1m,
                             decade_change_percentage = 50.4m,
                             education_requirement = "No formal educational credential",
@@ -4003,7 +4007,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 326,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.3m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
@@ -4014,7 +4018,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 327,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.4m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -4025,7 +4029,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 328,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.3m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4036,7 +4040,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 329,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.3m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
@@ -4047,7 +4051,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 330,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 106.6m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "No formal educational credential",
@@ -4058,7 +4062,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 331,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 116.4m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "No formal educational credential",
@@ -4069,7 +4073,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 332,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 217.1m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4080,7 +4084,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 333,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 222.1m,
                             decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
@@ -4091,7 +4095,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 334,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 782.2m,
                             decade_change_percentage = 12.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -4102,7 +4106,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 335,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 21.9m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4113,7 +4117,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 336,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.2m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4124,7 +4128,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 337,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 34.4m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
@@ -4135,7 +4139,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 338,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.5m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
@@ -4146,7 +4150,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 339,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 39.6m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Postsecondary nondegree award",
@@ -4157,7 +4161,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 340,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.2m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4168,7 +4172,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 341,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.2m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
@@ -4179,7 +4183,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 342,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.1m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -4190,7 +4194,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 343,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 71.6m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -4201,7 +4205,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 344,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.1m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -4212,7 +4216,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 345,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.8m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -4223,7 +4227,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 346,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.9m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
@@ -4234,7 +4238,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 347,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 84.8m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "Master's degree",
@@ -4245,7 +4249,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 348,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 148.0m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
@@ -4256,7 +4260,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 349,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 327.0m,
                             decade_change_percentage = 6.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -4267,7 +4271,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 350,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.9m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -4278,7 +4282,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 351,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.1m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
@@ -4289,7 +4293,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 352,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.2m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4300,7 +4304,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 353,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.3m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -4311,7 +4315,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 354,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.7m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
@@ -4322,7 +4326,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 355,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.4m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
@@ -4333,7 +4337,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 356,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 35.2m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Master's degree",
@@ -4344,7 +4348,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 357,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 141.0m,
                             decade_change_percentage = 2.8m,
                             education_requirement = "No formal educational credential",
@@ -4355,7 +4359,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 358,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 154.5m,
                             decade_change_percentage = 3.1m,
                             education_requirement = "No formal educational credential",
@@ -4366,7 +4370,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 359,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.5m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4377,7 +4381,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 360,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.4m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -4388,7 +4392,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 361,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.3m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
@@ -4399,7 +4403,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 362,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 434.5m,
                             decade_change_percentage = 8.9m,
                             education_requirement = "No formal educational credential",
@@ -4410,7 +4414,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 363,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
@@ -4421,7 +4425,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 364,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4432,7 +4436,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 365,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.5m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
@@ -4443,7 +4447,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 366,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.4m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4454,7 +4458,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 367,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.3m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
@@ -4465,7 +4469,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 368,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.9m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -4476,7 +4480,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 369,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.6m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -4487,7 +4491,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 370,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.4m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
@@ -4498,7 +4502,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 371,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 54.5m,
                             decade_change_percentage = 1.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -4509,7 +4513,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 372,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 157.5m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4520,7 +4524,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 373,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.3m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -4531,7 +4535,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 374,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 47.8m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4542,7 +4546,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 375,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 145.3m,
                             decade_change_percentage = 3.3m,
                             education_requirement = "Bachelor's degree",
@@ -4553,7 +4557,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 376,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 482.7m,
                             decade_change_percentage = 10.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -4564,7 +4568,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 377,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4575,7 +4579,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 378,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.3m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
@@ -4586,7 +4590,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 379,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.9m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Associate's degree",
@@ -4597,7 +4601,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 380,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.7m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4608,7 +4612,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 381,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 173.4m,
                             decade_change_percentage = 4.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4619,7 +4623,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 382,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 576.2m,
                             decade_change_percentage = 14m,
                             education_requirement = "High school diploma or equivalent",
@@ -4630,7 +4634,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 383,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.1m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
@@ -4641,7 +4645,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 384,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.1m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4652,7 +4656,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 385,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.6m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4663,7 +4667,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 386,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.4m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -4674,7 +4678,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 387,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 66.0m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -4685,7 +4689,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 388,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 72.6m,
                             decade_change_percentage = 1.8m,
                             education_requirement = "Doctoral or professional degree",
@@ -4696,7 +4700,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 389,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 96.5m,
                             decade_change_percentage = 2.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4707,7 +4711,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 390,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 93.9m,
                             decade_change_percentage = 2.4m,
                             education_requirement = "Bachelor's degree",
@@ -4718,7 +4722,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 391,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 216.6m,
                             decade_change_percentage = 5.3m,
                             education_requirement = "Master's degree",
@@ -4729,7 +4733,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 392,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 339.9m,
                             decade_change_percentage = 8.3m,
                             education_requirement = "Bachelor's degree",
@@ -4740,7 +4744,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 393,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 809.9m,
                             decade_change_percentage = 20.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -4751,7 +4755,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 394,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4762,7 +4766,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 395,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.2m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -4773,7 +4777,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 396,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 40.0m,
                             decade_change_percentage = 1m,
                             education_requirement = "Doctoral or professional degree",
@@ -4784,7 +4788,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 397,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 230.9m,
                             decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4795,7 +4799,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 398,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 334.2m,
                             decade_change_percentage = 8.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -4806,7 +4810,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 399,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.8m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -4817,7 +4821,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 400,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.5m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -4828,7 +4832,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 401,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.7m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -4839,7 +4843,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 402,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.1m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Doctoral or professional degree",
@@ -4850,7 +4854,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 403,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 56.6m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4861,7 +4865,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 404,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 73.3m,
                             decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
@@ -4872,7 +4876,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 405,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 161.1m,
                             decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -4883,7 +4887,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 406,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 380.8m,
                             decade_change_percentage = 10.4m,
                             education_requirement = "No formal educational credential",
@@ -4894,7 +4898,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 407,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 437.6m,
                             decade_change_percentage = 11.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -4905,7 +4909,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 408,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.3m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Postsecondary nondegree award",
@@ -4916,7 +4920,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 409,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 31.3m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -4927,7 +4931,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 410,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.2m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -4938,7 +4942,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 411,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.5m,
                             decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
@@ -4949,7 +4953,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 412,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.5m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -4960,7 +4964,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 413,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 57.6m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
@@ -4971,7 +4975,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 414,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 83.0m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -4982,7 +4986,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 415,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 122.4m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -4993,7 +4997,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 416,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -5004,7 +5008,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 417,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.1m,
                             decade_change_percentage = 1.2m,
                             education_requirement = "No formal educational credential",
@@ -5015,7 +5019,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 418,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 43.9m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "Bachelor's degree",
@@ -5026,7 +5030,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 419,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 354.8m,
                             decade_change_percentage = 10.4m,
                             education_requirement = "Bachelor's degree",
@@ -5037,7 +5041,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 420,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.8m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -5048,7 +5052,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 421,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.1m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
@@ -5059,7 +5063,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 422,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.5m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "No formal educational credential",
@@ -5070,7 +5074,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 423,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.1m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5081,7 +5085,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 424,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.5m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5092,7 +5096,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 425,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 95.0m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -5103,7 +5107,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 426,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 141.2m,
                             decade_change_percentage = 4.3m,
                             education_requirement = "Master's degree",
@@ -5114,7 +5118,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 427,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 170.6m,
                             decade_change_percentage = 5.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -5125,7 +5129,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 428,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 254.9m,
                             decade_change_percentage = 7.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -5136,7 +5140,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 429,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 330.9m,
                             decade_change_percentage = 10m,
                             education_requirement = "Doctoral or professional degree",
@@ -5147,7 +5151,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 430,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.5m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
@@ -5158,7 +5162,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 431,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.4m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
@@ -5169,7 +5173,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 432,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.4m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -5180,7 +5184,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 433,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.0m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -5191,7 +5195,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 434,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.5m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
@@ -5202,7 +5206,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 435,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 74.1m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Associate's degree",
@@ -5213,7 +5217,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 436,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 95.0m,
                             decade_change_percentage = 3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5224,7 +5228,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 437,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 137.9m,
                             decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5235,7 +5239,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 438,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 258.6m,
                             decade_change_percentage = 8.1m,
                             education_requirement = "No formal educational credential",
@@ -5246,7 +5250,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 439,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -5257,7 +5261,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 440,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -5268,7 +5272,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 441,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.2m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -5279,7 +5283,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 442,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.2m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
@@ -5290,7 +5294,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 443,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.7m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -5301,7 +5305,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 444,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.9m,
                             decade_change_percentage = 1.8m,
                             education_requirement = "Doctoral or professional degree",
@@ -5312,7 +5316,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 445,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 58.8m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "Associate's degree",
@@ -5323,7 +5327,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 446,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 69.1m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "Associate's degree",
@@ -5334,7 +5338,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 447,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 78.1m,
                             decade_change_percentage = 2.5m,
                             education_requirement = "Some college, no degree",
@@ -5345,7 +5349,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 448,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 123.9m,
                             decade_change_percentage = 3.9m,
                             education_requirement = "Master's degree",
@@ -5356,7 +5360,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 449,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 146.4m,
                             decade_change_percentage = 4.7m,
                             education_requirement = "No formal educational credential",
@@ -5367,7 +5371,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 450,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 354.7m,
                             decade_change_percentage = 11.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -5378,7 +5382,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 451,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 462.6m,
                             decade_change_percentage = 14.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -5389,7 +5393,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 452,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.8m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
@@ -5400,7 +5404,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 453,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.3m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -5411,7 +5415,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 454,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.9m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
@@ -5422,7 +5426,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 455,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.6m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
@@ -5433,7 +5437,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 456,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.2m,
                             decade_change_percentage = 2.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -5444,7 +5448,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 457,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 170.3m,
                             decade_change_percentage = 5.7m,
                             education_requirement = "Bachelor's degree",
@@ -5455,7 +5459,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 458,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 223.7m,
                             decade_change_percentage = 7.4m,
                             education_requirement = "Some college, no degree",
@@ -5466,7 +5470,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 459,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 270.9m,
                             decade_change_percentage = 8.9m,
                             education_requirement = "Bachelor's degree",
@@ -5477,7 +5481,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 460,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 641.3m,
                             decade_change_percentage = 21.3m,
                             education_requirement = "No formal educational credential",
@@ -5488,7 +5492,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 461,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 684.0m,
                             decade_change_percentage = 22.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -5499,7 +5503,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 462,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1228.3m,
                             decade_change_percentage = 41m,
                             education_requirement = "Bachelor's degree",
@@ -5510,7 +5514,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 463,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.5m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
@@ -5521,7 +5525,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 464,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.0m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "No formal educational credential",
@@ -5532,7 +5536,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 465,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.5m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Associate's degree",
@@ -5543,7 +5547,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 466,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.3m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -5554,7 +5558,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 467,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.5m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -5565,7 +5569,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 468,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.6m,
                             decade_change_percentage = 1.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -5576,7 +5580,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 469,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.4m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
@@ -5587,7 +5591,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 470,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.6m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -5598,7 +5602,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 471,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 99.5m,
                             decade_change_percentage = 3.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -5609,7 +5613,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 472,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 512.3m,
                             decade_change_percentage = 17.2m,
                             education_requirement = "Associate's degree",
@@ -5620,7 +5624,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 473,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.5m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5631,7 +5635,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 474,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.6m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5642,7 +5646,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 475,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.2m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Associate's degree",
@@ -5653,7 +5657,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 476,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.9m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -5664,7 +5668,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 477,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.1m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "No formal educational credential",
@@ -5675,7 +5679,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 478,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 66.3m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -5686,7 +5690,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 479,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 127.2m,
                             decade_change_percentage = 4.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -5697,7 +5701,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 480,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 180.2m,
                             decade_change_percentage = 6.3m,
                             education_requirement = "Bachelor's degree",
@@ -5708,7 +5712,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 481,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 218.2m,
                             decade_change_percentage = 7.7m,
                             education_requirement = "Master's degree",
@@ -5719,7 +5723,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 482,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1176.1m,
                             decade_change_percentage = 41.7m,
                             education_requirement = "No formal educational credential",
@@ -5730,7 +5734,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 483,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.2m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -5741,7 +5745,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 484,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.6m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -5752,7 +5756,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 485,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.8m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -5763,7 +5767,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 486,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.8m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
@@ -5774,7 +5778,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 487,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.1m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -5785,7 +5789,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 488,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 31.2m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -5796,7 +5800,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 489,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 87.1m,
                             decade_change_percentage = 3.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -5807,7 +5811,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 490,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 262.8m,
                             decade_change_percentage = 9.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -5818,7 +5822,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 491,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 334.2m,
                             decade_change_percentage = 12m,
                             education_requirement = "Postsecondary nondegree award",
@@ -5829,7 +5833,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 492,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1607.2m,
                             decade_change_percentage = 57.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -5840,7 +5844,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 493,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.9m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -5851,7 +5855,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 494,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.0m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Postsecondary nondegree award",
@@ -5862,7 +5866,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 495,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.0m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -5873,7 +5877,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 496,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.3m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -5884,7 +5888,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 497,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.0m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
@@ -5895,7 +5899,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 498,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.5m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Associate's degree",
@@ -5906,7 +5910,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 499,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.3m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -5917,7 +5921,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 500,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.7m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "Master's degree",
@@ -5928,7 +5932,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 501,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 58.9m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "Associate's degree",
@@ -5939,7 +5943,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 502,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 74.3m,
                             decade_change_percentage = 2.8m,
                             education_requirement = "Doctoral or professional degree",
@@ -5950,7 +5954,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 503,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 108.0m,
                             decade_change_percentage = 4m,
                             education_requirement = "Doctoral or professional degree",
@@ -5961,7 +5965,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 504,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 151.2m,
                             decade_change_percentage = 5.6m,
                             education_requirement = "Bachelor's degree",
@@ -5972,7 +5976,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 505,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 305.6m,
                             decade_change_percentage = 11.4m,
                             education_requirement = "Bachelor's degree",
@@ -5983,7 +5987,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 506,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 401.8m,
                             decade_change_percentage = 15m,
                             education_requirement = "No formal educational credential",
@@ -5994,7 +5998,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 507,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 796.6m,
                             decade_change_percentage = 29.9m,
                             education_requirement = "No formal educational credential",
@@ -6005,7 +6009,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 508,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.2m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -6016,7 +6020,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 509,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.4m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -6027,7 +6031,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 510,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.0m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -6038,7 +6042,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 511,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.8m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -6049,7 +6053,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 512,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.2m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -6060,7 +6064,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 513,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 80.0m,
                             decade_change_percentage = 3m,
                             education_requirement = "Associate's degree",
@@ -6071,7 +6075,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 514,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.0m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6082,7 +6086,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 515,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.9m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -6093,7 +6097,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 516,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.5m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
@@ -6104,7 +6108,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 517,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.9m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -6115,7 +6119,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 518,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.1m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -6126,7 +6130,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 519,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 48.8m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "No formal educational credential",
@@ -6137,7 +6141,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 520,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 60.4m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
@@ -6148,7 +6152,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 521,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 91.7m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "Bachelor's degree",
@@ -6159,7 +6163,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 522,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 94.9m,
                             decade_change_percentage = 3.7m,
                             education_requirement = "Bachelor's degree",
@@ -6170,7 +6174,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 523,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.2m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -6181,7 +6185,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 524,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.9m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -6192,7 +6196,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 525,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.5m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -6203,7 +6207,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 526,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 45.0m,
                             decade_change_percentage = 1.8m,
                             education_requirement = "No formal educational credential",
@@ -6214,7 +6218,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 527,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 50.9m,
                             decade_change_percentage = 2.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6225,7 +6229,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 528,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 554.7m,
                             decade_change_percentage = 22.5m,
                             education_requirement = "Bachelor's degree",
@@ -6236,7 +6240,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 529,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.4m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -6247,7 +6251,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 530,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.5m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -6258,7 +6262,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 531,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.7m,
                             decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
@@ -6269,7 +6273,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 532,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 94.1m,
                             decade_change_percentage = 3.8m,
                             education_requirement = "No formal educational credential",
@@ -6280,7 +6284,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 533,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 148.9m,
                             decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6291,7 +6295,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 534,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 201.5m,
                             decade_change_percentage = 8.2m,
                             education_requirement = "Bachelor's degree",
@@ -6302,7 +6306,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 535,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 421.6m,
                             decade_change_percentage = 17.4m,
                             education_requirement = "Bachelor's degree",
@@ -6313,7 +6317,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 536,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1113.2m,
                             decade_change_percentage = 45.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -6324,7 +6328,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 537,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1174.8m,
                             decade_change_percentage = 48.7m,
                             education_requirement = "Bachelor's degree",
@@ -6335,7 +6339,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 538,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1361.3m,
                             decade_change_percentage = 56.5m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6346,7 +6350,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 539,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 2192.3m,
                             decade_change_percentage = 89.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6357,7 +6361,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 540,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.0m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Master's degree",
@@ -6368,7 +6372,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 541,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.9m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -6379,7 +6383,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 542,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.8m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6390,7 +6394,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 543,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 45.5m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -6401,7 +6405,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 544,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 170.2m,
                             decade_change_percentage = 7.1m,
                             education_requirement = "Bachelor's degree",
@@ -6412,7 +6416,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 545,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 188.8m,
                             decade_change_percentage = 7.9m,
                             education_requirement = "Bachelor's degree",
@@ -6423,7 +6427,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 546,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 343.8m,
                             decade_change_percentage = 14.4m,
                             education_requirement = "No formal educational credential",
@@ -6434,7 +6438,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 547,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 354.3m,
                             decade_change_percentage = 14.8m,
                             education_requirement = "Associate's degree",
@@ -6445,7 +6449,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 548,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 396.8m,
                             decade_change_percentage = 16.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -6456,7 +6460,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 549,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 459.2m,
                             decade_change_percentage = 19.2m,
                             education_requirement = "No formal educational credential",
@@ -6467,7 +6471,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 550,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3507.8m,
                             decade_change_percentage = 147.3m,
                             education_requirement = "Bachelor's degree",
@@ -6478,7 +6482,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 551,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.8m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "Associate's degree",
@@ -6489,7 +6493,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 552,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 23.1m,
                             decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6500,7 +6504,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 553,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 25.8m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6511,7 +6515,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 554,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 68.7m,
                             decade_change_percentage = 3m,
                             education_requirement = "Bachelor's degree",
@@ -6522,7 +6526,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 555,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 85.4m,
                             decade_change_percentage = 3.7m,
                             education_requirement = "No formal educational credential",
@@ -6533,7 +6537,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 556,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 140.2m,
                             decade_change_percentage = 6.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6544,7 +6548,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 557,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.1m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -6555,7 +6559,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 558,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.5m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -6566,7 +6570,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 559,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.3m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Associate's degree",
@@ -6577,7 +6581,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 560,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 77.5m,
                             decade_change_percentage = 3.4m,
                             education_requirement = "Bachelor's degree",
@@ -6588,7 +6592,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 561,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 136.7m,
                             decade_change_percentage = 6m,
                             education_requirement = "Doctoral or professional degree",
@@ -6599,7 +6603,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 562,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1418.6m,
                             decade_change_percentage = 61.9m,
                             education_requirement = "No formal educational credential",
@@ -6610,7 +6614,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 563,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1538.4m,
                             decade_change_percentage = 67.4m,
                             education_requirement = "Bachelor's degree",
@@ -6621,7 +6625,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 564,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.3m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
@@ -6632,7 +6636,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 565,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.2m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -6643,7 +6647,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 566,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.6m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
@@ -6654,7 +6658,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 567,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 136.8m,
                             decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6665,7 +6669,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 568,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 282.9m,
                             decade_change_percentage = 12.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -6676,7 +6680,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 569,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 505.8m,
                             decade_change_percentage = 22.9m,
                             education_requirement = "Bachelor's degree",
@@ -6687,7 +6691,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 570,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.4m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -6698,7 +6702,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 571,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.2m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -6709,7 +6713,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 572,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 50.8m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
@@ -6720,7 +6724,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 573,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 78.1m,
                             decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
@@ -6731,7 +6735,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 574,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 77.6m,
                             decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
@@ -6742,7 +6746,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 575,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 127.0m,
                             decade_change_percentage = 5.8m,
                             education_requirement = "Bachelor's degree",
@@ -6753,7 +6757,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 576,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 289.4m,
                             decade_change_percentage = 13.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -6764,7 +6768,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 577,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 377.5m,
                             decade_change_percentage = 17.2m,
                             education_requirement = "Bachelor's degree",
@@ -6775,7 +6779,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 578,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 373.2m,
                             decade_change_percentage = 17.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -6786,7 +6790,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 579,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.2m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
@@ -6797,7 +6801,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 580,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.9m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -6808,7 +6812,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 581,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.1m,
                             decade_change_percentage = 1m,
                             education_requirement = "Doctoral or professional degree",
@@ -6819,7 +6823,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 582,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 60.9m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
@@ -6830,7 +6834,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 583,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 74.8m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6841,7 +6845,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 584,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 81.4m,
                             decade_change_percentage = 3.9m,
                             education_requirement = "Bachelor's degree",
@@ -6852,7 +6856,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 585,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 601.1m,
                             decade_change_percentage = 28.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -6863,7 +6867,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 586,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.9m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -6874,7 +6878,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 587,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.1m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -6885,7 +6889,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 588,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 34.4m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
@@ -6896,7 +6900,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 589,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 86.3m,
                             decade_change_percentage = 4.2m,
                             education_requirement = "Bachelor's degree",
@@ -6907,7 +6911,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 590,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 123.7m,
                             decade_change_percentage = 6m,
                             education_requirement = "Bachelor's degree",
@@ -6918,7 +6922,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 591,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.8m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -6929,7 +6933,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 592,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.0m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -6940,7 +6944,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 593,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.4m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -6951,7 +6955,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 594,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 218.8m,
                             decade_change_percentage = 10.8m,
                             education_requirement = "No formal educational credential",
@@ -6962,7 +6966,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 595,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 342.9m,
                             decade_change_percentage = 16.8m,
                             education_requirement = "Bachelor's degree",
@@ -6973,7 +6977,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 596,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1221.7m,
                             decade_change_percentage = 60m,
                             education_requirement = "High school diploma or equivalent",
@@ -6984,7 +6988,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 597,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.9m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -6995,7 +6999,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 598,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.9m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -7006,7 +7010,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 599,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.1m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -7017,7 +7021,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 600,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.1m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -7028,7 +7032,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 601,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.0m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
@@ -7039,7 +7043,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 602,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 326.3m,
                             decade_change_percentage = 16.2m,
                             education_requirement = "Bachelor's degree",
@@ -7050,7 +7054,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 603,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 736.2m,
                             decade_change_percentage = 36.8m,
                             education_requirement = "Some college, no degree",
@@ -7061,7 +7065,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 604,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.1m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -7072,7 +7076,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 605,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 7.9m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
@@ -7083,7 +7087,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 606,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.7m,
                             decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
@@ -7094,7 +7098,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 607,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 22.3m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
@@ -7105,7 +7109,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 608,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.3m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "Bachelor's degree",
@@ -7116,7 +7120,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 609,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.7m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
@@ -7127,7 +7131,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 610,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 56.3m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "Master's degree",
@@ -7138,7 +7142,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 611,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 169.1m,
                             decade_change_percentage = 8.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -7149,7 +7153,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 612,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.5m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
@@ -7160,7 +7164,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 613,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.0m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
@@ -7171,7 +7175,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 614,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.7m,
                             decade_change_percentage = 1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7182,7 +7186,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 615,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 21.2m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Associate's degree",
@@ -7193,7 +7197,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 616,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.9m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
@@ -7204,7 +7208,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 617,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.1m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
@@ -7215,7 +7219,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 618,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 44.4m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7226,7 +7230,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 619,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 50.9m,
                             decade_change_percentage = 2.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -7237,7 +7241,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 620,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 124.0m,
                             decade_change_percentage = 6.5m,
                             education_requirement = "Bachelor's degree",
@@ -7248,7 +7252,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 621,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 191.6m,
                             decade_change_percentage = 10m,
                             education_requirement = "Bachelor's degree",
@@ -7259,7 +7263,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 622,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.5m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
@@ -7270,7 +7274,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 623,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.6m,
                             decade_change_percentage = 1.4m,
                             education_requirement = "Master's degree",
@@ -7281,7 +7285,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 624,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.0m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -7292,7 +7296,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 625,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 174.4m,
                             decade_change_percentage = 9.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -7303,7 +7307,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 626,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 355.3m,
                             decade_change_percentage = 18.9m,
                             education_requirement = "Bachelor's degree",
@@ -7314,7 +7318,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 627,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 655.0m,
                             decade_change_percentage = 34.9m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7325,7 +7329,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 628,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2988.5m,
                             decade_change_percentage = 158.8m,
                             education_requirement = "No formal educational credential",
@@ -7336,7 +7340,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 629,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 5.2m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -7347,7 +7351,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 630,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 32.8m,
                             decade_change_percentage = 1.8m,
                             education_requirement = "Bachelor's degree",
@@ -7358,7 +7362,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 631,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 66.7m,
                             decade_change_percentage = 3.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -7369,7 +7373,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 632,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 98.3m,
                             decade_change_percentage = 5.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7380,7 +7384,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 633,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 109.2m,
                             decade_change_percentage = 5.9m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7391,7 +7395,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 634,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 156.4m,
                             decade_change_percentage = 8.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -7402,7 +7406,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 635,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 170.7m,
                             decade_change_percentage = 9.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7413,7 +7417,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 636,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 342.4m,
                             decade_change_percentage = 18.4m,
                             education_requirement = "Master's degree",
@@ -7424,7 +7428,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 637,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 429.6m,
                             decade_change_percentage = 23.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -7435,7 +7439,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 638,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.5m,
                             decade_change_percentage = 2.8m,
                             education_requirement = "No formal educational credential",
@@ -7446,7 +7450,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 639,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 63.6m,
                             decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -7457,7 +7461,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 640,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 222.8m,
                             decade_change_percentage = 12.2m,
                             education_requirement = "Associate's degree",
@@ -7468,7 +7472,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 641,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 415.8m,
                             decade_change_percentage = 23m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7479,7 +7483,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 642,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 38.7m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -7490,7 +7494,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 643,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 250.8m,
                             decade_change_percentage = 14m,
                             education_requirement = "Bachelor's degree",
@@ -7501,7 +7505,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 644,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 459.6m,
                             decade_change_percentage = 25.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -7512,7 +7516,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 645,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3172.5m,
                             decade_change_percentage = 177.4m,
                             education_requirement = "Bachelor's degree",
@@ -7523,7 +7527,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 646,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 0.4m,
                             decade_change_percentage = 0m,
                             education_requirement = "Doctoral or professional degree",
@@ -7534,7 +7538,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 647,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.8m,
                             decade_change_percentage = 0.2m,
                             education_requirement = "Bachelor's degree",
@@ -7545,7 +7549,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 648,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.3m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -7556,7 +7560,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 649,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 112.7m,
                             decade_change_percentage = 6.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -7567,7 +7571,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 650,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.6m,
                             decade_change_percentage = 1.8m,
                             education_requirement = "No formal educational credential",
@@ -7578,7 +7582,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 651,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 35.0m,
                             decade_change_percentage = 2m,
                             education_requirement = "Associate's degree",
@@ -7589,7 +7593,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 652,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.8m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -7600,7 +7604,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 653,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.1m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Master's degree",
@@ -7611,7 +7615,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 654,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 72.0m,
                             decade_change_percentage = 4.3m,
                             education_requirement = "Bachelor's degree",
@@ -7622,7 +7626,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 655,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 874.5m,
                             decade_change_percentage = 51.4m,
                             education_requirement = "Bachelor's degree",
@@ -7633,7 +7637,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 656,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.4m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7644,7 +7648,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 657,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 95.7m,
                             decade_change_percentage = 5.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -7655,7 +7659,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 658,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 38.3m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -7666,7 +7670,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 659,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 47.3m,
                             decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
@@ -7677,7 +7681,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 660,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 63.8m,
                             decade_change_percentage = 3.9m,
                             education_requirement = "Bachelor's degree",
@@ -7688,7 +7692,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 661,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 80.5m,
                             decade_change_percentage = 4.9m,
                             education_requirement = "Bachelor's degree",
@@ -7699,7 +7703,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 662,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 135.1m,
                             decade_change_percentage = 8.2m,
                             education_requirement = "Bachelor's degree",
@@ -7710,7 +7714,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 663,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 136.0m,
                             decade_change_percentage = 8.3m,
                             education_requirement = "Bachelor's degree",
@@ -7721,7 +7725,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 664,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 297.1m,
                             decade_change_percentage = 18m,
                             education_requirement = "Bachelor's degree",
@@ -7732,7 +7736,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 665,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.1m,
                             decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
@@ -7743,7 +7747,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 666,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 87.1m,
                             decade_change_percentage = 5.4m,
                             education_requirement = "Bachelor's degree",
@@ -7754,7 +7758,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 667,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 113.5m,
                             decade_change_percentage = 7m,
                             education_requirement = "No formal educational credential",
@@ -7765,7 +7769,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 668,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 881.3m,
                             decade_change_percentage = 54.7m,
                             education_requirement = "Bachelor's degree",
@@ -7776,7 +7780,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 669,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
@@ -7787,7 +7791,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 670,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.6m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Master's degree",
@@ -7798,7 +7802,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 671,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.7m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -7809,7 +7813,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 672,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 173.7m,
                             decade_change_percentage = 11m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7820,7 +7824,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 673,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 385.8m,
                             decade_change_percentage = 24.2m,
                             education_requirement = "Bachelor's degree",
@@ -7831,7 +7835,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 674,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2851.6m,
                             decade_change_percentage = 178.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -7842,7 +7846,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 675,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.2m,
                             decade_change_percentage = 0.5m,
                             education_requirement = "Master's degree",
@@ -7853,7 +7857,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 676,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 762.6m,
                             decade_change_percentage = 49.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -7864,7 +7868,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 677,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 41.3m,
                             decade_change_percentage = 2.7m,
                             education_requirement = "Bachelor's degree",
@@ -7875,7 +7879,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 678,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 103.0m,
                             decade_change_percentage = 6.7m,
                             education_requirement = "Bachelor's degree",
@@ -7886,7 +7890,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 679,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 6.2m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Master's degree",
@@ -7897,7 +7901,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 680,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 68.4m,
                             decade_change_percentage = 4.5m,
                             education_requirement = "Bachelor's degree",
@@ -7908,7 +7912,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 681,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 78.6m,
                             decade_change_percentage = 5.2m,
                             education_requirement = "Bachelor's degree",
@@ -7919,7 +7923,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 682,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 168.0m,
                             decade_change_percentage = 11.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -7930,7 +7934,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 683,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 358.2m,
                             decade_change_percentage = 23.7m,
                             education_requirement = "Bachelor's degree",
@@ -7941,7 +7945,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 684,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.6m,
                             decade_change_percentage = 1.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -7952,7 +7956,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 685,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 34.5m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -7963,7 +7967,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 686,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 50.8m,
                             decade_change_percentage = 3.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -7974,7 +7978,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 687,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 112.1m,
                             decade_change_percentage = 7.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -7985,7 +7989,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 688,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 175.3m,
                             decade_change_percentage = 11.7m,
                             education_requirement = "Bachelor's degree",
@@ -7996,7 +8000,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 689,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 696.6m,
                             decade_change_percentage = 46.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -8007,7 +8011,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 690,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 53.3m,
                             decade_change_percentage = 3.7m,
                             education_requirement = "Bachelor's degree",
@@ -8018,7 +8022,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 691,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 59.4m,
                             decade_change_percentage = 4.1m,
                             education_requirement = "No formal educational credential",
@@ -8029,7 +8033,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 692,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 99.9m,
                             decade_change_percentage = 6.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -8040,7 +8044,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 693,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 371.0m,
                             decade_change_percentage = 25.7m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8051,7 +8055,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 694,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 12.9m,
                             decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -8062,7 +8066,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 695,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 63.1m,
                             decade_change_percentage = 4.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8073,7 +8077,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 696,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 85.2m,
                             decade_change_percentage = 6m,
                             education_requirement = "Bachelor's degree",
@@ -8084,7 +8088,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 697,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 98.2m,
                             decade_change_percentage = 6.9m,
                             education_requirement = "Bachelor's degree",
@@ -8095,7 +8099,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 698,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 177.9m,
                             decade_change_percentage = 12.5m,
                             education_requirement = "Associate's degree",
@@ -8106,7 +8110,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 699,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 60.4m,
                             decade_change_percentage = 4.4m,
                             education_requirement = "Bachelor's degree",
@@ -8117,7 +8121,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 700,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 110.9m,
                             decade_change_percentage = 7.9m,
                             education_requirement = "Bachelor's degree",
@@ -8128,7 +8132,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 701,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 27.8m,
                             decade_change_percentage = 2m,
                             education_requirement = "Bachelor's degree",
@@ -8139,7 +8143,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 702,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.2m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "No formal educational credential",
@@ -8150,7 +8154,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 703,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1.6m,
                             decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
@@ -8161,7 +8165,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 704,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.5m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -8172,7 +8176,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 705,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 219.4m,
                             decade_change_percentage = 16.3m,
                             education_requirement = "Associate's degree",
@@ -8183,7 +8187,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 706,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 482.2m,
                             decade_change_percentage = 35.6m,
                             education_requirement = "Bachelor's degree",
@@ -8194,7 +8198,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 707,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 15.3m,
                             decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
@@ -8205,7 +8209,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 708,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 132.0m,
                             decade_change_percentage = 9.9m,
                             education_requirement = "Bachelor's degree",
@@ -8216,7 +8220,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 709,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 826.3m,
                             decade_change_percentage = 62.4m,
                             education_requirement = "Doctoral or professional degree",
@@ -8227,7 +8231,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 710,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 317.2m,
                             decade_change_percentage = 24.2m,
                             education_requirement = "Bachelor's degree",
@@ -8238,7 +8242,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 711,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 41.4m,
                             decade_change_percentage = 3.2m,
                             education_requirement = "Associate's degree",
@@ -8249,7 +8253,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 712,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 114.6m,
                             decade_change_percentage = 8.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -8260,7 +8264,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 713,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 139.4m,
                             decade_change_percentage = 10.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8271,7 +8275,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 714,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 541.0m,
                             decade_change_percentage = 41.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -8282,7 +8286,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 715,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 555.8m,
                             decade_change_percentage = 42.8m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8293,7 +8297,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 716,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 171.5m,
                             decade_change_percentage = 13.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -8304,7 +8308,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 717,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 68.3m,
                             decade_change_percentage = 5.4m,
                             education_requirement = "No formal educational credential",
@@ -8315,7 +8319,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 718,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 151.2m,
                             decade_change_percentage = 12m,
                             education_requirement = "High school diploma or equivalent",
@@ -8326,7 +8330,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 719,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 536.8m,
                             decade_change_percentage = 42.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -8337,7 +8341,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 720,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.6m,
                             decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
@@ -8348,7 +8352,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 721,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 218.4m,
                             decade_change_percentage = 17.5m,
                             education_requirement = "No formal educational credential",
@@ -8359,7 +8363,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 722,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.8m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
@@ -8370,7 +8374,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 723,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 45.6m,
                             decade_change_percentage = 3.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -8381,7 +8385,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 724,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 53.6m,
                             decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -8392,7 +8396,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 725,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.4m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Master's degree",
@@ -8403,7 +8407,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 726,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 19.9m,
                             decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
@@ -8414,7 +8418,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 727,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.5m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "No formal educational credential",
@@ -8425,7 +8429,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 728,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 58.9m,
                             decade_change_percentage = 4.8m,
                             education_requirement = "Bachelor's degree",
@@ -8436,7 +8440,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 729,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 89.3m,
                             decade_change_percentage = 7.4m,
                             education_requirement = "Bachelor's degree",
@@ -8447,7 +8451,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 730,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 177.7m,
                             decade_change_percentage = 14.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -8458,7 +8462,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 731,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.2m,
                             decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
@@ -8469,7 +8473,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 732,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 26.4m,
                             decade_change_percentage = 2.2m,
                             education_requirement = "Bachelor's degree",
@@ -8480,7 +8484,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 733,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 159.0m,
                             decade_change_percentage = 13.1m,
                             education_requirement = "High school diploma or equivalent",
@@ -8491,7 +8495,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 734,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 194.3m,
                             decade_change_percentage = 16.5m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8502,7 +8506,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 735,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 4.6m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8513,7 +8517,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 736,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 8.0m,
                             decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -8524,7 +8528,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 737,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 62.4m,
                             decade_change_percentage = 5.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -8535,7 +8539,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 738,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.0m,
                             decade_change_percentage = 5.5m,
                             education_requirement = "No formal educational credential",
@@ -8546,7 +8550,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 739,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 415.1m,
                             decade_change_percentage = 35.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -8557,7 +8561,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 740,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 196.9m,
                             decade_change_percentage = 17.1m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8568,7 +8572,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 741,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 43.4m,
                             decade_change_percentage = 3.8m,
                             education_requirement = "Doctoral or professional degree",
@@ -8579,7 +8583,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 742,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 55.0m,
                             decade_change_percentage = 4.9m,
                             education_requirement = "Doctoral or professional degree",
@@ -8590,7 +8594,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 743,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 49.4m,
                             decade_change_percentage = 4.5m,
                             education_requirement = "Master's degree",
@@ -8601,7 +8605,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 744,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.0m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "No formal educational credential",
@@ -8612,7 +8616,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 745,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 82.0m,
                             decade_change_percentage = 7.5m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8623,7 +8627,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 746,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 178.4m,
                             decade_change_percentage = 16.2m,
                             education_requirement = "Bachelor's degree",
@@ -8634,7 +8638,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 747,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 275.2m,
                             decade_change_percentage = 25.3m,
                             education_requirement = "Bachelor's degree",
@@ -8645,7 +8649,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 748,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 45.5m,
                             decade_change_percentage = 4.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -8656,7 +8660,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 749,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 51.0m,
                             decade_change_percentage = 4.8m,
                             education_requirement = "Bachelor's degree",
@@ -8667,7 +8671,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 750,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.0m,
                             decade_change_percentage = 2.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -8678,7 +8682,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 751,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 191.4m,
                             decade_change_percentage = 18.4m,
                             education_requirement = "Master's degree",
@@ -8689,7 +8693,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 752,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 531.4m,
                             decade_change_percentage = 51.1m,
                             education_requirement = "Bachelor's degree",
@@ -8700,7 +8704,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 753,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 20.4m,
                             decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
@@ -8711,7 +8715,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 754,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 95.9m,
                             decade_change_percentage = 9.3m,
                             education_requirement = "High school diploma or equivalent",
@@ -8722,7 +8726,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 755,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 107.1m,
                             decade_change_percentage = 10.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8733,7 +8737,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 756,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 449.4m,
                             decade_change_percentage = 43.8m,
                             education_requirement = "Bachelor's degree",
@@ -8744,7 +8748,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 757,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 987.6m,
                             decade_change_percentage = 95.7m,
                             education_requirement = "Bachelor's degree",
@@ -8755,7 +8759,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 758,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 17.7m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -8766,7 +8770,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 759,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 119.0m,
                             decade_change_percentage = 11.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -8777,7 +8781,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 760,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.4m,
                             decade_change_percentage = 1.4m,
                             education_requirement = "Bachelor's degree",
@@ -8788,7 +8792,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 761,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 64.0m,
                             decade_change_percentage = 6.4m,
                             education_requirement = "Bachelor's degree",
@@ -8799,7 +8803,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 762,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 286.1m,
                             decade_change_percentage = 28.5m,
                             education_requirement = "Bachelor's degree",
@@ -8810,7 +8814,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 763,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 24.7m,
                             decade_change_percentage = 2.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -8821,7 +8825,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 764,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 16.5m,
                             decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
@@ -8832,7 +8836,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 765,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 14.4m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Doctoral or professional degree",
@@ -8843,7 +8847,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 766,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 113.5m,
                             decade_change_percentage = 12m,
                             education_requirement = "Master's degree",
@@ -8854,7 +8858,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 767,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 13.9m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Master's degree",
@@ -8865,7 +8869,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 768,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.3m,
                             decade_change_percentage = 1.3m,
                             education_requirement = "No formal educational credential",
@@ -8876,7 +8880,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 769,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 67.5m,
                             decade_change_percentage = 7.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -8887,7 +8891,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 770,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 111.1m,
                             decade_change_percentage = 12.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -8898,7 +8902,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 771,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 139.6m,
                             decade_change_percentage = 16.1m,
                             education_requirement = "Master's degree",
@@ -8909,7 +8913,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 772,
-                            at_risk = 1,
+                            at_risk = "1",
                             currently_employed = 1164.6m,
                             decade_change_percentage = 133.8m,
                             education_requirement = "High school diploma or equivalent",
@@ -8920,7 +8924,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 773,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 327.3m,
                             decade_change_percentage = 38.4m,
                             education_requirement = "Bachelor's degree",
@@ -8931,7 +8935,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 774,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 42.3m,
                             decade_change_percentage = 5.2m,
                             education_requirement = "Bachelor's degree",
@@ -8942,7 +8946,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 775,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 133.1m,
                             decade_change_percentage = 16.7m,
                             education_requirement = "Associate's degree",
@@ -8953,7 +8957,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 776,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 18.5m,
                             decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
@@ -8964,7 +8968,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 777,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 66.5m,
                             decade_change_percentage = 8.4m,
                             education_requirement = "Postsecondary nondegree award",
@@ -8975,7 +8979,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 778,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 327.6m,
                             decade_change_percentage = 42m,
                             education_requirement = "Bachelor's degree",
@@ -8986,7 +8990,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 779,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 66.4m,
                             decade_change_percentage = 8.8m,
                             education_requirement = "Associate's degree",
@@ -8997,7 +9001,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 780,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 113.8m,
                             decade_change_percentage = 15.2m,
                             education_requirement = "Bachelor's degree",
@@ -9008,7 +9012,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 781,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 868.6m,
                             decade_change_percentage = 116.6m,
                             education_requirement = "Bachelor's degree",
@@ -9019,7 +9023,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 782,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 329.5m,
                             decade_change_percentage = 45.2m,
                             education_requirement = "High school diploma or equivalent",
@@ -9030,7 +9034,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 783,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 764.4m,
                             decade_change_percentage = 105.9m,
                             education_requirement = "Postsecondary nondegree award",
@@ -9041,7 +9045,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 784,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.8m,
                             decade_change_percentage = 4.8m,
                             education_requirement = "Master's degree",
@@ -9052,7 +9056,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 785,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 67.2m,
                             decade_change_percentage = 9.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -9063,7 +9067,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 786,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 83.8m,
                             decade_change_percentage = 12m,
                             education_requirement = "Associate's degree",
@@ -9074,7 +9078,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 787,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.2m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -9085,7 +9089,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 788,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 2.4m,
                             decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
@@ -9096,7 +9100,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 789,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 71.2m,
                             decade_change_percentage = 10.6m,
                             education_requirement = "Master's degree",
@@ -9107,7 +9111,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 790,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 402.2m,
                             decade_change_percentage = 59.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -9118,7 +9122,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 791,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 246.8m,
                             decade_change_percentage = 37.3m,
                             education_requirement = "Doctoral or professional degree",
@@ -9129,7 +9133,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 792,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 117.9m,
                             decade_change_percentage = 17.9m,
                             education_requirement = "Bachelor's degree",
@@ -9140,7 +9144,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 793,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 9.5m,
                             decade_change_percentage = 1.5m,
                             education_requirement = "Master's degree",
@@ -9151,7 +9155,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 794,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 557.4m,
                             decade_change_percentage = 86m,
                             education_requirement = "Bachelor's degree",
@@ -9162,7 +9166,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 795,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 339.0m,
                             decade_change_percentage = 52.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -9173,7 +9177,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 796,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 28.5m,
                             decade_change_percentage = 4.6m,
                             education_requirement = "Postsecondary nondegree award",
@@ -9184,7 +9188,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 797,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 54.1m,
                             decade_change_percentage = 8.7m,
                             education_requirement = "High school diploma or equivalent",
@@ -9195,7 +9199,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 798,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 792.6m,
                             decade_change_percentage = 126.6m,
                             education_requirement = "Bachelor's degree",
@@ -9206,7 +9210,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 799,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3.5m,
                             decade_change_percentage = 0.6m,
                             education_requirement = "Master's degree",
@@ -9217,7 +9221,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 800,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 37.9m,
                             decade_change_percentage = 6.2m,
                             education_requirement = "Associate's degree",
@@ -9228,7 +9232,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 801,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 98.8m,
                             decade_change_percentage = 16.7m,
                             education_requirement = "Bachelor's degree",
@@ -9239,7 +9243,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 802,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 68.2m,
                             decade_change_percentage = 11.7m,
                             education_requirement = "Master's degree",
@@ -9250,7 +9254,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 803,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 85.9m,
                             decade_change_percentage = 15.6m,
                             education_requirement = "Doctoral or professional degree",
@@ -9261,7 +9265,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 804,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 134.3m,
                             decade_change_percentage = 24.6m,
                             education_requirement = "Postsecondary nondegree award",
@@ -9272,7 +9276,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 805,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 208.7m,
                             decade_change_percentage = 38.3m,
                             education_requirement = "Bachelor's degree",
@@ -9283,7 +9287,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 806,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 388.2m,
                             decade_change_percentage = 71.5m,
                             education_requirement = "Bachelor's degree",
@@ -9294,7 +9298,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 807,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 262.8m,
                             decade_change_percentage = 50.2m,
                             education_requirement = "Doctoral or professional degree",
@@ -9305,7 +9309,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 808,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 171.4m,
                             decade_change_percentage = 33.1m,
                             education_requirement = "Master's degree",
@@ -9316,7 +9320,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 809,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 65.6m,
                             decade_change_percentage = 12.8m,
                             education_requirement = "Bachelor's degree",
@@ -9327,7 +9331,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 810,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 89.5m,
                             decade_change_percentage = 17.7m,
                             education_requirement = "Doctoral or professional degree",
@@ -9338,7 +9342,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 811,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 200.8m,
                             decade_change_percentage = 40.8m,
                             education_requirement = "Bachelor's degree",
@@ -9349,7 +9353,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 812,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 1361.2m,
                             decade_change_percentage = 277.6m,
                             education_requirement = "No formal educational credential",
@@ -9360,7 +9364,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 813,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 87.0m,
                             decade_change_percentage = 17.9m,
                             education_requirement = "High school diploma or equivalent",
@@ -9371,7 +9375,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 814,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 114.8m,
                             decade_change_percentage = 23.5m,
                             education_requirement = "High school diploma or equivalent",
@@ -9382,7 +9386,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 815,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 122.9m,
                             decade_change_percentage = 25.2m,
                             education_requirement = "Associate's degree",
@@ -9393,7 +9397,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 816,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 177.3m,
                             decade_change_percentage = 36.4m,
                             education_requirement = "No formal educational credential",
@@ -9404,7 +9408,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 817,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 3715.5m,
                             decade_change_percentage = 804.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -9415,7 +9419,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 818,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 29.4m,
                             decade_change_percentage = 6.6m,
                             education_requirement = "High school diploma or equivalent",
@@ -9426,7 +9430,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 819,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 109.9m,
                             decade_change_percentage = 24.7m,
                             education_requirement = "Bachelor's degree",
@@ -9437,7 +9441,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 820,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 36.5m,
                             decade_change_percentage = 8.3m,
                             education_requirement = "Master's degree",
@@ -9448,7 +9452,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 821,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 30.0m,
                             decade_change_percentage = 7m,
                             education_requirement = "Bachelor's degree",
@@ -9459,7 +9463,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 822,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 45.1m,
                             decade_change_percentage = 10.8m,
                             education_requirement = "Associate's degree",
@@ -9470,7 +9474,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 823,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 1594.5m,
                             decade_change_percentage = 410.4m,
                             education_requirement = "Bachelor's degree",
@@ -9481,7 +9485,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 824,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 100.7m,
                             decade_change_percentage = 26.3m,
                             education_requirement = "Associate's degree",
@@ -9492,7 +9496,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 825,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 148.0m,
                             decade_change_percentage = 39.3m,
                             education_requirement = "Master's degree",
@@ -9503,7 +9507,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 826,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 10.0m,
                             decade_change_percentage = 2.7m,
                             education_requirement = "Master's degree",
@@ -9514,7 +9518,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 827,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 509.5m,
                             decade_change_percentage = 144.7m,
                             education_requirement = "Bachelor's degree",
@@ -9525,7 +9529,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 828,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 168.9m,
                             decade_change_percentage = 53.2m,
                             education_requirement = "Bachelor's degree",
@@ -9536,7 +9540,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 829,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 33.3m,
                             decade_change_percentage = 10.5m,
                             education_requirement = "Master's degree",
@@ -9547,7 +9551,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 830,
-                            at_risk = 0,
+                            at_risk = "0",
                             currently_employed = 168.9m,
                             decade_change_percentage = 59.4m,
                             education_requirement = "Bachelor's degree",
@@ -9558,7 +9562,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 831,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 266.3m,
                             decade_change_percentage = 118.6m,
                             education_requirement = "Master's degree",
@@ -9569,7 +9573,7 @@ namespace sikho_backend.Migrations
                         new
                         {
                             Id = 832,
-                            at_risk = -1,
+                            at_risk = "-1",
                             currently_employed = 11.2m,
                             decade_change_percentage = 5m,
                             education_requirement = "Postsecondary nondegree award",

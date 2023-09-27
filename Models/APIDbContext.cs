@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Common;
+using sikho_backend.Utilities;
 
 namespace sikho_backend.Models
 {
@@ -39,6 +40,11 @@ namespace sikho_backend.Models
                 
             }
 
+           
+            CustomCsvReader reader = new CustomCsvReader();
+            List<Occupation> occupations = reader.readOccupationData();
+            modelBuilder.Entity<Occupation>().HasData(occupations);
+
             base.OnModelCreating(modelBuilder);
         } 
 
@@ -46,5 +52,7 @@ namespace sikho_backend.Models
         public DbSet<Company> Companies {get; set;}
 
         public DbSet<DataPoint> DataPoints {get; set;}
+        public DbSet<Occupation> Occupations {get; set;}
+
     }
 }
