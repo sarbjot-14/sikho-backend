@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using sikho_backend.Models;
@@ -25,10 +26,18 @@ namespace sikho_backend.Controllers
 
        // GET: api/Occupation
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Occupation>>> GetOccupation()
+        public async Task<ActionResult<IEnumerable<Occupation>>> GetOccupation([FromQuery(Name ="industryId")] string? industryId)
         {
-          
-            return  await _context.Occupations.ToListAsync();
+            Console.WriteLine($"indusstttrrryyy {industryId}");
+            IQueryable<Occupation> occupations;
+            if(string.IsNullOrWhiteSpace(industryId)){
+                return  await _context.Occupations.ToListAsync();
+            }
+            else{
+                industryId = industryId.Trim();
+                occupations = _context.Occupations.Where(o=> o.industry.Contains(industryId));
+                return await occupations.ToListAsync();
+            }
         }
 
         // GET: api/Occupation/5
@@ -44,6 +53,19 @@ namespace sikho_backend.Controllers
 
             return occupation;
         }
+        // // GET: api/Occupation
+        // [HttpGet]
+        // public async Task<ActionResult<Occupation>> GetOccupationByIndustry([FromQuery(Name ="industryId")] string industryId)
+        // {
+        //     if(param?.industry != null){
+        //         Console.WriteLine(param.industry);
+
+        //     }
+           
+        //     return NotFound();
+            
+
+        // }
 
         // PUT: api/Occupation/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -109,4 +131,12 @@ namespace sikho_backend.Controllers
             return _context.Occupations.Any(e => e.Id == id);
         }
     }
+
+    public class QueryParameterOccupationIndustry
+{
+
+
+    [BindRequired]
+    public string industry { get; set; }
+}
 }
