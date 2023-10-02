@@ -54,18 +54,6 @@ namespace sikho_backend.Controllers
             return occupation;
         }
         // // GET: api/Occupation
-        // [HttpGet]
-        // public async Task<ActionResult<Occupation>> GetOccupationByIndustry([FromQuery(Name ="industryId")] string industryId)
-        // {
-        //     if(param?.industry != null){
-        //         Console.WriteLine(param.industry);
-
-        //     }
-           
-        //     return NotFound();
-            
-
-        // }
 
         // PUT: api/Occupation/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

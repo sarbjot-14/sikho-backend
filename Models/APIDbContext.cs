@@ -53,6 +53,7 @@ namespace sikho_backend.Models
 
         public DbSet<DataPoint> DataPoints {get; set;}
         public DbSet<Occupation> Occupations {get; set;}
+        public DbSet<JobGrowthPoll> JobGrowthPolls {get; set;}
 
     }
 }
