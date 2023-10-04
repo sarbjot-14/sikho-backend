@@ -12,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Dependancy Injection of DbContext
-builder.Services.AddDbContext<APIDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+builder.Services.AddDbContext<APIDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
 
 builder.Services.AddCors(options =>
 {
@@ -25,11 +25,11 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseCors();
 app.UseHttpsRedirection();

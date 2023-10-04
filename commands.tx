@@ -1,5 +1,6 @@
  dotnet run --launch-profile https
 
 dotnet ef database update
+dotnet ef database update -- --environment Production
 
 dotnet ef migrations add InitialCreate
