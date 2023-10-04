@@ -23,13 +23,13 @@ jobs:
           dotnet-version: '7.0.103'
           
       - name: Restore
-        run: dotnet restore ./SikhoBackend.sln
+        run: dotnet restore ./sikho-backend.csproj
         
       - name: Build
-        run: dotnet build ./SikhoBackend.sln --configuration Release --no-restore
+        run: dotnet build ./sikho-backend.csproj --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish ./SikhoBackend.sln --configuration Release --no-build --output ${{env.DOTNET_ROOT}}/publish
+        run: dotnet publish ./sikho-backend.csproj -c Release -property:PublishDir=${{env.DOTNET_ROOT}}/publish
 
       - name: Deployment
         uses: azure/webapps-deploy@v2
