@@ -32,7 +32,7 @@ jobs:
         run: dotnet tool install -g dotnet-ef
 
       - name: delete migration files
-        run: rm -r ${{env.DOTNET_ROOT}}/myapp/migrate;  rm -r ${{env.DOTNET_ROOT}}/myapp/Data
+        run: rm -r ${{env.DOTNET_ROOT}}/myapp/migrate || true;  rm -r ${{env.DOTNET_ROOT}}/myapp/Data || true
         
       - name: copy seed data
         run: cp -r Data ${{env.DOTNET_ROOT}}/myapp/migrate
