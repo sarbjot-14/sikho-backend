@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using sikho_backend.Models;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,6 +21,8 @@ options.InstanceName = "SampleInstance";
 });
 
 
+
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
@@ -29,6 +32,14 @@ builder.Services.AddCors(options =>
         });
 });
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<APIDbContext>();    
+    context.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
