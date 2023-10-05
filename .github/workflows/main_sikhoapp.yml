@@ -34,11 +34,6 @@ jobs:
       - name: do migrations
         run: dotnet ef migrations --force bundle --runtime linux-x64 -p sikho-backend.csproj -o ${{env.DOTNET_ROOT}}/myapp/migrate
 
-      - name: make seed data directory
-        run: mkdir ${{env.DOTNET_ROOT}}/myapp/migrate/Data
-        
-      - name: copy seed data
-        run: cp -r --force Data ${{env.DOTNET_ROOT}}/myapp/migrate/Data
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
