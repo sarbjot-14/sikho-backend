@@ -16,15 +16,15 @@ namespace sikho_backend.Models
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
-            // using (StreamReader r = new StreamReader("Data/industryData.json")){
-            //     string mockJson = r.ReadToEnd();
-            //     var industryData = JsonSerializer.Deserialize<List<Industry>>(mockJson);
+            using (StreamReader r = new StreamReader("Data/industryData.json")){
+                string mockJson = r.ReadToEnd();
+                var industryData = JsonSerializer.Deserialize<List<Industry>>(mockJson);
             
-            //     modelBuilder.Entity<Industry>().HasData(industryData);
+                modelBuilder.Entity<Industry>().HasData(industryData);
                 
-            // }
-            var fs = new FileStream("Data/companyData.json", FileMode.Open, FileAccess.Read);
-            using (StreamReader r = new StreamReader(fs)){
+            }
+        
+            using (StreamReader r = new StreamReader("Data/companyData.json")){
                 string mockJson = r.ReadToEnd();
                 var companyData = JsonSerializer.Deserialize<List<Company>>(mockJson);
       
@@ -32,13 +32,13 @@ namespace sikho_backend.Models
                 
             }
 
-            // using (StreamReader r = new StreamReader("Data/datapointsData.json")){
-            //     string mockJson = r.ReadToEnd();
-            //     var datapointData = JsonSerializer.Deserialize<List<DataPoint>>(mockJson);
+            using (StreamReader r = new StreamReader("Data/datapointsData.json")){
+                string mockJson = r.ReadToEnd();
+                var datapointData = JsonSerializer.Deserialize<List<DataPoint>>(mockJson);
       
-            //     modelBuilder.Entity<DataPoint>().HasData(datapointData);
+                modelBuilder.Entity<DataPoint>().HasData(datapointData);
                 
-            // }
+            }
 
            
             // CustomCsvReader reader = new CustomCsvReader();
