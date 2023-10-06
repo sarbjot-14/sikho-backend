@@ -9,6 +9,7 @@ using sikho_backend.Utilities;
 using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
+using System.Text.Json.Serialization;
 
 namespace sikho_backend.Models
 {
@@ -46,31 +47,42 @@ namespace sikho_backend.Models
             }
 
            
-            List<Occupation> occupations = new();
-            var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = true,
-                TrimOptions = TrimOptions.Trim,
-                MissingFieldFound = null,
-                HeaderValidated = null
-            };
+            // List<Occupation> occupations = new();
+            // var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
+            // {
+            //     HasHeaderRecord = true,
+            //     TrimOptions = TrimOptions.Trim,
+            //     MissingFieldFound = null,
+            //     HeaderValidated = null
+            // };
 
-            string projectRootPath = _hostingEnvironment.ContentRootPath;
-            using var reader = new StreamReader(projectRootPath+ "/Data/EmploymentProjections.csv");
-            using var csv = new CsvReader(reader, conf);
+            // string projectRootPath = _hostingEnvironment.ContentRootPath;
+            // using var reader = new StreamReader(projectRootPath+ "/Data/EmploymentProjections.csv");
+            // using var csv = new CsvReader(reader, conf);
           
-            var records = csv.GetRecords<Occupation>().ToList();
-          
+            // var records = csv.GetRecords<Occupation>().ToList();
+            using (StreamReader r = new StreamReader("Data/EmploymentProjections.json")){
+                string mockJson = r.ReadToEnd();
+                var options = new JsonSerializerOptions()
+                    {
+                        NumberHandling = JsonNumberHandling.AllowReadingFromString |
+                        JsonNumberHandling.WriteAsString
+                    };
 
-
-            for(var i = 0;i <records.Count; i++){
+                var occupationsData = JsonSerializer.Deserialize<List<Occupation>>(mockJson, options);
+                  for(var i = 0;i <occupationsData.Count; i++){
                
-                records[i].Id = i+1;
-                records[i].title = records[i].title.Split('*')[0].Trim();
-               // Console.WriteLine($"the id is {records[i].Id}");
+                occupationsData[i].Id = i+1;
+                //records[i].title = records[i].title.Split('*')[0].Trim();
+                Console.WriteLine($"the id is {occupationsData[i].Id}");
             
+                  }
+                modelBuilder.Entity<Occupation>().HasData(occupationsData);
+                
             }
-            modelBuilder.Entity<Occupation>().HasData(records);
+
+          
+
 
             base.OnModelCreating(modelBuilder);
         } 
