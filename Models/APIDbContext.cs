@@ -73,7 +73,7 @@ namespace sikho_backend.Models
                   for(var i = 0;i <occupationsData.Count; i++){
                
                 occupationsData[i].Id = i+1;
-                //records[i].title = records[i].title.Split('*')[0].Trim();
+                occupationsData[i].title = occupationsData[i].title.Split('*')[0].Trim();
                 Console.WriteLine($"the id is {occupationsData[i].Id}");
             
                   }
