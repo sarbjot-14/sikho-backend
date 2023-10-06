@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Common;
 using sikho_backend.Utilities;
+using CsvHelper;
+using CsvHelper.Configuration;
+using System.Globalization;
 
 namespace sikho_backend.Models
 {
@@ -41,9 +44,32 @@ namespace sikho_backend.Models
             }
 
            
-            // CustomCsvReader reader = new CustomCsvReader();
-            // List<Occupation> occupations = reader.readOccupationData();
-            // modelBuilder.Entity<Occupation>().HasData(occupations);
+            string inputFile = "Data/EmploymentProjections.csv";
+            List<Occupation> occupations = new();
+            var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = true,
+                TrimOptions = TrimOptions.Trim,
+                MissingFieldFound = null,
+                HeaderValidated = null
+            };
+
+
+            using var reader = new StreamReader(inputFile);
+            using var csv = new CsvReader(reader, conf);
+          
+            var records = csv.GetRecords<Occupation>().ToList();
+          
+
+
+            for(var i = 0;i <records.Count; i++){
+               
+                records[i].Id = i+1;
+                records[i].title = records[i].title.Split('*')[0].Trim();
+               // Console.WriteLine($"the id is {records[i].Id}");
+            
+            }
+            modelBuilder.Entity<Occupation>().HasData(records);
 
             base.OnModelCreating(modelBuilder);
         } 
