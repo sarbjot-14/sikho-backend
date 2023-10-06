@@ -15,7 +15,9 @@ namespace sikho_backend.Models
     public class APIDbContext : DbContext
     {
         private readonly ILogger<APIDbContext> _logger;
-        public APIDbContext(DbContextOptions options, ILogger<APIDbContext> logger) : base(options) => this._logger = logger;
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public APIDbContext(DbContextOptions options, ILogger<APIDbContext> logger, IWebHostEnvironment hostingEnvironment) : base(options){this._logger = logger; this._hostingEnvironment = hostingEnvironment;} 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
@@ -44,7 +46,7 @@ namespace sikho_backend.Models
             }
 
            
-            string inputFile = "Data/EmploymentProjections.csv";
+           
             List<Occupation> occupations = new();
             var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -55,7 +57,7 @@ namespace sikho_backend.Models
             };
 
 
-            using var reader = new StreamReader(inputFile);
+            using var reader = new StreamReader("Data/EmploymentProjections.csv");
             using var csv = new CsvReader(reader, conf);
           
             var records = csv.GetRecords<Occupation>().ToList();
