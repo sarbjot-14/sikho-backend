@@ -46,7 +46,6 @@ namespace sikho_backend.Models
             }
 
            
-           
             List<Occupation> occupations = new();
             var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -56,8 +55,8 @@ namespace sikho_backend.Models
                 HeaderValidated = null
             };
 
-
-            using var reader = new StreamReader("Data/EmploymentProjections.csv");
+            string projectRootPath = _hostingEnvironment.ContentRootPath;
+            using var reader = new StreamReader(projectRootPath+ "/Data/EmploymentProjections.csv");
             using var csv = new CsvReader(reader, conf);
           
             var records = csv.GetRecords<Occupation>().ToList();
