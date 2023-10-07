@@ -459,7 +459,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,330",
-                            title = "Word processors and typists    * Clerk Typist* Dictaphone Typist* Statistical Typist* Transcription Typist* Typist* Word Processor"
+                            title = "Word processors and typists"
                         },
                         new
                         {
@@ -470,7 +470,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,370",
-                            title = "Watch and clock repairers    * Antique Clock Repairer* Chronometer Repairer* Clock Repair Technician* Clockmaker* Clocksmith* Horologist* Time Piece Repairer* Watchmaker"
+                            title = "Watch and clock repairers"
                         },
                         new
                         {
@@ -481,7 +481,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,210",
-                            title = "Roof bolters, mining    * Roof Bolter Operator* Roof Bolting Coal Miner* Underground Bolting Machine Operator* Underground Roof Bolter"
+                            title = "Roof bolters, mining"
                         },
                         new
                         {
@@ -492,7 +492,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,130",
-                            title = "Cutters and trimmers, hand    * Fur Trimmer* Hand Cloth Cutter* Hand Fabric Cutter* Portable Machine Cutter"
+                            title = "Cutters and trimmers, hand"
                         },
                         new
                         {
@@ -503,7 +503,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,330",
-                            title = "Telephone operators    * 411 Directory Assistance Operator* Directory Assistance Operator* Information Operator* Local Telephone Operator* Long Distance Operator* Telephone Exchange Operator"
+                            title = "Telephone operators"
                         },
                         new
                         {
@@ -514,7 +514,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,190",
-                            title = "Data entry keyers    * Customs Entry Clerk* Data Entry Clerk* Data Input Clerk* Data Keyer* Data Processing Clerk* Data Typist* Key Punch Operator* Keypunch Operator* Keypuncher"
+                            title = "Data entry keyers"
                         },
                         new
                         {
@@ -525,7 +525,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,670",
-                            title = "Switchboard operators, including answering service    * PBX Operator* Private Branch Exchange Operator* Telephone Answering Service Operator* Telephone Switchboard Operator"
+                            title = "Switchboard operators, including answering service"
                         },
                         new
                         {
@@ -536,7 +536,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,120",
-                            title = "Foundry mold and coremakers    * Airset Caster* Airset Molder* Core Stripper* Foundry Molder* Green Sand Molder* No Bake Molder* Sand Molder* Wax Pattern Coater"
+                            title = "Foundry mold and coremakers"
                         },
                         new
                         {
@@ -547,7 +547,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,780",
-                            title = "Legal secretaries and administrative assistants    * Accredited Legal Secretary* Certified Legal Secretary Specialist* Law Secretary* Legal Administrative Assistant"
+                            title = "Legal secretaries and administrative assistants"
                         },
                         new
                         {
@@ -558,7 +558,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,690",
-                            title = "Pressers, textile, garment, and related materials    * Clothes Ironer* Clothes Presser* Clothing Presser* Garment Presser* Pants Presser* Shirt Presser* Silk Presser* Wool Presser"
+                            title = "Pressers, textile, garment, and related materials"
                         },
                         new
                         {
@@ -569,7 +569,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "54,970",
-                            title = "Patternmakers, metal and plastic    * Metal Patternmaker"
+                            title = "Patternmakers, metal and plastic"
                         },
                         new
                         {
@@ -580,7 +580,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,550",
-                            title = "Refractory materials repairers, except brickmasons    * Bondactor Machine Operator* Cupola Repairer* Kiln Door Builder* Ladle Repairer* Refractory Repairer"
+                            title = "Refractory materials repairers, except brickmasons"
                         },
                         new
                         {
@@ -591,7 +591,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "65,980",
-                            title = "Executive secretaries and executive administrative assistants    * Executive Assistant"
+                            title = "Executive secretaries and executive administrative assistants"
                         },
                         new
                         {
@@ -602,7 +602,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,820",
-                            title = "Manufactured building and mobile home installers    * Housetrailer Servicer* Mobile Home Mechanic* Mobile Home Servicer* Mobile Home Technician* Modular Home Crew Member"
+                            title = "Manufactured building and mobile home installers"
                         },
                         new
                         {
@@ -613,7 +613,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,030",
-                            title = "Telemarketers    * Inbound Telemarketer* Outbound Telemarketer* Telemarketing Sales Representative* Telephone Solicitor* Telesales Representative* Telesales Specialist"
+                            title = "Telemarketers"
                         },
                         new
                         {
@@ -624,7 +624,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,960",
-                            title = "Grinding and polishing workers, hand    * Hand Buffer* Hand Sander* Jewelry Grinder* Jewelry Polisher* Knife Grinder* Ring Polisher"
+                            title = "Grinding and polishing workers, hand"
                         },
                         new
                         {
@@ -635,7 +635,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,850",
-                            title = "Engine and other machine assemblers    * Aircraft Engine Assembler* Assembling Motor Builder* Clutch Housing Assembler* Engine Builder* Gas Turbine Assembler* Generator Assembler* Jet Engine Assembler* Machine Builder* Sewing Machine Assembler* Steam Turbine Assembler* Truck Transmission Assembler* Truck Transmission Builder"
+                            title = "Engine and other machine assemblers"
                         },
                         new
                         {
@@ -646,7 +646,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "57,620",
-                            title = "Model makers, metal and plastic    * Metal Mockup Maker* Plastic Jig and Fixture Builder"
+                            title = "Model makers, metal and plastic"
                         },
                         new
                         {
@@ -657,7 +657,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,290",
-                            title = "Timing device assemblers and adjusters    * Digital Watch Assembler* Electrical Timing Device Adjuster* Marine Chronometer Assembler* Time Stamp Assembler"
+                            title = "Timing device assemblers and adjusters"
                         },
                         new
                         {
@@ -668,7 +668,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,450",
-                            title = "Drilling and boring machine tool setters, operators, and tenders, metal and plastic    * Bore Mill Operator for Plastic* Boring Mill Operator for Metal* Drill Press Operator for Metal* Horizontal Boring Mill Operator for Metal* Radial Drill Operator for Plastic* Radial Drill Press Operator for Plastic* Reaming Machine Operator for Plastic"
+                            title = "Drilling and boring machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -679,7 +679,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "38,060",
-                            title = "Order clerks    * Catalogue Clerk* Classified Ad Clerk* Mail Order Clerk* Order Desk Clerk* Service Order Clerk* Subscription Clerk* Want Ad Clerk"
+                            title = "Order clerks"
                         },
                         new
                         {
@@ -690,7 +690,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "33,160",
-                            title = "Floral designers    * Corsage Maker* Floral Arranger* Floral Artist* Floral Decorator* Florist* Florist Designer* Flower Arranger"
+                            title = "Floral designers"
                         },
                         new
                         {
@@ -701,7 +701,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "41,600",
-                            title = "Electronic equipment installers and repairers, motor vehicles    * Auto Electrician* Auto Phone Installer* Auto Radio Mechanic* Automotive Electrician* Car Alarm Installer* Car Stereo Installer* GPS Car Navigation Installer* Mobile Electronics Installation Specialist"
+                            title = "Electronic equipment installers and repairers, motor vehicles"
                         },
                         new
                         {
@@ -712,7 +712,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "63,920",
-                            title = "Loading and moving machine operators, underground mining    * Coal Hauler Operator* Coke Loader* Joy Loader* Load Haul Dump Operator* Mine Shuttle Car Operator* Mobile Bridge Conveyor Operator"
+                            title = "Loading and moving machine operators, underground mining"
                         },
                         new
                         {
@@ -723,7 +723,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "43,560",
-                            title = "Prepress technicians and workers    * Digital Proofing and Platemaker* Electronic Pre-Press Technician* Photoengraver* Plate Mounter* Pre-Press Proofer* Prepress Stripper* Type Setter"
+                            title = "Prepress technicians and workers"
                         },
                         new
                         {
@@ -734,7 +734,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,160",
-                            title = "Coil winders, tapers, and finishers    * Coil Builder* Coil Former* Coil Winder* Motor Rewinder* Motor Winder* Multiple Coil Winder* Rotor Coil Taper* Wire Coiler* Wire Winder* Wire Winding Machine Tender"
+                            title = "Coil winders, tapers, and finishers"
                         },
                         new
                         {
@@ -745,7 +745,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,630",
-                            title = "Payroll and timekeeping clerks    * Flight Crew Time Clerk* Payroll Bookkeeper* Personnel Scheduler* Time Clerk* Time and Attendance Clerk* Timekeeper"
+                            title = "Payroll and timekeeping clerks"
                         },
                         new
                         {
@@ -756,7 +756,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,200",
-                            title = "Structural metal fabricators and fitters    * Mill Beam Fitter* Protector Plate Attacher"
+                            title = "Structural metal fabricators and fitters"
                         },
                         new
                         {
@@ -767,7 +767,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,970",
-                            title = "Print binding and finishing workers    * Bindery Cutter Operator* Bindery Folder Operator* Bindery Machine Operator* Bindery Worker* Book Repairer* Bookbinder* Bookbinding Machine Operator* Case Binder Operator* Foil Stamp Operator* Perfect Binder Operator* Saddle Stitch Operator* Saddle Stitcher Operator* Spiral Binder Operator"
+                            title = "Print binding and finishing workers"
                         },
                         new
                         {
@@ -778,7 +778,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,290",
-                            title = "File clerks    * Cut File Clerk* Document Clerk* File Keeper* Index Clerk* Records Clerk"
+                            title = "File clerks"
                         },
                         new
                         {
@@ -789,7 +789,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,100",
-                            title = "Door-to-door sales workers, news and street vendors, and related workers    * Newspaper Carrier* Newstand Vendor* Peddler* Souvenir Street Vendor"
+                            title = "Door-to-door sales workers, news and street vendors, and related workers"
                         },
                         new
                         {
@@ -800,7 +800,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,530",
-                            title = "Sewers, hand    * Hand Quilter* Hand Sewer* Hand Stitcher* Hand Weaver"
+                            title = "Sewers, hand"
                         },
                         new
                         {
@@ -811,7 +811,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,740",
-                            title = "Sewing machine operators    * Blind Stitch Machine Operator* Button Sewing Machine Operator* Carpet Sewing Machine Operator* Custom T-Shirt Embroidery Machine Operator* Embroidery Machine Operator* Hemming and Tacking Machine Operator* Ultrasonic Seaming Machine Operator"
+                            title = "Sewing machine operators"
                         },
                         new
                         {
@@ -822,7 +822,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "58,430",
-                            title = "Aircraft structure, surfaces, rigging, and systems assemblers    * Aircraft De-Icer Installer* Aircraft Fuselage Framer* Aircraft Layout Worker* Aircraft Line Assembler* Aircraft Part Assembler* Aircraft Riveter* Aircraft Sheet Metal Mechanic* Helicopter Airframe Mechanic* Propeller Layout Worker* Wing Coverer"
+                            title = "Aircraft structure, surfaces, rigging, and systems assemblers"
                         },
                         new
                         {
@@ -833,7 +833,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,540",
-                            title = "Forging machine setters, operators, and tenders, metal and plastic    * Cold Header Operator* Forging Roll Operator* Header Setup Operator* Spike Machine Operator* Swager Operator* Swaging Machine Operator"
+                            title = "Forging machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -844,7 +844,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,380",
-                            title = "Tellers    * Bank Teller* Commercial Teller* Exchange Teller* Foreign Banknote Teller* Foreign Exchange Clerk* Loan Teller* Money Order Clerk* Receiving Teller* Savings Teller* Securities Teller"
+                            title = "Tellers"
                         },
                         new
                         {
@@ -855,7 +855,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,820",
-                            title = "New accounts clerks    * Banking Services Clerk* New Accounts Banking Representative* New Client Banking Services Clerk"
+                            title = "New accounts clerks"
                         },
                         new
                         {
@@ -866,7 +866,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,710",
-                            title = "Office machine operators, except computer    * Business Machine Operator* Coin Machine Operator* Coin Rolling Machine Operator* Coin Wrapping Machine Operator* Collator Operator* Copy Center Operator* Copy Machine Operator* Duplicating Machine Operator* Scanning Equipment Operators"
+                            title = "Office machine operators, except computer"
                         },
                         new
                         {
@@ -877,7 +877,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,870",
-                            title = "Milling and planing machine setters, operators, and tenders, metal and plastic    * Metal Milling Machine Operator* Metal Rotary Head Milling Machine Setup Operator* Plastic Thread Milling Machine Setup Operator"
+                            title = "Milling and planing machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -888,7 +888,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,640",
-                            title = "Cooks, fast food    * Fast Food Cook* Fast Food Fry Cook* Fryline Attendant"
+                            title = "Cooks, fast food"
                         },
                         new
                         {
@@ -899,7 +899,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "34,280",
-                            title = "Tailors, dressmakers, and custom sewers    * Alterations Sewer* Alterations Tailor* Bridal Gown Fitter* Coat Cutter* Coat Maker* Couture Dressmaker* Dress Fitter* Fur Tailor* Garment Fitter* Suit Maker* Vest Maker"
+                            title = "Tailors, dressmakers, and custom sewers"
                         },
                         new
                         {
@@ -910,7 +910,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "47,910",
-                            title = "Desktop publishers    * DTP Operator* Desktop Publishing Specialist* Electronic Console Display Operator* Electronic Imager* Electronic Pagination System Operator* Electronic Publisher* Electronic Publishing Specialist"
+                            title = "Desktop publishers"
                         },
                         new
                         {
@@ -921,7 +921,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "58,590",
-                            title = "Adult basic education, adult secondary education, and english as a second language instructors    * Adult Basic Studies Teacher* Adult Education Teacher* Adult English as a Second Language (ESL) Teacher* Adult Literacy Instructor* Adult Literacy Teacher* Adult Remedial Education Instructor* GED¿ Instructor* General Educational Development (GED¿) Teacher* General Educational Development Teacher"
+                            title = "Adult basic education, adult secondary education, and english as a second language instructors"
                         },
                         new
                         {
@@ -932,7 +932,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "93,060",
-                            title = "Power plant operators    * Hydroelectric Plant Operator* Power Plant Control Room Operator* Powerhouse Operator* Turbine Room Attendant"
+                            title = "Power plant operators"
                         },
                         new
                         {
@@ -943,7 +943,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,280",
-                            title = "Photographic process workers and processing machine operators    * Digital Imaging Technician* Digital Photo Printer* Digital Photo Technician* Digital Retoucher* Film Developing Machine Operator* Film Printer* Film Process Operator* Film Processor* Photo Lab Specialist* Photo Lab Technician* Photo Machine Operator* Photo Print Specialist* Photo Retoucher* Print Retoucher"
+                            title = "Photographic process workers and processing machine operators"
                         },
                         new
                         {
@@ -954,7 +954,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "64,180",
-                            title = "Underground mining machine operators, all other    * Clay Mine Cutting Machine Operator* Long Wall Mining Machine Tender* Long Wall Operator* Long Wall Plow Operator* Long Wall Shear Operator* Long Wall Shearer* Mine Cutting and Channeling Machine Operator* Rock Dust Sprayer* Rock Duster* Shale Planer Operator* Shearer Operator* Underground Jumbo Driller"
+                            title = "Underground mining machine operators, all other"
                         },
                         new
                         {
@@ -965,7 +965,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,760",
-                            title = "Meter readers, utilities    * Electric Meter Reader* Gas Meter Reader* Water Meter Reader"
+                            title = "Meter readers, utilities"
                         },
                         new
                         {
@@ -976,7 +976,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "52,330",
-                            title = "Terrazzo workers and finishers    * Granite-Chip Terrazzo Finisher* Marble-Chip Terrazzo Worker* Onyx-Chip Terrazzo Worker* Rustic Terrazzo Setter* Terrazzo Finisher* Terrazzo Grinder* Terrazzo Installer* Terrazzo Layer* Terrazzo Setter* Terrazzo Worker"
+                            title = "Terrazzo workers and finishers"
                         },
                         new
                         {
@@ -987,7 +987,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "79,460",
-                            title = "Gas plant operators    * Gas Controller* Gas Plant Dispatcher* Gas Plant Technician* Natural Gas Plant Technician"
+                            title = "Gas plant operators"
                         },
                         new
                         {
@@ -998,7 +998,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "41,000",
-                            title = "Secretaries and administrative assistants, except legal, medical, and executive    * Alumni Secretary* Office Secretary* Personal Secretary* Real Estate Administrative Assistant"
+                            title = "Secretaries and administrative assistants, except legal, medical, and executive"
                         },
                         new
                         {
@@ -1009,7 +1009,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "41,750",
-                            title = "Broadcast announcers and radio disc jockeys    * Commercial Announcer* Game Show Host* Radio Artist* Radio Disc Jockey* Radio Host* Talk Show Host* Television Host"
+                            title = "Broadcast announcers and radio disc jockeys"
                         },
                         new
                         {
@@ -1020,7 +1020,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "49,130",
-                            title = "Postal service mail sorters, processors, and processing machine operators    * Flat Sorter Operator* Flat Sorting Machine Clerk* Mail Forwarding System Markup Clerk* Parcel Post Distribution Machine Operator* Post Office Markup Clerk* Postal Service Mail Processor* Small Package and Bundle Sorter Clerk"
+                            title = "Postal service mail sorters, processors, and processing machine operators"
                         },
                         new
                         {
@@ -1031,7 +1031,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "97,800",
-                            title = "Computer programmers    * Applications Programmer* Computer Language Coder* Computer Programmer* IT Programmer* Junior Software Developer* Mainframe Programmer* Systems Programmer"
+                            title = "Computer programmers"
                         },
                         new
                         {
@@ -1042,7 +1042,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "45,240",
-                            title = "Carpet installers    * Carpet Layer* Commercial Carpet Installer* Residential Carpet Installer* Wall-to-Wall Carpet Installer"
+                            title = "Carpet installers"
                         },
                         new
                         {
@@ -1053,7 +1053,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,400",
-                            title = "Locksmiths and safe repairers    * Key Maker* Keysmith* Lock Expert* Lock Fitter* Lock Setter* Lock Technician* Locksmith* Safe and Vault Installer* Safe and Vault Mechanic"
+                            title = "Locksmiths and safe repairers"
                         },
                         new
                         {
@@ -1064,7 +1064,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,710",
-                            title = "Paper goods machine setters, operators, and tenders    * Box Fabricator* Carton Making Machine Operator* Corrugated Box Machine Operator* Corrugator Machine Operator* Corrugator Operator* Envelope Machine Operator* Napkin Machine Operator* Paper Bag Machine Operator* Paper Cone Machine Tender* Paper Machine Operator"
+                            title = "Paper goods machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1075,7 +1075,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,310",
-                            title = "Rolling machine setters, operators, and tenders, metal and plastic    * Brass Roller* Forming Roll Operator* Metal Sheet Roller Operator* Pipe Straightener* Plastic Straightening Roll Operator* Steel Roller"
+                            title = "Rolling machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1086,7 +1086,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "32,460",
-                            title = "Shoe and leather workers and repairers    * Cobbler* Leather Lacer* Leather Worker* Luggage Repairer* Saddle Maker* Saddle and Harness Maker* Shoe Maker* Shoe Repairer* Shoemaker"
+                            title = "Shoe and leather workers and repairers"
                         },
                         new
                         {
@@ -1097,7 +1097,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,340",
-                            title = "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic    * Crimping Machine Operator for Metal* Four Slide Machine Setter* Metal Punch Press Operator* Metal Slitter* Metal Stamper"
+                            title = "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1108,7 +1108,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "39,430",
-                            title = "Helpers--brickmasons, blockmasons, stonemasons, and tile and marble setters    * Adobe Layer Helper* Brick Carrier* Brick Washer* Bricklayer Helper* Ceramic Tile Installation Helper* Chimney Builder Helper* Firebrick Layer Helper* Marble Installation Helper* Mortar Mixer* Parquet Floor Layer's Helper* Refractory Tile Helper* Wood Tile Installation Helper"
+                            title = "Helpers--brickmasons, blockmasons, stonemasons, and tile and marble setters"
                         },
                         new
                         {
@@ -1119,7 +1119,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "33,060",
-                            title = "Shoe machine operators and tenders    * Arch Cushion Press Operator* Insole Beveler* Lacing Operator* Lasting Machine Operator* Pump Stitcher* Rasper Machine Operator* Shoe Cementer* Shoe Sewing Machine Operator and Tender* Sole Trimmer"
+                            title = "Shoe machine operators and tenders"
                         },
                         new
                         {
@@ -1130,7 +1130,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "44,910",
-                            title = "Computer, automated teller, and office machine repairers    * ATM Servicer* Cash Register Servicer* Computer Repair Technician* Computer Repairer* Computer Service Technician* Copier Technician* Copying Machine Repairer* Data Processing Equipment Repairer* Photocopying Equipment Repairer* Printer Repair Technician"
+                            title = "Computer, automated teller, and office machine repairers"
                         },
                         new
                         {
@@ -1141,7 +1141,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,420",
-                            title = "Textile cutting machine setters, operators, and tenders    * Bedspread Cutter* Canvas Cutter* Cloth Cutter* Industrial Fabric Cutter* Textile Slitting Machine Operator* Twill Cutter* Upholstery Cutter* Welt Trimming Machine Operator"
+                            title = "Textile cutting machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1152,7 +1152,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,750",
-                            title = "Textile knitting and weaving machine setters, operators, and tenders    * Crochet Machine Operator* Jacquard Loom Weaver* Knitter Operator* Knitting Machine Operator* Loom Operator* Looping Machine Operator* Warp Knitting Machine Operator"
+                            title = "Textile knitting and weaving machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1163,7 +1163,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "28,240",
-                            title = "Cashiers    * Cash Register Operator* Check Out Cashier* Fare Collector* Grocery Checker* Hotel Dining Room Cashier* Snack Bar Cashier* Toll Booth Operator* Toll Collector"
+                            title = "Cashiers"
                         },
                         new
                         {
@@ -1174,7 +1174,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "58,260",
-                            title = "Layout workers, metal and plastic    * Shipfitter* Shipfitter Apprentice"
+                            title = "Layout workers, metal and plastic"
                         },
                         new
                         {
@@ -1185,7 +1185,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,700",
-                            title = "Interviewers, except eligibility and loan    * Admitting Interviewer* Census Clerk* Census Taker* Field Enumerator* Market Research Interviewer* Outpatient Interviewing Clerk* Survey Interviewer* Telephone Interviewer"
+                            title = "Interviewers, except eligibility and loan"
                         },
                         new
                         {
@@ -1196,7 +1196,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,470",
-                            title = "Bill and account collectors    * Accounts Collector* Bill Collector* Billing Representative* Collection Agent* Collections Clerk* Collections Representative* Debt Collector* Installment Agent* Installment Loan Collector* Insurance Collector* Payment Collector* Repossessor"
+                            title = "Bill and account collectors"
                         },
                         new
                         {
@@ -1207,7 +1207,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "33,360",
-                            title = "Motion picture projectionists    * Chief Projectionist* Film Projector Operator* Motion Picture Operator* Motion Picture Projectionist* Movie Projectionist* Projector Booth Operator* Stereoptician"
+                            title = "Motion picture projectionists"
                         },
                         new
                         {
@@ -1218,7 +1218,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,910",
-                            title = "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic    * Aluminum Polisher* Deburring Machine Operator* Jewel Bearing Facer* Metal Grinder* Tool Polishing Machine Operator"
+                            title = "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1229,7 +1229,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "32,680",
-                            title = "Textile bleaching and dyeing machine operators and tenders    * Cloth Dyer* Dye Range Operator* Rug Dyer* Skein Yarn Dyer* Yarn Dyer"
+                            title = "Textile bleaching and dyeing machine operators and tenders"
                         },
                         new
                         {
@@ -1240,7 +1240,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,900",
-                            title = "Plating machine setters, operators, and tenders, metal and plastic    * Anodizer* Chrome Plater* Chromium Plater* Copper Plater* Electro Plater* Electrogalvanizing Machine Operator* Electroplater* Galvanizer* Hard Chrome Plater* Metal Plater* Metal Spraying Machine Operator* Metalizing Machine Operator* Nickel Plater* Plating Machine Operator* Tin Plater"
+                            title = "Plating machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1251,7 +1251,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,020",
-                            title = "Lathe and turning machine tool setters, operators, and tenders, metal and plastic    * Engine Lathe Operator* Gear Cutter* Screw Machine Operator* Screw Machine Tool Setter"
+                            title = "Lathe and turning machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1262,7 +1262,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,150",
-                            title = "Musical instrument repairers and tuners    * Accordion Repairer* Band Instrument Repair Technician* Banjo Repairer* Bow Rehairer* Brass and Wind Instrument Repairer* Chip Tuner* Fretted String Instrument Repairer* Guitar Builder* Guitar Repairer* Keyboard Instrument Repairer* Luthier* Mandolin Repairer* Organ Installer* Organ Tuner* Percussion Instrument Repairer* Piano Regulator* Piano Technician* Piano Tuner* Pipe Organ Technician* Stringed Instrument Repairer* Tone Regulator* Violin Repairer"
+                            title = "Musical instrument repairers and tuners"
                         },
                         new
                         {
@@ -1273,7 +1273,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,160",
-                            title = "Fallers    * Lumberjack* Pulpwood Cutter* Timber Cutter* Timber Faller* Timber Feller"
+                            title = "Fallers"
                         },
                         new
                         {
@@ -1284,7 +1284,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,670",
-                            title = "Helpers--production workers    * Blending Tank Helper* Commercial Baker Helper* Machinist Helper* Slitter Helper* Tailor Helper* Welder Helper* Woodworker Helper"
+                            title = "Helpers--production workers"
                         },
                         new
                         {
@@ -1295,7 +1295,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,900",
-                            title = "Heat treating equipment setters, operators, and tenders, metal and plastic    * Annealing Furnace Operator* Carburizing Furnace Operator* Flame Hardening Machine Setter* Heat Treater Apprentice* Heat Treating Furnace Tender* Induction Machine Setter* Wire Annealer* Wire Temperer"
+                            title = "Heat treating equipment setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -1306,7 +1306,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,070",
-                            title = "Pourers and casters, metal    * Aluminum Pourer* Ingot Caster* Iron Pourer* Molten Iron Pourer* Steel Pourer* Tin Pourer* White Metal Caster"
+                            title = "Pourers and casters, metal"
                         },
                         new
                         {
@@ -1317,7 +1317,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "54,680",
-                            title = "Brokerage clerks    * Brokerage Purchase-and-Sale Clerk* Commodities Clerk* Dividend Clerk* Securities Clerk"
+                            title = "Brokerage clerks"
                         },
                         new
                         {
@@ -1328,7 +1328,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "32,270",
-                            title = "Forest and conservation workers    * Forest Nursery Worker* Forester Aide* Forestry Laborer* Pine Straw Gatherer* Rangelands Conservation Laborer* Reforestation Worker* Seedling Puller* Wetlands Conservation Laborer"
+                            title = "Forest and conservation workers"
                         },
                         new
                         {
@@ -1339,7 +1339,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "33,720",
-                            title = "Textile winding, twisting, and drawing out machine setters, operators, and tenders    * Rope Machine Setter* Roving Winder* Silk Winding Machine Operator* Twister Operator* Winder Operator"
+                            title = "Textile winding, twisting, and drawing out machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1350,7 +1350,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,350",
-                            title = "Printing press operators    * Digital Press Operator* Flexographic Press Operator* Gravure Press Operator* Lithograph Press Operator* Lithographing Machine Operator* Offset Lithographic Press Setter and Set-Up Operator* Offset Press Operator* Printing Machine Operator* Screen Printing Machine Operator* Screen Printing Press Operator* Silk Screen Operator* Silk Screen Printer* Web Offset Press Feeder* Web Press Operator"
+                            title = "Printing press operators"
                         },
                         new
                         {
@@ -1361,7 +1361,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "59,800",
-                            title = "Tool and die makers    * Jig Bore Tool Maker* Metal Die Finisher* Metal Gauge Maker* Plastic Die Maker Apprentice* Tool Maker* Toolmaker"
+                            title = "Tool and die makers"
                         },
                         new
                         {
@@ -1372,7 +1372,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "41,940",
-                            title = "Tool grinders, filers, and sharpeners    * Tool Grinder* Tool Grinding Machine Operator* Tool Sharpener* Tool Straightener"
+                            title = "Tool grinders, filers, and sharpeners"
                         },
                         new
                         {
@@ -1383,7 +1383,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,760",
-                            title = "Shipping, receiving, and inventory clerks    * Freight Clerk* Incoming Freight Clerk* Inventory Control Clerk* Inventory Taker* Receiving Clerk* Reconsignment Clerk* Route Delivery Clerk* Shipping Order Clerk* Shipping and Receiving Clerk* Stockroom Attendant* Stockroom Clerk* Store Receiving Clerk* Supply Clerk* Supply Room Clerk* Tool Crib Attendant* Warehouse Clerk"
+                            title = "Shipping, receiving, and inventory clerks"
                         },
                         new
                         {
@@ -1394,7 +1394,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,920",
-                            title = "Welding, soldering, and brazing machine setters, operators, and tenders    * Brazing Machine Operator* Brazing Machine Setter and Setup Operator* Brazing Machine Tender* Electron Beam Welder Setter* Machine Welder* Reserve Tube Welder* Soldering Machine Operator* Soldering Machine Setter and Setup Operator* Soldering Machine Tender* Ultrasonic Welding Machine Operator* Welding Machine Operator"
+                            title = "Welding, soldering, and brazing machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1405,7 +1405,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,660",
-                            title = "Office and administrative support workers, all other    * Braille Transcriber* Envelope Stuffer* Fingerprint Clerk* Investigation Clerk* Newspaper Inserter* Notary Public"
+                            title = "Office and administrative support workers, all other"
                         },
                         new
                         {
@@ -1416,7 +1416,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "189,520",
-                            title = "Chief executives    * Admiral* CEO* COO* Chief Executive Officer* Chief Financial Officer* Chief Operating Officer* Chief Sustainability Officer* Commissioner of Internal Revenue* County Commissioner* Government Service Executive* Governor* Mayor* School Superintendent* University President"
+                            title = "Chief executives"
                         },
                         new
                         {
@@ -1427,7 +1427,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,280",
-                            title = "Metal-refining furnace operators and tenders    * Electric Arc Furnace Operator* Melt Room Operator* Smelter Operator"
+                            title = "Metal-refining furnace operators and tenders"
                         },
                         new
                         {
@@ -1438,7 +1438,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,760",
-                            title = " "
+                            title = ""
                         },
                         new
                         {
@@ -1449,7 +1449,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,340",
-                            title = "Metal workers and plastic workers, all other    * Electrical Discharge Machine Setup Operator* Metal Rivet Machine Operator* Tin Recovery Worker"
+                            title = "Metal workers and plastic workers, all other"
                         },
                         new
                         {
@@ -1460,7 +1460,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "57,640",
-                            title = "Drafters, all other    * Blueprint Tracer* Drafting Layout Worker* Draughtsman* Geological Drafter* Marine Drafter"
+                            title = "Drafters, all other"
                         },
                         new
                         {
@@ -1471,7 +1471,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "32,640",
-                            title = "Textile, apparel, and furnishings workers, all other    * Apparel Embroidery Digitizer* Feltmaker* Hat Blocking Machine Operator* Swatch Maker* Tassel Making Machine Operator"
+                            title = "Textile, apparel, and furnishings workers, all other"
                         },
                         new
                         {
@@ -1493,7 +1493,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,240",
-                            title = "Procurement clerks    * Procurement Assistant* Purchasing Assistant* Purchasing Clerk"
+                            title = "Procurement clerks"
                         },
                         new
                         {
@@ -1515,7 +1515,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,610",
-                            title = "Correctional officers and jailers    * Certified Detention Deputy* Convict Guard* Correction Officer* Correctional Guard* Correctional Sergeant* Detention Deputy* Detention Officer* Jail Guard* Juvenile Corrections Officer* Penal Officer* Prison Guard* Prison Officer"
+                            title = "Correctional officers and jailers"
                         },
                         new
                         {
@@ -1526,7 +1526,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,320",
-                            title = "Fabric and apparel patternmakers    * Clothing Patternmaker* Embroidery Patternmaker* Fabric Pattern Grader"
+                            title = "Fabric and apparel patternmakers"
                         },
                         new
                         {
@@ -1537,7 +1537,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "58,450",
-                            title = "Advertising sales agents    * Advertising Account Executive* Advertising Agent* Advertising Solicitor* Display Advertising Sales Representative* Inside Sales Advertising Executive* Outside Sales Advertising Executive* Radio Time Salesperson* Signs and Displays Salesperson* Yellow Pages Space Salesperson"
+                            title = "Advertising sales agents"
                         },
                         new
                         {
@@ -1548,7 +1548,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "61,310",
-                            title = "Mechanical drafters    * Aeronautical Drafter* Automotive Design Drafter* Die Designer* Gage Designer* Mechanical Design Drafter* Tool Designer* Tool and Die Designer"
+                            title = "Mechanical drafters"
                         },
                         new
                         {
@@ -1559,7 +1559,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,110",
-                            title = "Logging workers, all other    * Log Cutter* Log Peeler* Log Roper* Logging Laborer* Logging Swamper* Rigging Slinger* Timber Hand"
+                            title = "Logging workers, all other"
                         },
                         new
                         {
@@ -1570,7 +1570,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,250",
-                            title = "First-line supervisors of retail sales workers    * Assistant Store Manager* Cashier Manager* Cashier Supervisor* Delicatessen Department Manager* Produce Department Supervisor* Sales Clerk Supervisor* Used Car Sales Supervisor"
+                            title = "First-line supervisors of retail sales workers"
                         },
                         new
                         {
@@ -1581,7 +1581,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "54,250",
-                            title = "Postal service mail carriers    * City Letter Carrier* Letter Carrier* Mail Deliverer* Parcel Post Carrier* Postal Mail Carrier* Rural Mail Carrier* Rural Route Carrier* USPS Letter Carrier"
+                            title = "Postal service mail carriers"
                         },
                         new
                         {
@@ -1592,7 +1592,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "56,200",
-                            title = "Postal service clerks    * Bulk Mail Clerk* Bulk Mail Technician* Parcel Post Clerk* Postal Clerk* Postal Service Clerk* Postal Service Window Clerk"
+                            title = "Postal service clerks"
                         },
                         new
                         {
@@ -1603,7 +1603,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "82,760",
-                            title = "Postmasters and mail superintendents    * Postal Supervisor* Postmaster"
+                            title = "Postmasters and mail superintendents"
                         },
                         new
                         {
@@ -1614,7 +1614,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,040",
-                            title = "Office clerks, general    * Administrative Clerk* Office Assistant* Office Clerk* Real Estate Clerk"
+                            title = "Office clerks, general"
                         },
                         new
                         {
@@ -1625,7 +1625,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "44,960",
-                            title = "Audiovisual equipment installers and repairers    * Cable Installation Technician* Electric Organ Checker* Electronic Musical Instrument Repairer* Home Stereo Equipment Installer* Home Theater Installer* Satellite Dish Installer* Stereo Equipment Installer* Television Installer* Television Repairer* Wireless Internet Installer"
+                            title = "Audiovisual equipment installers and repairers"
                         },
                         new
                         {
@@ -1636,7 +1636,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,600",
-                            title = "Water and wastewater treatment plant and system operators    * Industrial Waste Treatment Technician* Lead Sewage Plant Operator* Liquid Waste Treatment Plant Operator* Sewage Plant Operator* Waste Treatment Operator* Wastewater Operator* Water Plant Operator* Water Treatment Technician"
+                            title = "Water and wastewater treatment plant and system operators"
                         },
                         new
                         {
@@ -1647,7 +1647,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "59,500",
-                            title = "Fish and game wardens    * Conservation Enforcement Officer* Fish Warden* Fish and Wildlife Warden* Game Warden* Wildlife Control Agent* Wildlife Officer* Wildlife and Game Protector"
+                            title = "Fish and game wardens"
                         },
                         new
                         {
@@ -1658,7 +1658,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "45,860",
-                            title = "Bookkeeping, accounting, and auditing clerks    * Accounts Receivable Assistant* Accounts Receivable Clerk* Auditing Clerk* Bookkeeper* Fixed Capital Clerk* Foreign Exchange Position Clerk* Mortgage Accounting Clerk"
+                            title = "Bookkeeping, accounting, and auditing clerks"
                         },
                         new
                         {
@@ -1669,7 +1669,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,360",
-                            title = "Cooks, short order    * Griddle Attendant* Griddle Cook* Grill Cook* Short Order Fry Cook* Snack Bar Cook"
+                            title = "Cooks, short order"
                         },
                         new
                         {
@@ -1680,7 +1680,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "37,600",
-                            title = "Library technicians    * Cataloging Library Technical Assistant* Library Acquisitions Technician* Library Cataloging Technician* Library Circulation Technician* Library Technical Assistant* Serials or Bindery Library Technical Assistant"
+                            title = "Library technicians"
                         },
                         new
                         {
@@ -1691,7 +1691,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,210",
-                            title = "Stonemasons    * Banker Mason* Curbstone Setter* Granite Setter* Memorial Mason* Monument Mason* Rock Mason* Stone Chimney Mason* Stone Layer"
+                            title = "Stonemasons"
                         },
                         new
                         {
@@ -1702,7 +1702,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,700",
-                            title = "Correspondence clerks    * Claims Correspondence Clerk* Correspondence Representative* Correspondence Transcriber* Customer Service Correspondence Clerk* Fan Mail Editor* Medicare Correspondence Representative* Student Loan Correspondent"
+                            title = "Correspondence clerks"
                         },
                         new
                         {
@@ -1713,7 +1713,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,150",
-                            title = "Library assistants, clerical    * Book Sorter* Braille and Talking Books Clerk* Circulation Clerk* Film Library Clerk* Library Aide* Library Assistant* Library Circulation Clerk* Library Clerk* Medical Library Assistant* Microfilm Clerk"
+                            title = "Library assistants, clerical"
                         },
                         new
                         {
@@ -1724,7 +1724,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,830",
-                            title = "Credit authorizers, checkers, and clerks    * Charge Authorizer* Commercial Credit Reviewer* Credit Authorizer* Credit Charge Authorizer* Credit Checker* Credit Investigator* Credit Processor* Credit Rating Checker* Credit Reference Clerk* Credit Report Checker"
+                            title = "Credit authorizers, checkers, and clerks"
                         },
                         new
                         {
@@ -1735,7 +1735,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,010",
-                            title = "Gambling change persons and booth cashiers    * Mutuel Teller* Slot Attendant"
+                            title = "Gambling change persons and booth cashiers"
                         },
                         new
                         {
@@ -1746,7 +1746,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,780",
-                            title = "Customer service representatives    * Complaint Clerk* Contact Center Specialist* Customer Complaint Clerk* Customer Contact Specialist* Customer Relations Representative* Customer Support Representative* Gas Distribution and Emergency Clerk* Passenger Relations Representative* Policyholder Information Clerk* Warranty Clerk"
+                            title = "Customer service representatives"
                         },
                         new
                         {
@@ -1757,7 +1757,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,330",
-                            title = "Chemical equipment operators and tenders    * Acid Purification Equipment Operator* Chemical Machine Tender* Chemical Process Equipment Operator* Chemical Processor* Chemical Treatment Operator"
+                            title = "Chemical equipment operators and tenders"
                         },
                         new
                         {
@@ -1768,7 +1768,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "38,570",
-                            title = "Cooks, private household    * Certified Personal Chef* Personal Chef* Private Chef"
+                            title = "Cooks, private household"
                         },
                         new
                         {
@@ -1779,7 +1779,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,720",
-                            title = "Gambling cage workers    * Cage Cashier* Casino Cage Cashier* Casino Cashier* Gambling Cage Cashier* Gambling Cashier"
+                            title = "Gambling cage workers"
                         },
                         new
                         {
@@ -1790,7 +1790,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "34,150",
-                            title = "Farmworkers, farm, ranch, and aquacultural animals    * Aquaculture Worker* Barn Hand* Barn Worker* Cattle Brander* Cattle Driver* Chicken Handler* Chicken Vaccinator* Cow Tender* Egg Gatherer* Farrowing Worker* Goat Herder* Groom* Hatchery Worker* Livestock Handler* Poultry Debeaker* Ranch Hand* Sheep Shearer* Shrimp Pond Laborer"
+                            title = "Farmworkers, farm, ranch, and aquacultural animals"
                         },
                         new
                         {
@@ -1801,7 +1801,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,490",
-                            title = "Helpers--carpenters    * Beam Builder Helper* Building Carpenter Helper* Carpenter Assistant* Carpenter Helper* Construction Carpenters Helper* Hardwood Floor Installation Helper* House Carpenter Helper"
+                            title = "Helpers--carpenters"
                         },
                         new
                         {
@@ -1812,7 +1812,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "61,370",
-                            title = "First-line supervisors of office and administrative support workers    * Accounts Payable Supervisor* Billing Department Supervisor* Billing Supervisor* Clerical Supervisor* Data Entry Supervisor* Medical Billing Supervisor* Office Services Supervisor* Payroll Supervisor* Records Supervisor* Teller Supervisor* Timekeeping Supervisor"
+                            title = "First-line supervisors of office and administrative support workers"
                         },
                         new
                         {
@@ -1823,7 +1823,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "32,550",
-                            title = "Graders and sorters, agricultural products    * Apple Sorter* Cherry Sorter* Cotton Grader* Egg Grader* Fruit Sorter* Meat Grader* Oyster Sorter* Peanut Grader* Potato Sorter* Seed Sorter* Strawberry Sorter* Vegetable Sorter* Wool Grader"
+                            title = "Graders and sorters, agricultural products"
                         },
                         new
                         {
@@ -1834,7 +1834,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,290",
-                            title = "Patternmakers, wood    * Wood Die Maker"
+                            title = "Patternmakers, wood"
                         },
                         new
                         {
@@ -1845,7 +1845,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "101,650",
-                            title = "Power distributors and dispatchers    * Power System Dispatcher* Steam Plant Control Room Operator* Steam and Power Panel Operator* Substation Operator"
+                            title = "Power distributors and dispatchers"
                         },
                         new
                         {
@@ -1856,7 +1856,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "45,930",
-                            title = "Human resources assistants, except payroll and timekeeping    * Employment Clerk* HR Clerk* Personnel Clerk"
+                            title = "Human resources assistants, except payroll and timekeeping"
                         },
                         new
                         {
@@ -1867,7 +1867,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "2",
                             median_annual_wage = "29,790",
-                            title = "Food preparation workers    * Deli Clerk* Deli Slicer* Food Preparer* Fruit and Vegetable Parer* Salad Maker* Sandwich Maker"
+                            title = "Food preparation workers"
                         },
                         new
                         {
@@ -1878,7 +1878,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,070",
-                            title = "Mail clerks and mail machine operators, except postal service    * Direct Mail Clerk* Mailroom Clerk* Packaging Clerk"
+                            title = "Mail clerks and mail machine operators, except postal service"
                         },
                         new
                         {
@@ -1889,7 +1889,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "75,760",
-                            title = "Farmers, ranchers, and other agricultural managers    * Agricultural Crop Farm Manager* Animal Husbandry Manager* Aquaculture Farm Manager* Beef Farm Operator* Christmas Tree Farm Manager* Dairy Farm Manager* Fish Hatchery Manager* Greenhouse Manager* Hatchery Manager* Orchard Manager"
+                            title = "Farmers, ranchers, and other agricultural managers"
                         },
                         new
                         {
@@ -1900,7 +1900,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,050",
-                            title = "Dental laboratory technicians    * Crown Ceramist* Crown and Bridge Dental Lab Technician* Crown and Bridge Technician* Dental Ceramist* Dental Laboratory Worker* Dental Mold Maker* Dental Technician* Orthodontic Technician"
+                            title = "Dental laboratory technicians"
                         },
                         new
                         {
@@ -1911,7 +1911,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "45,990",
-                            title = "Pipelayers    * Cast-Iron Drain Pipe Layer* Pipe Layer* Sewer Pipe Layer* Trench Pipe Layer* Water Main Pipe Layer"
+                            title = "Pipelayers"
                         },
                         new
                         {
@@ -1922,7 +1922,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "78,850",
-                            title = "Credit analysts    * Chief Credit Analyst* Credit Analyst* Credit Assessment Analyst* Credit Risk Analyst* Factorer"
+                            title = "Credit analysts"
                         },
                         new
                         {
@@ -1933,7 +1933,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,000",
-                            title = "Home appliance repairers    * Certified Appliance Service Technician* Electric Stove Installer* Gas Appliance Repairer* Gas Appliance Servicer* Home Appliance Installer* Stove Installer* Vacuum Cleaner Repair Person* Vacuum Cleaner Repairer* Washing Machine Installer* Washing Machine Repairer* Window Air Conditioner Installer"
+                            title = "Home appliance repairers"
                         },
                         new
                         {
@@ -1944,7 +1944,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,650",
-                            title = "Tire builders    * Auto Tire Recapper* Retreader* Tire Finisher* Tire Molder* Tire Retreader"
+                            title = "Tire builders"
                         },
                         new
                         {
@@ -1955,7 +1955,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,880",
-                            title = "Cutting and slicing machine setters, operators, and tenders    * Dog Food Shredder Operator* Glass Cutting Machine Operator* Insulation Cutter* Paper Cutter* Paper Slitter* Rubber Trimmer* Shearing Machine Tender* Trimming Operator"
+                            title = "Cutting and slicing machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -1966,7 +1966,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "48,300",
-                            title = "Cement masons and concrete finishers    * Cement Mason* Cement Patcher* Concrete Finisher* Concrete Floor Installer* Concrete Mason* Concrete Smoother* Concrete Swimming Pool Installer"
+                            title = "Cement masons and concrete finishers"
                         },
                         new
                         {
@@ -1977,7 +1977,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "73,080",
-                            title = "Editors    * Advertising Editor* Art Editor* Book Editor* Copy Desk Chief* Copy Editor* Index Editor* Manuscript Editor* Newspaper Photo Editor* Publications Editor* Rewrite Editor* Scientific Publications Editor* Sports Editor* Technical Editor"
+                            title = "Editors"
                         },
                         new
                         {
@@ -1988,7 +1988,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "66,920",
-                            title = "Boilermakers    * Boiler Fitter* Boiler Installer* Boiler Mechanic* Boiler Setter* Boiler Tester* Boilermaker Mechanic"
+                            title = "Boilermakers"
                         },
                         new
                         {
@@ -1999,7 +1999,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "28,940",
-                            title = "Gambling and sports book writers and runners    * Betting Clerk* Bingo Worker* Bookie* Casino Floor Runner* Keno Runner* Keno Writer* Race Book Writer* Race and Sports Book Writer* Sports Book Board Attendant* Sportsbook Ticket Writer"
+                            title = "Gambling and sports book writers and runners"
                         },
                         new
                         {
@@ -2010,7 +2010,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,900",
-                            title = "Inspectors, testers, sorters, samplers, and weighers    * Ampoule Examiner* Bag Grader* Cigarette Examiner* Compressed Gas Tester* Machined Parts Quality Inspector* Petroleum Sampler* Quality Assurance Inspector* Quality Control Inspector* Quality Inspector* Spark Plug Tester"
+                            title = "Inspectors, testers, sorters, samplers, and weighers"
                         },
                         new
                         {
@@ -2021,7 +2021,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,810",
-                            title = "First-line supervisors of security workers    * Loss Prevention Supervisor* Security Guard Supervisor* TSA Screener Supervisor* Transportation Security Administration (TSA) Screener Supervisor"
+                            title = "First-line supervisors of security workers"
                         },
                         new
                         {
@@ -2032,7 +2032,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "45,410",
-                            title = "Proofreaders and copy markers    * Braille Proofreader* Clerical Proofreader* Copy Reader* Editorial Assistant* Format Proofreader* Proofreader"
+                            title = "Proofreaders and copy markers"
                         },
                         new
                         {
@@ -2043,7 +2043,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "34,730",
-                            title = "Medical transcriptionists    * Certified Medical Transcriptionist* Medical Record Transcriber* Medical Stenographer* Medical Transcriber* Pathology Transcriptionist* Radiology Transcriptionist* Registered Medical Transcriptionist"
+                            title = "Medical transcriptionists"
                         },
                         new
                         {
@@ -2054,7 +2054,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,350",
-                            title = "Excavating and loading machine and dragline operators, surface mining    * Dragline Oiler* Mining Back Hoe Operator* Mining Backhoe Operator* Mining Bulldozer Operator* Mining Earth Moving Equipment Operator* Mining End Loader Operator* Mining Excavator* Mining Excavator Backhoe Operator* Mining Payloader Operator* Mining Shovel Operator* Mining Yard Loader Operator* Trenching Machine Operator"
+                            title = "Excavating and loading machine and dragline operators, surface mining"
                         },
                         new
                         {
@@ -2065,7 +2065,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,400",
-                            title = "Logging equipment operators    * Combination Slasher-Loader Operator* Delimber Operator* Feller Buncher Operator* Feller Operator* Grapple Operator* Grapple Skidder Operator* Loader Operator* Log Chipper Operator* Log Hauler* Log Loader Operator* Log Processor Operator* Log Stacker Operator* Logging Cable Skidder Operator* Logging Clam Bunk Operator* Logging Crane Operator* Logging Excavator Operator* Logging Forwarder Operator* Logging Operating Engineer* Logging Shovel Operator* Logging Slasher Operator* Logging Tractor Operator* Lumber Stacker Operator* Timber Harvester Operator* Tree Crusher Operator* Tree-Shear Operator"
+                            title = "Logging equipment operators"
                         },
                         new
                         {
@@ -2076,7 +2076,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "60,410",
-                            title = "Survey researchers    * Pollster* Survey Methodologist* Survey Questionnaire Designer"
+                            title = "Survey researchers"
                         },
                         new
                         {
@@ -2087,7 +2087,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,050",
-                            title = "Molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic    * Aluminum Molding Machine Operator* Blow Mold Operator* Compression Molding Machine Operator* Plastic Cup Fabricating Machine Operator"
+                            title = "Molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -2098,7 +2098,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "29,880",
-                            title = "School bus monitors    * Bus Monitor* School Bus Attendant"
+                            title = "School bus monitors"
                         },
                         new
                         {
@@ -2109,7 +2109,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,370",
-                            title = "Woodworkers, all other    * Pole Framer* Timber Framer* Wood Carver* Wood Casket Assembler* Wood Veneer Taper"
+                            title = "Woodworkers, all other"
                         },
                         new
                         {
@@ -2120,7 +2120,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,940",
-                            title = "Model makers, wood    * Architectural Wood Model Maker"
+                            title = "Model makers, wood"
                         },
                         new
                         {
@@ -2131,7 +2131,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,070",
-                            title = "Helpers--electricians    * Electrical Sign Wirer Helper* Electrician's Assistant* House Wirer Helper* Marine Electrician Helper* Stage Electrician Helper* Utilities Ground Worker"
+                            title = "Helpers--electricians"
                         },
                         new
                         {
@@ -2142,7 +2142,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,290",
-                            title = "Crushing, grinding, and polishing machine setters, operators, and tenders    * Beveling and Edging Machine Operator* Beveller Operator* Blanchard Grinder Operator* Crusher Plant Operator* Cullet Crusher and Washer* Industrial Coffee Grinder* Marble and Granite Polisher* Mix Crusher Operator* Pulverizer Operator"
+                            title = "Crushing, grinding, and polishing machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -2153,7 +2153,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "61,650",
-                            title = "Lighting technicians    * Dimmer Board Operator* Gaffer* Lamp Operator* Spotlight Operator"
+                            title = "Lighting technicians"
                         },
                         new
                         {
@@ -2164,7 +2164,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "55,960",
-                            title = "News analysts, reporters, and journalists    * Book Critic* Book Reviewer* Columnist* Correspondent* Desk Reporter* Film Critic* Foreign Correspondent* Investigative Reporter* Journalist* Market News Reporter* Movie Critic* News Anchor* News Commentator* News Reporter* Newscaster* Newspaper Columnist* Newspaper Correspondent* Political Reporter* Press Writer* Society Reporter"
+                            title = "News analysts, reporters, and journalists"
                         },
                         new
                         {
@@ -2175,7 +2175,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "115,870",
-                            title = "Nuclear power reactor operators    * Nuclear Control Room Operator* Nuclear Reactor Operator* Nuclear Station Operator* Reactor Operator"
+                            title = "Nuclear power reactor operators"
                         },
                         new
                         {
@@ -2186,7 +2186,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "46,080",
-                            title = "Insurance claims and policy processing clerks    * Insurance Claims Clerk* Insurance Clerk* Insurance Examining Clerk* Insurance Policy Issue Clerk* Underwriting Assistant* Underwriting Clerk"
+                            title = "Insurance claims and policy processing clerks"
                         },
                         new
                         {
@@ -2197,7 +2197,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "82,670",
-                            title = "Chemical plant and system operators    * Chemical Plant Operator* Chemical Treatment Plant Technician* Nitric Acid Plant Operator* Nitrogen Operator* Pharmaceutical Manufacturing Machine Operator"
+                            title = "Chemical plant and system operators"
                         },
                         new
                         {
@@ -2208,7 +2208,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "57,360",
-                            title = "Continuous mining machine operators    * Bore Miner Operator* Continuous Mining Machine Coal Miner* Continuous Mining Machine Lode Miner* Continuous Mining Machine Miner* Self-Propelled Mining Machine Operator"
+                            title = "Continuous mining machine operators"
                         },
                         new
                         {
@@ -2219,7 +2219,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,120",
-                            title = "Waiters and waitresses    * Cocktail Server* Cocktail Waitress* Dining Car Server* Restaurant Server* Wine Steward"
+                            title = "Waiters and waitresses"
                         },
                         new
                         {
@@ -2230,7 +2230,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "72,230",
-                            title = "Claims adjusters, examiners, and investigators    * Claims Analyst* Fire Claims Adjuster* Health Claims Examiner* Health Insurance Adjuster* Independent Insurance Adjuster* Medical Claims Analyst* Medical Claims Examiner* Property Damage Claims Adjustor* Property and Casualty Insurance Claims Examiner* Reinsurance Claims Analyst* Workers Compensation Claims Adjuster* Workers Compensation Claims Examiner"
+                            title = "Claims adjusters, examiners, and investigators"
                         },
                         new
                         {
@@ -2241,7 +2241,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "49,690",
-                            title = "Education and childcare administrators, preschool and daycare    * Childcare Center Administrator* Childcare Center Director* Early Head Start Director* Head Start Director* Prekindergarten Program Coordinator* Preschool Director"
+                            title = "Education and childcare administrators, preschool and daycare"
                         },
                         new
                         {
@@ -2252,7 +2252,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,140",
-                            title = "Jewelers and precious stone and metal workers    * Diamond Grader* Diamond Polisher* Diamond Setter* Facetor* Gem Cutter* Gemologist* Goldsmith* Jewelry Repairer* Jewelsmith* Lapidarist* Pewterer* Silversmith"
+                            title = "Jewelers and precious stone and metal workers"
                         },
                         new
                         {
@@ -2263,7 +2263,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "71,200",
-                            title = "Cost estimators    * Construction Estimator* Construction Job Cost Estimator* Crating and Moving Estimator* Electrical Estimator* Job Estimator* Production Cost Estimator"
+                            title = "Cost estimators"
                         },
                         new
                         {
@@ -2274,7 +2274,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,950",
-                            title = "Weighers, measurers, checkers, and samplers, recordkeeping    * Bean Weigher* Cheese Weigher* Freight Checker* Sample Checker* Scale Attendant* Scale Clerk* Scale Operator* Warehouse Checker* Weighing Station Operator* Wool Sampler"
+                            title = "Weighers, measurers, checkers, and samplers, recordkeeping"
                         },
                         new
                         {
@@ -2285,7 +2285,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "33,270",
-                            title = "Pharmacy aides    * Certified Pharmacist Assistant* Pharmacist Aide* Pharmacist Assistant* Pharmacy Assistant* Pharmacy Clerk* Prescription Clerk"
+                            title = "Pharmacy aides"
                         },
                         new
                         {
@@ -2296,7 +2296,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,310",
-                            title = "First-line supervisors of correctional officers    * Chief Jailer* Correctional Officer Sergeant* Correctional Supervisor* Corrections Sergeant* Prison Guard Supervisor"
+                            title = "First-line supervisors of correctional officers"
                         },
                         new
                         {
@@ -2307,7 +2307,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "93,720",
-                            title = "Electrical and electronics repairers, powerhouse, substation, and relay    * Generating Station Mechanic* Power Transformer Repairer* Powerhouse Electrician* Protective Relay Technician* Relay Technician* Substation Electrician* Substation Mechanic"
+                            title = "Electrical and electronics repairers, powerhouse, substation, and relay"
                         },
                         new
                         {
@@ -2318,7 +2318,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "1,2",
                             median_annual_wage = "60,570",
-                            title = "Electro-mechanical and mechatronics technologists and technicians    * Electo-Mechanical and Mechatronics Technologist* Mechatronics Technician* Remotely Piloted Vehicle Engineering Technician* Robotics Testing Technician* Unmanned Aerial Vehicle Operator* Unmanned Air Systems Operator"
+                            title = "Electro-mechanical and mechatronics technologists and technicians"
                         },
                         new
                         {
@@ -2329,7 +2329,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "28,910",
-                            title = "Hotel, motel, and resort desk clerks    * Assistant Innkeeper* Hotel Desk Clerk* Hotel Front Desk Clerk* Hotel Registration Clerk* Motel Clerk* Motel Front Desk Attendant* Resort Desk Clerk"
+                            title = "Hotel, motel, and resort desk clerks"
                         },
                         new
                         {
@@ -2340,7 +2340,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "69,380",
-                            title = "Insurance appraisers, auto damage    * Auto Damage Appraiser* Auto Damage Insurance Appraiser* Automobile Damage Appraiser* Vehicle Damage Appraiser"
+                            title = "Insurance appraisers, auto damage"
                         },
                         new
                         {
@@ -2351,7 +2351,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,600",
-                            title = "Upholsterers    * Aircraft Seat Upholsterer* Auto Upholsterer* Chair Upholsterer* Dining Chair Seat Cushion Trimmer* Furniture Upholsterer* Seating Upholsterer"
+                            title = "Upholsterers"
                         },
                         new
                         {
@@ -2362,7 +2362,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "76,230",
-                            title = "Insurance underwriters    * Automobile and Property Underwriter* Bond Underwriter* Insurance Analyst* Insurance Underwriter* Insurance Writer* Underwriting Account Representative* Underwriting Service Representative"
+                            title = "Insurance underwriters"
                         },
                         new
                         {
@@ -2373,7 +2373,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,080",
-                            title = "Dishwashers    * Dish Room Worker* Dishwasher* Silverware Cleaner"
+                            title = "Dishwashers"
                         },
                         new
                         {
@@ -2384,7 +2384,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "85,090",
-                            title = "Petroleum pump system operators, refinery operators, and gaugers    * Hydrotreater Operator* Oil Gauger* Oil Pipeline Dispatcher* Oil Pipeline Operator* Oil Refiner* Petroleum Plant Operator* Petroleum Refinery Control Panel Operator* Petroleum Refinery Operator* Petroleum Refining Equipment Operator"
+                            title = "Petroleum pump system operators, refinery operators, and gaugers"
                         },
                         new
                         {
@@ -2395,7 +2395,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,100",
-                            title = "Bailiffs    * City Bailiff* County Bailiff* Court Bailiff* Court Officer* Court Security Officer* Deputy Bailiff"
+                            title = "Bailiffs"
                         },
                         new
                         {
@@ -2406,7 +2406,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,860",
-                            title = "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers    * Drawbench Operator* Fiber Machine Tender* Synthetic Filament Extruder"
+                            title = "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers"
                         },
                         new
                         {
@@ -2417,7 +2417,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "62,360",
-                            title = "Tapers    * Drywall Taper* Sheet Rock Taper* Wall Taper"
+                            title = "Tapers"
                         },
                         new
                         {
@@ -2428,7 +2428,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "33,000",
-                            title = "Farmworkers and laborers, crop, nursery, and greenhouse    * Cane Cutter* Carrot Harvester* Citrus Picker* Corn Picker* Cotton Picker* Crop Picker* Flower Picker* Greenhouse Transplanter* Harvest Worker* Harvester* Orchard Hand* Orchard Worker* Pecan Gatherer* Pepper Picker* Vineyard Tender"
+                            title = "Farmworkers and laborers, crop, nursery, and greenhouse"
                         },
                         new
                         {
@@ -2439,7 +2439,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "82,850",
-                            title = "First-line supervisors of non-retail sales workers    * Blood Donor Recruiter Supervisor* Insurance Sales Supervisor* Radio Time Sales Supervisor* Real Estate Sales Supervisor* Stock Broker Supervisor* Telemarketer Supervisor* Telemarketing Manager* Telesales Supervisor"
+                            title = "First-line supervisors of non-retail sales workers"
                         },
                         new
                         {
@@ -2450,7 +2450,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,280",
-                            title = "Wellhead pumpers    * Oil Field Pumper* Oil Well Pumper* Oilfield Plant and Field Operator"
+                            title = "Wellhead pumpers"
                         },
                         new
                         {
@@ -2461,7 +2461,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,780",
-                            title = "Adhesive bonding machine operators and tenders    * Glue Line Operator* Glue Machine Operator* Glue Reel Operator* Paper Gluing Operator"
+                            title = "Adhesive bonding machine operators and tenders"
                         },
                         new
                         {
@@ -2472,7 +2472,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,600",
-                            title = "Retail salespersons    * Automotive Salesperson* Department Store Salesperson* Menswear Salesperson* New Car Salesperson* Pet Supplies Salesperson* Pets Salesperson* Shoe Salesperson* Used Car Salesperson* Women's Apparel Salesperson"
+                            title = "Retail salespersons"
                         },
                         new
                         {
@@ -2483,7 +2483,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "59,990",
-                            title = "Gas compressor and gas pumping station operators    * Acetylene Gas Compressor* Butane Compressor Operator* Compressor Station Operator* Gas Compressor Operator* Gas Cylinder Processor* Gas Storage Operator* High Pressure Compressed Gas Filler* LNG Plant Operator* Liquid Natural Gas Plant Operator"
+                            title = "Gas compressor and gas pumping station operators"
                         },
                         new
                         {
@@ -2494,7 +2494,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "28,520",
-                            title = "Childcare workers    * Au Pair* Baby Sitter* Before and After School Daycare Worker* Childcare Aide* Childcare Attendant* Day Care Attendant* Day Care Worker* Daycare Aide* Daycare Provider* Governess* Nanny* Nursery Day Care Worker* Playground Aide"
+                            title = "Childcare workers"
                         },
                         new
                         {
@@ -2505,7 +2505,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "53,450",
-                            title = "Farm and home management educators    * 4-H Youth Development Specialist* Agricultural Agent* Agricultural Extension Educator* Extension Service Advisor* Family Resource Management Specialist* Family and Consumer Sciences Extension Agent* Farm Business Management Agent* Farm Management Specialist* Feed Management Advisor* Home Economics Expert"
+                            title = "Farm and home management educators"
                         },
                         new
                         {
@@ -2516,7 +2516,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,810",
-                            title = "Cabinetmakers and bench carpenters    * Cabinet Builder* Cabinetmaker* Marquetry Worker* Wood Furniture Assembler* Wood Working Assembler"
+                            title = "Cabinetmakers and bench carpenters"
                         },
                         new
                         {
@@ -2527,7 +2527,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,970",
-                            title = "Extruding and drawing machine setters, operators, and tenders, metal and plastic    * Wire Drawing Machine Tender* Wire Mill Rover"
+                            title = "Extruding and drawing machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -2538,7 +2538,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,600",
-                            title = "Extraction workers, all other    * Mine Milling Worker* Mine Tailings Worker* Muck Hauler, Extraction* Sand Filler, Extraction"
+                            title = "Extraction workers, all other"
                         },
                         new
                         {
@@ -2549,7 +2549,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "58,950",
-                            title = "Hoist and winch operators    * Hoist Operator* Winch Derrick Operator* Winch Operator"
+                            title = "Hoist and winch operators"
                         },
                         new
                         {
@@ -2560,7 +2560,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,690",
-                            title = "Coin, vending, and amusement machine servicers and repairers    * Arcade Games Mechanic* Coin Box Collector* Juke Box Mechanic* Parking Meter Collector* Slot Machine Mechanic* Slot Technician* Stamp Machine Servicer* Vending Machine Filler"
+                            title = "Coin, vending, and amusement machine servicers and repairers"
                         },
                         new
                         {
@@ -2571,7 +2571,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "48,880",
-                            title = "Statistical assistants    * Actuarial Assistant* Actuary Clerk* Data Analysis Assistant* Statistical Clerk* Tariff Compiling Clerk"
+                            title = "Statistical assistants"
                         },
                         new
                         {
@@ -2582,7 +2582,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,370",
-                            title = "Log graders and scalers    * Log Check Scaler* Log Grader* Log Scaler* Log Sorter* Timber Estimator* Veneer Grader"
+                            title = "Log graders and scalers"
                         },
                         new
                         {
@@ -2593,7 +2593,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "64,480",
-                            title = "Construction and building inspectors    * Architectural Inspector* Bridge Inspector* Building Code Inspector* Building Inspector* Construction Inspector* Electrical Inspector* Elevator Inspector* Highway Inspector* Home Inspector* Plumbing Inspector* Public Works Inspector* Residential Building Inspector"
+                            title = "Construction and building inspectors"
                         },
                         new
                         {
@@ -2604,7 +2604,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "41,570",
-                            title = "Parking enforcement workers    * Meter Maid* Parking Enforcement Officer* Parking Meter Attendant"
+                            title = "Parking enforcement workers"
                         },
                         new
                         {
@@ -2615,7 +2615,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,750",
-                            title = "Security guards    * Armed Guard* Bank Guard* Bodyguard* Bouncer* Private Watchman* Security Officer"
+                            title = "Security guards"
                         },
                         new
                         {
@@ -2626,7 +2626,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,060",
-                            title = "Laundry and dry-cleaning workers    * Drycleaner* Launderer* Laundress* Laundry Attendant* Laundry Equipment Operator* Laundry Operator* Laundry Sorter* Laundry Worker* Precision Dyer"
+                            title = "Laundry and dry-cleaning workers"
                         },
                         new
                         {
@@ -2637,7 +2637,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,480",
-                            title = "Extruding, forming, pressing, and compacting machine setters, operators, and tenders    * Bowling Ball Molder* Brick Maker* Cigarette Stamper* Extrusion Press Operator* Paper Baling Machine Operator* Rubber Extrusion Operator* Sugar Presser* Tuber Operator"
+                            title = "Extruding, forming, pressing, and compacting machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -2648,7 +2648,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "100,420",
-                            title = "Nuclear technicians    * Nuclear Monitoring Technician* Radiation Protection Technician* Radiochemical Technician"
+                            title = "Nuclear technicians"
                         },
                         new
                         {
@@ -2659,7 +2659,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,930",
-                            title = "Butchers and meat cutters    * Butcher* Butcher Apprentice* Halal Butcher* Kosher Butcher* Meat Carver* Meat Clerk* Meat Counter Worker"
+                            title = "Butchers and meat cutters"
                         },
                         new
                         {
@@ -2670,7 +2670,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "60,670",
-                            title = "Sound engineering technicians    * Audio Recording Engineer* Disc Recordist* Dub Room Engineer* Film Sound Engineer* Play Back Operator* Recording Engineer* Sound Assistant* Sound Cutter* Sound Designer* Sound Editor* Sound Effects Technician"
+                            title = "Sound engineering technicians"
                         },
                         new
                         {
@@ -2681,7 +2681,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,830",
-                            title = "Dispatchers, except police, fire, and ambulance    * Airplane Dispatch Clerk* Auto Service Dispatcher* Bus Dispatcher* Crew Dispatcher* Maintenance Dispatcher* School Bus Dispatcher* Taxicab Dispatcher* Tow Truck Dispatcher* Train Dispatcher* Truck Dispatcher"
+                            title = "Dispatchers, except police, fire, and ambulance"
                         },
                         new
                         {
@@ -2692,7 +2692,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "60,700",
-                            title = "Broadcast technicians    * Broadcast Engineer* Broadcast Maintenance Engineer* Broadcast Operations Engineer* Radio Station Audio Engineer* Radio/Television Technician* Remote Broadcast Engineer* Telecasting Engineer* Television Audio Engineer"
+                            title = "Broadcast technicians"
                         },
                         new
                         {
@@ -2703,7 +2703,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "32,920",
-                            title = "Packers and packagers, hand    * Bagger* Carton Wrapper* Egg Packer* Gift Wrapper* Grocery Store Bagger* Meat Packager* Meat Wrapper* Utility Bagger"
+                            title = "Packers and packagers, hand"
                         },
                         new
                         {
@@ -2714,7 +2714,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,490",
-                            title = "Loan interviewers and clerks    * Loan Interviewer* Loan Processor* Mortgage Closing Clerk* Mortgage Loan Closer* Mortgage Loan Processing Clerk* Mortgage Loan Processor* Mortgage Processor"
+                            title = "Loan interviewers and clerks"
                         },
                         new
                         {
@@ -2725,7 +2725,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,240",
-                            title = "Slaughterers and meat packers    * Beef Splitter* Cattle Killer* Halal Meat Packer* Hog Slaughterer* Meat Packer* Meat Processor* Poultry Slaughterer* Shochet* Slaughterer"
+                            title = "Slaughterers and meat packers"
                         },
                         new
                         {
@@ -2736,7 +2736,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,830",
-                            title = "Woodworking machine setters, operators, and tenders, except sawing    * Computer Numerically Controlled (CNC) Wood Lathe Operator* Roof Truss Builder* Speed Belt Sander* Tenon Operator* Wood Boring Machine Operator* Wood Dowel Machine Operator* Wood Lathe Operator* Wood Planer"
+                            title = "Woodworking machine setters, operators, and tenders, except sawing"
                         },
                         new
                         {
@@ -2747,7 +2747,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "82,010",
-                            title = "Labor relations specialists    * Employee Relations Specialist* Industrial Relations Analyst* Industrial Relations Specialist* Labor Relations Consultant* Labor Relations Representative* Union Representative"
+                            title = "Labor relations specialists"
                         },
                         new
                         {
@@ -2758,7 +2758,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,280",
-                            title = "Bridge and lock tenders    * Bridge Operator* Bridge Tender* Dam Tender* Lighthouse Keeper* Lock and Dam Operator"
+                            title = "Bridge and lock tenders"
                         },
                         new
                         {
@@ -2769,7 +2769,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
                             median_annual_wage = "64,030",
-                            title = "Electrical and electronics repairers, commercial and industrial equipment    * Industrial Aerial Installer* Industrial Robotics Mechanic* Missile Pad Mechanic* Public Address System Mechanic"
+                            title = "Electrical and electronics repairers, commercial and industrial equipment"
                         },
                         new
                         {
@@ -2780,7 +2780,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "39,840",
-                            title = "Fence erectors    * Chain Link Fence Installer* Fence Builder* Wire Fence Builder* Wood Fence Installer"
+                            title = "Fence erectors"
                         },
                         new
                         {
@@ -2791,7 +2791,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,960",
-                            title = "Furniture finishers    * Cabinet Finisher* Furniture Refinisher* Furniture Sander* Piano Refinisher* Wood Cabinet Finisher"
+                            title = "Furniture finishers"
                         },
                         new
                         {
@@ -2802,7 +2802,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "64,810",
-                            title = "Control and valve installers and repairers, except mechanical door    * Air Valve Mechanic* Electric Meter Installer* Gas Meter Installer* Gas Meter Mechanic* Thermostat Repairer* Valve Mechanic* Water Meter Installer"
+                            title = "Control and valve installers and repairers, except mechanical door"
                         },
                         new
                         {
@@ -2813,7 +2813,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "59,840",
-                            title = "Career/technical education teachers, postsecondary    * Architectural Drafting Instructor* Automotive Technology Instructor* Aviation Maintenance Instructor* Barbering Instructor* Building Trades Instructor* Carpentry Instructor* Computer-Aided Drafting and Design Instructor* Cosmetology Instructor* Electrical Technology Instructor* Electronics Technology Instructor* HVAC Instructor* Industrial Electrical Technology Instructor* Industrial Maintenance Instructor* Machine Tool Technician Instructor* Masonry Instructor* Mechanical Maintenance Instructor* Paralegal Instructor* Residential Construction Instructor* Skin Care Instructor* Upholstery Instructor* Vocational Horticulture Instructor* Welding Instructor"
+                            title = "Career/technical education teachers, postsecondary"
                         },
                         new
                         {
@@ -2824,7 +2824,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Fishing and hunting workers    * Alligator Hunter* Bird Trapper* Commercial Crabber* Commercial Fisher* Crab Fisher* Crabber* Deer Hunter* Fishing Boat Captain* Fur Trapper* Lobster Catcher* Oyster Boat Laborer* Predator Control Trapper* Predatory Animal Exterminator* Predatory Animal Hunter* Predatory Animal Trapper* Seaweed Harvester* Shellfish Dredge Operator* Wild Oyster Harvester"
+                            title = "Fishing and hunting workers"
                         },
                         new
                         {
@@ -2835,7 +2835,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,110",
-                            title = "Fiberglass laminators and fabricators    * Fiberglass Boat Builder* Fiberglass Fabricator* Fiberglass Grinder* Fiberglass Laminator* Fiberglass Luggage Molder* Fiberglass Machine Operator* Fiberglass Roller* Fiberglass Ski Maker* Fiberglasser"
+                            title = "Fiberglass laminators and fabricators"
                         },
                         new
                         {
@@ -2846,7 +2846,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "49,380",
-                            title = "Directors, religious activities and education    * Campus Ministry Director* Christian Education Minister* Education Minister* Parish Religious Education Director* Religious Activities Director* Religious Education Coordinator* Religious Education Director* Student Ministries Director* Youth Ministry Director"
+                            title = "Directors, religious activities and education"
                         },
                         new
                         {
@@ -2857,7 +2857,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,500",
-                            title = "Career/technical education teachers, secondary school    * High School Auto Repair Teacher* High School Cosmetology Teacher"
+                            title = "Career/technical education teachers, secondary school"
                         },
                         new
                         {
@@ -2868,7 +2868,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,990",
-                            title = "Special education teachers, middle school    * Junior High School Special Education Teacher* Middle School Special Education Teacher"
+                            title = "Special education teachers, middle school"
                         },
                         new
                         {
@@ -2879,7 +2879,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,980",
-                            title = "Etchers and engravers    * Engraver* Glass Etcher* Laser Engraver* Machine Engraver* Metal Engraver* Pantograph Engraver* Rotary Engraver* Rubber Engraver"
+                            title = "Etchers and engravers"
                         },
                         new
                         {
@@ -2890,7 +2890,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "57,470",
-                            title = "Plant and system operators, all other    * Asphalt Plant Operator* Concrete Batch Plant Operator* Lime Filter Operator* Sand Plant Attendant"
+                            title = "Plant and system operators, all other"
                         },
                         new
                         {
@@ -2901,7 +2901,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "55,350",
-                            title = "Sheet metal workers    * Air Conditioning Sheet Metal Installer* Heating, Ventilation, and Air Conditioning (HVAC) Sheet Metal Installer* Sheet Metal Duct Installer* Sheet Metal Fabricator* Sheet Metal Former* Sheet Metal Installer* Sheet Metal Layout Mechanic* Sheet Metal Layout Worker* Tinsmith"
+                            title = "Sheet metal workers"
                         },
                         new
                         {
@@ -2923,7 +2923,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,630",
-                            title = "Career/technical education teachers, middle school    * Junior High School Business Teacher* Middle School Technology Education Teacher"
+                            title = "Career/technical education teachers, middle school"
                         },
                         new
                         {
@@ -2934,7 +2934,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "61,690",
-                            title = "Precision instrument and equipment repairers, all other    * Gyroscope Repairer* Scale Adjuster* Telescope Repairer"
+                            title = "Precision instrument and equipment repairers, all other"
                         },
                         new
                         {
@@ -2945,7 +2945,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,710",
-                            title = "Transportation security screeners    * Airport Baggage Screener* Airport Security Screener* Flight Security Specialist* Transportation Security Administration (TSA) Screener* Transportation Security Officer"
+                            title = "Transportation security screeners"
                         },
                         new
                         {
@@ -2956,7 +2956,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,810",
-                            title = "Billing and posting clerks    * Billing Clerk* Invoice Clerk* Invoice Control Clerk* Posting Clerk* Statement Clerk* Statement Distribution Clerk* Statement Processor"
+                            title = "Billing and posting clerks"
                         },
                         new
                         {
@@ -2967,7 +2967,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "46,060",
-                            title = "Floor sanders and finishers    * Floor Finisher* Floor Refinisher* Floor Sander* Floor Sanding Machine Operator* Floor Scraper* Hardwood Finisher"
+                            title = "Floor sanders and finishers"
                         },
                         new
                         {
@@ -2978,7 +2978,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "38,270",
-                            title = "Painting, coating, and decorating workers    * Ceramic Painter* China Decorator* Glass Decorator* Lacquerer* Sign Painter"
+                            title = "Painting, coating, and decorating workers"
                         },
                         new
                         {
@@ -2989,7 +2989,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "55,260",
-                            title = "Rotary drill operators, oil and gas    * Drilling Rig Operator* Fracturing Rotary Drill Operator* Natural Gas Shothole Driller* Oil Driller* Oil Rig Driller* Oil Well Cable Tool Driller* Oil Well Cable Tool Operator* Oil Well Driller* Prospecting Driller"
+                            title = "Rotary drill operators, oil and gas"
                         },
                         new
                         {
@@ -3000,7 +3000,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,270",
-                            title = "Sawing machine setters, operators, and tenders, wood    * Backup Sawyer* Band Scroll Saw Operator* Bandmill Operator* Buzzsaw Operator* Chop Saw Operator* Circle Saw Operator* Curve Saw Operator* Cut Off Saw Operator* Hardwood Sawyer* Headrig Sawyer* Panel Saw Operator* Rip Saw Operator* Stave Saw Operator* Trim Saw Operator"
+                            title = "Sawing machine setters, operators, and tenders, wood"
                         },
                         new
                         {
@@ -3011,7 +3011,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "50,140",
-                            title = "Service unit operators, oil and gas    * Oil Well Fishing-Tool Technician* Well Service Pump Equipment Operator* Well Service Rig Operator* Well Services Operator* Well Servicing Rig Operator"
+                            title = "Service unit operators, oil and gas"
                         },
                         new
                         {
@@ -3033,7 +3033,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,960",
-                            title = "Maids and housekeeping cleaners    * Chambermaid* Cleaning Maid* Cottage Attendant* Domestic Maid* House Cleaner* Housekeeping Aide* Housekeeping Staff* Motel Maid* Ward Maid"
+                            title = "Maids and housekeeping cleaners"
                         },
                         new
                         {
@@ -3044,7 +3044,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "30,380",
-                            title = "Ambulance drivers and attendants, except emergency medical technicians    * Ambulance Attendant* Emergency Medical Services (EMS) Driver* Emergency Medical Services Driver"
+                            title = "Ambulance drivers and attendants, except emergency medical technicians"
                         },
                         new
                         {
@@ -3055,7 +3055,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "61,340",
-                            title = "Crane and tower operators    * Boom Crane Operator* Bridge Crane Operator* Cherry Picker Operator* Coal Tower Operator* Electric Crane Operator* Erecting Crane Operator* Monorail Crane Operator* Overhead Crane Operator* Port Crane Operator* Radio Control Crane Operator* Scrap Crane Operator* Tower Loader Operator* Woodyard Crane Operator"
+                            title = "Crane and tower operators"
                         },
                         new
                         {
@@ -3066,7 +3066,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "62,340",
-                            title = "Legal support workers, all other    * Legal Technician"
+                            title = "Legal support workers, all other"
                         },
                         new
                         {
@@ -3077,7 +3077,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "1",
                             median_annual_wage = "30,850",
-                            title = "Automotive and watercraft service attendants    * Auto Service Station Attendant* Gas Pump Attendant* Gas Station Attendant* Gas and Oil Servicer* Oil Changer* Pump Jockey* Service Station Attendant"
+                            title = "Automotive and watercraft service attendants"
                         },
                         new
                         {
@@ -3088,7 +3088,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,090",
-                            title = "Dredge operators    * Dredge Deckhand* Dredge Engineer* Dredge Mate* Dredger"
+                            title = "Dredge operators"
                         },
                         new
                         {
@@ -3099,7 +3099,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "97,490",
-                            title = "Mining and geological engineers, including mining safety engineers    * Geophysical Engineer* Mineral Engineer* Mining Engineer* Seismic Engineer"
+                            title = "Mining and geological engineers, including mining safety engineers"
                         },
                         new
                         {
@@ -3110,7 +3110,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,510",
-                            title = "First-line supervisors of production and operating workers    * Assembly Line Supervisor* Assembly Supervisor* Die Cast Supervisor* Machine Assembler Supervisor* Machinist Supervisor* Molding Supervisor* Paper Machine Supervisor* Printing Supervisor* Printing Worker Supervisor* Tool Room Supervisor"
+                            title = "First-line supervisors of production and operating workers"
                         },
                         new
                         {
@@ -3121,7 +3121,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "58,360",
-                            title = "Hydrologic technicians    * Groundwater Monitoring Technician"
+                            title = "Hydrologic technicians"
                         },
                         new
                         {
@@ -3132,7 +3132,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,530",
-                            title = "Furnace, kiln, oven, drier, and kettle operators and tenders    * Calciner Operator* Dry Kiln Operator* Induction Furnace Operator* Lime Kiln Operator* Lumber Kiln Operator* Rubber Curer* Soap Drier Tender* Tunnel Kiln Operator"
+                            title = "Furnace, kiln, oven, drier, and kettle operators and tenders"
                         },
                         new
                         {
@@ -3143,7 +3143,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "85,300",
-                            title = "Nuclear medicine technologists    * Certified Nuclear Medicine Technologist* Isotope Technologist* Nuclear Cardiology Technologist* Nuclear Medical Technologist* Radioisotope Technologist* Registered Nuclear Medicine Technologist"
+                            title = "Nuclear medicine technologists"
                         },
                         new
                         {
@@ -3154,7 +3154,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "33,960",
-                            title = "Receptionists and information clerks    * Appointment Clerk* Dental Receptionist* Front Desk Receptionist* Land Leasing Information Clerk"
+                            title = "Receptionists and information clerks"
                         },
                         new
                         {
@@ -3165,7 +3165,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "43,130",
-                            title = "Models    * Artist's Model* Clothes Model* Fashion Model* Figure Model* Hand Model* Hat Model* Photographer's Model* Studio Model"
+                            title = "Models"
                         },
                         new
                         {
@@ -3176,7 +3176,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "51,220",
-                            title = "Derrick operators, oil and gas    * Derrick Operator* Fracturing Derrick Operator* Gas Derrick Operator* Oil Derrick Operator* Rotary Derrick Operator* Well Service Derrick Worker"
+                            title = "Derrick operators, oil and gas"
                         },
                         new
                         {
@@ -3187,7 +3187,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "59,000",
-                            title = "Brickmasons and blockmasons    * Adobe Layer* Block Layer* Blockmason* Brick Chimney Builder* Brick Setter* Bricklayer* Brickmason* Brickmason Apprentice* Firebrick Layer* Furnace Mason* Pottery Kiln Builder* Refractory Bricklayer"
+                            title = "Brickmasons and blockmasons"
                         },
                         new
                         {
@@ -3198,7 +3198,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "60,490",
-                            title = "Kindergarten teachers, except special education    * Bilingual Education Kindergarten Teacher* Kindergarten Teacher"
+                            title = "Kindergarten teachers, except special education"
                         },
                         new
                         {
@@ -3209,7 +3209,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,560",
-                            title = "Special education teachers, secondary school    * High School Special Education Resource Teacher"
+                            title = "Special education teachers, secondary school"
                         },
                         new
                         {
@@ -3220,7 +3220,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "2",
                             median_annual_wage = "61,310",
-                            title = "Food service managers    * Banquet Director* Banquet Manager* Cafeteria Director* Food Service Director* Food and Beverage Manager* Restaurant General Manager* Tavern Operator"
+                            title = "Food service managers"
                         },
                         new
                         {
@@ -3231,7 +3231,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,720",
-                            title = "Hosts and hostesses, restaurant, lounge, and coffee shop    * Bar Host/Hostess* Bar Hostess* Dining Room Host* Dining Room Host/Hostess* Maitre D'* Tearoom Host/Hostess* Tearoom Hostess"
+                            title = "Hosts and hostesses, restaurant, lounge, and coffee shop"
                         },
                         new
                         {
@@ -3242,7 +3242,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,970",
-                            title = "Gambling surveillance officers and gambling investigators    * Casino Investigator* Casino Surveillance Officer* Gambling Monitor* Gambling Surveillance Observer* Gambling Surveillance Officer"
+                            title = "Gambling surveillance officers and gambling investigators"
                         },
                         new
                         {
@@ -3253,7 +3253,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "41,520",
-                            title = "Forest and conservation technicians    * Forest Technician* Forestry Aide* Forestry Technician* Natural Resources Technician* Soil Conservation Technician* Timber Management Technician"
+                            title = "Forest and conservation technicians"
                         },
                         new
                         {
@@ -3264,7 +3264,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "1",
                             median_annual_wage = "61,990",
-                            title = "Mechanical engineering technologists and technicians    * Gyroscopic Engineering Technician* Heat Transfer Technician* Hydraulic Technician* Mechanical Engineering Technician* Mechanical Engineering Technologist* Optomechanical Technician"
+                            title = "Mechanical engineering technologists and technicians"
                         },
                         new
                         {
@@ -3275,7 +3275,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "57,950",
-                            title = "Tax examiners and collectors, and revenue agents    * City Collector* Customs Appraiser* Income Tax Adjuster* Internal Revenue Agent* Internal Revenue Service Agent* Revenue Collector* Revenue Enforcement Agent* Tax Compliance Officer* Tax Compliance Representative* Tax Examiner* Tax Investigator* Tax Revenue Officer"
+                            title = "Tax examiners and collectors, and revenue agents"
                         },
                         new
                         {
@@ -3286,7 +3286,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "39,370",
-                            title = "Religious workers, all other    * Buddhist Monk* Christian Science Nurse* Missionary* Mohel* Nun* Pastoral Worker* Prior* Sacristan* Sunday School Missionary* Traveling Missionary* Verger"
+                            title = "Religious workers, all other"
                         },
                         new
                         {
@@ -3297,7 +3297,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "59,820",
-                            title = "Architectural and civil drafters    * Architectural Drafter* Building Drafter* Civil Computer-Aided Design and Drafting Technician* Civil Drafter* Structural Drafter"
+                            title = "Architectural and civil drafters"
                         },
                         new
                         {
@@ -3308,7 +3308,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,210",
-                            title = "Multiple machine tool setters, operators, and tenders, metal and plastic    * Combination Machine Tool Operator* Multi-operation Forming Machine Setter"
+                            title = "Multiple machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
@@ -3319,7 +3319,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,960",
-                            title = "Coating, painting, and spraying machine setters, operators, and tenders    * Aircraft Painter* Auto Body Painter* Auto Painter* Automobile Body Painter* Automobile Refinisher* Automotive Paint Technician* Automotive Refinish Technician* Automotive Spray Painter* Boat Painter* Electrostatic Paint Operator* Lacquer Spray Booth Operator* Paint Line Operator* Railroad Car Painter* Spraying Machine Operator* Tactical Vehicle Painter"
+                            title = "Coating, painting, and spraying machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -3330,7 +3330,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "55,550",
-                            title = "Clergy    * Cantor* Children's Pastor* College Chaplain* Hebrew Cantor* Hospital Chaplain* Imam* Minister* Parish Priest* Pastor* Priest* Rabbi* Reverend* Vicar* Youth Pastor"
+                            title = "Clergy"
                         },
                         new
                         {
@@ -3341,7 +3341,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "96,910",
-                            title = "Marine engineers and naval architects    * Marine Architect* Marine Equipment Engineer* Marine Structural Designer* Naval Engineer* Ships Equipment Engineer"
+                            title = "Marine engineers and naval architects"
                         },
                         new
                         {
@@ -3352,7 +3352,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "73,210",
-                            title = "Landscape architects    * Golf Course Architect* Golf Course Designer* Landscape Architect* Landscape Designer"
+                            title = "Landscape architects"
                         },
                         new
                         {
@@ -3363,7 +3363,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,230",
-                            title = "Sales representatives, wholesale and manufacturing, except technical and scientific products    * Bottling Equipment Sales Representative* Freight Broker* Hotel Supplies Salesperson* Mortician Supplies Sales Representative* Pulpwood Dealer* Wholesale Diamond Broker"
+                            title = "Sales representatives, wholesale and manufacturing, except technical and scientific products"
                         },
                         new
                         {
@@ -3374,7 +3374,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,690",
-                            title = "Elementary school teachers, except special education    * 3rd Grade Reading Teacher* 4th Grade Math Teacher* Elementary School Music Teacher* Elementary School Teacher* Grades 1 Through 5 Teacher"
+                            title = "Elementary school teachers, except special education"
                         },
                         new
                         {
@@ -3385,7 +3385,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "30,350",
-                            title = "Gambling service workers, all other    * Card Table Attendant* Pit Clerk* Poker Prop Player* Proposition Player* Shill"
+                            title = "Gambling service workers, all other"
                         },
                         new
                         {
@@ -3396,7 +3396,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,110",
-                            title = "Helpers--extraction workers    * Blaster Helper* Blasting Helper* Boring Machine Operator Helper* Continuous Miner Operator Helper* Driller Helper* Loading Machine Operator Helper* Longwall Machine Operator Helper* Mining Helper* Roof Bolter Helper* Rotary Drill Operator Helper* Shale Planer Operator Helper"
+                            title = "Helpers--extraction workers"
                         },
                         new
                         {
@@ -3407,7 +3407,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "74,570",
-                            title = "Locomotive engineers    * Freight Engineer* Railroad Engineer* Railway Engineer* Train Engineer"
+                            title = "Locomotive engineers"
                         },
                         new
                         {
@@ -3418,7 +3418,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Surgeons, all other    * Aviation Medicine Specialist* Brain Surgeon* Cardiac Surgeon* Cardiovascular Surgeon* Colorectal Surgeon* Neurological Surgeon* Neurosurgeon* Otolaryngologist* Plastic Surgeon* Reconstructive Surgeon* Surgical Oncologist* Thoracic Surgeon* Urologist* Vascular Surgeon"
+                            title = "Surgeons, all other"
                         },
                         new
                         {
@@ -3429,7 +3429,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,690",
-                            title = "Hazardous materials removal workers    * Asbestos Abatement Worker* Asbestos Remover* Decontamination Worker* Hazard Waste Handler* Hazmat Technician* Irradiated Fuel Handler* Lead Abatement Worker* Radiological Control and Safety Technician"
+                            title = "Hazardous materials removal workers"
                         },
                         new
                         {
@@ -3440,7 +3440,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "1",
                             median_annual_wage = "66,390",
-                            title = "Electrical and electronic engineering technologists and technicians    * Electrical Design Technician* Electrical Engineering Technician* Electrical Power Station Technician* Electrical and Electronic Engineering Technologist* Electronic Instrument Testing Technician* Lighting Engineering Technician* Programmable Logic Controller Programmer* Semiconductor Development Technician"
+                            title = "Electrical and electronic engineering technologists and technicians"
                         },
                         new
                         {
@@ -3451,7 +3451,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,810",
-                            title = "Middle school teachers, except special and career/technical education    * Intermediate School Social Studies Teacher* Junior High School Teacher* Middle School PE Teacher* Middle School Science Teacher"
+                            title = "Middle school teachers, except special and career/technical education"
                         },
                         new
                         {
@@ -3462,7 +3462,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "49,910",
-                            title = "Embalmers    * Anatomical Embalmer* Arterial Embalmer* Embalmer Apprentice* Licensed Embalmer* Restorative Art Embalmer"
+                            title = "Embalmers"
                         },
                         new
                         {
@@ -3473,7 +3473,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "64,240",
-                            title = "Electrical and electronics drafters    * Circuit Board Drafter* Electrical Computer Aided Design and Drafting Technician* Electrical Drafter* Electrical Systems Drafter* Electronic Drafter* Printed Circuit Board Drafter"
+                            title = "Electrical and electronics drafters"
                         },
                         new
                         {
@@ -3484,7 +3484,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "190,350",
-                            title = "Pediatricians, general    * General Pediatrician* Internal Medicine Pediatrician* Neonatal Doctor* Neonatologist* Paediatrician* Pediatric Cardiologist* Pediatrist* Primary Care Pediatrician"
+                            title = "Pediatricians, general"
                         },
                         new
                         {
@@ -3495,7 +3495,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "59,630",
-                            title = "Civil engineering technologists and technicians    * Civil Engineering Technician* Civil Engineering Technologist* Concrete Engineering Technician* Geotechnical Engineering Technician* Highway Engineering Technician* Structural Engineering Technician* Transportation Engineering Technician"
+                            title = "Civil engineering technologists and technicians"
                         },
                         new
                         {
@@ -3506,7 +3506,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "54,360",
-                            title = "Bus and truck mechanics and diesel engine specialists    * Biodiesel Engine Specialist* Diesel Engine Fitter* Diesel Service Technician* Marine Diesel Technician* School Bus Mechanic* Tractor Trailer Mechanic* Truck Engine Technician"
+                            title = "Bus and truck mechanics and diesel engine specialists"
                         },
                         new
                         {
@@ -3517,7 +3517,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,390",
-                            title = "Carpenters    * Beam Builder* Building Carpenter* Construction Carpenter* Counter Installer* Custom Wood Stair Builder* Finish Carpenter* Hardwood Floor Installer* House Carpenter* Wood Floor Layer"
+                            title = "Carpenters"
                         },
                         new
                         {
@@ -3528,7 +3528,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Pediatric surgeons    * Pediatric Neurosurgeon* Pediatric Vascular Surgeon"
+                            title = "Pediatric surgeons"
                         },
                         new
                         {
@@ -3539,7 +3539,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "148,720",
-                            title = "Podiatrists    * Chiropodist* Doctor of Podiatric Medicine* Foot Doctor* Foot Orthopedist* Foot and Ankle Surgeon* Orthopedic Podiatrist* Podiatric Physician"
+                            title = "Podiatrists"
                         },
                         new
                         {
@@ -3550,7 +3550,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "29,120",
-                            title = "Gambling dealers    * 21 Dealer* Blackjack Dealer* Casino Dealer* Casino Games Dealer* Craps Dealer* Keno Dealer* Poker Dealer* Roulette Dealer* Table Games Dealer"
+                            title = "Gambling dealers"
                         },
                         new
                         {
@@ -3561,7 +3561,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,800",
-                            title = "Parts salespersons    * Appliance Parts Counter Clerk* Auto Parts Salesperson* Electronic Parts Salesperson* Parts Clerk* Parts Counter Clerk"
+                            title = "Parts salespersons"
                         },
                         new
                         {
@@ -3572,7 +3572,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,360",
-                            title = "Secondary school teachers, except special and career/technical education    * High School Algebra Teacher* High School Biology Teacher* High School English Teacher* High School French Teacher* High School History Teacher* High School Math Teacher* High School Teacher"
+                            title = "Secondary school teachers, except special and career/technical education"
                         },
                         new
                         {
@@ -3583,7 +3583,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,060",
-                            title = "Camera and photographic equipment repairers    * Aircraft Photographic Equipment Repairer* Camera Machinist* Camera Repair Technician* Camera Repairer* Photographic Equipment Technician"
+                            title = "Camera and photographic equipment repairers"
                         },
                         new
                         {
@@ -3594,7 +3594,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "88,900",
-                            title = "Geographers    * Biogeographer* Economic Geographer* GIS Geographer* Geomorphologist* Glaciologist* Physical Geographer* Political Geographer"
+                            title = "Geographers"
                         },
                         new
                         {
@@ -3605,7 +3605,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "94,990",
-                            title = "Administrative law judges, adjudicators, and hearing officers    * Appeals Examiner* Appeals Referee* Appellate Conferee* Hearing Examiner* Hearing Officer* Justice of The Peace* Traffic Court Referee"
+                            title = "Administrative law judges, adjudicators, and hearing officers"
                         },
                         new
                         {
@@ -3616,7 +3616,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "56,670",
-                            title = "Explosives workers, ordnance handling experts, and blasters    * Blast Setter* Blaster* Dynamite Shooter* Dynamiter* Explosive Ordnance Handler* Explosive Technician* Mining Powder Crew Worker* Tier and Detonator* Unexploded Ordnance Quality Control Worker"
+                            title = "Explosives workers, ordnance handling experts, and blasters"
                         },
                         new
                         {
@@ -3627,7 +3627,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "122,480",
-                            title = "Nuclear engineers    * Atomic Process Engineer* Nuclear Engineer* Nuclear Radiation Engineer* Nuclear Steam Supply System Engineer* Radiation Engineer* Reactor Engineer* Reactor Projects Engineer"
+                            title = "Nuclear engineers"
                         },
                         new
                         {
@@ -3638,7 +3638,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,810",
-                            title = "Ophthalmic laboratory technicians    * Contact Lens Cutter* Contact Lens Technician* Eyeglass Assembler* Eyeglass Lens Cutter* Eyeglass Maker* Lens Grinder* Lens Grinder and Polisher* Lens Mounter* Precision Lens Centerer and Edger* Prescription Eyeglass Maker"
+                            title = "Ophthalmic laboratory technicians"
                         },
                         new
                         {
@@ -3649,7 +3649,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "68,180",
-                            title = "Railroad conductors and yardmasters    * Freight Conductor* Passenger Car Conductor* Train Conductor* Yard Conductor"
+                            title = "Railroad conductors and yardmasters"
                         },
                         new
                         {
@@ -3660,7 +3660,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,130",
-                            title = "Financial clerks, all other    * Bank Vault Attendant* Bank Vault Clerk* Bank Vault Custodian* Financial Operations Clerk* Financial Reserve Clerk* Safe Deposit Clerk* Safety Deposit Clerk* Vault Teller"
+                            title = "Financial clerks, all other"
                         },
                         new
                         {
@@ -3671,7 +3671,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,940",
-                            title = "Music directors and composers    * Choir Director* Choirmaster* Chorus Master* Composer* Maestro* Music Adapter* Music Arranger* Music Copyist* Music Director* Music Minister* Music Pastor* Orchestra Conductor* Orchestra Director* Orchestrator* Songwriter"
+                            title = "Music directors and composers"
                         },
                         new
                         {
@@ -3682,7 +3682,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,240",
-                            title = "Tire repairers and changers    * Auto Tire Worker* Tire Balancer* Tire Fixer* Tire Mechanic* Tire Mounter* Tire Servicer* Tire Technician"
+                            title = "Tire repairers and changers"
                         },
                         new
                         {
@@ -3693,7 +3693,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "101,320",
-                            title = "Education administrators, kindergarten through secondary    * Elementary School Principal* High School Principal* Junior High School Principal* K-12 School Principal* K-8 School Principal* Middle School Principal* Secondary School Principal"
+                            title = "Education administrators, kindergarten through secondary"
                         },
                         new
                         {
@@ -3704,7 +3704,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "67,540",
-                            title = "Railroad brake, signal, and switch operators and locomotive firers    * Diesel Locomotive Firer* Dinkey Engine Firer* Freight Brake Operator* Locomotive Switch Operator* Railroad Brake Operator* Railroad Firer* Railway Switch Operator* Switch Coupler* Train Brake Operator"
+                            title = "Railroad brake, signal, and switch operators and locomotive firers"
                         },
                         new
                         {
@@ -3715,7 +3715,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "81,300",
-                            title = "Signal and track switch repairers    * Electric Track Switch Maintainer* Light Rail Signal Technician* Rail Signal Mechanic* Railway Signal Technician* Third Rail Installer* Train Control Electronic Technician* Train Control Technician"
+                            title = "Signal and track switch repairers"
                         },
                         new
                         {
@@ -3726,7 +3726,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,070",
-                            title = "Reinforcing iron and rebar workers    * Post Tensioning Ironworker* Rebar Worker* Reinforcing Steel Worker* Rod Buster* Steel Rod Buster* Steel Tier"
+                            title = "Reinforcing iron and rebar workers"
                         },
                         new
                         {
@@ -3737,7 +3737,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,030",
-                            title = "Outdoor power equipment and other small engine mechanics    * Chain Saw Mechanic* Edge Trimmer Mechanic* Electric Golf Cart Repairers* Electric Wheelchair Repairer* Go-Cart Mechanic* Golf Cart Mechanic* Lawn Mower Repairer* Mobility Scooter Repairer* Power Saw Mechanic* Power Wheelchair Mechanic* Snowblower Mechanic* Snowmobile Mechanic"
+                            title = "Outdoor power equipment and other small engine mechanics"
                         },
                         new
                         {
@@ -3748,7 +3748,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "74,280",
-                            title = "English language and literature teachers, postsecondary    * Children's Literature Professor* Composition Professor* Contemporary English Literature Professor* Creative Writing English Professor* Etymology Professor* Medieval English Literature Professor* Seventeenth-Century English Literature Professor* Victorian Literature Professor"
+                            title = "English language and literature teachers, postsecondary"
                         },
                         new
                         {
@@ -3759,7 +3759,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "47,670",
-                            title = "Automotive body and related repairers    * Auto Body Customizer* Auto Body Technician* Auto Body Worker* Auto Bumper Straightener* Body Shop Worker* Body and Frame Technician* Car Refinisher* Truck Body Repairer* Vehicle Body Sander"
+                            title = "Automotive body and related repairers"
                         },
                         new
                         {
@@ -3770,7 +3770,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Musicians and singers    * Accompanist* Baritone* Bassoonist* Bugler* Cellist* Choir Member* Church Organist* Clarinetist* Concert Pianist* Concert Singer* Double Bass Player* English Horn Player* Flutist* Guitar Player* Guitarist* Harpist* Horn Player* Instrumentalist* Musician* Oboist* Opera Singer* Organist* Percussionist* Pianist* Piano Player* Piccoloist* Rapper* Soloist* Tenor* Timpanist* Trombonist* Trumpet Player* Trumpeter* Violinist* Violist* Vocalist"
+                            title = "Musicians and singers"
                         },
                         new
                         {
@@ -3781,7 +3781,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "87,300",
-                            title = "Ship engineers    * Barge Engineer* Ferry Engineer* Towboat Engineer* Tug Boat Engineer* Tugboat Engineer"
+                            title = "Ship engineers"
                         },
                         new
                         {
@@ -3792,7 +3792,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "50,980",
-                            title = "Environmental engineering technologists and technicians    * Air Analysis Engineering Technician* Environmental Engineering Technologist* Environmental Remediation Engineering Technician* Environmental Technician* Pollution Control Engineering Technician"
+                            title = "Environmental engineering technologists and technicians"
                         },
                         new
                         {
@@ -3803,7 +3803,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "79,400",
-                            title = "History teachers, postsecondary    * African History Professor* American History Professor* Historiography Professor* Jewish History Professor* Russian History Professor* South Asian History Professor"
+                            title = "History teachers, postsecondary"
                         },
                         new
                         {
@@ -3814,7 +3814,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "81,500",
-                            title = "School psychologists    * Educational Psychologists"
+                            title = "School psychologists"
                         },
                         new
                         {
@@ -3825,7 +3825,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,160",
-                            title = "Reservation and transportation ticket agents and travel clerks    * Airline Reservation Agent* Airline Reservationist* Airline Ticket Agent* Gate Agent* Hotel Reservationist* Passenger Agent* Passenger Booking Clerk* Reservation Agent* Reservation Sales Agent* Train Clerk* Train Reservation Clerk* Transportation Clerk* Travel Clerk"
+                            title = "Reservation and transportation ticket agents and travel clerks"
                         },
                         new
                         {
@@ -3836,7 +3836,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,990",
-                            title = "Janitors and cleaners, except maids and housekeeping cleaners    * Building Custodian* Cleaning and Maintenance Worker* Custodial Worker* Custodian* Floor Cleaner* Heavy Duty Custodian* Industrial Plant Custodian* Janitor* Office Cleaner* School Custodian* Window Cleaner* Window Washer"
+                            title = "Janitors and cleaners, except maids and housekeeping cleaners"
                         },
                         new
                         {
@@ -3847,7 +3847,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,230",
-                            title = "Rail-track laying and maintenance equipment operators    * Ballast Cleaning Machine Operator* Rail Maintenance Worker* Railroad Track Mechanic* Track Layer* Track Machine Operator* Track Maintainer* Track Moving Machine Operator* Track Repair Worker* Track Repairer* Track Service Worker* Track Surfacing Machine Operator* Trackwalker"
+                            title = "Rail-track laying and maintenance equipment operators"
                         },
                         new
                         {
@@ -3858,7 +3858,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "132,250",
-                            title = "Air traffic controllers    * Air Traffic Control Operator* Air Traffic Control Specialist* Air Traffic Coordinator* Airport Tower Controller* Control Tower Operator* Enroute Controller"
+                            title = "Air traffic controllers"
                         },
                         new
                         {
@@ -3869,7 +3869,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "76,030",
-                            title = "Foreign language and literature teachers, postsecondary    * Arabic Professor* Biblical Languages Professor* Chinese Language Professor* French Professor* German Professor* Greek Professor* Hebrew Professor* Japanese Professor* Russian Language Professor* Spanish Literature Professor"
+                            title = "Foreign language and literature teachers, postsecondary"
                         },
                         new
                         {
@@ -3880,7 +3880,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "54,680",
-                            title = "Riggers    * Acrobatic Rigger* Boat Rigger* Crane Rigger* Fly Rail Operator* Gantry Rigger* High Rigger* Marine Rigger* Parachute Rigger* Ship Rigger* Theatrical Rigger* Wire Rigger* Yacht Rigger* Yard Rigger"
+                            title = "Riggers"
                         },
                         new
                         {
@@ -3902,7 +3902,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "41,270",
-                            title = "Bus drivers, school    * School Bus Driver* School Bus Operator* Special Education Bus Driver"
+                            title = "Bus drivers, school"
                         },
                         new
                         {
@@ -3913,7 +3913,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,540",
-                            title = "Welders, cutters, solderers, and brazers    * Aluminum Welder* Arc Welder* Brazer* Certified Maintenance Welder* Cutting Torch Operator* Pipe Welder* Silver Solderer* Sub Arc Operator* Welder Fitter* Wire Welder"
+                            title = "Welders, cutters, solderers, and brazers"
                         },
                         new
                         {
@@ -3924,7 +3924,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,080",
-                            title = "Helpers--painters, paperhangers, plasterers, and stucco masons    * Billboard Poster Helper* Bridge Painter Helper* Dry Plasterer Helper* Highway Painter Helper* House Painter Helper* Ornamental Plasterer Helper* Plaster Tender* Ship Painter Helper* Swimming Pool Plasterer Helper* Wallpaper Hanger Helper* Wallpaperer Helper"
+                            title = "Helpers--painters, paperhangers, plasterers, and stucco masons"
                         },
                         new
                         {
@@ -3935,7 +3935,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "85,990",
-                            title = "Hydrologists    * Hydrogeologist* Isotope Hydrologist* Surface Hydrologist"
+                            title = "Hydrologists"
                         },
                         new
                         {
@@ -3946,7 +3946,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "99,000",
-                            title = "Elevator and escalator installers and repairers    * Elevator Adjuster* Elevator Constructor* Elevator Installer* Elevator Mechanic* Elevator Repair and Maintenance Technician* Elevator Service Technician* Escalator Installer* Escalator Mechanic* Escalator Service Mechanic* Freight Elevator Erector* Hydraulic Elevator Constructor"
+                            title = "Elevator and escalator installers and repairers"
                         },
                         new
                         {
@@ -3957,7 +3957,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,570",
-                            title = "Parking attendants    * Auto Parker* Car Jockey* Parking Ramp Attendant* Valet Parker* Valet Runner"
+                            title = "Parking attendants"
                         },
                         new
                         {
@@ -3968,7 +3968,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,250",
-                            title = "Tax preparers    * Corporate Tax Preparer* Income Tax Advisor* Income Tax Preparer* Licensed Tax Consultant* Tax Consultant* Tax Specialist"
+                            title = "Tax preparers"
                         },
                         new
                         {
@@ -3979,7 +3979,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "86,280",
-                            title = "Detectives and criminal investigators    * Criminal Investigator* Deputy United States Marshal* FBI Investigator* Homicide Detective* Narcotics Detective* Narcotics Investigator* Police Detective"
+                            title = "Detectives and criminal investigators"
                         },
                         new
                         {
@@ -3990,7 +3990,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,410",
-                            title = "Mixing and blending machine setters, operators, and tenders    * Asphalt Blender* Clay Mixer* Concrete Batcher* Dye Mixer* Glue Mixer* Ink Blender* Ink Mixer* Plaster Mixer* Resin Mixer"
+                            title = "Mixing and blending machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -4001,7 +4001,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,500",
-                            title = "Installation, maintenance, and repair workers, all other    * Bowling Alley Mechanic* Curtain Mender* Fabric Awning Repairer* Fire Extinguisher Installer* Gasoline Pump Installer* Gunsmith* Hand-Woven Carpet and Rug Mender* Parachute Repairer* Sail Repairer* Ski Lift Mechanic* Tarp Repairer* Wheelwright* Window Shade Installer"
+                            title = "Installation, maintenance, and repair workers, all other"
                         },
                         new
                         {
@@ -4012,7 +4012,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "46,090",
-                            title = "Painters, construction and maintenance    * Bridge Painter* Facilities Painter* Highway Painter* House Painter* Industrial Painter* Parking Line Painter* Roof Painter* Traffic Line Painter"
+                            title = "Painters, construction and maintenance"
                         },
                         new
                         {
@@ -4023,7 +4023,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "2",
                             median_annual_wage = "27,930",
-                            title = "Fast food and counter workers    * Barista* Cafe Server* Cafeteria Server* Concession Stand Attendant* Food Counter Worker* Hot Dog Vender* Ice Cream Server* Mess Attendant* Snack Bar Attendant"
+                            title = "Fast food and counter workers"
                         },
                         new
                         {
@@ -4034,7 +4034,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "53,930",
-                            title = "Tank car, truck, and ship loaders    * Barge Loader* Bulk Tank Car Unloader* Dock Loader* Rail Car Loader* Rail Loader* Ship Unloader* Tank Car Loader* Tank Truck Loader"
+                            title = "Tank car, truck, and ship loaders"
                         },
                         new
                         {
@@ -4045,7 +4045,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Orthopedic surgeons, except pediatric    * Joint Preservationist* Orthopaedic Surgeon* Orthopedic Sports Medicine Physician* Orthopedic Surgeon"
+                            title = "Orthopedic surgeons, except pediatric"
                         },
                         new
                         {
@@ -4056,7 +4056,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,700",
-                            title = "Food cooking machine operators and tenders    * Doughnut Machine Operator* Dumpling Machine Operator* Fish Fryer* Food Cooking Machine Operator* Kettle Fry Cook Operator* Pierogi Maker* Potato Chip Frier* Tripe Cooker"
+                            title = "Food cooking machine operators and tenders"
                         },
                         new
                         {
@@ -4067,7 +4067,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,820",
-                            title = "Helpers, construction trades, all other    * Boiler Coverer Helper* Bridge Ironworker Helper* Carpet Layer Helper* Cellulose Insulation Helper* Construction Ironworker Helper* Cork Insulator Helper* Drywall Hanger Helper* Drywall Stripper Helper* Drywall Taper Helper* HVAC Sheet Metal Installer Helper* Heat and Frost Insulator Helper* Linoleum Layer Helper* Ornamental Ironworker Helper* Pipe Insulator Helper* Plate Glass Installer Helper* Post Tensioning Ironworker Helper* Rod Buster Helper* Sheet Metal Duct Installer Helper* Sheet Rock Installation Helper* Sheet Rock Taper Helper* Stained Glass Glazier Helper* Terrazzo Finisher Helper* Terrazzo Layer Helper* Terrazzo Worker Helper* Trench Digger Helper* Wall Taper Helper* Window Glazier Helper"
+                            title = "Helpers, construction trades, all other"
                         },
                         new
                         {
@@ -4078,7 +4078,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,650",
-                            title = "Ushers, lobby attendants, and ticket takers    * Drive-In Theater Attendant* Lobby Attendant* Theater Usher* Ticket Attendant* Ticket Collector* Usher"
+                            title = "Ushers, lobby attendants, and ticket takers"
                         },
                         new
                         {
@@ -4089,7 +4089,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "50,440",
-                            title = "Drywall and ceiling tile installers    * Acoustical Ceiling Installer* Drywall Applicator* Drywall Finisher* Drywall Hanger* Drywall Installer* Drywall Sander* Drywall Stripper* Drywall Worker* Sheet Rock Applier* Sheet Rock Hanger* Sheet Rock Installer* Sheet Rock Worker"
+                            title = "Drywall and ceiling tile installers"
                         },
                         new
                         {
@@ -4100,7 +4100,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,280",
-                            title = "Couriers and messengers    * Bank Courier* Bicycle Messenger* Courier* Court Messenger* Laboratory Courier* Office Messenger* Office Runner"
+                            title = "Couriers and messengers"
                         },
                         new
                         {
@@ -4111,7 +4111,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "107,560",
-                            title = "Industrial production managers    * Industrial Production Manager* Manufacturing Director* Plant Chief* Plant Manager* Plant Superintendent* Production Control Manager"
+                            title = "Industrial production managers"
                         },
                         new
                         {
@@ -4122,7 +4122,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
                             median_annual_wage = "46,970",
-                            title = "Automotive service technicians and mechanics    * Auto Clutch Rebuilder* Auto Clutch Specialist* Auto Radiator Specialist* Auto Suspension and Steering Mechanic* Auto Transmission Specialist* Automotive Alignment Specialist* Automotive Brake Adjuster* Automotive Brake Specialist* Automotive Brake Technician* Automotive Fuel Injection Servicer* Automotive Fuel Systems Converter* Automotive Specialty Technician* Hybrid Car Mechanic* Motor Tune-Up Specialist"
+                            title = "Automotive service technicians and mechanics"
                         },
                         new
                         {
@@ -4133,7 +4133,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "43,700",
-                            title = "Automotive glass installers and repairers    * Auto Glass Installer* Auto Glass Mechanic* Automotive Glass Technician* Automotive Glazier* Windshield Installer* Windshield Repair Technician"
+                            title = "Automotive glass installers and repairers"
                         },
                         new
                         {
@@ -4144,7 +4144,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,590",
-                            title = "Insulation workers, mechanical    * Boiler Coverer* Heat and Frost Insulator* Pipe Coverer* Pipe Insulator* Refrigeration Insulator* Sheet Metal Insulator"
+                            title = "Insulation workers, mechanical"
                         },
                         new
                         {
@@ -4155,7 +4155,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "45,380",
-                            title = "Insulation workers, floor, ceiling, and wall    * Ceiling Insulation Blower* Composition Weatherboard Installer* Cork Insulation Installer* Cork Insulator* Insulation Machine Operator* Interior Surface Insulation Worker* Wall Insulation Sprayer"
+                            title = "Insulation workers, floor, ceiling, and wall"
                         },
                         new
                         {
@@ -4166,7 +4166,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "88,900",
-                            title = "Social scientists and related workers, all other    * Behavioral Scientist* Demographer* Ethnologist* Etymologist* Linguist* Philologist* Social Scientist"
+                            title = "Social scientists and related workers, all other"
                         },
                         new
                         {
@@ -4177,7 +4177,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "95,210",
-                            title = "Captains, mates, and pilots of water vessels    * Barge Captain* Barge Master* Boat Pilot* Car Ferry Captain* Car Ferry Master* Coastal Tug Mate* Deck Officer* Docking Pilot* Ferry Boat Captain* Ferry Captain* Ferryboat Captain* First Mate* Harbor Boat Pilot* Harbor Pilot* Harbor Tug Captain* Port Captain* River Boat Captain* River Pilot* Sailboat Captain* Ship Harbor Pilot* Tow Boat Captain* Towboat Pilot* Tug Boat Captain* Tugboat Captain* Tugboat Mate* Tugboat Operator* Tugboat Pilot"
+                            title = "Captains, mates, and pilots of water vessels"
                         },
                         new
                         {
@@ -4188,7 +4188,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,490",
-                            title = "Title examiners, abstractors, and searchers    * Abstract Searcher* Abstract Writer* Advisory Title Officer* Escrow Officer* Land Title Examiner* Lease Examiner* Lien Searcher* Title Agent* Title Checker* Title Examiner* Title Inspector* Title Investigator* Title Officer* Title Searcher"
+                            title = "Title examiners, abstractors, and searchers"
                         },
                         new
                         {
@@ -4199,7 +4199,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,720",
-                            title = "Agricultural workers, all other    * Crop Scout* Irrigation Worker* Livestock Showman"
+                            title = "Agricultural workers, all other"
                         },
                         new
                         {
@@ -4210,7 +4210,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "43,370",
-                            title = "Motorcycle mechanics    * ATV Technician* All Terrain Vehicle Technician* Motor Scooter Mechanic* Motorcycle Repairer* Motorcycle Service Technician* Motorcycle Technician* Scooter Mechanic"
+                            title = "Motorcycle mechanics"
                         },
                         new
                         {
@@ -4221,7 +4221,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,500",
-                            title = "Structural iron and steel workers    * Bridge Ironworker* Construction Ironworker* Iron Guardrail Installer* Metal Tank Erector* Ornamental Ironworker* Pre-Engineered Metal Building Ironworker* Precast Concrete Ironworker* Steel Fabricator* Steel Fitter* Structural Steel Erector* Wind Turbine Erector"
+                            title = "Structural iron and steel workers"
                         },
                         new
                         {
@@ -4232,7 +4232,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "46,010",
-                            title = "Rock splitters, quarry    * Quarry Chop Saw Operator* Quarry Plug and Feather Driller* Sandstone Splitter"
+                            title = "Rock splitters, quarry"
                         },
                         new
                         {
@@ -4243,7 +4243,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "62,240",
-                            title = "Special education teachers, preschool    * Early Childhood Special Education Teacher* Early Childhood Special Educator* Pre-K Special Education Teacher* Pre-Kindergarten Education Intervention Teacher* Pre-Kindergarten Special Education Teacher* Special Education Preschool Teacher"
+                            title = "Special education teachers, preschool"
                         },
                         new
                         {
@@ -4254,7 +4254,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "127,830",
-                            title = "Advertising and promotions managers    * Advertising Director* Advertising Executive* Advertising Manager* Classified Advertising Manager* Promotions Director* Promotions Manager* VP Advertising* VP Promotions"
+                            title = "Advertising and promotions managers"
                         },
                         new
                         {
@@ -4265,7 +4265,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "39,990",
-                            title = "Rehabilitation counselors    * Certified Rehabilitation Counselor* Coordinator of Rehabilitation Services* Psychosocial Rehabilitation Counselor* Veterans Rehabilitation Counselor* Vocational Rehabilitation Counselor* Vocational Rehabilitation Job Coach"
+                            title = "Rehabilitation counselors"
                         },
                         new
                         {
@@ -4276,7 +4276,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,250",
-                            title = "Teachers and instructors, all other    * Sunday School Teacher"
+                            title = "Teachers and instructors, all other"
                         },
                         new
                         {
@@ -4287,7 +4287,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,510",
-                            title = "Machinists    * Automotive Machinist* CNC Machinist* Gear Machinist* Manual Lathe Machinist* Precision Machinist* Production Machinist* Tool Room Machinist"
+                            title = "Machinists"
                         },
                         new
                         {
@@ -4298,7 +4298,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,020",
-                            title = "Helpers--roofers    * Hot Tar Roofer Helper* Industrial Roofer Helper* Residential Roofer Helper* Roofer Assistant* Roofer Helper* Roofing Laborer* Shingles Roofer Helper* Slate Roofer Helper* Terra Cotta Roofer Helper"
+                            title = "Helpers--roofers"
                         },
                         new
                         {
@@ -4309,7 +4309,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "44,720",
-                            title = "Agricultural inspectors    * Cattle Examiner* Cattle Inspector* Grain Sampler* Meat and Poultry Inspector* Milk Tester* Wheat Inspector"
+                            title = "Agricultural inspectors"
                         },
                         new
                         {
@@ -4320,7 +4320,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "41,440",
-                            title = "Pesticide handlers, sprayers, and applicators, vegetation    * Certified Pesticide Applicator* Fruit Sprayer* Herbicide Sprayer* Orchard Sprayer* Plant Sprayer* Weed Sprayer"
+                            title = "Pesticide handlers, sprayers, and applicators, vegetation"
                         },
                         new
                         {
@@ -4342,7 +4342,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "47,490",
-                            title = "Sailors and marine oilers    * Able Seaman* Deck Cadet* Deck Hand* Deckhand* Merchant Mariner* Merchant Seaman* Ordinary Seaman* Sailor* Vessel Ordinary Seaman"
+                            title = "Sailors and marine oilers"
                         },
                         new
                         {
@@ -4353,7 +4353,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "75,910",
-                            title = "Commercial and industrial designers    * Automobile Designer* Bank Note Designer* Bicycle Designer* Car Body Designer* Ceramic Designer* Ceramic Mold Designer* Furniture Designer* Package Designer* Rug Designer* Snowboard Designer* Textile Designer* Tile Designer* Toy Designer"
+                            title = "Commercial and industrial designers"
                         },
                         new
                         {
@@ -4364,7 +4364,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "106,230",
-                            title = "Healthcare diagnosing or treating practitioners, all other    * Homeopathic Doctor* Hypnotherapist* Naturopath* Naturopathic Doctor* Naturopathic Physician"
+                            title = "Healthcare diagnosing or treating practitioners, all other"
                         },
                         new
                         {
@@ -4375,7 +4375,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,070",
-                            title = "Meat, poultry, and fish cutters and trimmers    * Crab Picker* Deboner* Fish Cutter* Fish Filleter* Frozen Meat Cutter* Meat Trimmer* Oyster Shucker* Poultry Cutter* Poultry Eviscerator* Shrimp Peeler* Shrimp Picker* Wing Scorer"
+                            title = "Meat, poultry, and fish cutters and trimmers"
                         },
                         new
                         {
@@ -4386,7 +4386,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "47,920",
-                            title = "Roofers    * Composition Roofer* Hot Tar Roofer* Industrial Roofer* Metal Roofing Mechanic* Residential Roofer* Sheet Metal Roofer* Shingles Roofer* Slate Roofer* Terra Cotta Roofer"
+                            title = "Roofers"
                         },
                         new
                         {
@@ -4397,7 +4397,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,320",
-                            title = "Animal breeders    * Cat Breeder* Dairy Husbandry Worker* Dog Breeder* Equine Breeder* Horse Breeder* Livestock Breeder* Poultry Inseminator* Stallion Manager"
+                            title = "Animal breeders"
                         },
                         new
                         {
@@ -4419,7 +4419,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "49,730",
-                            title = "Plasterers and stucco masons    * Dry Plasterer* Journey Level Plasterer* Molding Plasterer* Ornamental Plasterer* Plasterer Apprentice* Stucco Plasterer* Stucco Worker* Swimming Pool Plasterer"
+                            title = "Plasterers and stucco masons"
                         },
                         new
                         {
@@ -4430,7 +4430,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "32,510",
-                            title = "Cooks, institution and cafeteria    * Cafeteria Cook* Camp Cook* Galley Cook* Institutional Cook* Mess Cook* School Cook"
+                            title = "Cooks, institution and cafeteria"
                         },
                         new
                         {
@@ -4441,7 +4441,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "112,110",
-                            title = "Mathematicians    * Algebraist* Cipher Expert* Cryptanalyst* Cryptographer* Cryptographic Vulnerability Analyst* Geometrician"
+                            title = "Mathematicians"
                         },
                         new
                         {
@@ -4452,7 +4452,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,280",
-                            title = "Rail transportation workers, all other    * Railway Equipment Operator* Retarder Operator* Transfer Table Operator"
+                            title = "Rail transportation workers, all other"
                         },
                         new
                         {
@@ -4463,7 +4463,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "131,280",
-                            title = "Compensation and benefits managers    * Compensation Director* Employee Benefits Coordinator* Employee Benefits Director* Employee Benefits Manager* Wage and Salary Administrator"
+                            title = "Compensation and benefits managers"
                         },
                         new
                         {
@@ -4474,7 +4474,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,740",
-                            title = "Earth drillers, except oil and gas    * Blast Hole Driller* Churn Drill Operator* Churn Driller* Earth Auger Operator* Earth Boring Machine Operator* Hard Rock Drill Operator* Rock Drill Operator"
+                            title = "Earth drillers, except oil and gas"
                         },
                         new
                         {
@@ -4485,7 +4485,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "39,520",
-                            title = "Grounds maintenance workers, all other    * Trail Construction Worker* Trail Maintenance Worker* Trailhead Construction Worker* Trailhead Maintenance Worker* Tree Trimmer Helper"
+                            title = "Grounds maintenance workers, all other"
                         },
                         new
                         {
@@ -4496,7 +4496,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Obstetricians and gynecologists    * Gynecological Oncologist* Gynecologist* Maternal-Fetal Medicine Physician* OB Specialist* OB/GYN* OB/GYN Physician* Obstetrician* Obstetrician/Gynecologist"
+                            title = "Obstetricians and gynecologists"
                         },
                         new
                         {
@@ -4507,7 +4507,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "151,030",
-                            title = "Judges, magistrate judges, and magistrates    * Administrative Court Justice* Circuit Court Judge* County Court Judge* Criminal Court Judge* District Court Judge* Jurist* Justice* Probate Judge* Trial Court Judge* Tribal Judge"
+                            title = "Judges, magistrate judges, and magistrates"
                         },
                         new
                         {
@@ -4518,7 +4518,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "72,110",
-                            title = "Funeral home managers    * Funeral Home Director* Funeral Home Manager* Funeral Service Manager"
+                            title = "Funeral home managers"
                         },
                         new
                         {
@@ -4529,7 +4529,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,720",
-                            title = "Glaziers    * Leaded Glass Installer* Plate Glass Installer* Stained Glass Glazier* Stained Glass Installer* Stained Glass Joiner* Window Glazier"
+                            title = "Glaziers"
                         },
                         new
                         {
@@ -4540,7 +4540,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,230",
-                            title = "Eligibility interviewers, government programs    * Medicare Interviewer* Public Housing Interviewer* Social Security Benefits Interviewer* Unemployment Benefits Claims Taker* Welfare Interviewer"
+                            title = "Eligibility interviewers, government programs"
                         },
                         new
                         {
@@ -4551,7 +4551,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "57,490",
-                            title = "Judicial law clerks    * Judicial Clerk"
+                            title = "Judicial law clerks"
                         },
                         new
                         {
@@ -4562,7 +4562,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,340",
-                            title = "Helpers--pipelayers, plumbers, pipefitters, and steamfitters    * Gas Main Fitter Helper* Hydraulic Plumber Helper* Industrial Gas Fitter Helper* Marine Pipefitter Helper* Marine Steam Fitter Helper* Pipe Fitter Helper* Plumber Assistant* Plumber Helper* Sewer Pipe Layer Helper* Sprinkler Fitter Helper* Trench Pipe Layer Helper* Water Main Installer Helper"
+                            title = "Helpers--pipelayers, plumbers, pipefitters, and steamfitters"
                         },
                         new
                         {
@@ -4573,7 +4573,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "47,650",
-                            title = "Educational instruction and library workers, all other    * Aptitude Test (SAT) Grader* General Educational Development (GED¿) Examiner"
+                            title = "Educational instruction and library workers, all other"
                         },
                         new
                         {
@@ -4584,7 +4584,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,090",
-                            title = "Plumbers, pipefitters, and steamfitters    * Fire Sprinkler Installer* Gas Main Fitter* Gas Plumber* Hydraulic Plumber* Industrial Gas Fitter* Marine Pipefitter* Marine Steamfitter* Master Plumber* Pipe Fitter* Plumber* Solar Thermal Installer* Sprinkler Fitter* Steamfitter* Water Pump Installer"
+                            title = "Plumbers, pipefitters, and steamfitters"
                         },
                         new
                         {
@@ -4595,7 +4595,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "56,340",
-                            title = "Rail yard engineers, dinkey operators, and hostlers    * Coal Tram Driver* Dinkey Driver* Dinkey Operator* Engine Hostler* Haulage Engine Operator* Railcar Switcher* Yard Hostler"
+                            title = "Rail yard engineers, dinkey operators, and hostlers"
                         },
                         new
                         {
@@ -4606,7 +4606,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "64,220",
-                            title = "Foresters    * Environmental Protection Forester* Forest Ecologist* Forestry Scientist* Land Management Forester* Operations Forester* Resource Forester* Service Forester* Timber Management Specialist* Urban Forester"
+                            title = "Foresters"
                         },
                         new
                         {
@@ -4617,7 +4617,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "89,530",
-                            title = "Radiation therapists    * Radiation Therapy Technologist* Registered Radiation Therapist"
+                            title = "Radiation therapists"
                         },
                         new
                         {
@@ -4628,7 +4628,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,590",
-                            title = "Molders, shapers, and casters, except metal and plastic    * Burial Vault Maker* Cigar Roller* Clay Modeler* Concrete Vault Maker* Glass Bender* Glass Block Bender* Glass Blower* Glass Presser* Glass Tube Bender* Mannequin Mold Maker* Neon Glass Bender* Neon Glass Blower* Neon Molder* Neon Tube Bender* Rubber Molder* Stone Carver"
+                            title = "Molders, shapers, and casters, except metal and plastic"
                         },
                         new
                         {
@@ -4639,7 +4639,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,380",
-                            title = "Merchandise displayers and window trimmers    * Display Artist* Display Decorator* Display Designer* Display Specialist* Mannequin Decorator* Merchandise Displayer* Show Floor Decorator* Visual Merchandiser* Visual Merchandising Specialist* Window Decorator* Window Draper* Window Dresser* Window Trimmer"
+                            title = "Merchandise displayers and window trimmers"
                         },
                         new
                         {
@@ -4650,7 +4650,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "73,140",
-                            title = "First-line supervisors of mechanics, installers, and repairers    * Automobile Body Repair Supervisor* Body Shop Supervisor* Electronic Maintenance Supervisor* Fleet Maintenance Supervisor* Heating, Ventilation, and Air Conditioning Supervisor* Oil Field Equipment Mechanic Supervisor* Railroad Car Repair Supervisor* Repair Department Supervisor"
+                            title = "First-line supervisors of mechanics, installers, and repairers"
                         },
                         new
                         {
@@ -4661,7 +4661,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,200",
-                            title = "Building cleaning workers, all other    * Building Pressure Washer* Chimney Sweep* Chimney Sweeper"
+                            title = "Building cleaning workers, all other"
                         },
                         new
                         {
@@ -4672,7 +4672,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,260",
-                            title = "Electric motor, power tool, and related repairers    * AC/DC Rewinder* Armature Rewinder* Battery Repairer* Dynamo Repairer* Electric Motor Fitter* Electric Motor Rewinder* Electrical Parts Reconditioner"
+                            title = "Electric motor, power tool, and related repairers"
                         },
                         new
                         {
@@ -4683,7 +4683,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,160",
-                            title = "Medical appliance technicians    * Arch-Support Maker* Brace Maker* Hearing Aid Repair Technician* Manufacturing Orthopedic Technologist* Orthotic Fabricator Technician* Orthotic Finish Grinding Technician* Orthotics Fitter* Orthotics Technician* Prosthetics Fabrication Technician* Prosthetics Lab Technician* Prosthetics Technician* Surgical Appliance Fitter"
+                            title = "Medical appliance technicians"
                         },
                         new
                         {
@@ -4694,7 +4694,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "131,800",
-                            title = "Petroleum engineers    * Natural Gas Engineer* Oil Drilling Engineer* Oil Exploration Engineer* Oil Well Engineer* Petroleum Engineer"
+                            title = "Petroleum engineers"
                         },
                         new
                         {
@@ -4705,7 +4705,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,080",
-                            title = "Tree trimmers and pruners    * Pruner* Tree Pruner* Tree Specialist* Tree Surgeon* Tree Trimmer* Utility Arborist"
+                            title = "Tree trimmers and pruners"
                         },
                         new
                         {
@@ -4716,7 +4716,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "214,460",
-                            title = "General internal medicine physicians    * General Internal Medicine Doctor* General Internist* Internal Medicine Physician* Internist"
+                            title = "General internal medicine physicians"
                         },
                         new
                         {
@@ -4727,7 +4727,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,100",
-                            title = "Helpers--installation, maintenance, and repair workers    * Automobile Body Repairer Helper* Cable Splicer Helper* Hydroelectric Machinery Mechanic Helper* Locksmith Helper* Logging Equipment Mechanic Helper* Mechanic's Assistant* Meter Repairer Helper* Motorboat Mechanic Helper* Powerhouse Mechanic Helper* Streetcar Repairer Helper"
+                            title = "Helpers--installation, maintenance, and repair workers"
                         },
                         new
                         {
@@ -4738,7 +4738,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "59,860",
-                            title = "Probation officers and correctional treatment specialists    * Correctional Treatment Specialist* Juvenile Probation Officer* Parole Agent* Parole Officer* Probation Officer"
+                            title = "Probation officers and correctional treatment specialists"
                         },
                         new
                         {
@@ -4749,7 +4749,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "66,490",
-                            title = "Instructional coordinators    * Curriculum Coordinator* Curriculum Designer* Curriculum Specialist* Curriculum and Assessment Director* Curriculum and Instruction Director* Instructional Materials Director* School Curriculum Developer* Special Education Curriculum Specialist"
+                            title = "Instructional coordinators"
                         },
                         new
                         {
@@ -4760,7 +4760,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "90,520",
-                            title = "Network and computer systems administrators    * LAN Administrator* LAN Systems Administrator* Local Area Network Administrator* Network Analyst* Network Coordinator* Network Support Coordinator* Network Support Manager* Network Systems Administrator* Network Systems Coordinator* WAN Systems Administrator* Wide Area Network Administrator"
+                            title = "Network and computer systems administrators"
                         },
                         new
                         {
@@ -4771,7 +4771,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "74,080",
-                            title = "First-line supervisors of construction trades and extraction workers    * Carpenter Supervisor* Drilling Foreman* Electrician Supervisor* Excavating Supervisor* Foreman* Foreperson* Forewoman* Quarry Boss* Rig Supervisor* Roustabout Crew Leader* Segmental Paving Supervisor* Solar Panel Installation Supervisor* Tool Pushers"
+                            title = "First-line supervisors of construction trades and extraction workers"
                         },
                         new
                         {
@@ -4782,7 +4782,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "80,710",
-                            title = "Gambling managers    * Bingo Manager* Casino Manager* Gambling Department Head* Gambling Director* Gambling Manager* Slot Operations Director* Slots Manager* Table Games Manager"
+                            title = "Gambling managers"
                         },
                         new
                         {
@@ -4793,7 +4793,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "75,390",
-                            title = "Social sciences teachers, postsecondary, all other    * Social Science Professor* Survey Research Professor* Urban Planning Professor"
+                            title = "Social sciences teachers, postsecondary, all other"
                         },
                         new
                         {
@@ -4804,7 +4804,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Anesthesiologists    * Ambulatory Anesthesiologist* Anaesthesiologist* Anesthetist* Attending Anesthesiologist* Obstetrical Anesthesiologist* Staff Anesthetist"
+                            title = "Anesthesiologists"
                         },
                         new
                         {
@@ -4815,7 +4815,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,810",
-                            title = "First-line supervisors of landscaping, lawn service, and groundskeeping workers    * Gardening Supervisor* Greenskeeper Supervisor* Grounds Crew Supervisor* Grounds Foreman* Grounds Maintenance Supervisor* Head Greenskeeper* Horticultural Services Supervisor* Landscape Installation Foreman* Turf and Grounds Supervisor"
+                            title = "First-line supervisors of landscaping, lawn service, and groundskeeping workers"
                         },
                         new
                         {
@@ -4826,7 +4826,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "132,750",
-                            title = "Pharmacists    * Apothecary* Clinical Pharmacist* Druggist* Hospital Pharmacist* Registered Pharmacist"
+                            title = "Pharmacists"
                         },
                         new
                         {
@@ -4837,7 +4837,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "212,740",
-                            title = "Dentists, all other specialists    * Endodontist* Maxillofacial Pathology* Oral Pathologist* Pediatric Dentist* Pedodontist* Periodontist* Public Health Dentist"
+                            title = "Dentists, all other specialists"
                         },
                         new
                         {
@@ -4848,7 +4848,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "64,990",
-                            title = "Criminal justice and law enforcement teachers, postsecondary    * Criminal Justice Professor* Criminology Professor* Penology Professor"
+                            title = "Criminal justice and law enforcement teachers, postsecondary"
                         },
                         new
                         {
@@ -4859,7 +4859,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "79,570",
-                            title = "Transportation inspectors    * Aircraft Inspector* Aircraft Landing Gear Inspector* Aircraft Quality Control Inspector* Airworthiness Safety Inspector* Freight Inspector* Locomotive Inspector* Motor Vehicle Emissions Inspector* Railroad Car Inspector* Railroad Inspector* School Bus Inspector* Transit Vehicle Inspector"
+                            title = "Transportation inspectors"
                         },
                         new
                         {
@@ -4870,7 +4870,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "78,780",
-                            title = "Philosophy and religion teachers, postsecondary    * Biblical Studies Professor* Divinity Professor* Eastern Philosophy Professor* Ethics Professor* Old Testament Professor* Pastoral Ministries Professor* Religious Studies Professor* Theology Professor* Western Philosophy Professor"
+                            title = "Philosophy and religion teachers, postsecondary"
                         },
                         new
                         {
@@ -4881,7 +4881,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "54,490",
-                            title = "First-line supervisors of farming, fishing, and forestry workers    * Animal Caretaker Supervisor* Aquacultural Worker Supervisor* Corn Crop Supervisor* Corral Boss* Cranberry Bog Supervisor* Farm Supervisor* Farrowing Manager* Feed Manager* Fish Hatchery Supervisor* Harvest Crew Supervisor* Harvest Manager* Logging Crew Supervisor* Picking Crew Supervisor* Planting Supervisor* Ranch Hand Supervisor"
+                            title = "First-line supervisors of farming, fishing, and forestry workers"
                         },
                         new
                         {
@@ -4892,7 +4892,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,610",
-                            title = "Opticians, dispensing    * Certified Optician* Contact Lens Fitter* Eyeglass Fitter* Licensed Dispensing Optician* Licensed Optical Dispenser* Licensed Optician* Optical Dispenser* Optician"
+                            title = "Opticians, dispensing"
                         },
                         new
                         {
@@ -4903,7 +4903,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,720",
-                            title = "Information and record clerks, all other    * Election Clerk* Flight Crew Scheduler* Probate Clerk* Student Admissions Clerk"
+                            title = "Information and record clerks, all other"
                         },
                         new
                         {
@@ -4914,7 +4914,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,830",
-                            title = "Counter and rental clerks    * Airplane Charter Clerk* Apartment Rental Clerk* Automobile Rental Clerk* Automotive Service Writer* Bicycle Rental Clerk* Boat Rental Clerk* Car Rental Agent* Dry Cleaning Counter Clerk* Layaway Clerk* Rental Clerk* Storage Facility Rental Clerk* Video Rental Clerk"
+                            title = "Counter and rental clerks"
                         },
                         new
                         {
@@ -4925,7 +4925,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "51,430",
-                            title = "Operating engineers and other construction equipment operators    * Angle Dozer Operator* Blade Grader Operator* Construction Backhoe Operator* Construction Bulldozer Operator* Construction Excavator* Construction Shovel Operator* Ditching Machine Operating Engineer* Grader Operator* Motor Grader Operator* Road Grader* Scraper Operator* Steam Shovel Operating Engineer* Steam Shovel Operator"
+                            title = "Operating engineers and other construction equipment operators"
                         },
                         new
                         {
@@ -4936,7 +4936,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "63,560",
-                            title = "Court reporters and simultaneous captioners    * Court Recording Monitor* Court Stenographer* Court Transcriber* Deposition Reporter* Realtime Captioner* Stenocaptioner* Voice Writing Reporter"
+                            title = "Court reporters and simultaneous captioners"
                         },
                         new
                         {
@@ -4947,7 +4947,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Emergency medicine physicians    * Critical Care Physician* Disaster Medicine Physician* Emergency Medicine Specialist"
+                            title = "Emergency medicine physicians"
                         },
                         new
                         {
@@ -4958,7 +4958,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,160",
-                            title = "Funeral attendants    * Funeral Assistant* Funeral Greeter* Funeral Home Assistant* Funeral Home Associate* Mortician Helper* Pallbearer* Undertaker Helper"
+                            title = "Funeral attendants"
                         },
                         new
                         {
@@ -4969,7 +4969,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "58,230",
-                            title = "Camera operators, television, video, and film    * Electronic News Gathering Camera Operator* Motion Picture Camera Operator* Movie Shot Camera Operator* News Camera Operator* News Videographer* Television Camera Operator* Video Camera Operator"
+                            title = "Camera operators, television, video, and film"
                         },
                         new
                         {
@@ -4980,7 +4980,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "67,120",
-                            title = "Stationary engineers and boiler operators    * Boiler Engineer* Boiler Operator* Boiler Plant Operator* Boiler Room Operator* Heating, Ventilation, and Air Conditioning (HVAC) Mechanic Boiler Operator* High Pressure Boiler Operator"
+                            title = "Stationary engineers and boiler operators"
                         },
                         new
                         {
@@ -5002,7 +5002,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,130",
-                            title = "Security and fire alarm systems installers    * Alarm Adjuster* Alarm Technician* Burglar Alarm Installer* Fire Alarm Installer* Fire Alarm Technician* Home Security Alarm Installer"
+                            title = "Security and fire alarm systems installers"
                         },
                         new
                         {
@@ -5013,7 +5013,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "82,340",
-                            title = "Electrical power-line installers and repairers    * Electric Powerline Examiner* Electric Utility Lineworker* Electrical High Tension Tester* Electrical Lineworker* Power Lineworker* Underground Conduit Installer"
+                            title = "Electrical power-line installers and repairers"
                         },
                         new
                         {
@@ -5024,7 +5024,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "41,430",
-                            title = "Motorboat operators    * Launch Operator* Outboard Motorboat Operator* Speedboat Driver* Speedboat Operator* Water Taxi Ferry Operator* Water Taxi Operator"
+                            title = "Motorboat operators"
                         },
                         new
                         {
@@ -5035,7 +5035,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "43,590",
-                            title = "Roustabouts, oil and gas    * Gas Floorhand* Oil Field Roustabout* Oil Rig Floorhand* Oil Rig Roughneck* Oil and Gas Floorhand* Roustabout* Roustabout Pusher"
+                            title = "Roustabouts, oil and gas"
                         },
                         new
                         {
@@ -5046,7 +5046,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,950",
-                            title = "Special education teachers, all other    * Special Education Teacher for Adults with Disabilities"
+                            title = "Special education teachers, all other"
                         },
                         new
                         {
@@ -5057,7 +5057,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "65,740",
-                            title = "Loan officers    * Branch Lending Officer* Commercial Lender* Loan Analyst* Loan Officer* Loan Reviewer* Payday Loan Officer* Real Estate Loan Officer"
+                            title = "Loan officers"
                         },
                         new
                         {
@@ -5068,7 +5068,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "108,860",
-                            title = "Law teachers, postsecondary    * Constitutional Law Professor* Contracts Law Professor* Criminal Law Professor* Environmental Law Professor* Labor Law Professor* Torts Law Professor"
+                            title = "Law teachers, postsecondary"
                         },
                         new
                         {
@@ -5079,7 +5079,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "67,430",
-                            title = "Zoologists and wildlife biologists    * Aquatic Biologist* Entomologist* Fish Culturist* Fishery Biologist* Herpetologist* Ichthyologist* Lepidopterist* Marine Biologist* Migratory Game Bird Biologist* Ornithologist* Protozoologist* Wildlife Biologist"
+                            title = "Zoologists and wildlife biologists"
                         },
                         new
                         {
@@ -5090,7 +5090,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,790",
-                            title = "Food and tobacco roasting, baking, and drying machine operators and tenders    * Bean Roaster* Coffee Roaster* Fish Smoker* Food Dehydrator Operator* Grain Roaster* Malt House Kiln Operator* Meat Curer* Meat Smoker* Sausage Smoker* Smokehouse Worker* Tobacco Drier Operator"
+                            title = "Food and tobacco roasting, baking, and drying machine operators and tenders"
                         },
                         new
                         {
@@ -5101,7 +5101,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,930",
-                            title = "Millwrights    * Construction Millwright* Machine Erector* Machinery Dismantler* Maintenance Millwright* Manufacturing Millwright"
+                            title = "Millwrights"
                         },
                         new
                         {
@@ -5112,7 +5112,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,410",
-                            title = "Physical therapist aides    * Clinical Rehabilitation Aide* Physical Therapy Aide* Physiotherapy Aide"
+                            title = "Physical therapist aides"
                         },
                         new
                         {
@@ -5123,7 +5123,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,460",
-                            title = "Protective service workers, all other    * Warrant Server"
+                            title = "Protective service workers, all other"
                         },
                         new
                         {
@@ -5134,7 +5134,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "61,660",
-                            title = "Librarians and media collections specialists    * Acquisitions Librarian* Audio-Visual Collections Coordinator* Catalog Librarian* Children's Librarian* Collection Development Librarian* College Librarian* Electronic Resources Librarian* Film Librarian* Government Documents Librarian* High School Librarian* Interlibrary Loan Services Librarian* Law Librarian* Library Media Specialist* Medical Librarian* Multimedia Services Coordinator* Music Librarian* Periodicals Librarian* Record Librarian* Reference Librarian* Research Librarian* School Librarian* Serials Librarian* Technical Services Librarian* University Librarian* Youth Services Librarian"
+                            title = "Librarians and media collections specialists"
                         },
                         new
                         {
@@ -5145,7 +5145,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,140",
-                            title = "Court, municipal, and license clerks    * Circuit Court Clerk* City Clerk* Court Clerk* Courtroom Clerk* Deputy Court Clerk* Docket Clerk* Dog Licenser* License Clerk* Motor Vehicle License Clerk* Motor Vehicle Representative* Municipal Clerk* Tax Clerk* Township Clerk* Warrant Clerk"
+                            title = "Court, municipal, and license clerks"
                         },
                         new
                         {
@@ -5156,7 +5156,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,440",
-                            title = "First-line supervisors of housekeeping and janitorial workers    * Building Cleaning Supervisor* Cleaning Staff Supervisor* Custodial Supervisor* Head Custodian* Head School Custodian* Janitor Supervisor* Maid Supervisor* Maintenance and Custodian Supervisor"
+                            title = "First-line supervisors of housekeeping and janitorial workers"
                         },
                         new
                         {
@@ -5167,7 +5167,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "223,410",
-                            title = "Physicians, all other    * Gastroenterologist* Immunologist* Nephrologist* Oncologist* Physiatrist* Pulmonary Physician* Pulmonologist* Rheumatologist"
+                            title = "Physicians, all other"
                         },
                         new
                         {
@@ -5178,7 +5178,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "64,540",
-                            title = "Historians    * Genealogist* Historiographer* Protohistorian"
+                            title = "Historians"
                         },
                         new
                         {
@@ -5189,7 +5189,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "48,490",
-                            title = "Geological technicians, except hydrologic technicians    * Crude Tester* Geological Sample Tester* Geophysical Prospector* Magnetometer Operator* Mineral Technologist* Mining Technician* Mud Logger* Petroleum Technician* Seismic Interpreter* Seismic Observer* Seismograph Operator"
+                            title = "Geological technicians, except hydrologic technicians"
                         },
                         new
                         {
@@ -5200,7 +5200,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Dermatologists    * Dermatopathologist* Procedural Dermatologist"
+                            title = "Dermatologists"
                         },
                         new
                         {
@@ -5211,7 +5211,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Cardiologists    * Electrophysiology Cardiologist* Interventional Cardiologist"
+                            title = "Cardiologists"
                         },
                         new
                         {
@@ -5222,7 +5222,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "65,390",
-                            title = "Designers, all other    * Memorial Marker Designer"
+                            title = "Designers, all other"
                         },
                         new
                         {
@@ -5233,7 +5233,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "65,520",
-                            title = "Engineering technologists and technicians, except drafters, all other    * Agricultural Engineering Technician* Agricultural Engineering Technologist* Biomedical Engineering Technician* Biomedical Engineering Technologist* Chemical Engineering Technician* Chemical Engineering Technologist* Marine Engineering Technician* Marine Engineering Technologist* Materials Engineering Technician* Materials Engineering Technologist* Metallurgical Engineering Technician* Metallurgical Engineering Technologist* Non-Destructive Testing Specialist* Nuclear Engineering Technician* Nuclear Engineering Technologist* Optical Engineering Technician* Optical Engineering Technologist* Ordnance Engineering Technician* Ordnance Engineering Technologist* Radar Technicians* Salvage Engineering Technician* Salvage Engineering Technologist* Sonar Technicians"
+                            title = "Engineering technologists and technicians, except drafters, all other"
                         },
                         new
                         {
@@ -5244,7 +5244,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,310",
-                            title = "Pest control workers    * Exterminator* Fumigator* Insecticide Expert* Mosquito Sprayer* Pest Controller* Rat Exterminator* Rodent Exterminator* Termite Technician* Termite Treater"
+                            title = "Pest control workers"
                         },
                         new
                         {
@@ -5255,7 +5255,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "96,290",
-                            title = "First-line supervisors of police and detectives    * Commanding Officer Homicide Squad* Detective Lieutenant* Detective Supervisor* Police Lieutenant* Traffic Lieutenant* Traffic Sergeant"
+                            title = "First-line supervisors of police and detectives"
                         },
                         new
                         {
@@ -5266,7 +5266,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,300",
-                            title = "Food servers, nonrestaurant    * Boat Hop* Hospital Food Service Worker* Room Service Food Server"
+                            title = "Food servers, nonrestaurant"
                         },
                         new
                         {
@@ -5277,7 +5277,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "64,310",
-                            title = "Pile driver operators    * Diesel Pile Hammer Operator* Hydraulic Pile Hammer Operator* Hydraulic Press-In Operator* Vibratory Pile Driver"
+                            title = "Pile driver operators"
                         },
                         new
                         {
@@ -5288,7 +5288,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "69,150",
-                            title = "Transit and railroad police    * Railroad Detective* Railroad Police Officer* Track Patrol* Transit Authority Police* Transit Police Officer"
+                            title = "Transit and railroad police"
                         },
                         new
                         {
@@ -5299,7 +5299,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "224,260",
-                            title = "Neurologists    * Clinical Neuromuscular Pathologist* Epileptologist* Headache Specialist"
+                            title = "Neurologists"
                         },
                         new
                         {
@@ -5310,7 +5310,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "33,390",
-                            title = "Cooks, all other    * Falafel Cart Cook* Fraternity House Cook"
+                            title = "Cooks, all other"
                         },
                         new
                         {
@@ -5321,7 +5321,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "56,290",
-                            title = "First-line supervisors of gambling services workers    * Blackjack Pit Boss* Blackjack Supervisor* Cardroom Manager* Cardroom Supervisor* Casino Slot Supervisor* Casino Supervisor* Electronic Gambling Device Supervisor* Executive Casino Host* Gambling Supervisor* Pit Boss* Poker Room Supervisor* Slot Floor Supervisor* Slot Host* Slot Key Person* Slot Shift Manager* Table Games Supervisor"
+                            title = "First-line supervisors of gambling services workers"
                         },
                         new
                         {
@@ -5332,7 +5332,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "77,420",
-                            title = "Mathematical science teachers, postsecondary    * Actuarial Science Professor* Biostatistics Professor* Calculus Professor* Geometry Professor* Mathematics Professor* Statistical Methods Professor* Statistics Professor* Topology Professor"
+                            title = "Mathematical science teachers, postsecondary"
                         },
                         new
                         {
@@ -5343,7 +5343,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "50,840",
-                            title = "Chemical technicians    * Assayer* Chemical Laboratory Technician* Inorganic Chemical Technician"
+                            title = "Chemical technicians"
                         },
                         new
                         {
@@ -5354,7 +5354,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "61,210",
-                            title = "Industrial engineering technologists and technicians    * Industrial Engineering Technician* Industrial Engineering Technologist* Motion Study Technician* Production Control Technologist* Time Study Technician* Time Study Technologist"
+                            title = "Industrial engineering technologists and technicians"
                         },
                         new
                         {
@@ -5365,7 +5365,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Actors    * Actor Understudy* Actress* Dramatic Reader* Elocutionist* Monologist* Vaudeville Actor* Voice-Over Artist"
+                            title = "Actors"
                         },
                         new
                         {
@@ -5376,7 +5376,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "77,280",
-                            title = "Art, drama, and music teachers, postsecondary    * Ballet Professor* Graphic Design Professor* Media Arts Professor* Music Professor* Photography Professor* Piano Performance and Pedagogy Professor* Piano Professor* Scene and Lighting Design Lecturer* Stagecraft Professor* Theatre Professor* Voice Professor"
+                            title = "Art, drama, and music teachers, postsecondary"
                         },
                         new
                         {
@@ -5387,7 +5387,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "43,540",
-                            title = "Refuse and recyclable material collectors    * Garbage Collector* Recyclable Materials Collector* Refuse Collector* Scrap Metal Collector* Solid Waste Collector* Trash Collector"
+                            title = "Refuse and recyclable material collectors"
                         },
                         new
                         {
@@ -5398,7 +5398,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,110",
-                            title = "Self-enrichment teachers    * Citizenship Teacher* Driver Education Instructor* Knitting Instructor* Recreational Activities Instructor"
+                            title = "Self-enrichment teachers"
                         },
                         new
                         {
@@ -5409,7 +5409,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,980",
-                            title = "Real estate sales agents    * Agricultural Real Estate Agent* Apartment Rental Agent* Industrial Real Estate Agent* Land Sales Agent* Right of Way Agent"
+                            title = "Real estate sales agents"
                         },
                         new
                         {
@@ -5420,7 +5420,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "79,180",
-                            title = "Emergency management directors    * Director of Civil Defense* Disaster Response Director* EMS Director* Emergency Management System Director* Emergency Planner* Emergency Planning and Response Manager* Emergency Preparedness Coordinator* Emergency Services Director* Emergency Services Program Coordinator* Public Safety Director"
+                            title = "Emergency management directors"
                         },
                         new
                         {
@@ -5431,7 +5431,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "72,650",
-                            title = "Recreation and fitness studies teachers, postsecondary    * Health and Physical Education Professor* Human Performance Professor* Kinesiology Professor* Leisure Studies Professor* Physical Education (PE) Professor* Physical Education Professor* Swimming Professor"
+                            title = "Recreation and fitness studies teachers, postsecondary"
                         },
                         new
                         {
@@ -5442,7 +5442,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "76,700",
-                            title = "Fashion designers    * Apparel Designer* Clothes Designer* Clothing Designer* Costume Designer* Custom Furrier* Dance Costume Designer* Dress Designer* Hat Designer* Sweater Designer* Uniform Designer"
+                            title = "Fashion designers"
                         },
                         new
                         {
@@ -5453,7 +5453,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "82,260",
-                            title = "Budget analysts    * Budget Analyst* Budget Coordinator* Budget Examiner* Budget Officer* Cost Analyst"
+                            title = "Budget analysts"
                         },
                         new
                         {
@@ -5464,7 +5464,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,180",
-                            title = "Surveying and mapping technicians    * Cartographic Aide* Cartographic Technician* Field Map Technician* GIS Mapping Technician* Geophysical Prospecting Surveying Technician* Mapping Technician* Mineral Surveying Technician* Surveying Technician* Topography Technician"
+                            title = "Surveying and mapping technicians"
                         },
                         new
                         {
@@ -5475,7 +5475,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "104,600",
-                            title = "Engineers, all other    * Calibration Engineer* Coastal Engineer* Corrosion Control Engineer* Mathematical Engineer* Mechatronics Engineer* Metrologist* Ocean Engineer* Optical Engineer* Ordnance Engineer* Photonics Engineer* Salvage Engineer"
+                            title = "Engineers, all other"
                         },
                         new
                         {
@@ -5486,7 +5486,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "36,680",
-                            title = "Tutors    * Algebra Tutor* Reading Tutor* Spanish Tutor* Standardized Test Tutor"
+                            title = "Tutors"
                         },
                         new
                         {
@@ -5497,7 +5497,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "57,990",
-                            title = "Graphic designers    * Graphic Artist* Visual Designer"
+                            title = "Graphic designers"
                         },
                         new
                         {
@@ -5508,7 +5508,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,380",
-                            title = "Bartenders    * Barkeep* Drink Mixer* Mixologist* Taproom Attendant"
+                            title = "Bartenders"
                         },
                         new
                         {
@@ -5519,7 +5519,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "65,790",
-                            title = "Police and sheriff's patrol officers    * Border Guard* Border Patrol Officer* Campus Police Officer* Constable* Cop* Deputy Sheriff* Highway Patrol Officer* Motorcycle Police* Mounted Police* Park Police* Patrol Officer* Policeman* Policewoman* State Highway Police Officer* State Trooper"
+                            title = "Police and sheriff's patrol officers"
                         },
                         new
                         {
@@ -5530,7 +5530,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "128,620",
-                            title = "Managers, all other    * Clerk of Court* Environmental Control Administrator* Highway Patrol Commander* Safety Coordinator* Social Science Manager* Utilities Manager"
+                            title = "Managers, all other"
                         },
                         new
                         {
@@ -5541,7 +5541,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "128,970",
-                            title = "Medical dosimetrists    * Certified Medical Dosimetrist* Qualified Medical Dosimetrist"
+                            title = "Medical dosimetrists"
                         },
                         new
                         {
@@ -5552,7 +5552,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "69,760",
-                            title = "Artists and related workers, all other    * Calligrapher* Tattoo Artist"
+                            title = "Artists and related workers, all other"
                         },
                         new
                         {
@@ -5563,7 +5563,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "59,720",
-                            title = "Radio, cellular, and tower equipment installers and repairers    * Radio Frequency Technician* Radio Mechanic* Radio Repairer* Two-Way Radio Technician"
+                            title = "Radio, cellular, and tower equipment installers and repairers"
                         },
                         new
                         {
@@ -5574,7 +5574,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "69,490",
-                            title = "Media and communication equipment workers, all other    * Satellite Communications Operator"
+                            title = "Media and communication equipment workers, all other"
                         },
                         new
                         {
@@ -5585,7 +5585,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "61,030",
-                            title = "First-line supervisors of protective service workers, all other    * Animal Control Supervisor* Animal Cruelty Investigation Supervisor"
+                            title = "First-line supervisors of protective service workers, all other"
                         },
                         new
                         {
@@ -5596,7 +5596,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "76,250",
-                            title = "Communications teachers, postsecondary    * Interpersonal Communications Professor* Journalism Professor* Professor of Communication and Writing* Professor of Rhetoric* Public Speaking Professor* Speech Professor"
+                            title = "Communications teachers, postsecondary"
                         },
                         new
                         {
@@ -5607,7 +5607,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "48,090",
-                            title = "Legislators    * City Alderman* City Council Member* Congressional Representative* Councilor* Legislator* Member of Congress* Selectman* Senator* Tribal Council Member"
+                            title = "Legislators"
                         },
                         new
                         {
@@ -5618,7 +5618,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,250",
-                            title = "Separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders    * Brewmaster* Fermentation Operator* Fermenter* Linseed Oil Temperer* Milk Pasteurizer* Milk Processor* Molasses Preparer* Pasteurizer* Winemaker"
+                            title = "Separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders"
                         },
                         new
                         {
@@ -5629,7 +5629,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,900",
-                            title = "Public safety telecommunicators    * 911 Dispatcher* 911 Operator* Ambulance Dispatcher* Emergency Communications Dispatcher* Emergency Communications Operator* Emergency Operator* Emergency Telecommunications Dispatcher* Fire Dispatcher* Police Dispatcher* Police Radio Dispatcher* Public Safety Dispatcher* Public Safety Telecommunicator"
+                            title = "Public safety telecommunicators"
                         },
                         new
                         {
@@ -5640,7 +5640,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "35,330",
-                            title = "Preschool teachers, except special education    * Early Childhood Teacher* Head Start Teacher* Home-based Preschool Teacher* Nursery School Teacher* Nursery Teacher* Pre-K Teacher* Pre-Kindergarten Teacher* Preschool Head Start Teacher* Preschool Teacher"
+                            title = "Preschool teachers, except special education"
                         },
                         new
                         {
@@ -5651,7 +5651,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "88,260",
-                            title = "Subway and streetcar operators    * Light Rail Operator* Light Rail Transit Operator* Light Rail Vehicle Operator* Rapid Transit Operator* Subway Conductor* Subway Train Operator* Tram Operator* Trolley Car Operator"
+                            title = "Subway and streetcar operators"
                         },
                         new
                         {
@@ -5662,7 +5662,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,050",
-                            title = "Traffic technicians    * Highway Traffic Control Technician* Traffic Engineering Technician* Traffic Signal Technician* Transportation Planning Technician* Transportation Technician"
+                            title = "Traffic technicians"
                         },
                         new
                         {
@@ -5673,7 +5673,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "33,960",
-                            title = "Dietetic technicians    * Clinical Dietetic Technician* Cook Chill Technician* DTR* Dietary Aide* Dietary Technician* Nutrition Technician* Registered Diet Technician"
+                            title = "Dietetic technicians"
                         },
                         new
                         {
@@ -5684,7 +5684,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "80,720",
-                            title = "Chemistry teachers, postsecondary    * Chemistry Professor* Inorganic Chemistry Professor* Organic Chemistry Professor* Physical Chemistry Professor* Phytochemistry Professor"
+                            title = "Chemistry teachers, postsecondary"
                         },
                         new
                         {
@@ -5695,7 +5695,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "38,800",
-                            title = "Material moving workers, all other    * Back Hoe Operator* Backhoe Operator* Bulldozer Operator* End Loader Operator* Freight Elevator Operator* Payloader Operator* Shovel Operator"
+                            title = "Material moving workers, all other"
                         },
                         new
                         {
@@ -5706,7 +5706,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,400",
-                            title = "Travel agents    * Auto Travel Counselor* Certified Corporate Travel Executive* Certified Travel Counselor* Corporate Travel Expert* Travel Consultant* Travel Counselor* Travel Service Consultant"
+                            title = "Travel agents"
                         },
                         new
                         {
@@ -5717,7 +5717,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "62,190",
-                            title = "Real estate brokers    * Licensed Real Estate Broker"
+                            title = "Real estate brokers"
                         },
                         new
                         {
@@ -5728,7 +5728,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "126,900",
-                            title = "Computer network architects    * Computer Network Engineer* Network Designer* Network Developer* Network Engineer"
+                            title = "Computer network architects"
                         },
                         new
                         {
@@ -5739,7 +5739,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "99,940",
-                            title = "Education administrators, postsecondary    * Continuing Education Director* Director of Student Services* Graduate School Dean* Graduate Studies Dean* Provost* University Dean* University Department Chair"
+                            title = "Education administrators, postsecondary"
                         },
                         new
                         {
@@ -5750,7 +5750,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "35,890",
-                            title = "Landscaping and groundskeeping workers    * Golf Course Laborer* Greenskeeper* Greenskeeper Laborer* Grounds Caretaker* Grounds Maintenance Worker* Hedge Trimmer* Lawn Care Worker* Lawn Caretaker* Lawn Maintenance Worker* Lawn Mower* Lawn Service Worker* Shrub Planter* Sod Layer"
+                            title = "Landscaping and groundskeeping workers"
                         },
                         new
                         {
@@ -5761,7 +5761,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "55,860",
-                            title = "Pump operators, except wellhead pumpers    * Acid Pump Operator* Brewery Pumper* Concrete Pump Operator* Fluid Pump Operator"
+                            title = "Pump operators, except wellhead pumpers"
                         },
                         new
                         {
@@ -5772,7 +5772,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "97,770",
-                            title = "Atmospheric, earth, marine, and space sciences teachers, postsecondary    * Climatology Professor* Earth Science Professor* Geology Professor* Geoscience Professor* Meteorology Professor* Mineralogy Professor* Oceanic Sciences Professor* Oceanography Professor* Volcanology Professor"
+                            title = "Atmospheric, earth, marine, and space sciences teachers, postsecondary"
                         },
                         new
                         {
@@ -5783,7 +5783,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "219,810",
-                            title = "Ophthalmologists, except pediatric    * Cornea and External Disease Physician* Viteroretinal Disease Physician"
+                            title = "Ophthalmologists, except pediatric"
                         },
                         new
                         {
@@ -5794,7 +5794,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "51,330",
-                            title = "Recreational therapists    * CTRS* Certified Recreational Therapist* Certified Therapeutic Recreation Specialist* Drama Therapist* Therapeutic Recreation Specialist"
+                            title = "Recreational therapists"
                         },
                         new
                         {
@@ -5805,7 +5805,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "62,510",
-                            title = "Rail car repairers    * Freight Car Repairer* Mine Car Mechanic* Rail Car Maintenance Mechanic* Rail Car Mechanic* Streetcar Repairer* Subway Car Repairer* Tank Car Reconditioner* Trolley Car Mechanic* Trolley Car Overhauler"
+                            title = "Rail car repairers"
                         },
                         new
                         {
@@ -5816,7 +5816,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Radiologists    * Diagnostic Radiologist* Interventional Radiologist"
+                            title = "Radiologists"
                         },
                         new
                         {
@@ -5827,7 +5827,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "80,150",
-                            title = "First-line supervisors of firefighting and prevention workers    * Fire Lieutenant* Municipal Fire Fighting and Prevention Supervisor* Supervising Fire Marshal"
+                            title = "First-line supervisors of firefighting and prevention workers"
                         },
                         new
                         {
@@ -5838,7 +5838,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "76,920",
-                            title = "Postsecondary teachers, all other    * Flight Simulator Instructor* Military Science Instructor* Packaging Professor"
+                            title = "Postsecondary teachers, all other"
                         },
                         new
                         {
@@ -5849,7 +5849,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "51,680",
-                            title = "Firefighters    * Fire Engine Pump Operator* Fire Equipment Operator* Fire Fighter* Forest Firefighter* Marine Firefighter* Municipal Firefighter* Smoke Jumper* Wildland Firefighter"
+                            title = "Firefighters"
                         },
                         new
                         {
@@ -5860,7 +5860,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,980",
-                            title = "Maintenance and repair workers, general    * Building Maintenance Mechanic* Building Mechanic* Building Services Mechanic* Facilities Maintenance Worker* General Maintenance Worker* Maintenance Mechanic* Mechanics Handyman* Plant Maintenance Technician"
+                            title = "Maintenance and repair workers, general"
                         },
                         new
                         {
@@ -5871,7 +5871,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "44,930",
-                            title = "Paperhangers    * Billboard Poster* Wall Covering Installer* Wallpaper Hanger* Wallpaperer"
+                            title = "Paperhangers"
                         },
                         new
                         {
@@ -5882,7 +5882,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "69,450",
-                            title = "Fire inspectors and investigators    * Arson Investigator* CFEI* Certified Fire Investigator* Certified Fire and Explosion Investigator* Certified Vehicle Fire Investigator* Fire Hazard Inspector* Fire Investigator* Fire Prevention Inspector* Fire Safety Inspector"
+                            title = "Fire inspectors and investigators"
                         },
                         new
                         {
@@ -5893,7 +5893,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "78,970",
-                            title = "Sociology teachers, postsecondary    * Comparative Sociology Professor* Race Relations Professor* Social Organization Professor"
+                            title = "Sociology teachers, postsecondary"
                         },
                         new
                         {
@@ -5904,7 +5904,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "83,770",
-                            title = "Political science teachers, postsecondary    * Government Professor* International Relations Professor* Political Theory Professor* Public Policy Professor"
+                            title = "Political science teachers, postsecondary"
                         },
                         new
                         {
@@ -5915,7 +5915,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "100,660",
-                            title = "Health and safety engineers, except mining safety engineers and inspectors    * Fire Prevention Engineer* Fire Protection Engineer* Industrial Safety Engineer* Product Safety Engineer* Product Safety Test Engineer* System Safety Engineer"
+                            title = "Health and safety engineers, except mining safety engineers and inspectors"
                         },
                         new
                         {
@@ -5926,7 +5926,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "51,570",
-                            title = "Morticians, undertakers, and funeral arrangers    * Certified Mortician* Funeral Arrangement Director* Funeral Arranger"
+                            title = "Morticians, undertakers, and funeral arrangers"
                         },
                         new
                         {
@@ -5937,7 +5937,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,270",
-                            title = "Paving, surfacing, and tamping equipment operators    * Asphalt Paver* Asphalt Paving Machine Operator* Asphalt Roller Operator* Asphalt Tamping Machine Operator* Blacktop-Paver Operator* Paver Operator* Screed Operator"
+                            title = "Paving, surfacing, and tamping equipment operators"
                         },
                         new
                         {
@@ -5948,7 +5948,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "79,540",
-                            title = "Urban and regional planners    * City Planner* Community Development Planner* Regional Planner* Urban Planner"
+                            title = "Urban and regional planners"
                         },
                         new
                         {
@@ -5959,7 +5959,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "63,020",
-                            title = "Cardiovascular technologists and technicians    * Cardiac Catheterization Laboratory Technologist* Cardiac Catheterization Technologist* Cardiac Monitor Technician* Cardiac Technician* Cardiopulmonary Technologist* Cardiovascular Interventional Technologist* Cardiovascular Technologist* EKG Technician* Electrocardiogram Technician* Electrocardiograph Operator* Pulmonary Function Technologist"
+                            title = "Cardiovascular technologists and technicians"
                         },
                         new
                         {
@@ -5970,7 +5970,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "66,930",
-                            title = "Education teachers, postsecondary    * Literacy Education Professor* Mathematics Education Professor* Primary Education Professor* Science Education Professor* Secondary Education Professor* Special Education Professor"
+                            title = "Education teachers, postsecondary"
                         },
                         new
                         {
@@ -5981,7 +5981,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "211,300",
-                            title = "Family medicine physicians    * Board Certified Family Physician* Family Physician* Family Practice Medical Doctor* Family Practice Physician* Family Practitioner* GP Doctor* General Practitioner"
+                            title = "Family medicine physicians"
                         },
                         new
                         {
@@ -5992,7 +5992,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "73,150",
-                            title = "Writers and authors    * Advertising Copy Writer* Advertising Copywriter* Author* Biographer* Copy Writer* Copywriter* Lyricist* Novelist* Playwright* Poet* Program Writer* Radio Script Writer* Screen Writer* Short Story Writer* Song Lyricist* Television Writer* Verse Writer"
+                            title = "Writers and authors"
                         },
                         new
                         {
@@ -6003,7 +6003,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "97,710",
-                            title = "Sales representatives, wholesale and manufacturing, technical and scientific products    * Chemical Sales Representative* Electroplating Sales Representative* Engineering Supplies Sales* Pharmaceutical Detailer* Pharmaceutical Sales Representative* Pharmaceutical Salesperson* Surgical Instruments Sales Representative* Wholesale Ultrasonic Equipment Salesperson"
+                            title = "Sales representatives, wholesale and manufacturing, technical and scientific products"
                         },
                         new
                         {
@@ -6014,7 +6014,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "31,000",
-                            title = "Cleaners of vehicles and equipment    * Aircraft Cleaner* Auto Cleaner* Auto Detailer* Automobile Detailer* Beer Coil Cleaner* Boat Detailer* Bus Cleaner* Bus Washer* Car Wash Attendant* Car Washer* Equipment Cleaner* Machine Cleaner* Railroad Car Cleaner* Truck Washer"
+                            title = "Cleaners of vehicles and equipment"
                         },
                         new
                         {
@@ -6025,7 +6025,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "41,230",
-                            title = "Industrial truck and tractor operators    * Forklift Driver* Forklift Operator* Front-End Loader Operator* Hydraulic Lift Driver* Industrial Truck Operator* Reach-Lift Truck Driver* Stacker Operator"
+                            title = "Industrial truck and tractor operators"
                         },
                         new
                         {
@@ -6036,7 +6036,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "93,220",
-                            title = "Architecture teachers, postsecondary    * Architectural Design Professor* Architecture Professor* Interior Design Professor* Landscape Architecture Professor"
+                            title = "Architecture teachers, postsecondary"
                         },
                         new
                         {
@@ -6047,7 +6047,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,250",
-                            title = "Bicycle repairers    * Bicycle Mechanic* Bicycle Service Technician* Bike Mechanic"
+                            title = "Bicycle repairers"
                         },
                         new
                         {
@@ -6058,7 +6058,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,190",
-                            title = "Cleaning, washing, and metal pickling equipment operators and tenders    * Acid Dipper* Bottle Washing Machine Operator* Degreaser Operator* Glass Cleaning Machine Tender* Immersion Metal Cleaner* Metal Pickling Equipment Operator* Pickle House Operator"
+                            title = "Cleaning, washing, and metal pickling equipment operators and tenders"
                         },
                         new
                         {
@@ -6069,7 +6069,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "103,930",
-                            title = "Economics teachers, postsecondary    * Agricultural Economics Professor* Econometrics Professor* Industrial Economics Professor* Labor Economics Professor* Macroeconomics Professor* Microeconomics Professor"
+                            title = "Economics teachers, postsecondary"
                         },
                         new
                         {
@@ -6080,7 +6080,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "86,550",
-                            title = "Physics teachers, postsecondary    * Aerodynamics Professor* Astrophysics Professor* Atomic Physics Professor* Ballistics Professor* Hydrodynamics Professor* Medical Physics Professor* Nuclear Physics Professor* Thermodynamics Professor"
+                            title = "Physics teachers, postsecondary"
                         },
                         new
                         {
@@ -6091,7 +6091,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "50,290",
-                            title = "Life, physical, and social science technicians, all other    * Meteorological Aide* Polygraph Examiner"
+                            title = "Life, physical, and social science technicians, all other"
                         },
                         new
                         {
@@ -6102,7 +6102,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,360",
-                            title = "Crematory operators    * Cremation Arranger* Cremator* Crematory Operator"
+                            title = "Crematory operators"
                         },
                         new
                         {
@@ -6113,7 +6113,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "76,440",
-                            title = "Family and consumer sciences teachers, postsecondary    * Family Resource Management Professor* Family and Consumer Sciences Professor* Home Economics Professor* Home and Family Living Professor"
+                            title = "Family and consumer sciences teachers, postsecondary"
                         },
                         new
                         {
@@ -6124,7 +6124,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "38,150",
-                            title = "Craft artists    * Hand Potter* Metal Crafts Artist* Quilter"
+                            title = "Craft artists"
                         },
                         new
                         {
@@ -6135,7 +6135,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "80,910",
-                            title = "Area, ethnic, and cultural studies teachers, postsecondary    * African Studies Professor* Asian Studies Professor* Black Studies Professor* Ethnology Professor* Gender Studies Professor* Latin American Studies Professor* Women's Studies Professor"
+                            title = "Area, ethnic, and cultural studies teachers, postsecondary"
                         },
                         new
                         {
@@ -6146,7 +6146,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,430",
-                            title = "Transportation workers, all other    * Pedicab Driver* Rickshaw Driver"
+                            title = "Transportation workers, all other"
                         },
                         new
                         {
@@ -6157,7 +6157,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "2",
                             median_annual_wage = "34,710",
-                            title = "Food processing workers, all other    * Olive Pitter* Pasta Press Operator* Poultry Hanger* Yeast Maker"
+                            title = "Food processing workers, all other"
                         },
                         new
                         {
@@ -6168,7 +6168,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "87,300",
-                            title = "Biological scientists, all other    * Biologist* Bryologist* Embryologist* Osteologist* Paleobotanist* Phytopathologist* Plant Etiologist"
+                            title = "Biological scientists, all other"
                         },
                         new
                         {
@@ -6179,7 +6179,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "211,790",
-                            title = "Airline pilots, copilots, and flight engineers    * Airline Captain* Airline Pilot* Airline Pilot Flight Instructor* Airline Pilot In Command* Airline Pilot Second In Command* Airline Transport Pilot* Charter Pilot (Air Transport Pilot Certificate Required)* Charter Pilot (Airline)* Regional Airline Pilot"
+                            title = "Airline pilots, copilots, and flight engineers"
                         },
                         new
                         {
@@ -6190,7 +6190,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,590",
-                            title = "Interior designers    * Certified Kitchen Designer* Furniture Arranger* Home Lighting Adviser* Interior Decorator* Interior Designer* Kitchen Designer* Kitchen and Bath Designer"
+                            title = "Interior designers"
                         },
                         new
                         {
@@ -6201,7 +6201,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "85,000",
-                            title = "Anthropology and archeology teachers, postsecondary    * Cultural Anthropology Professor* Ethnoarchaeology Professor* Near East Archeology Professor* Paleology Professor* Sociocultural Anthropology Professor"
+                            title = "Anthropology and archeology teachers, postsecondary"
                         },
                         new
                         {
@@ -6212,7 +6212,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "39,320",
-                            title = "Animal control workers    * Animal Control Officer* Animal Cruelty Investigator* Animal Treatment Investigator* Animal Warden* Dog Catcher* Dog Warden* Humane Officer"
+                            title = "Animal control workers"
                         },
                         new
                         {
@@ -6223,7 +6223,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "66,510",
-                            title = "Social work teachers, postsecondary    * Family Welfare Social Work Professor* Geriatric Social Work Professor* Health Social Work Professor* Social Work Professor"
+                            title = "Social work teachers, postsecondary"
                         },
                         new
                         {
@@ -6234,7 +6234,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "34,770",
-                            title = "Demonstrators and product promoters    * Home Demonstrator* Home Service Demonstrator* Hostess Party Sales Representative* In-Store Demonstrator"
+                            title = "Demonstrators and product promoters"
                         },
                         new
                         {
@@ -6245,7 +6245,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "103,910",
-                            title = "Commercial pilots    * Aerial Crop Duster* Aerial Hurricane Hunter* Aerial Sprayer* Agricultural Pilot* Air Ambulance Captain* Air Tour Pilot* Balloon Pilot* Charter Pilot (Commercial Pilot Certificate Required)* Charter Pilot (Commercial)* Commercial Helicopter Pilot* Corporate Pilot* EMS Helicopter Pilot* Emergency Medical Service Helicopter Pilot* Emergency Medical Service Rotary Wing Pilot* Executive Pilot* Flight Instructor (Commercial Pilots)* Helicopter Pilot"
+                            title = "Commercial pilots"
                         },
                         new
                         {
@@ -6256,7 +6256,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "130,600",
-                            title = "Sales managers    * District Sales Manager* E-Commerce Director* Export Manager* Regional Sales Manager* Sales Account Manager* Sales Director* Territory Sales Manager"
+                            title = "Sales managers"
                         },
                         new
                         {
@@ -6267,7 +6267,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "76,370",
-                            title = "Library science teachers, postsecondary    * Library and Information Science Professor* Library and Information Technology Instructor* Medical Records Library Professor"
+                            title = "Library science teachers, postsecondary"
                         },
                         new
                         {
@@ -6278,7 +6278,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,630",
-                            title = "Passenger attendants    * Dining Car Steward* Ship Steward* Sleeping Car Service Attendant* Train Attendant"
+                            title = "Passenger attendants"
                         },
                         new
                         {
@@ -6289,7 +6289,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "64,460",
-                            title = "Conservation scientists    * Conservation Science Officer* Grassland Conservationist* Land Reclamation Specialist* Land Resource Specialist* Range Conservationist* Range Ecologist* Range Scientist* Resource Conservationist* Soil Conservationist* Water Conservationist"
+                            title = "Conservation scientists"
                         },
                         new
                         {
@@ -6300,7 +6300,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "33,380",
-                            title = "Crossing guards and flaggers    * Construction Site Crossing Guard* Crossing Guard* School Crossing Guard* School Traffic Guard"
+                            title = "Crossing guards and flaggers"
                         },
                         new
                         {
@@ -6311,7 +6311,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,170",
-                            title = "Photographers    * Advertising Photographer* Aerial Photographer* Industrial Photographer* Marine Photographer* Medical Photographer* News Photographer* Newspaper Photojournalist* Photojournalist* Portrait Photographer* School Photographer* Wedding Photographer"
+                            title = "Photographers"
                         },
                         new
                         {
@@ -6322,7 +6322,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "159,920",
-                            title = "Architectural and engineering managers    * Electrical Engineering Director* Engineering Design Manager* Engineering Manager* Engineering Research Manager* Global Engineering Manager* Mechanical Engineering Director* Process Engineering Manager"
+                            title = "Architectural and engineering managers"
                         },
                         new
                         {
@@ -6333,7 +6333,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "35,250",
-                            title = "Substitute teachers, short-term    * Elementary School Substitute Teacher* English Substitute Teacher"
+                            title = "Substitute teachers, short-term"
                         },
                         new
                         {
@@ -6344,7 +6344,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "62,400",
-                            title = "Sales representatives of services, except advertising, insurance, financial services, and travel    * Automobile Club Membership Sales Agent* Bookkeeping Service Sales Agent* Business Services Sales Representative* Membership Solicitor* Pest Control Service Sales Agent"
+                            title = "Sales representatives of services, except advertising, insurance, financial services, and travel"
                         },
                         new
                         {
@@ -6355,7 +6355,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "75,990",
-                            title = "Business operations specialists, all other    * Mystery Shopper* Ship Purser"
+                            title = "Business operations specialists, all other"
                         },
                         new
                         {
@@ -6366,7 +6366,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "35,760",
-                            title = "Nursing assistants    * C.N.A.* Certified Nurse Aide* Certified Nursing Assistant* Hospital Aide* Hospital Attendant* Nursing Aide* Nursing Attendant* Nursing Care Attendant"
+                            title = "Nursing assistants"
                         },
                         new
                         {
@@ -6377,7 +6377,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
                             median_annual_wage = "49,920",
-                            title = "Heavy and tractor-trailer truck drivers    * Auto Carrier Driver* Cement Truck Driver* Concrete Mixer Driver* Concrete Mixer Truck Driver* Dump Truck Driver* Fuel Truck Driver* Garbage Truck Driver* Line Haul Driver* Log Truck Tractor-Trailer Driver* Logging Flatbed Truck Driver* Logging Truck Driver* Over-the-Road Driver* Self-loading Flatbed Truck Driver* Semi-Truck Driver* Tanker Driver* Tow Truck Operator"
+                            title = "Heavy and tractor-trailer truck drivers"
                         },
                         new
                         {
@@ -6388,7 +6388,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "63,940",
-                            title = "Anthropologists and archeologists    * Anthropologist* Applied Anthropologist* Archaeologist* Ethnoarchaeologist* Medical Anthropologist* Physical Anthropologist* Political Anthropologist* Research Anthropologist* Research Archaeologist"
+                            title = "Anthropologists and archeologists"
                         },
                         new
                         {
@@ -6399,7 +6399,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "83,040",
-                            title = "Environmental science teachers, postsecondary    * Environmental Science Professor* Environmental Science, Management and Policy Professor* Environmental Studies Professor"
+                            title = "Environmental science teachers, postsecondary"
                         },
                         new
                         {
@@ -6410,7 +6410,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Disc jockeys, except radio    * Club DJ* DJ* Deejay"
+                            title = "Disc jockeys, except radio"
                         },
                         new
                         {
@@ -6421,7 +6421,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,520",
-                            title = "Orderlies    * Emergency Room Orderly* Hospital Orderly* Medical Orderly* Surgical Orderly"
+                            title = "Orderlies"
                         },
                         new
                         {
@@ -6432,7 +6432,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "38,050",
-                            title = "Teaching assistants, postsecondary    * Assistant Instructor* College Biology Teaching Assistant* University Teaching Assistant"
+                            title = "Teaching assistants, postsecondary"
                         },
                         new
                         {
@@ -6443,7 +6443,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "103,320",
-                            title = "Electrical engineers    * Electrical Design Engineer* Electrical Systems Engineer* Illuminating Engineer* Power Distribution Engineer"
+                            title = "Electrical engineers"
                         },
                         new
                         {
@@ -6454,7 +6454,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,780",
-                            title = "Amusement and recreation attendants    * Amusement Park Worker* Animal Ride Attendant* Arcade Attendant* Carnival Worker* Ferris Wheel Operator* Golf Caddy* Ice Rink Attendant* Ride Operator* Rides Attendant* Ski Lift Attendant* Ski Lift Operator* Sports Complex Attendant"
+                            title = "Amusement and recreation attendants"
                         },
                         new
                         {
@@ -6465,7 +6465,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "59,200",
-                            title = "Paralegals and legal assistants    * Assistant Paralegal* Legal Aide* Legal Assistant* Paralegal* Summer Associate"
+                            title = "Paralegals and legal assistants"
                         },
                         new
                         {
@@ -6476,7 +6476,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,630",
-                            title = "Production, planning, and expediting clerks    * Expeditor* Material Control Clerk* Material Expediter* Mill Recorder* Production Control Clerk* Production Control Coordinating Clerk* Production Control Coordinator* Production Scheduler* Work Ticket Distributor"
+                            title = "Production, planning, and expediting clerks"
                         },
                         new
                         {
@@ -6487,7 +6487,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "29,120",
-                            title = "Dining room and cafeteria attendants and bartender helpers    * Banquet Set Up Person* Bar Back* Barback* Buffet Attendant* Bus Person* Busser* Lunchroom Attendant"
+                            title = "Dining room and cafeteria attendants and bartender helpers"
                         },
                         new
                         {
@@ -6498,7 +6498,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "98,100",
-                            title = "General and operations managers    * Department Store General Manager* Department Store Manager* General Manager* General Superintendent* Manufacturing Operations Manager* Operational Risk Manager* Operations Manager* Radio Station Manager* Television Store Manager"
+                            title = "General and operations managers"
                         },
                         new
                         {
@@ -6509,7 +6509,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "75,450",
-                            title = "Avionics technicians    * Aircraft Armament Mechanic* Aircraft Electrician* Aircraft Instrument Mechanic* Airplane Electrician* Automatic Pilot Mechanic* Aviation Electronics Technician* In-Flight Refueling System Repairer"
+                            title = "Avionics technicians"
                         },
                         new
                         {
@@ -6520,7 +6520,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "56,090",
-                            title = "Personal service managers, all other    * Day Spa Director* Nail Salon Manager* Travel Agency Manager"
+                            title = "Personal service managers, all other"
                         },
                         new
                         {
@@ -6531,7 +6531,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "65,000",
-                            title = "Media and communication workers, all other    * Public Address Announcer* Stage Technician* Train Announcer* Train Caller"
+                            title = "Media and communication workers, all other"
                         },
                         new
                         {
@@ -6542,7 +6542,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "53,640",
-                            title = "Interpreters and translators    * American Sign Language Interpreter* Court Interpreter* Deaf Interpreter* Diplomatic Interpreter* Language Translator* Translator"
+                            title = "Interpreters and translators"
                         },
                         new
                         {
@@ -6553,7 +6553,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "30,840",
-                            title = "Food preparation and serving related workers, all other    * Kitchen Steward"
+                            title = "Food preparation and serving related workers, all other"
                         },
                         new
                         {
@@ -6564,7 +6564,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "70,010",
-                            title = "Aircraft mechanics and service technicians    * A&P Mechanic* Aircraft Engine Mechanic* Aircraft Engine Specialist* Airframe Mechanic* Airframe and Power Plant Mechanic* Airplane Rigger* FAA Certified Powerplant Mechanic* Flight Test Mechanic* Helicopter Engine Mechanic* Helicopter Mechanic* Jet Engine Mechanic* Propeller-Driven Airplane Mechanic"
+                            title = "Aircraft mechanics and service technicians"
                         },
                         new
                         {
@@ -6575,7 +6575,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "81,920",
-                            title = "Geography teachers, postsecondary    * Cartography Professor* GIS Professor* Geographic Information Systems Professor* Geomatics Professor"
+                            title = "Geography teachers, postsecondary"
                         },
                         new
                         {
@@ -6586,7 +6586,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "83,780",
-                            title = "Atmospheric and space scientists    * Atmospheric Chemist* Atmospheric Scientist* Climatologist* Hurricane Tracker* Meteorologist* Oceanographic Meteorologist* Space Scientist* Storm Chaser* Tornado Chaser* Warning Coordination Meteorologist* Weather Analyst* Weather Forecaster* Weatherman"
+                            title = "Atmospheric and space scientists"
                         },
                         new
                         {
@@ -6597,7 +6597,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "62,050",
-                            title = "Calibration technologists and technicians    * Calibration Technician* Calibration Technologist* Hydrometer Calibrator"
+                            title = "Calibration technologists and technicians"
                         },
                         new
                         {
@@ -6608,7 +6608,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "131,350",
-                            title = "Purchasing managers    * Contract Administrator* Contracting Manager* Director of Strategic Sourcing* Procurement Manager* Purchasing Director* Sourcing Manager"
+                            title = "Purchasing managers"
                         },
                         new
                         {
@@ -6619,7 +6619,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "155,040",
-                            title = "Dentists, general    * Family Dentist"
+                            title = "Dentists, general"
                         },
                         new
                         {
@@ -6630,7 +6630,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "40,750",
-                            title = "Construction laborers    * Air Hammer Operator* Construction Craft Laborer* Construction Trench Digger"
+                            title = "Construction laborers"
                         },
                         new
                         {
@@ -6641,7 +6641,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "78,000",
-                            title = "Accountants and auditors    * Account Auditor* Accountant* Auditor* Auditor-In-Charge* CPA* Certified Public Accountant* Cost Accountant* Field Auditor* Financial Accountant* Financial Auditor* Fund Accountant* Internal Auditor* Payroll Auditor* Tax Accountant"
+                            title = "Accountants and auditors"
                         },
                         new
                         {
@@ -6652,7 +6652,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "98,590",
-                            title = "Sociologists    * Criminologist* Family Sociologist* Penologist* Rural Sociologist* Urban Sociologist"
+                            title = "Sociologists"
                         },
                         new
                         {
@@ -6663,7 +6663,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "174,360",
-                            title = "Orthodontists    * Dentofacial Orthopedics Dentist* Invisible Braces Orthodontist* Pediatric Orthodontist"
+                            title = "Orthodontists"
                         },
                         new
                         {
@@ -6674,7 +6674,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "41,760",
-                            title = "Agricultural technicians    * Agronomy Technician* Artificial Breeding Technician* Cotton Program Technician* Feed Mill Lab Technician* Feed Research Technician* Seed Analyst* Sugarcane Research Technician* Weed Science Research Technician"
+                            title = "Agricultural technicians"
                         },
                         new
                         {
@@ -6685,7 +6685,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,120",
-                            title = "Sales and related workers, all other    * Auctioneer* Blood Donor Recruiter* Leaflet Distributor* Livestock Auctioneer* Pawn Shop Clerk* Personal Shopper* Store Gift Wrap Associate"
+                            title = "Sales and related workers, all other"
                         },
                         new
                         {
@@ -6707,7 +6707,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "101,480",
-                            title = "Construction managers    * Construction Coordinator* Construction Superintendent* General Contractor* Masonry Contractor Administrator"
+                            title = "Construction managers"
                         },
                         new
                         {
@@ -6718,7 +6718,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "128,330",
-                            title = "Astronomers    * Astrophysicist* Cosmologist* Extragalactic Astronomer* Galactic Astronomer* High-energy Astrophysicist* Optical Astronomer* Planetary Astronomer* Radio Astronomer* Solar Astronomer* Stellar Astronomer* Theoretical Astronomer"
+                            title = "Astronomers"
                         },
                         new
                         {
@@ -6729,7 +6729,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Physicians, pathologists    * Clinical Pathologist* Immunopathologist* Neuropathologist"
+                            title = "Physicians, pathologists"
                         },
                         new
                         {
@@ -6740,7 +6740,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,080",
-                            title = "Surveyors    * City Surveyor* County Surveyor* Geodetic Surveyor* Geophysical Prospecting Surveyor* Land Surveyor* Mine Surveyor* Mineral Surveyor* Registered Land Surveyor* Topographical Surveyor"
+                            title = "Surveyors"
                         },
                         new
                         {
@@ -6751,7 +6751,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "132,360",
-                            title = "Computer hardware engineers    * Computer Hardware Designer* Computer Hardware Developer"
+                            title = "Computer hardware engineers"
                         },
                         new
                         {
@@ -6773,7 +6773,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "99,030",
-                            title = "Facilities managers    * Conference Center Manager* Director of University Housing* Stadium Manager"
+                            title = "Facilities managers"
                         },
                         new
                         {
@@ -6784,7 +6784,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,680",
-                            title = "Recreation workers    * Camp Counselor* Recreation Assistant* Recreational Activities Aide* Recreational Activities Assistant* Recreational Aide"
+                            title = "Recreation workers"
                         },
                         new
                         {
@@ -6795,7 +6795,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "71,690",
-                            title = "Compliance officers    * Air Pollution Compliance Inspector* Compliance Investigator* Driver's License Examiner* EEO Officer* Environmental Compliance Inspector* Equal Employment Opportunity Investigator* Equal Employment Opportunity Officer* Equal Employment Opportunity Representative* Immigration Investigator* Inspector of Weights and Measures* License Inspector* Mortician Investigator* Wage and Hour Investigator"
+                            title = "Compliance officers"
                         },
                         new
                         {
@@ -6806,7 +6806,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,750",
-                            title = "Packaging and filling machine operators and tenders    * Bottle Capper* Bottle Line Worker* Bottle Packer* Can Filler* Can Sealer* Keg Filler* Potato Chip Packaging Machine Operator* Tea Bag Packer"
+                            title = "Packaging and filling machine operators and tenders"
                         },
                         new
                         {
@@ -6817,7 +6817,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "65,730",
-                            title = "Soil and plant scientists    * Agriculturist* Agronomist* Arboreal Scientist* Crop Nutrition Scientist* Floriculturist* Horticulturist* Plant Physiologist* Plant Scientist* Pomologist* Soil Fertility Extension Specialist* Soil Scientist* Viticulturist"
+                            title = "Soil and plant scientists"
                         },
                         new
                         {
@@ -6828,7 +6828,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,050",
-                            title = "Aircraft service attendants    * Aircraft De-Icer* Aircraft Refueler* Airplane Refueler"
+                            title = "Aircraft service attendants"
                         },
                         new
                         {
@@ -6839,7 +6839,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "142,850",
-                            title = "Physicists    * Computational Physicist* Condensed Matter Physicist* Fluid Dynamicist* Health Physicist* Mathematical Physicist* Medical Physicist* Molecular Physicist* Nuclear Physicist* Optical Scientist* Plasma Physicist* Research Physicist* Rheologist* Thermodynamic Physicist* Thermodynamicist"
+                            title = "Physicists"
                         },
                         new
                         {
@@ -6850,7 +6850,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "108,530",
-                            title = "Sales engineers    * Aerospace Products Sales Engineer* Missile Navigation Systems Sales Engineer* Nuclear Equipment Sales Engineer"
+                            title = "Sales engineers"
                         },
                         new
                         {
@@ -6861,7 +6861,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "50,660",
-                            title = "Audio and video technicians    * Audio-Visual Production Specialist* Event AV Operator* Video Control Operator* Video Equipment Technician* Video Production Assistant"
+                            title = "Audio and video technicians"
                         },
                         new
                         {
@@ -6872,7 +6872,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "49,650",
-                            title = "Biological technicians    * Bacteriology Technician* Biochemistry Technician* Biology Laboratory Assistant* Marine Fisheries Technician* Microbiology Technician* Wildlife Technician"
+                            title = "Biological technicians"
                         },
                         new
                         {
@@ -6894,7 +6894,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "73,630",
-                            title = "Electrical and electronics installers and repairers, transportation equipment    * Locomotive Electrician* Marine Electronics Repairer* Marine Electronics Technician"
+                            title = "Electrical and electronics installers and repairers, transportation equipment"
                         },
                         new
                         {
@@ -6905,7 +6905,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "85,860",
-                            title = "Agricultural sciences teachers, postsecondary    * Agricultural Soil Conservation Professor* Agronomy Professor* Animal Husbandry Professor* Animal Science Professor* Aquaculture and Fisheries Professor* Farm Management Professor* Floriculture Professor* Horticulture Instructor* Olericulture Professor"
+                            title = "Agricultural sciences teachers, postsecondary"
                         },
                         new
                         {
@@ -6916,7 +6916,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "50,470",
-                            title = "Social science research assistants    * City Planning Aide* Economic Research Assistant* Economist Research Assistant* Historian Research Assistant* Political Science Research Assistant* Psychologist Research Assistant* Sociology Research Assistant"
+                            title = "Social science research assistants"
                         },
                         new
                         {
@@ -6927,7 +6927,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "144,440",
-                            title = "Natural sciences managers    * Agricultural Research Director* Geochemical Manager* Geophysical Manager* Ocean Program Administrator"
+                            title = "Natural sciences managers"
                         },
                         new
                         {
@@ -6938,7 +6938,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "82,840",
-                            title = "Architects, except landscape and naval    * Building Architect* Building Architectural Designer* Structural Architect"
+                            title = "Architects, except landscape and naval"
                         },
                         new
                         {
@@ -6949,7 +6949,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,060",
-                            title = "Occupational therapy aides    * Certified Occupational Rehabilitation Aide* OT Aide* Occupational Rehabilitation Aide* Occupational Therapist Aide* Rehabilitation Services Aide"
+                            title = "Occupational therapy aides"
                         },
                         new
                         {
@@ -6960,7 +6960,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "49,600",
-                            title = "Airfield operations specialists    * Aviation Operations Specialist* Flight Operations Coordinator"
+                            title = "Airfield operations specialists"
                         },
                         new
                         {
@@ -6971,7 +6971,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,160",
-                            title = "Psychiatric aides    * Mental Health Orderly* Psychiatric Nursing Aide* Psychiatric Orderly* Psychiatric Technician Assistant"
+                            title = "Psychiatric aides"
                         },
                         new
                         {
@@ -6982,7 +6982,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "32,780",
-                            title = "Bakers    * Bagel Maker* Bread Baker* Dough Maker* Pastry Baker* Pastry Finisher* Pie Baker* Pie Maker"
+                            title = "Bakers"
                         },
                         new
                         {
@@ -7004,7 +7004,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "2",
                             median_annual_wage = "37,050",
-                            title = "First-line supervisors of food preparation and serving workers    * Banquet Supervisor* Bar Manager* Cafeteria Manager* Dairy Bar Manager* Food Service Supervisor* Head Waiter* Head Waitress* Kitchen Supervisor"
+                            title = "First-line supervisors of food preparation and serving workers"
                         },
                         new
                         {
@@ -7015,7 +7015,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "239,200",
-                            title = "Oral and maxillofacial surgeons    * Dental Surgeon* Maxillofacial Surgeon* Oral Surgeon"
+                            title = "Oral and maxillofacial surgeons"
                         },
                         new
                         {
@@ -7026,7 +7026,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "50,990",
-                            title = "Choreographers    * Dance Director* Dance Master"
+                            title = "Choreographers"
                         },
                         new
                         {
@@ -7037,7 +7037,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,470",
-                            title = "Costume attendants    * Theatrical Wardrobe Attendant* Theatrical Wardrobe Dresser* Wardrobe Assistant* Wardrobe Attendant* Wardrobe Custodian* Wardrobe Dresser* Wardrobe Supervisor"
+                            title = "Costume attendants"
                         },
                         new
                         {
@@ -7048,7 +7048,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "64,030",
-                            title = "Arbitrators, mediators, and conciliators    * Alternative Dispute Resolution Coordinator* Mediation Commissioner* Ombudsman"
+                            title = "Arbitrators, mediators, and conciliators"
                         },
                         new
                         {
@@ -7059,7 +7059,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "71,890",
-                            title = "Cartographers and photogrammetrists    * Cadastral Mapper* Digital Cartographer* Engineer, Photogrammetric* Map Maker* Mapper* Orthophotography Technician* Photo Cartographer* Photogrammetrist* Topographer"
+                            title = "Cartographers and photogrammetrists"
                         },
                         new
                         {
@@ -7070,7 +7070,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "89,940",
-                            title = "Civil engineers    * Architectural Engineer* Bridge Engineer* Construction Engineer* Facilities Engineer* Geotechnical Engineer* Highway Engineer* Hydrographic Engineer* Railroad Design Consultant* Research Hydraulic Engineer* Structural Engineer"
+                            title = "Civil engineers"
                         },
                         new
                         {
@@ -7081,7 +7081,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Some college, no degree",
                             industry = "-",
                             median_annual_wage = "57,890",
-                            title = "Computer user support specialists    * Computer Customer Support Specialist* Computer Help Desk Representative* Computer Help Desk Specialist* End-User Support Specialist* Help Desk Analyst* Help Desk Technician* IT Support Specialist* PC Support Specialist"
+                            title = "Computer user support specialists"
                         },
                         new
                         {
@@ -7092,7 +7092,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "42,890",
-                            title = "Cooling and freezing equipment operators and tenders    * Ammonia Refrigeration Worker* Chiller Operator* Chiller Tender* Freezer Operator* Refrigerating Machine Operator* Refrigeration Operator"
+                            title = "Cooling and freezing equipment operators and tenders"
                         },
                         new
                         {
@@ -7103,7 +7103,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "104,380",
-                            title = "Materials scientists    * Metal Alloy Scientist* Plastics Scientist"
+                            title = "Materials scientists"
                         },
                         new
                         {
@@ -7114,7 +7114,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "99,550",
-                            title = "Bioengineers and biomedical engineers    * Bio-Mechanical Engineer* Biochemical Engineer* Biomaterials Engineer* Biomedical Engineer* Dialysis Engineer* Genetic Engineer"
+                            title = "Bioengineers and biomedical engineers"
                         },
                         new
                         {
@@ -7125,7 +7125,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "100,140",
-                            title = "Materials engineers    * Automotive Sheet Metal Engineer* Ceramic Engineer* Forensic Materials Engineer* Glass Science Engineer* Metallographer* Metallurgical Engineer* Metallurgist* Welding Engineer"
+                            title = "Materials engineers"
                         },
                         new
                         {
@@ -7136,7 +7136,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "87,480",
-                            title = "Geoscientists, except hydrologists and geographers    * Crystallographer* Development Geologist* Environmental Geologist* Exploration Geologist* Geochemist* Geodesist* Geologist* Geomagnetist* Geophysicist* Geoscientist* Mine Geologist* Mineralogist* Mining Production Geologist* Oceanographer* Oceanologist* Paleontologist* Petroleum Geologist* Petrologist* Research Geologist* Sedimentationist* Seismologist* Stratigrapher* Volcanologist"
+                            title = "Geoscientists, except hydrologists and geographers"
                         },
                         new
                         {
@@ -7147,7 +7147,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "107,390",
-                            title = "Fundraising managers    * Donor Relations Manager* Foundation Director* Funding Coordinator* Fundraising Director"
+                            title = "Fundraising managers"
                         },
                         new
                         {
@@ -7158,7 +7158,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "106,420",
-                            title = "Psychologists, all other    * Developmental Psychologist* Experimental Psychologist* Forensic Psychologist* Neuropsychologist* Psychotherapist* Rehabilitation Psychologist* Social Psychologist* Sports Psychologist"
+                            title = "Psychologists, all other"
                         },
                         new
                         {
@@ -7169,7 +7169,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "59,440",
-                            title = "Mobile heavy equipment mechanics, except engines    * Bulldozer Mechanic* Construction Equipment Mechanic* Dragline Mechanic* Forklift Mechanic* Forklift Technician* Logging Equipment Mechanic"
+                            title = "Mobile heavy equipment mechanics, except engines"
                         },
                         new
                         {
@@ -7180,7 +7180,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "96,500",
-                            title = "Forestry and conservation science teachers, postsecondary    * Ecology Professor* Environmental Conservation Professor* Forest Biometrics Professor* Forest Ecology Professor* Forest Management Professor* Forest Pathology Professor* Forest Resources Professor* Forest Technology Professor* Silviculture Professor* Timber Management Professor* Wildlife Conservation Professor"
+                            title = "Forestry and conservation science teachers, postsecondary"
                         },
                         new
                         {
@@ -7191,7 +7191,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "83,930",
-                            title = "Life scientists, all other    * Life Science Taxonomist"
+                            title = "Life scientists, all other"
                         },
                         new
                         {
@@ -7202,7 +7202,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "57,290",
-                            title = "Surgical assistants    * Surgical First Assistant"
+                            title = "Surgical assistants"
                         },
                         new
                         {
@@ -7213,7 +7213,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "2",
                             median_annual_wage = "47,860",
-                            title = "Food science technicians    * Flavor Technician* Food Quality Control Technician* Food Quality Technician"
+                            title = "Food science technicians"
                         },
                         new
                         {
@@ -7224,7 +7224,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "81,990",
-                            title = "Microbiologists    * Bacteriologist* Clinical Microbiologist* Medical Microbiologist* Microbiological Analyst* Public Health Microbiologist* Quality Control Microbiologist* Virologist"
+                            title = "Microbiologists"
                         },
                         new
                         {
@@ -7235,7 +7235,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "57,560",
-                            title = "Fine artists, including painters, sculptors, and illustrators    * Book Illustrator* Caricature Artist* Comic Artist* Comic Book Artist* Comic Illustrator* Commercial Artist* Concrete Sculptor* Editorial Cartoonist* Fashion Illustrator* Free Lance Artist* Fresco Artist* Glass Artist* Ice Sculptor* Medical Illustrator* Mural Painter* Muralist* Non-Representational Metal Sculptor* Oil Painter* Pattern Illustrator* Political Cartoonist* Portrait Artist* Portrait Painter* Scientific Illustrator* Sketch Artist* Sports Cartoonist* Stained Glass Artist* Water Colorist* Watercolor Artist"
+                            title = "Fine artists, including painters, sculptors, and illustrators"
                         },
                         new
                         {
@@ -7246,7 +7246,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "60,160",
-                            title = "Healthcare practitioners and technical workers, all other    * Podiatric Technician* Traditional Chinese Herbalist"
+                            title = "Healthcare practitioners and technical workers, all other"
                         },
                         new
                         {
@@ -7257,7 +7257,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "78,810",
-                            title = "Psychology teachers, postsecondary    * Applied Psychology Professor* Child Development Professor* Clinical Psychology Professor* Educational Psychology Professor* Human Relations Professor* Industrial Psychology Professor* Industrial/Organizational Psychology Professor* Psychology Professor"
+                            title = "Psychology teachers, postsecondary"
                         },
                         new
                         {
@@ -7268,7 +7268,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,190",
-                            title = "Fundraisers    * Campaign Fundraiser* Donor Relations Officer* Fundraising Officer"
+                            title = "Fundraisers"
                         },
                         new
                         {
@@ -7279,7 +7279,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "130,000",
-                            title = "Human resources managers    * Employee Relations Manager* Job Analysis Manager* Labor Relations Director* Personnel Administrator* Personnel Director* Personnel Manager* Position Description Manager"
+                            title = "Human resources managers"
                         },
                         new
                         {
@@ -7290,7 +7290,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Dancers    * Ballerina* Ballet Company Member* Ballet Dancer* Ballet Soloist* Burlesque Dancer* Dance Artist* Discotheque Dancer* Exotic Dancer* Go-Go Dancer* Line Dancer* Soft Shoe Dancer* Tap Dancer"
+                            title = "Dancers"
                         },
                         new
                         {
@@ -7301,7 +7301,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "72,220",
-                            title = "Acupuncturists    * Acupuncture Physician* Licensed Acupuncturist"
+                            title = "Acupuncturists"
                         },
                         new
                         {
@@ -7312,7 +7312,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "84,760",
-                            title = "Computer science teachers, postsecondary    * C++ Professor* Computer Information Systems Professor* Computer Programming Professor* IT Professor* Information Systems Professor* Information Technology Professor* Java Programming Professor"
+                            title = "Computer science teachers, postsecondary"
                         },
                         new
                         {
@@ -7323,7 +7323,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "56,520",
-                            title = "Chefs and head cooks    * Banquet Chef* Chef De Cuisine* Chef De Froid* Executive Chef* Head Chef* Kitchen Chef* Master Chef* Pastry Chef* Sous Chef* Sushi Chef"
+                            title = "Chefs and head cooks"
                         },
                         new
                         {
@@ -7334,7 +7334,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "50,820",
-                            title = "Child, family, and school social workers    * C-CYFSW* Certified Children, Youth, and Family Social Worker* Child Abuse Worker* Child Protective Services Social Worker* Child Protective Services Specialist* Child Welfare Social Worker* Child Welfare Worker* Child and Family Services Worker* Family Preservation Caseworker* Family Preservation Worker* Family Service Caseworker* Foster Care Social Worker* Foster Care Worker* School Social Worker"
+                            title = "Child, family, and school social workers"
                         },
                         new
                         {
@@ -7345,7 +7345,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "54,620",
-                            title = "Licensed practical and licensed vocational nurses    * LP Nurse* LPN* LVN* Licensed Practical Nurse* Licensed Vocational Nurse* Pediatric Licensed Practical Nurse* Triage Licensed Practical Nurse"
+                            title = "Licensed practical and licensed vocational nurses"
                         },
                         new
                         {
@@ -7356,7 +7356,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,110",
-                            title = "Laborers and freight, stock, and material movers, hand    * Cargo Handler* Cart Pusher* Freight Handler* Grave Digger* Manufacturing Laborer* Material Handler* Package Handler* Shipping and Receiving Material Handler* Van Loader* Wharf Laborer"
+                            title = "Laborers and freight, stock, and material movers, hand"
                         },
                         new
                         {
@@ -7367,7 +7367,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "27,260",
-                            title = "Entertainment attendants and related workers, all other    * Jockey Valet"
+                            title = "Entertainment attendants and related workers, all other"
                         },
                         new
                         {
@@ -7378,7 +7378,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "47,320",
-                            title = "Credit counselors    * Credit Counselor* Debt Management Counselor* Student Financial Aid Counselor* Student Loan Counselor"
+                            title = "Credit counselors"
                         },
                         new
                         {
@@ -7389,7 +7389,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "41,480",
-                            title = "Medical equipment preparers    * Central Sterile Supply Technician* Certified Registered Central Service Technician* Health Equipment Servicer* Medical Supply Technician* Oxygen Equipment Preparer* Sterile Preparation Technician* Sterile Processing Technician* Sterile Processing and Distribution Technician* Sterilization Specialist* Sterilization Technician"
+                            title = "Medical equipment preparers"
                         },
                         new
                         {
@@ -7400,7 +7400,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "49,090",
-                            title = "Paramedics    * Ambulance Driver-Paramedic* Flight Paramedic"
+                            title = "Paramedics"
                         },
                         new
                         {
@@ -7411,7 +7411,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "55,960",
-                            title = "Surgical technologists    * Certified Surgical Technologist* OR Tech* Operating Room Technician* Surgical Scrub Technologist"
+                            title = "Surgical technologists"
                         },
                         new
                         {
@@ -7422,7 +7422,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "50,890",
-                            title = "Bus drivers, transit and intercity    * Charter Coach Driver* Motor Coach Bus Driver* Motor Coach Driver* Motor Coach Tour Operator* Public Transit Bus Driver* Public Transit Trolley Driver"
+                            title = "Bus drivers, transit and intercity"
                         },
                         new
                         {
@@ -7433,7 +7433,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "36,680",
-                            title = "Emergency medical technicians    * EMT* EMT-B* EMT-I/85* EMT-I/99"
+                            title = "Emergency medical technicians"
                         },
                         new
                         {
@@ -7444,7 +7444,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "60,140",
-                            title = "Educational, guidance, and career counselors and advisors    * Admissions Counselor* Career Counselor* Career Technical Counselor* Education Counselor* Guidance Counselor* International Student Counselor* School Adjustment Counselor* School Guidance Counselor* Student Advisor* Student Development Advisor* Student Services Counselor* Student Success Counselor* Study Abroad Advisor* Vocational Adviser"
+                            title = "Educational, guidance, and career counselors and advisors"
                         },
                         new
                         {
@@ -7455,7 +7455,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,670",
-                            title = "Property, real estate, and community association managers    * Apartment Manager* Building Rental Manager* Community Association Manager* Condominium Association Manager* Homeowner Association Manager* Land Acquisition Manager* Leasing Property Manager* Property Manager* Real Estate Manager"
+                            title = "Property, real estate, and community association managers"
                         },
                         new
                         {
@@ -7466,7 +7466,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "38,040",
-                            title = "Machine feeders and offbearers    * Brick Offbearer* Chain Offbearer* Chopper Feeder* Doffer* Dryer Feeder* Hopper Feeder* Hopper Filler* Line Feeder* Offbearer* Packing Machine Can Feeder* Spike Machine Feeder* Spinning Doffer* Spooler Operator"
+                            title = "Machine feeders and offbearers"
                         },
                         new
                         {
@@ -7477,7 +7477,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "53,310",
-                            title = "Maintenance workers, machinery    * Crane Oiler"
+                            title = "Maintenance workers, machinery"
                         },
                         new
                         {
@@ -7488,7 +7488,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "65,140",
-                            title = "Radiologic technologists and technicians    * Computed Axial Tomography Technologist* Computed Tomography (CT) Scanner Operator* Radiologic Technician* Registered Radiologic Technologist* Skiagrapher* X-Ray Technician"
+                            title = "Radiologic technologists and technicians"
                         },
                         new
                         {
@@ -7499,7 +7499,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "51,390",
-                            title = "Heating, air conditioning, and refrigeration mechanics and installers    * Air Conditioning Service Technician* Bulk Cooler Installer* Evaporative Cooler Installer* Furnace Converter* Furnace Fitter* Gas Furnace Installer* Heating, Ventilation, and Air Conditioning (HVAC) Mechanic* Oil Burner Repairer* Oil Furnace Installer* Refrigeration Systems Installer* Stoker Installer"
+                            title = "Heating, air conditioning, and refrigeration mechanics and installers"
                         },
                         new
                         {
@@ -7510,7 +7510,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,560",
-                            title = "Concierges    * Activities Concierge* Club Concierge* Conference Concierge* Guest Service Supervisor* Hotel Concierge* Hotel Guest Service Agent"
+                            title = "Concierges"
                         },
                         new
                         {
@@ -7521,7 +7521,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "103,330",
-                            title = "Administrative services managers    * Business Office Manager* Business Unit Manager* Records Management Director* Records and Information Manager* University Registrar"
+                            title = "Administrative services managers"
                         },
                         new
                         {
@@ -7532,7 +7532,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "37,790",
-                            title = "Pharmacy technicians    * CPHT* Certified Pharmacy Technician* Pharmacist Technician* Pharmacy Laboratory Technician"
+                            title = "Pharmacy technicians"
                         },
                         new
                         {
@@ -7543,7 +7543,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "81,220",
-                            title = "Registered nurses    * CCU Nurse* CNS* Clinical Nurse Specialist* Community Health Nurse* Coronary Care Unit Nurse* Emergency Room RN* Endoscopy Registered Nurse* Hospice Registered Nurse* Obstetrical Nurse* Oncology Registered Nurse* PACU Nurse* Pediatric Registered Nurse* Post-Anesthesia Care Unit Nurse* Psychiatric Nurse* RN* Triage Registered Nurse"
+                            title = "Registered nurses"
                         },
                         new
                         {
@@ -7554,7 +7554,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Prosthodontists    * Maxillofacial Prosthetics Dentist* Maxillofacial Prosthodontist* Reconstructive Dentist"
+                            title = "Prosthodontists"
                         },
                         new
                         {
@@ -7565,7 +7565,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "69,390",
-                            title = "Animal scientists    * Animal Geneticist* Animal Nutritionist* Beef Cattle Nutritionist* Dairy Scientist* Poultry Scientist* Swine Genetics Researcher"
+                            title = "Animal scientists"
                         },
                         new
                         {
@@ -7576,7 +7576,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,280",
-                            title = "Motorboat mechanics and service technicians    * Certified Marine Mechanic* Marine Propulsion Technician* Marine Technician* Motorboat Mechanic* Outboard Motor Mechanic* Outboard Technician"
+                            title = "Motorboat mechanics and service technicians"
                         },
                         new
                         {
@@ -7587,7 +7587,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "40,420",
-                            title = "Healthcare support workers, all other    * Ortho/Prosthetic Aide"
+                            title = "Healthcare support workers, all other"
                         },
                         new
                         {
@@ -7598,7 +7598,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "36,890",
-                            title = "Conveyor operators and tenders    * Ash Conveyor Operator* Assembly Line Tender* Chip Bin Conveyor Tender* Conveyor Belt Operator* Conveyor Tender* Grain Elevator Operator* Packing Line Operator"
+                            title = "Conveyor operators and tenders"
                         },
                         new
                         {
@@ -7609,7 +7609,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "48,380",
-                            title = "Environmental science and protection technicians, including health    * Air Quality Technician* Certified Indoor Environmentalist* Environmental Science Technician* Infectious Waste Technician* Pollution Control Technician* Public Health Sanitarian Technician* Radon Inspector"
+                            title = "Environmental science and protection technicians, including health"
                         },
                         new
                         {
@@ -7620,7 +7620,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,180",
-                            title = "Communications equipment operators, all other    * Communications Equipment Operator* Radio Operator* Telegraph and Teletype Operator* Telex Operator"
+                            title = "Communications equipment operators, all other"
                         },
                         new
                         {
@@ -7631,7 +7631,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "139,280",
-                            title = "Industrial-organizational psychologists    * Engineering Psychologist* Human Resources Psychologist* I/O Psychologist* Industrial Psychologist* Management Psychologist* Organizational Psychologist* Organizational Research Consultant* Personnel Research Psychologist"
+                            title = "Industrial-organizational psychologists"
                         },
                         new
                         {
@@ -7642,7 +7642,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "129,430",
-                            title = "Public relations managers    * Communication Manager* Public Affairs Director* Public Information Director* Public Information Relations Manager* Public Relations Director* Public Relations Manager* Publicity Director"
+                            title = "Public relations managers"
                         },
                         new
                         {
@@ -7653,7 +7653,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "64,240",
-                            title = "Human resources specialists    * Corporate Recruiter* Credentialing Coordinator* Employee Placement Specialist* Human Resources Generalist* Job Placement Officer* Job Placement Specialist* Job Recruiter* Personnel Coordinator* Personnel Officer* Personnel Recruiter* Personnel Specialist* Staffing Coordinator* Student Recruiter* Volunteer Coordinator"
+                            title = "Human resources specialists"
                         },
                         new
                         {
@@ -7664,7 +7664,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "68,300",
-                            title = "Commercial divers    * Marine Diver* Non Destructive Testing Underwater Welder* Salvage Diver* Scuba Diver* Submarine Diver* Underwater Welder"
+                            title = "Commercial divers"
                         },
                         new
                         {
@@ -7675,7 +7675,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,720",
-                            title = "Residential advisors    * Dormitory Counselor* House Parent* Residence Director* Residence Life Coordinator* Residential Director* Residential Life Director* Sorority Mother"
+                            title = "Residential advisors"
                         },
                         new
                         {
@@ -7686,7 +7686,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "52,120",
-                            title = "Private detectives and investigators    * Certified Legal Investigator* Licensed Private Investigator* Loss Prevention Detective* Private Detective* Private Eye* Private Investigator* Skip Tracer* Store Detective"
+                            title = "Private detectives and investigators"
                         },
                         new
                         {
@@ -7697,7 +7697,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "96,530",
-                            title = "Environmental engineers    * Air Pollution Control Engineer* Environmental Remediation Engineer* Hazardous Substances Engineer* Hazardous Waste Management Control Engineer* Pollution Control Engineer* Soil Engineer* Waste Management Engineer* Wastewater Treatment Engineer* Water Treatment Plant Engineer"
+                            title = "Environmental engineers"
                         },
                         new
                         {
@@ -7708,7 +7708,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "126,880",
-                            title = "Aerospace engineers    * Aerodynamics Engineer* Aeronautical Engineer* Aircraft Design Engineer* Aircraft Designer* Aircraft Engineer* Astronautical Engineer* Flight Systems Test Engineer* Flight Test Engineer* Wind Tunnel Engineer"
+                            title = "Aerospace engineers"
                         },
                         new
                         {
@@ -7719,7 +7719,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "76,480",
-                            title = "Environmental scientists and specialists, including health    * Ecological Modeler* Environmental Analyst* Environmental Scientist* Hazardous Substances Scientist* Health Environmentalist* Water Pollution Scientist* Water Quality Analyst"
+                            title = "Environmental scientists and specialists, including health"
                         },
                         new
                         {
@@ -7730,7 +7730,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "105,180",
-                            title = "Art directors    * Magazine Designer"
+                            title = "Art directors"
                         },
                         new
                         {
@@ -7741,7 +7741,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "73,810",
-                            title = "Financial specialists, all other    * Bail Bondsman* Bondsman* Executor of Estate"
+                            title = "Financial specialists, all other"
                         },
                         new
                         {
@@ -7752,7 +7752,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "67,440",
-                            title = "Public relations specialists    * Environmental Communications Specialist* Lobbyist* Media Relations Specialist* Press Agent* Press Secretary* Public Affairs Officer* Public Relations Counselor* Public Relations Officer* Public Relations Representative* Publicist* Publicity Agent* Publicity Writer"
+                            title = "Public relations specialists"
                         },
                         new
                         {
@@ -7763,7 +7763,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "71,700",
-                            title = "Mathematical science occupations, all other    * Harmonic Analyst* Mathematical Engineering Technician* Mathematics Technician"
+                            title = "Mathematical science occupations, all other"
                         },
                         new
                         {
@@ -7774,7 +7774,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "80,670",
-                            title = "Chemists    * Agricultural Chemist* Analytical Chemist* Bench Chemist* Food Chemist* Formulary Chemist* Industrial Chemist* Inorganic Chemist* Laboratory Chemist* Nuclear Chemist* Organic Chemist* Quality Control Chemist* Research and Development Chemist"
+                            title = "Chemists"
                         },
                         new
                         {
@@ -7785,7 +7785,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,270",
-                            title = "Lifeguards, ski patrol, and other recreational protective service workers    * Beach Lifeguard* Certified Ski Patroller* Life Guard* OEC Technician* Outdoor Emergency Care Technician* Pool Lifeguard* Ski Patrol"
+                            title = "Lifeguards, ski patrol, and other recreational protective service workers"
                         },
                         new
                         {
@@ -7796,7 +7796,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "95,370",
-                            title = "Project management specialists    * Design Project Management Specialists* Movie Project Management Specialists"
+                            title = "Project management specialists"
                         },
                         new
                         {
@@ -7807,7 +7807,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "83,260",
-                            title = "Agricultural engineers    * Agricultural Engineer* Agricultural Production Engineer* Agricultural Research Engineer* Farm Equipment Engineer* Research Agricultural Engineer"
+                            title = "Agricultural engineers"
                         },
                         new
                         {
@@ -7818,7 +7818,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "113,940",
-                            title = "Economists    * Agricultural Economist* Econometrician* Economic Development Specialist* Economic Research Analyst* Environmental Economist* Industrial Economist* Labor Economist* Price Economist* Social Economist* Tax Economist* Trade Economist"
+                            title = "Economists"
                         },
                         new
                         {
@@ -7829,7 +7829,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "31,510",
-                            title = "Baggage porters and bellhops    * Baggage Porter* Bell Staff* Bellperson* Bellstaff* Hotel Baggage Handler* Luggage Attendant* Redcap* Skycap"
+                            title = "Baggage porters and bellhops"
                         },
                         new
                         {
@@ -7840,7 +7840,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "59,960",
-                            title = "Telecommunications equipment installers and repairers, except line installers    * Communications Equipment Installer* Fiber Optic Central Office Installer* Headend Technician* Private Branch Exchange (PBX ) Installer and Repairer* Switchboard Wirer* Telecommunications Switch Technician"
+                            title = "Telecommunications equipment installers and repairers, except line installers"
                         },
                         new
                         {
@@ -7851,7 +7851,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,080",
-                            title = "Training and development specialists    * Computer Software Training Specialist* Computer Training Specialist* Corporate Trainer* Employee Development Specialist* Insurance Employee Trainer* Job Training Specialist* Training Coordinator* Training Specialist"
+                            title = "Training and development specialists"
                         },
                         new
                         {
@@ -7862,7 +7862,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,220",
-                            title = "Stockers and order fillers    * Grocery Stocker* Night Stocker* Retail Stocker* Store Stocker* Warehouse Stocker"
+                            title = "Stockers and order fillers"
                         },
                         new
                         {
@@ -7873,7 +7873,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "120,880",
-                            title = "Nurse midwives    * Certified Nurse Midwife* Certified Nurse Midwife (CNM)"
+                            title = "Nurse midwives"
                         },
                         new
                         {
@@ -7884,7 +7884,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,240",
-                            title = "Electricians    * Chief Electrician* Control Electrician* Electrical Maintenance Worker* Electrical Sign Wirer* House Wirer* Licensed Electrician* Lighting Fixture Installer* Marine Electrician* Master Electrician* Solar Photovoltaic Electrician* Stage Electrician"
+                            title = "Electricians"
                         },
                         new
                         {
@@ -7895,7 +7895,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "120,000",
-                            title = "Training and development managers    * E-Learning Manager* Employee Development Director* Employee Development Manager* Labor Training Manager"
+                            title = "Training and development managers"
                         },
                         new
                         {
@@ -7906,7 +7906,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "47,290",
-                            title = "Community and social service specialists, all other    * Community Organization Worker* Veterans Service Officer"
+                            title = "Community and social service specialists, all other"
                         },
                         new
                         {
@@ -7917,7 +7917,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "128,020",
-                            title = "Political scientists    * Government Affairs Researcher* Government Affairs Specialist* Local Governance and Citizen Participation Specialist* Political Consultant* Political Research Scientist* Political Researcher"
+                            title = "Political scientists"
                         },
                         new
                         {
@@ -7928,7 +7928,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "61,420",
-                            title = "Social workers, all other    * Adult Protective Service Social Worker* Criminal Justice Social Worker* Forensic Social Worker* Sexual Assault Social Worker"
+                            title = "Social workers, all other"
                         },
                         new
                         {
@@ -7939,7 +7939,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "66,450",
-                            title = "Dietitians and nutritionists    * Clinical Dietitian* Dietitian* Nutritionist* Pediatric Dietician* Public Health Dietitian* Public Health Nutritionist* Research Dietitian* Sports Nutritionist* Therapeutic Dietitian"
+                            title = "Dietitians and nutritionists"
                         },
                         new
                         {
@@ -7950,7 +7950,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "44,990",
-                            title = "Health technologists and technicians, all other    * CRTT* Certified Respiratory Therapy Technician* Dialysis Technician* Electroencephalogram (EEG) Technologist* Electroneurodiagnostic Technologist* Encephalographer* Oxygen Therapy Technician* Perfusionist* Polysomnograph Tech* Respiratory Therapy Technician"
+                            title = "Health technologists and technicians, all other"
                         },
                         new
                         {
@@ -7961,7 +7961,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "140,040",
-                            title = "Marketing managers    * Internet Marketing Manager* Marketing Administrator* Marketing Director* VP Marketing"
+                            title = "Marketing managers"
                         },
                         new
                         {
@@ -7972,7 +7972,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "226,880",
-                            title = "Psychiatrists    * Addiction Psychiatrist* Child Psychiatrist* Clinical Psychiatrist* Forensic Psychiatrist* Geriatric Psychiatrist* Neuropsychiatrist* Pediatric Psychiatrist* Staff Psychiatrist"
+                            title = "Psychiatrists"
                         },
                         new
                         {
@@ -7983,7 +7983,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "103,810",
-                            title = "Biochemists and biophysicists    * Biochemist* Biological Chemist* Biophysicist* Clinical Biochemist* Physical Biochemist"
+                            title = "Biochemists and biophysicists"
                         },
                         new
                         {
@@ -7994,7 +7994,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "61,910",
-                            title = "Lodging managers    * Bed and Breakfast Innkeeper* Boardinghouse Keeper* Hotel Director* Hotel Manager* Hotel Operations Manager* Innkeeper* Lodging Facilities Manager"
+                            title = "Lodging managers"
                         },
                         new
                         {
@@ -8005,7 +8005,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "60,580",
-                            title = "Telecommunications line installers and repairers    * Cable Television Installer* FIOS Line Installer* Fiber Optic Technician* Telecommunication Lines Repairer* Telecommunications Line Installer* Telephone Cable Splicer* Telephone Lines Repairer* Telephone Lineworker"
+                            title = "Telecommunications line installers and repairers"
                         },
                         new
                         {
@@ -8016,7 +8016,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "85,320",
-                            title = "Producers and directors    * Broadcast Producer* Casting Director* Film Maker* Independent Film Maker* Independent Video Producer* Motion Picture Director* Movie Producer* Music Video Director* Music Video Producer* News Production Supervisor* Newscast Director* Newscast Producer* On-Air Director* Pageant Director* Radio Producer* Radio and Television Technical Director* Stage Manager* Television News Producer* Television Newscast Director* Television Producer* Television Program Director* Theater Company Producer* Video Producer"
+                            title = "Producers and directors"
                         },
                         new
                         {
@@ -8027,7 +8027,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,500",
-                            title = "Medical secretaries and administrative assistants    * Dental Secretary* Hospital Secretary* Psychiatric Secretary"
+                            title = "Medical secretaries and administrative assistants"
                         },
                         new
                         {
@@ -8038,7 +8038,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "79,960",
-                            title = "Technical writers    * Assembly Instructions Writer* Documentation Writer* Engineering Writer* Handbook Writer* Specifications Writer* Technical Communicator"
+                            title = "Technical writers"
                         },
                         new
                         {
@@ -8049,7 +8049,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "48,340",
-                            title = "Tile and stone setters    * Ceramic Tile Installer* Hard Tile Setter* Marble Ceiling Installer* Parquet Floor Layer* Tile Installer* Tile Mason* Wood Tile Installer"
+                            title = "Tile and stone setters"
                         },
                         new
                         {
@@ -8060,7 +8060,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "88,790",
-                            title = "Business teachers, postsecondary    * Accounting Professor* Banking and Finance Instructor* Business Administration Professor* Finance Professor* Management Professor* Marketing Instructor* Marketing Professor"
+                            title = "Business teachers, postsecondary"
                         },
                         new
                         {
@@ -8071,7 +8071,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "44,820",
-                            title = "Dental assistants    * Certified Dental Assistant* Dental Aide* Expanded Functions Dental Assistant* Orthodontic Assistant* Orthodontist Assistant* Registered Dental Assistant* Surgical Dental Assistant"
+                            title = "Dental assistants"
                         },
                         new
                         {
@@ -8082,7 +8082,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "30,210",
-                            title = "Locker room, coatroom, and dressing room attendants    * Athletic Equipment Manager* Bathhouse Attendant* Checkroom Attendant* Cloak Room Attendant* Coat Checker* Ladies Locker Room Attendant* Locker Room Attendant* Locker Room Manager* Locker Room Supervisor* Washroom Attendant"
+                            title = "Locker room, coatroom, and dressing room attendants"
                         },
                         new
                         {
@@ -8093,7 +8093,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "34,990",
-                            title = "Barbers    * Barber Apprentice* Master Barber"
+                            title = "Barbers"
                         },
                         new
                         {
@@ -8104,7 +8104,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "99,890",
-                            title = "Database administrators    * Automatic Data Processing Planner* Database Administration Manager* Database Coordinator* Database Programmer* Database Security Administrator"
+                            title = "Database administrators"
                         },
                         new
                         {
@@ -8115,7 +8115,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "67,780",
-                            title = "Compensation, benefits, and job analysis specialists    * Benefits Analyst* Compensation Analyst* Compensation Specialist* Employee Benefits Specialist* Job Analyst* Job Specification Writer* Occupational Analyst* Pension Administrator* Position Classification Specialist* Retirement Plan Specialist"
+                            title = "Compensation, benefits, and job analysis specialists"
                         },
                         new
                         {
@@ -8126,7 +8126,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "68,050",
-                            title = "Computer network support specialists    * Network Diagnostic Support Specialist* Network Support Technician* Network Technician"
+                            title = "Computer network support specialists"
                         },
                         new
                         {
@@ -8137,7 +8137,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "59,990",
-                            title = "Health education specialists    * Certified Diabetes Educator* Certified Health Education Specialist* Community Health Education Coordinator* Diabetes Educator* Health Educator* Public Health Educator"
+                            title = "Health education specialists"
                         },
                         new
                         {
@@ -8148,7 +8148,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "108,170",
-                            title = "Electronics engineers, except computer    * Antenna Engineer* Circuit Design Engineer* Electronic Design Automation Engineer* Electronic Engineer* Electronic Parts Designer* Telecommunication Engineer"
+                            title = "Electronics engineers, except computer"
                         },
                         new
                         {
@@ -8159,7 +8159,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "59,990",
-                            title = "Set and exhibit designers    * Scenic Designer* Set Decorator* Set Designer* Stage Scenery Designer* Theater Set Production Designer"
+                            title = "Set and exhibit designers"
                         },
                         new
                         {
@@ -8170,7 +8170,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "48,870",
-                            title = "Floor layers, except carpet, wood, and hard tiles    * Composition Floor Layer* Cork Floor Installer* Laminate Floor Installer* Linoleum Installer* Resilient Tile Installer* Shock-Absorption Floor Layer* Vinyl Flooring Installer* Vinyl Installer"
+                            title = "Floor layers, except carpet, wood, and hard tiles"
                         },
                         new
                         {
@@ -8181,7 +8181,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "49,330",
-                            title = "Farm labor contractors    * Farm Labor Contractor* Harvesting Contractor"
+                            title = "Farm labor contractors"
                         },
                         new
                         {
@@ -8192,7 +8192,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,610",
-                            title = "Septic tank servicers and sewer pipe cleaners    * Electric Sewer Cleaning Machine Operator* Septic Pump Truck Driver* Septic Tank Cleaner* Sewage Screen Operator* Sewer Cleaner* Sewer Pipe Cleaner* Sewer and Drain Technician"
+                            title = "Septic tank servicers and sewer pipe cleaners"
                         },
                         new
                         {
@@ -8203,7 +8203,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "81,400",
-                            title = "Dental hygienists    * Oral Hygienist* RDH* Registered Dental Hygienist"
+                            title = "Dental hygienists"
                         },
                         new
                         {
@@ -8214,7 +8214,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "67,480",
-                            title = "Securities, commodities, and financial services sales agents    * Commodities Broker* Commodity Trader* Equity Trader* Foreign Exchange Trader* Investment Banker* Municipal Bond Trader* Mutual Fund Sales Agent* Securities Trader* Stock Broker* Stock Trader"
+                            title = "Securities, commodities, and financial services sales agents"
                         },
                         new
                         {
@@ -8225,7 +8225,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "2",
                             median_annual_wage = "79,860",
-                            title = "Food scientists and technologists    * Dairy Bacteriologist* Enologist* Food Preservation Scientist* Food Processing Scientist* Food Safety Scientist* Food Scientist* Food Technologist"
+                            title = "Food scientists and technologists"
                         },
                         new
                         {
@@ -8236,7 +8236,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "52,560",
-                            title = "Meeting, convention, and event planners    * Certified Meeting Professional* Conference Organizer* Conference Planner* Conference Planning Manager* Conference Services Director* Conference Services Manager* Convention Planner* Convention Services Manager* Corporate Meeting Planner* Event Planner* Events Manager* Wedding Planner"
+                            title = "Meeting, convention, and event planners"
                         },
                         new
                         {
@@ -8247,7 +8247,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "135,740",
-                            title = "Lawyers    * Agency Legal Counsel* Assistant Attorney General* Assistant Corporation Counsel* Assistant Counsel* Associate Attorney* Attorney* Attorney At Law* Attorney General* Brief Writer* City Attorney* Civil Lawyer* Commonwealth Attorney* Corporate Attorney* Corporate Counsel* Corporate Counselor* County Attorney* Defense Attorney* Deputy Attorney General* Deputy Chief Counsel* District Attorney* Environmental Attorney* Estate Conservator* General Counsel* Insurance Attorney* Legal Counsel* Probate Lawyer* Prosecutor* Public Defender* Real Estate Attorney* Sports Attorney* Tax Attorney* Trial Attorney* Trial Lawyer"
+                            title = "Lawyers"
                         },
                         new
                         {
@@ -8258,7 +8258,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "95,080",
-                            title = "Financial and investment analysts    * Corporate Financial Analyst* Corporate Securities Research Analyst* Corporate Statistical Financial Analyst* Institutional Commodity Analyst* Organizational Investment Analyst"
+                            title = "Financial and investment analysts"
                         },
                         new
                         {
@@ -8269,7 +8269,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "80,090",
-                            title = "Magnetic resonance imaging technologists    * Computed Tomography/Magnetic Resonance Imaging (CT/MRI) Technologist* MRI Technologist"
+                            title = "Magnetic resonance imaging technologists"
                         },
                         new
                         {
@@ -8280,7 +8280,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,660",
-                            title = "First-line supervisors of entertainment and recreation workers, except gambling services    * Arcade Supervisor* Caddy Master* Recreation Attendant Supervisor"
+                            title = "First-line supervisors of entertainment and recreation workers, except gambling services"
                         },
                         new
                         {
@@ -8291,7 +8291,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "38,530",
-                            title = "Phlebotomists    * Certified Phlebotomy Technician* Phlebotomy Technician* Venipuncturist"
+                            title = "Phlebotomists"
                         },
                         new
                         {
@@ -8302,7 +8302,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "32,690",
-                            title = "Driver/sales workers    * Bobtailer* Delivery Sales worker* Newspaper Deliverer* Newspaper Delivery Driver* Pizza Delivery Driver* Route Sales Person* Route Salesperson* Sales Route Driver"
+                            title = "Driver/sales workers"
                         },
                         new
                         {
@@ -8313,7 +8313,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "33,290",
-                            title = "Hairdressers, hairstylists, and cosmetologists    * Beautician* Cosmetologist* Funeral Home Makeup Artist* Hair Colorist* Hair Stylist* Hair and Makeup Designer* Hairdresser* Hairpiece Stylist* Wedding Makeup Artist* Wig Stylist"
+                            title = "Hairdressers, hairstylists, and cosmetologists"
                         },
                         new
                         {
@@ -8324,7 +8324,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,580",
-                            title = "Food batchmakers    * Almond Paste Mixer* Candy Maker* Candy Puller* Cheese Processor* Cottage Cheese Maker* Dough Scaler and Mixer* Frozen Yogurt Maker* Honey Blender* Ice Cream Maker* Liquid Sugar Fortifier* Peanut Butter Maker* Pickle Maker* Relish Maker* Taffy Puller"
+                            title = "Food batchmakers"
                         },
                         new
                         {
@@ -8335,7 +8335,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "33,210",
-                            title = "Motor vehicle operators, all other    * Assembly Line Driver* Ice-Resurfacing Machine Operators* Motorcycle Deliverer* Street Cleaning Equipment Operator* Street Sweeper Operator"
+                            title = "Motor vehicle operators, all other"
                         },
                         new
                         {
@@ -8346,7 +8346,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,930",
-                            title = "Highway maintenance workers    * Highway Maintainer* Highway Maintenance Crew Worker* Highway Worker* Lane Marker Installer* Road Patcher* Road Sign Installer"
+                            title = "Highway maintenance workers"
                         },
                         new
                         {
@@ -8357,7 +8357,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "57,860",
-                            title = "Insurance sales agents    * Health Insurance Sales Agent* Insurance Agent* Insurance Broker* Life Insurance Agent* Life Insurance Salesperson* Pension Agent"
+                            title = "Insurance sales agents"
                         },
                         new
                         {
@@ -8368,7 +8368,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "44,690",
-                            title = "Semiconductor processing technicians    * Electronic Semiconductor Processor* Semiconductor Assembler* Wafer Fabricator"
+                            title = "Semiconductor processing technicians"
                         },
                         new
                         {
@@ -8379,7 +8379,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "1",
                             median_annual_wage = "32,800",
-                            title = "Shuttle drivers and chauffeurs    * Airport Apron Bus Driver* Airport Shuttle Driver* Airside Transfer Bus Driver* Courtesy Car Driver* Courtesy Van Driver* Funeral Car Driver* Hearse Driver* Hotel Shuttle Driver* Nonemergency Medical Transporter"
+                            title = "Shuttle drivers and chauffeurs"
                         },
                         new
                         {
@@ -8390,7 +8390,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "106,260",
-                            title = "Chemical engineers    * Absorption and Adsorption Engineer* Chemical Process Engineer* Chemical Research Engineer* Fuels Engineer* Oxidation Engineer* Plastics Engineer* Polymerization Engineer"
+                            title = "Chemical engineers"
                         },
                         new
                         {
@@ -8401,7 +8401,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,010",
-                            title = "Farm equipment mechanics and service technicians    * Agricultural Equipment Mechanic* Combine Mechanic* Dairy Equipment Mechanic* Dairy Equipment Repairer* Harvester Mechanic* Irrigation Equipment Mechanic* Milking Machine Mechanic* Tractor Mechanic"
+                            title = "Farm equipment mechanics and service technicians"
                         },
                         new
                         {
@@ -8423,7 +8423,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "58,640",
-                            title = "Archivists    * Digital Archivist* Film Archivist* Historical Records Administrator* Image Archivist* Museum Archivist* Processing Archivist* Reference Archivist* State Archivist"
+                            title = "Archivists"
                         },
                         new
                         {
@@ -8434,7 +8434,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "82,530",
-                            title = "Agents and business managers of artists, performers, and athletes    * Artist Manager* Artist Representative* Author's Agent* Band Manager* Booking Agent* Booking Manager* Fight Manager* Literary Agent* Modeling Agent* Talent Agent* Talent Manager* Theatrical Agent"
+                            title = "Agents and business managers of artists, performers, and athletes"
                         },
                         new
                         {
@@ -8445,7 +8445,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "0",
-                            title = "Entertainers and performers, sports and related workers, all other    * Acrobat* Aerialist* Amusement Park Entertainer* Bareback Rider* Baton Twirler* Clown* Comedian* Fortune Teller* Impersonator* Juggler* Magician* Marionette Performer* Palmist* Professional Poker Player* Prompter* Puppeteer* Ringmaster* Rodeo Performer* Story Teller* Stunt Performer* Tumbler* Ventriloquist* Wire Walker"
+                            title = "Entertainers and performers, sports and related workers, all other"
                         },
                         new
                         {
@@ -8456,7 +8456,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "102,120",
-                            title = "Financial risk specialists    * Financial Risk Analyst"
+                            title = "Financial risk specialists"
                         },
                         new
                         {
@@ -8467,7 +8467,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "98,950",
-                            title = "Special effects artists and animators    * 3D Animator* Animator* Multimedia Artist* Special Effects Artist"
+                            title = "Special effects artists and animators"
                         },
                         new
                         {
@@ -8478,7 +8478,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "98,560",
-                            title = "Transportation, storage, and distribution managers    * Airport Manager* Cold Storage Supervisor* Distribution Center Manager* Logistics Manager* Logistics Supply Officer* Marine Oil Terminal Superintendent* Traffic Safety Administrator* Transportation Manager* Warehouse Manager* Warehouse Operations Manager"
+                            title = "Transportation, storage, and distribution managers"
                         },
                         new
                         {
@@ -8489,7 +8489,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "74,410",
-                            title = "Aerospace engineering and operations technologists and technicians    * Aerospace Engineering and Operations Technologist* Altitude Chamber Technician* Flight Data Technician* Wind Tunnel Technician"
+                            title = "Aerospace engineering and operations technologists and technicians"
                         },
                         new
                         {
@@ -8500,7 +8500,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "67,220",
-                            title = "Entertainment and recreation managers, except gambling    * Amusement Park Manager* Boat Club Manager* Fitness Club Manager* Golf Club Manager* Marina Club Manager* Skating Rink Manager* Ski Resort Manager* Tennis Club Manager* Theme Park Manager"
+                            title = "Entertainment and recreation managers, except gambling"
                         },
                         new
                         {
@@ -8511,7 +8511,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "43,680",
-                            title = "First-line supervisors of personal service workers    * Animal Trainer Supervisor* Child Care Worker Supervisor* Hair Salon Supervisor* Head Butler"
+                            title = "First-line supervisors of personal service workers"
                         },
                         new
                         {
@@ -8522,7 +8522,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "47,180",
-                            title = "Medical records specialists    * Health Information Coder* Health Records Technician* Medical Bill Coder"
+                            title = "Medical records specialists"
                         },
                         new
                         {
@@ -8533,7 +8533,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "96,370",
-                            title = "Makeup artists, theatrical and performance    * Special Effects Makeup Artist"
+                            title = "Makeup artists, theatrical and performance"
                         },
                         new
                         {
@@ -8544,7 +8544,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "53,490",
-                            title = "Aircraft cargo handling supervisors    * Air Cargo Ground Crew Supervisor* Air Cargo Ground Operations Supervisor* Air Cargo Supervisor* Aircraft Loadmaster* Airport Ramp Supervisor"
+                            title = "Aircraft cargo handling supervisors"
                         },
                         new
                         {
@@ -8555,7 +8555,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "81,650",
-                            title = "Biological science teachers, postsecondary    * Anatomy Professor* Bacteriology Professor* Biochemistry Professor* Botany Professor* Embryology Professor* Microbiology Professor* Zoology Professor"
+                            title = "Biological science teachers, postsecondary"
                         },
                         new
                         {
@@ -8566,7 +8566,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "37,780",
-                            title = "Agricultural equipment operators    * Cane Flume Chute Operator* Combine Driver* Combine Operator* Corn Detasseler Machine Operator* Cotton Ginner* Cotton Picker Operator* Custom Harvester* Farm Tractor Operator* Feed Mixer Operator* Hay Baler* Hay Stacker Operator* Rake Operator* Replanting Machine Operator* Tractor Operator* Wheat Combine Driver"
+                            title = "Agricultural equipment operators"
                         },
                         new
                         {
@@ -8577,7 +8577,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "38,520",
-                            title = "Social and human service assistants    * Addictions Counselor Assistant* Case Work Aide* Clinical Social Work Aide* Family Service Assistant* Human Services Worker* Social Work Assistant"
+                            title = "Social and human service assistants"
                         },
                         new
                         {
@@ -8588,7 +8588,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "31,130",
-                            title = "Manicurists and pedicurists    * Fingernail Sculptor* Nail Technician* Pedicurist"
+                            title = "Manicurists and pedicurists"
                         },
                         new
                         {
@@ -8599,7 +8599,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "125,590",
-                            title = "Optometrists    * Doctor of Optometry"
+                            title = "Optometrists"
                         },
                         new
                         {
@@ -8610,7 +8610,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "75,380",
-                            title = "Chiropractors    * Chiropractic Doctor* Chiropractic Physician"
+                            title = "Chiropractors"
                         },
                         new
                         {
@@ -8621,7 +8621,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "203,090",
-                            title = "Nurse anesthetists    * Certified Registered Nurse Anesthetist* Certified Registered Nurse Anesthetist (CRNA)* DNAP* Doctor of Nurse Anesthesia Practice"
+                            title = "Nurse anesthetists"
                         },
                         new
                         {
@@ -8632,7 +8632,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "94,270",
-                            title = "Athletes and sports competitors    * National Association for Stock Car Auto Racing Driver* Profession Cyclist* Professional All Terrain Vehicle Racer* Professional Athlete* Professional Auto Racer* Professional Baseball Pitcher* Professional Baseball Player* Professional Basketball Player* Professional Bass Fisher* Professional Bicycle Racer* Professional Bicyclist* Professional Billiard Player* Professional Bowler* Professional Bull Rider* Professional Car Racer* Professional Dirt Bike Racer* Professional Drag Car Racer* Professional Figure Skater* Professional Football Player* Professional Golfer* Professional Hockey Player* Professional Horse Racer* Professional Ice Skater* Professional Jockey* Professional Kick Boxer* Professional Motocross Racer* Professional Prize Fighter* Professional Pugilist* Professional Race Car Driver* Professional Roller Skater* Professional Skater* Professional Skier* Professional Snowboarder* Professional Soccer Player* Professional Softball Player* Professional Stock Car Driver* Professional Surfer* Professional Swimmer* Professional Tennis Player* Professional Volleyball Player* Professional Wrestler"
+                            title = "Athletes and sports competitors"
                         },
                         new
                         {
@@ -8643,7 +8643,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "38,060",
-                            title = "Skincare specialists    * Electrolysis Needle Operator* Electrolysis Operator* Electrolysist* Esthetician* Facialist* Licensed Esthetician* Medical Esthetician* Skin Care Technician"
+                            title = "Skincare specialists"
                         },
                         new
                         {
@@ -8654,7 +8654,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "74,240",
-                            title = "Social and community service managers    * Child Welfare Director* Community Service Director* Community Service Organization Director* Family Service Center Director* Neighborhood Service Center Director* Social Service Director* Social Services Director* Youth Program Director"
+                            title = "Social and community service managers"
                         },
                         new
                         {
@@ -8665,7 +8665,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "44,890",
-                            title = "Coaches and scouts    * Athletic Coach* Baseball Coach* Baseball Scout* Basketball Coach* Boxing Coach* Coach* Football Coach* Hockey Scout* Ice Skating Coach* Riding Coach* Ski Coach* Tennis Coach"
+                            title = "Coaches and scouts"
                         },
                         new
                         {
@@ -8676,7 +8676,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "103,550",
-                            title = "Engineering teachers, postsecondary    * Aeronautical Engineering Professor* Ceramic Engineering Professor* Chemical Engineering Professor* Civil Engineering Professor* Electrical Engineering Professor* Electronics Engineering Professor* Industrial Engineering Professor* Manufacturing Engineering Professor* Marine Engineering Professor* Mechanical Engineering Professor* Petroleum Engineering Professor"
+                            title = "Engineering teachers, postsecondary"
                         },
                         new
                         {
@@ -8687,7 +8687,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,520",
-                            title = "Film and video editors    * Cue Selector* Electronic News Gathering Editor* Film Editor* Movie Editor* News Video Editor* News Videotape Editor* Tape Editor* Television News Video Editor* Video Tape Transferrer"
+                            title = "Film and video editors"
                         },
                         new
                         {
@@ -8698,7 +8698,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "47,010",
-                            title = "Mechanical door repairers    * Automatic Door Mechanic* Door Closer Mechanic* Garage Door Technician* Overhead Door Technician"
+                            title = "Mechanical door repairers"
                         },
                         new
                         {
@@ -8709,7 +8709,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "60,280",
-                            title = "Healthcare social workers    * AIDS Social Worker* C-SWHC* Certified Social Workers In Health Care* Hospice Home Care Social Worker* Hospice Social Worker* Hospital Social Worker* Medical Social Worker* Neonatal Social Worker* Nephrology Social Worker* Oncology Social Worker* Pediatric Social Worker* Public Health Social Worker* Renal Social Worker"
+                            title = "Healthcare social workers"
                         },
                         new
                         {
@@ -8720,7 +8720,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "102,240",
-                            title = "Computer systems analysts    * Applications Analyst* Computer Systems Consultant* Data Processing Systems Analyst* Information Systems Analyst* Information Systems Planner* Programmer Analyst* Systems Architect"
+                            title = "Computer systems analysts"
                         },
                         new
                         {
@@ -8731,7 +8731,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "36,010",
-                            title = "Umpires, referees, and other sports officials    * Athletic Events Scorer* Baseball Umpire* Diving Judge* Dressage Judge* Equestrian Events Judge* Handicapper* Horse Show Judge* Paddock Judge* Pit Steward* Placing Judge* Race Starter"
+                            title = "Umpires, referees, and other sports officials"
                         },
                         new
                         {
@@ -8742,7 +8742,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,860",
-                            title = "Cargo and freight agents    * Cargo Agent* Cargo Router* Freight Agent* Freight Shipping Agent"
+                            title = "Cargo and freight agents"
                         },
                         new
                         {
@@ -8753,7 +8753,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "37,380",
-                            title = "Psychiatric technicians    * Behavioral Health Technician* Mental Health Technician"
+                            title = "Psychiatric technicians"
                         },
                         new
                         {
@@ -8764,7 +8764,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "98,740",
-                            title = "Computer occupations, all other    * Computer Console Operator* Computer Laboratory Technician* Data Center Operator"
+                            title = "Computer occupations, all other"
                         },
                         new
                         {
@@ -8775,7 +8775,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "95,290",
-                            title = "Management analysts    * Business Analyst* Business Consultant* Business Management Analyst* Business Process Consultant* Clerical Methods Analyst* Commercial Specialist* Industrial Analyst* Management Consultant* Records Management Analyst* University Institutional Researcher"
+                            title = "Management analysts"
                         },
                         new
                         {
@@ -8786,7 +8786,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,030",
-                            title = "Recreational vehicle service technicians    * Master Certified RV Technician* Mobile Service Recreational Vehicle Technician* RV Mechanic* RV Servicer* RVDA Master Certified RV Technician* Recreational Vehicle (RV) Repairer* Recreational Vehicle Mechanic"
+                            title = "Recreational vehicle service technicians"
                         },
                         new
                         {
@@ -8797,7 +8797,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "99,930",
-                            title = "Medical scientists, except epidemiologists    * Cancer Researcher* Clinical Pharmacologist* Gerontologist* Histopathologist* Immunochemist* Industrial Pharmacist* Medical Health Researcher* Medical Research Scientist* Medical Scientist* Neuroscientist* Pharmacologist* Serologist* Toxicologist"
+                            title = "Medical scientists, except epidemiologists"
                         },
                         new
                         {
@@ -8808,7 +8808,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "47,270",
-                            title = "Museum technicians and conservators    * Art Conservator* Art Handler* Conservation Technician* Ethnographic Materials Conservator* Museum Exhibit Technician* Objects Conservator* Paintings Conservator* Paper Conservator* Textile Conservator"
+                            title = "Museum technicians and conservators"
                         },
                         new
                         {
@@ -8819,7 +8819,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "134,870",
-                            title = "Database architects    * Data Architect* Data Integration Specialist* Data Warehousing Specialist* Database Developer"
+                            title = "Database architects"
                         },
                         new
                         {
@@ -8830,7 +8830,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "96,310",
-                            title = "Mechanical engineers    * Auto Research Engineer* Combustion Engineer* Engine Designer* Heating and Cooling Systems Engineer* Tool Engineer* Tool and Die Engineer"
+                            title = "Mechanical engineers"
                         },
                         new
                         {
@@ -8841,7 +8841,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "57,970",
-                            title = "Occupational health and safety technicians    * CHST* Construction Health and Safety Technician* Environmental Health Technologist* Ergonomics Technician* Occupational Health and Safety Technologist* Occupational Health and Safety Technologist (OHST)"
+                            title = "Occupational health and safety technicians"
                         },
                         new
                         {
@@ -8852,7 +8852,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "51,350",
-                            title = "Exercise physiologists    * Applied Exercise Physiologist* Clinical Exercise Physiologist* Kinesiotherapist"
+                            title = "Exercise physiologists"
                         },
                         new
                         {
@@ -8863,7 +8863,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "82,680",
-                            title = "Audiologists    * Clinical Audiologist* Dispensing Audiologist* Educational Audiologist* Hearing Therapist* Licensed Audiologist* Pediatric Audiologist"
+                            title = "Audiologists"
                         },
                         new
                         {
@@ -8874,7 +8874,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "51,240",
-                            title = "Mental health and substance abuse social workers    * Community Mental Health Social Worker* Drug Abuse Social Worker* Psychiatric Social Worker* Psychotherapist Social Worker"
+                            title = "Mental health and substance abuse social workers"
                         },
                         new
                         {
@@ -8885,7 +8885,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "60,380",
-                            title = "Curators    * Collections Curator* Collections and Archives Director* Educational Institution Curator* Exhibitions and Collections Manager* Herbarium Curator* Museum Curator* Photography and Prints Curator"
+                            title = "Curators"
                         },
                         new
                         {
@@ -8896,7 +8896,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "27,860",
-                            title = "Shampooers    * Scalp Treatment Specialist* Shampoo Assistant* Shampoo Technician"
+                            title = "Shampooers"
                         },
                         new
                         {
@@ -8907,7 +8907,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "90,130",
-                            title = "Clinical and counseling psychologists    * Eating Disorder Psychologists* Geropsychologists"
+                            title = "Clinical and counseling psychologists"
                         },
                         new
                         {
@@ -8918,7 +8918,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "63,760",
-                            title = "Flight attendants    * Airline Flight Attendant* Airplane Flight Attendant* Flight Steward"
+                            title = "Flight attendants"
                         },
                         new
                         {
@@ -8929,7 +8929,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "93,180",
-                            title = "Occupational therapists    * OT* Occupational Therapist* Registered Occupational Therapist"
+                            title = "Occupational therapists"
                         },
                         new
                         {
@@ -8940,7 +8940,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
                             median_annual_wage = "40,410",
-                            title = "Light truck drivers    * Grocery Light Truck Driver* Parcel Truck Driver"
+                            title = "Light truck drivers"
                         },
                         new
                         {
@@ -8951,7 +8951,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "96,350",
-                            title = "Industrial engineers    * Efficiency Engineer* Manufacturing Engineer* Packaging Engineer* Production Engineer"
+                            title = "Industrial engineers"
                         },
                         new
                         {
@@ -8962,7 +8962,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "60,800",
-                            title = "Therapists, all other    * Art Therapist* Auriculotherapist* Educational Therapist* Hydrotherapist* Music Therapist* Peripatologist"
+                            title = "Therapists, all other"
                         },
                         new
                         {
@@ -8973,7 +8973,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "70,540",
-                            title = "Respiratory therapists    * CRT* Certified Respiratory Therapist* Inhalation Therapist* Oxygen Therapist* RRT* Registered Respiratory Therapist* Respiratory Therapist"
+                            title = "Respiratory therapists"
                         },
                         new
                         {
@@ -8984,7 +8984,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "63,740",
-                            title = "Forensic science technicians    * Ballistic Technician* Ballistician* Ballistics Expert* Crime Lab Technician* Crime Scene Technician* Criminalist Technician* Fingerprint Expert* Forensic Analyst* Handwriting Expert* Trace Evidence Technician* Wildlife Forensic Geneticist"
+                            title = "Forensic science technicians"
                         },
                         new
                         {
@@ -8995,7 +8995,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "38,860",
-                            title = "Ophthalmic medical technicians    * Ocular Care Technologist* Ophthalmic Technologist"
+                            title = "Ophthalmic medical technicians"
                         },
                         new
                         {
@@ -9006,7 +9006,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "95,390",
-                            title = "Personal financial advisors    * Certified Financial Planner* Estate Planner* Estate Planning Counselor* Financial Counselor* Individual Pension Adviser* Individual Pension Consultant* Personal Financial Planner* Personal Investment Adviser"
+                            title = "Personal financial advisors"
                         },
                         new
                         {
@@ -9017,7 +9017,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "57,860",
-                            title = "Medical equipment repairers    * BMET* Biomedical Electronics Technician* Biomedical Equipment Technician* Certified Biomedical Equipment Technician* Dental Equipment Mechanic* Dental Equipment Repairer* Durable Medical Equipment Repairer* Electromedical Equipment Technician* Radiology Equipment Servicer* Surgical Instrument Mechanic"
+                            title = "Medical equipment repairers"
                         },
                         new
                         {
@@ -9028,7 +9028,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "78,570",
-                            title = "Occupational health and safety specialists    * Certified Industrial Hygienist* Certified Professional Ergonomist* Environmental Health Sanitarian* Health and Safety Inspector* Industrial Hygienist* Industrial Safety and Health Specialist* Occupational Safety and Health Inspector* Radiological Health Specialist"
+                            title = "Occupational health and safety specialists"
                         },
                         new
                         {
@@ -9039,7 +9039,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "68,230",
-                            title = "Market research analysts and marketing specialists    * Advertising Analyst* Market Research Analyst* Market Research Specialist* Marketing Analyst* Marketing Consultant* Marketing Forecaster* Marketing Specialist* Search Marketing Strategist"
+                            title = "Market research analysts and marketing specialists"
                         },
                         new
                         {
@@ -9050,7 +9050,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,380",
-                            title = "Exercise trainers and group fitness instructors    * Aerobics Instructor* Certified Personal Trainer* Fitness Trainer* Group Exercise Instructor* Group Fitness Instructor* Personal Fitness Trainer* Personal Trainer* Weight Trainer* Weight Training Instructor* Yoga Instructor* Yoga Teacher"
+                            title = "Exercise trainers and group fitness instructors"
                         },
                         new
                         {
@@ -9061,7 +9061,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "38,270",
-                            title = "Medical assistants    * Autopsy Assistant* Certified Medical Assistant* Chiropractic Assistant* Clinical Medical Assistant* Morgue Attendant* Ocular Care Aide* Optometric Aide* Optometrist Assistant* Optometry Assistant* Orthopedic Cast Specialist* Podiatric Aide"
+                            title = "Medical assistants"
                         },
                         new
                         {
@@ -9072,7 +9072,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "53,840",
-                            title = "Athletic trainers    * Certified Athletic Trainer* Clinical Athletic Instructor* Resident Athletic Trainer"
+                            title = "Athletic trainers"
                         },
                         new
                         {
@@ -9083,7 +9083,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "46,190",
-                            title = "Community health workers    * CHW* Community Health Advisor* Community Health Representative* Lay Health Advocate* Peer Health Promoter* Promotor(a)"
+                            title = "Community health workers"
                         },
                         new
                         {
@@ -9094,7 +9094,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "81,350",
-                            title = "Diagnostic medical sonographers    * Cardiac/Vascular Sonographer* Echocardiogram Technician* Echocardiographer* Echocardiographic Technologist* Echocardiography Technician* Echocardiology Technologist* Registered Diagnostic Medical Sonographer* Sonographer* Ultrasonographer* Ultrasound Technician* Ultrasound Technologist"
+                            title = "Diagnostic medical sonographers"
                         },
                         new
                         {
@@ -9105,7 +9105,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "59,020",
-                            title = "Hearing aid specialists    * Hearing Aid Fitter* Hearing Aid Technician* Hearing Instrument Specialist"
+                            title = "Hearing aid specialists"
                         },
                         new
                         {
@@ -9116,7 +9116,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "48,110",
-                            title = "Forest fire inspectors and prevention specialists    * Environmental Protection Fire Control Officer* Fire Operations Forester* Fire Ranger* Forest Fire Control Officer* Forest Fire Officer* Wildfire Prevention Specialist* Wildland Fire Operations Specialist"
+                            title = "Forest fire inspectors and prevention specialists"
                         },
                         new
                         {
@@ -9127,7 +9127,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "56,570",
-                            title = "Marriage and family therapists    * Child and Family Counselor* Couples Therapist* Family Counselor* Family Therapist* Marriage Counselor* Marriage Therapist* Relationship Counselor"
+                            title = "Marriage and family therapists"
                         },
                         new
                         {
@@ -9138,7 +9138,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "59,830",
-                            title = "Industrial machinery mechanics    * Bag Machine Adjuster* Boilerhouse Mechanic* Foundry Equipment Mechanic* Hydroelectric Machinery Mechanic* Industrial Conveyor Belt Repairer* Loom Fixer* Loom Technician"
+                            title = "Industrial machinery mechanics"
                         },
                         new
                         {
@@ -9149,7 +9149,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "97,720",
-                            title = "Physical therapists    * Cardiopulmonary Physical Therapist* Geriatric Physical Therapist* Orthopedic Physical Therapist* PT* Pediatric Physical Therapist* Physiotherapist* Pulmonary Physical Therapist* Sports Physical Therapist"
+                            title = "Physical therapists"
                         },
                         new
                         {
@@ -9160,7 +9160,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "83,240",
-                            title = "Web and digital interface designers    * Digital Designer* Graphic Web Designer* Web Content Specialist"
+                            title = "Web and digital interface designers"
                         },
                         new
                         {
@@ -9171,7 +9171,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "77,070",
-                            title = "Orthotists and prosthetists    * American Board Certified Orthotist* Artificial Limb Fitter* Certified Orthotic Fitter* Certified Prosthetist/Orthotist* Licensed Prosthetist* Orthotic/Prosthetic Practitioner* Orthotist* Pedorthist* Prosthetist"
+                            title = "Orthotists and prosthetists"
                         },
                         new
                         {
@@ -9182,7 +9182,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "164,070",
-                            title = "Computer and information systems managers    * Application Development Director* Chief Technology Officer* Computer Operations Manager* Computer Security Manager* Data Operations Director* Data Processing Manager* Information Systems Director* Information Systems Manager* Information Technology Director* Information Technology Systems Director* Internet Technology Manager* MIS Director* Management Information Systems Director"
+                            title = "Computer and information systems managers"
                         },
                         new
                         {
@@ -9193,7 +9193,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "29,530",
-                            title = "Animal caretakers    * Animal Care Giver* Animal Care Technician* Animal Caregiver* Animal Daycare Provider* Animal Groomer* Animal Shelter Worker* Animal Sitter* Aquarist* Aquarium Tank Attendant* Cat and Dog Bather* Dog Bather* Dog Beautician* Dog Groomer* Dog Sitter* Horse Exerciser* Kennel Aide* Kennel Attendant* Kennel Helper* Kennel Worker* Pet Feeder* Pet Groomer* Pet Sitter* Pet Stylist* Zookeeper"
+                            title = "Animal caretakers"
                         },
                         new
                         {
@@ -9204,7 +9204,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "60,800",
-                            title = "Computer numerically controlled tool programmers    * Computer Numerically Controlled (CNC) Programmer* Numerical Control Programmer* Numerical Tool Programmer* Numerical Tool and Process Control Programmer"
+                            title = "Computer numerically controlled tool programmers"
                         },
                         new
                         {
@@ -9215,7 +9215,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "35,620",
-                            title = "Animal trainers    * Dog Handler* Dog Trainer* Dolphin Trainer* Guide Dog Instructor* Guide Dog Mobility Instructor* Guide Dog Trainer* Horse Breaker* Licensed Guide Dog Instructor* Lion Trainer* Marine Mammal Trainer* Seeing Eye Dog Trainer"
+                            title = "Animal trainers"
                         },
                         new
                         {
@@ -9226,7 +9226,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "139,790",
-                            title = "Financial managers    * Bank Branch Manager* Banking Center Manager* Banking Manager* City Comptroller* City Treasurer* Comptroller* Credit Manager* Financial Director* Financial Officer* Fiscal Manager* International Bank Manager* Residential Mortgage Manager"
+                            title = "Financial managers"
                         },
                         new
                         {
@@ -9237,7 +9237,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "89,990",
-                            title = "Genetic counselors    * Certified Genetic Counselor* Chromosomal Disorders Counselor* Mitochondrial Disorders Counselor* Prenatal Genetic Counselor"
+                            title = "Genetic counselors"
                         },
                         new
                         {
@@ -9248,7 +9248,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "58,250",
-                            title = "Health information technologists and medical registrars    * Cancer Registrar* Clinical Informatics Analyst* Health Informatics Specialist* Health Information Analyst* Health Information Systems Technician"
+                            title = "Health information technologists and medical registrars"
                         },
                         new
                         {
@@ -9259,7 +9259,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "78,580",
-                            title = "Web developers    * Intranet Developer* Web Applications Developer* Web Architect* Web Content Developer* Web Developer"
+                            title = "Web developers"
                         },
                         new
                         {
@@ -9270,7 +9270,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "43,390",
-                            title = "Counselors, all other    * AIDS Counselor* Anger Control Counselor* Grief Counselor* HIV Counselor* Sexual Assault Counselor"
+                            title = "Counselors, all other"
                         },
                         new
                         {
@@ -9281,7 +9281,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "78,580",
-                            title = "Nursing instructors and teachers, postsecondary    * Advanced Nursing Professor* Clinical Nursing Instructor* Clinical Nursing Professor* Registered Nursing Professor"
+                            title = "Nursing instructors and teachers, postsecondary"
                         },
                         new
                         {
@@ -9292,7 +9292,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "49,860",
-                            title = "Massage therapists    * Deep Tissue Massage Therapist* Licensed Massage Practitioner* Licensed Massage Therapist* Masseur* Masseuse* Massotherapist* Rolfer* Swedish Masseuse"
+                            title = "Massage therapists"
                         },
                         new
                         {
@@ -9303,7 +9303,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "77,520",
-                            title = "Logisticians    * Logistician* Logistics Analyst* Logistics Coordinator* Logistics Planner* Logistics Specialist"
+                            title = "Logisticians"
                         },
                         new
                         {
@@ -9325,7 +9325,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "100,300",
-                            title = "Health specialties teachers, postsecondary    * Clinical Laboratory Science Professor* Clinical Sciences Professor* Dentistry Professor* Gastroenterology Professor* Neurology Professor* Nutrition Professor* Occupational Therapy Professor* Optometry Professor* Pharmacology Professor* Physical Therapy Professor* Podiatric Medicine Professor* Podiatry Professor* Public Health Professor"
+                            title = "Health specialties teachers, postsecondary"
                         },
                         new
                         {
@@ -9336,7 +9336,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "84,140",
-                            title = "Speech-language pathologists    * Language Pathologist* Public School Speech Clinician* Public School Speech Therapist* Speech Clinician* Speech Pathologist* Speech Therapist* Speech and Language Specialist"
+                            title = "Speech-language pathologists"
                         },
                         new
                         {
@@ -9347,7 +9347,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "82,210",
-                            title = "Financial examiners    * Bank Compliance Officer* Bank Examiner* Financial Compliance Examiner* Home Mortgage Disclosure Act Specialist* Payroll Examiner* Pension Examiner"
+                            title = "Financial examiners"
                         },
                         new
                         {
@@ -9358,7 +9358,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Doctoral or professional degree",
                             industry = "-",
                             median_annual_wage = "103,260",
-                            title = "Veterinarians    * Animal Pathologist* Animal Surgeon* Doctor of Veterinary Medicine* Doctor of Veterinary Medicine (DVM)* Equine Veterinarian* Large Animal Veterinarian* Poultry Pathologist* Public Health Veterinarian* Small Animal Veterinarian* Veterinary Cardiologist* Veterinary Medicine Scientist* Veterinary Radiologist* Wildlife Veterinarian"
+                            title = "Veterinarians"
                         },
                         new
                         {
@@ -9369,7 +9369,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "99,620",
-                            title = "Software quality assurance analysts and testers    * Applications Tester* Software Quality Assurance Technician* Software Quality Control Specialist* Software Quality Engineer* Software Test Engineer"
+                            title = "Software quality assurance analysts and testers"
                         },
                         new
                         {
@@ -9380,7 +9380,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "-",
                             median_annual_wage = "34,110",
-                            title = "Cooks, restaurant    * Banquet Cook* Breakfast Cook* Chef De Partie* Line Cook* Saucier* Specialty Cook"
+                            title = "Cooks, restaurant"
                         },
                         new
                         {
@@ -9391,7 +9391,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,670",
-                            title = "Personal care and service workers, all other    * Butler* Doula* House Sitter* Magnetic Healer* Shoe Shiner* Valet"
+                            title = "Personal care and service workers, all other"
                         },
                         new
                         {
@@ -9402,7 +9402,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "34,740",
-                            title = "Veterinary assistants and laboratory animal caretakers    * Laboratory Animal Caretaker* Veterinarian Assistant* Veterinarian Helper* Veterinary Attendant"
+                            title = "Veterinary assistants and laboratory animal caretakers"
                         },
                         new
                         {
@@ -9413,7 +9413,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "38,240",
-                            title = "Veterinary technologists and technicians    * Certified Veterinary Technician* LVT* Licensed Veterinary Technician* Registered Veterinary Technician* Veterinary Lab Tech* Veterinary Laboratory Technician* Veterinary Surgery Technician* Veterinary Surgery Technologist* Veterinary Technologist* Veterinary X-Ray Operator"
+                            title = "Veterinary technologists and technicians"
                         },
                         new
                         {
@@ -9424,7 +9424,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "No formal educational credential",
                             industry = "1",
                             median_annual_wage = "30,670",
-                            title = "Taxi drivers    * Cab Driver* Rideshare Cab Driver"
+                            title = "Taxi drivers"
                         },
                         new
                         {
@@ -9446,7 +9446,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "High school diploma or equivalent",
                             industry = "-",
                             median_annual_wage = "45,230",
-                            title = "Solar photovoltaic installers    * PV Installer* PV Panel Installer* Photovoltaic (PV) Installation Technician* Solar PV Installer"
+                            title = "Solar photovoltaic installers"
                         },
                         new
                         {
@@ -9457,7 +9457,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "85,720",
-                            title = "Operations research analysts    * Operations Analyst* Procedure Analyst* Process Analyst"
+                            title = "Operations research analysts"
                         },
                         new
                         {
@@ -9468,7 +9468,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "136,620",
-                            title = "Computer and information research scientists    * Computational Theory Scientist* Computer Scientist* Control System Computer Scientist* Programming Methodology and Languages Researcher"
+                            title = "Computer and information research scientists"
                         },
                         new
                         {
@@ -9479,7 +9479,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "113,990",
-                            title = "Actuaries    * Actuarial Associate* Actuarial Mathematician* Health Actuary* Insurance Actuary* Pricing Actuary* Product Development Actuary"
+                            title = "Actuaries"
                         },
                         new
                         {
@@ -9490,7 +9490,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "64,250",
-                            title = "Occupational therapy assistants    * COTA* Certified Occupational Therapy Assistant* Licensed Occupational Therapy Assistant* Occupational Therapist Assistants"
+                            title = "Occupational therapy assistants"
                         },
                         new
                         {
@@ -9501,7 +9501,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "127,260",
-                            title = "Software developers    * Application Integration Engineer* Applications Developer* Computer Applications Developer* Computer Applications Engineer* Computer Systems Engineer* Computer Systems Software Architect* Computer Systems Software Engineer* Embedded Systems Software Developer* Enterprise Systems Engineer* Mobile Applications Developer* Software Applications Architect* Software Applications Designer* Software Applications Engineer* Software Engineer* Software Systems Engineer* Systems Software Designer* Systems Software Developer* Systems Software Specialist"
+                            title = "Software developers"
                         },
                         new
                         {
@@ -9512,7 +9512,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Associate's degree",
                             industry = "-",
                             median_annual_wage = "62,770",
-                            title = "Physical therapist assistants    * LPTA* Licensed Physical Therapist Assistant* Physical Therapy Assistant* Physical Therapy Technician* Physiotherapy Assistant"
+                            title = "Physical therapist assistants"
                         },
                         new
                         {
@@ -9523,7 +9523,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "126,010",
-                            title = "Physician assistants    * Anesthesiologist Assistant* Certified Physician's Assistant* Family Practice Physician Assistant* Orthopaedic Physician Assistant* Orthopedic Physician Assistant* Pediatric Physician Assistant* Radiology Practitioner Assistant"
+                            title = "Physician assistants"
                         },
                         new
                         {
@@ -9534,7 +9534,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "78,520",
-                            title = "Epidemiologists    * Clinical Epidemiologist* Communicable Disease Specialist* Environmental Epidemiologist* Epidemiology Investigator* Malariologist* Medical Epidemiologist* Pharmacoepidemiologist"
+                            title = "Epidemiologists"
                         },
                         new
                         {
@@ -9545,7 +9545,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "104,830",
-                            title = "Medical and health services managers    * Chief Medical Information Officer* Clinic Director* Clinical Informatics Director* Clinical Services Director* Emergency Medical Service Coordinator* Health Care Manager* Health Information Services Manager* Health Services Administrator* Health Services Director* Healthcare Administrator* Healthcare Manager* Hospice Director* Hospice Plan Administrator* Hospital Administrator* Hospital Director* Medical Director* Medical Records Administrator* Medical and Health Information Manager* Mental Health Program Manager* Nursing Home Manager* Nursing Service Director* Occupational Therapy Director* Public Health Administrator* Respiratory Therapy Director* Speech and Hearing Therapy Director* Wellness Director* Wellness Manager"
+                            title = "Medical and health services managers"
                         },
                         new
                         {
@@ -9556,7 +9556,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "-",
                             median_annual_wage = "112,000",
-                            title = "Information security analysts    * Computer Security Specialist* Computer Systems Security Analyst* IT Risk Specialist* Information Security Analyst* Information Systems Security Analyst* Network Security Analyst"
+                            title = "Information security analysts"
                         },
                         new
                         {
@@ -9567,7 +9567,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "98,920",
-                            title = "Statisticians    * Analytical Statistician* Applied Statistician* Biometrician* Biostatistician* Environmental Statistician* Mathematical Statistician* Research Biostatistician* Sampling Expert* Statistical Analyst* Statistical Reporting Analyst* Survey Statistician* Time Study Statistician"
+                            title = "Statisticians"
                         },
                         new
                         {
@@ -9578,7 +9578,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Bachelor's degree",
                             industry = "1",
                             median_annual_wage = "103,500",
-                            title = "Data scientists    * Business Intelligence Developer* Data Analytics Specialist* Data Mining Analyst* Data Visualization Developer"
+                            title = "Data scientists"
                         },
                         new
                         {
@@ -9589,7 +9589,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Master's degree",
                             industry = "-",
                             median_annual_wage = "121,610",
-                            title = "Nurse practitioners    * Acute Care Nurse Practitioner* Adult Nurse Practitioner* Cardiology Nurse Practitioner* Certified Nurse Practitioner* Certified Pediatric Nurse Practitioner* Certified Registered Nurse Practitioner* Dermatology Nurse Practitioner* Electrophysiology Nurse Practitioner* Emergency Medicine Nurse Practitioner* Family Health Nurse Practitioner* Family Practice Nurse Practitioner* Gastroenterology Nurse Practitioner* Gerontological Nurse Practitioner* Internal Medicine Nurse Practitioner* NP* Neurosurgical Nurse Practitioner* Obstetrics-Gynecology Nurse Practitioner* Orthopedic Nurse Practitioner* Palliative Care Nurse Practitioner* Pediatric Nurse Practitioner* Surgical Nurse Practitioner"
+                            title = "Nurse practitioners"
                         },
                         new
                         {
@@ -9600,7 +9600,7 @@ namespace sikho_backend.Migrations
                             education_requirement = "Postsecondary nondegree award",
                             industry = "-",
                             median_annual_wage = "57,320",
-                            title = "Wind turbine service technicians    * Wind Energy Mechanic* Wind Energy Technician* Wind Turbine Mechanic* Wind Turbine Technician"
+                            title = "Wind turbine service technicians"
                         });
                 });
 
