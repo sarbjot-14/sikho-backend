@@ -12,8 +12,8 @@ using sikho_backend.Models;
 namespace sikho_backend.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20231007002117_Initial")]
-    partial class Initial
+    [Migration("20230927012533_ChangeRiskType")]
+    partial class ChangeRiskType
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -391,29 +391,6 @@ namespace sikho_backend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("sikho_backend.Models.JobGrowthPoll", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ip_address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("occupation_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("percent_change")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("JobGrowthPolls");
-                });
-
             modelBuilder.Entity("sikho_backend.Models.Occupation", b =>
                 {
                     b.Property<int>("Id")
@@ -425,12 +402,11 @@ namespace sikho_backend.Migrations
                     b.Property<int>("at_risk")
                         .HasColumnType("int");
 
-                    b.Property<string>("currently_employed")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("currently_employed")
+                        .HasColumnType("decimal(12, 3)");
 
-                    b.Property<float>("decade_change_percentage")
-                        .HasColumnType("real");
+                    b.Property<decimal>("decade_change_percentage")
+                        .HasColumnType("decimal(12, 3)");
 
                     b.Property<string>("education_requirement")
                         .IsRequired()
@@ -440,9 +416,8 @@ namespace sikho_backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("median_annual_wage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("median_annual_wage")
+                        .HasColumnType("decimal(12, 3)");
 
                     b.Property<string>("title")
                         .IsRequired()
@@ -457,9152 +432,9152 @@ namespace sikho_backend.Migrations
                         {
                             Id = 1,
                             at_risk = -1,
-                            currently_employed = "44.0",
-                            decade_change_percentage = -17f,
+                            currently_employed = 44.0m,
+                            decade_change_percentage = -17m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,330",
+                            industry = "-1",
+                            median_annual_wage = 44330m,
                             title = "Word processors and typists"
                         },
                         new
                         {
                             Id = 2,
                             at_risk = -1,
-                            currently_employed = "2.1",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 2.1m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,370",
+                            industry = "-1",
+                            median_annual_wage = 48370m,
                             title = "Watch and clock repairers"
                         },
                         new
                         {
                             Id = 3,
                             at_risk = -1,
-                            currently_employed = "1.8",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 1.8m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,210",
+                            industry = "-1",
+                            median_annual_wage = 60210m,
                             title = "Roof bolters, mining"
                         },
                         new
                         {
                             Id = 4,
                             at_risk = -1,
-                            currently_employed = "8.3",
-                            decade_change_percentage = -2.3f,
+                            currently_employed = 8.3m,
+                            decade_change_percentage = -2.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,130",
+                            industry = "-1",
+                            median_annual_wage = 36130m,
                             title = "Cutters and trimmers, hand"
                         },
                         new
                         {
                             Id = 5,
                             at_risk = -1,
-                            currently_employed = "4.1",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 4.1m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,330",
+                            industry = "-1",
+                            median_annual_wage = 38330m,
                             title = "Telephone operators"
                         },
                         new
                         {
                             Id = 6,
                             at_risk = -1,
-                            currently_employed = "165.6",
-                            decade_change_percentage = -43.1f,
+                            currently_employed = 165.6m,
+                            decade_change_percentage = -43.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,190",
+                            industry = "-1",
+                            median_annual_wage = 36190m,
                             title = "Data entry keyers"
                         },
                         new
                         {
                             Id = 7,
                             at_risk = -1,
-                            currently_employed = "48.4",
-                            decade_change_percentage = -12.1f,
+                            currently_employed = 48.4m,
+                            decade_change_percentage = -12.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,670",
+                            industry = "-1",
+                            median_annual_wage = 34670m,
                             title = "Switchboard operators, including answering service"
                         },
                         new
                         {
                             Id = 8,
                             at_risk = -1,
-                            currently_employed = "11.5",
-                            decade_change_percentage = -2.7f,
+                            currently_employed = 11.5m,
+                            decade_change_percentage = -2.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,120",
+                            industry = "-1",
+                            median_annual_wage = 40120m,
                             title = "Foundry mold and coremakers"
                         },
                         new
                         {
                             Id = 9,
                             at_risk = -1,
-                            currently_employed = "161.4",
-                            decade_change_percentage = -35.3f,
+                            currently_employed = 161.4m,
+                            decade_change_percentage = -35.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,780",
+                            industry = "-1",
+                            median_annual_wage = 48780m,
                             title = "Legal secretaries and administrative assistants"
                         },
                         new
                         {
                             Id = 10,
                             at_risk = -1,
-                            currently_employed = "29.8",
-                            decade_change_percentage = -6.5f,
+                            currently_employed = 29.8m,
+                            decade_change_percentage = -6.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,690",
+                            industry = "-1",
+                            median_annual_wage = 29690m,
                             title = "Pressers, textile, garment, and related materials"
                         },
                         new
                         {
                             Id = 11,
                             at_risk = -1,
-                            currently_employed = "2.3",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 2.3m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "54,970",
+                            industry = "-1",
+                            median_annual_wage = 54970m,
                             title = "Patternmakers, metal and plastic"
                         },
                         new
                         {
                             Id = 12,
                             at_risk = -1,
-                            currently_employed = "0.6",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 0.6m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,550",
+                            industry = "-1",
+                            median_annual_wage = 50550m,
                             title = "Refractory materials repairers, except brickmasons"
                         },
                         new
                         {
                             Id = 13,
                             at_risk = -1,
-                            currently_employed = "511.1",
-                            decade_change_percentage = -108.1f,
+                            currently_employed = 511.1m,
+                            decade_change_percentage = -108.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "65,980",
+                            industry = "-1",
+                            median_annual_wage = 65980m,
                             title = "Executive secretaries and executive administrative assistants"
                         },
                         new
                         {
                             Id = 14,
                             at_risk = -1,
-                            currently_employed = "4.1",
-                            decade_change_percentage = -0.9f,
+                            currently_employed = 4.1m,
+                            decade_change_percentage = -0.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,820",
+                            industry = "-1",
+                            median_annual_wage = 36820m,
                             title = "Manufactured building and mobile home installers"
                         },
                         new
                         {
                             Id = 15,
                             at_risk = -1,
-                            currently_employed = "97.7",
-                            decade_change_percentage = -20.1f,
+                            currently_employed = 97.7m,
+                            decade_change_percentage = -20.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,030",
+                            industry = "-1",
+                            median_annual_wage = 31030m,
                             title = "Telemarketers"
                         },
                         new
                         {
                             Id = 16,
                             at_risk = -1,
-                            currently_employed = "14.5",
-                            decade_change_percentage = -2.8f,
+                            currently_employed = 14.5m,
+                            decade_change_percentage = -2.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,960",
+                            industry = "-1",
+                            median_annual_wage = 36960m,
                             title = "Grinding and polishing workers, hand"
                         },
                         new
                         {
                             Id = 17,
                             at_risk = -1,
-                            currently_employed = "50.9",
-                            decade_change_percentage = -9.6f,
+                            currently_employed = 50.9m,
+                            decade_change_percentage = -9.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,850",
+                            industry = "-1",
+                            median_annual_wage = 50850m,
                             title = "Engine and other machine assemblers"
                         },
                         new
                         {
                             Id = 18,
                             at_risk = -1,
-                            currently_employed = "3.4",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 3.4m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "57,620",
+                            industry = "-1",
+                            median_annual_wage = 57620m,
                             title = "Model makers, metal and plastic"
                         },
                         new
                         {
                             Id = 19,
                             at_risk = -1,
-                            currently_employed = "0.4",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 0.4m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,290",
+                            industry = "-1",
+                            median_annual_wage = 42290m,
                             title = "Timing device assemblers and adjusters"
                         },
                         new
                         {
                             Id = 20,
                             at_risk = -1,
-                            currently_employed = "6.6",
-                            decade_change_percentage = -1.2f,
+                            currently_employed = 6.6m,
+                            decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,450",
+                            industry = "-1",
+                            median_annual_wage = 42450m,
                             title = "Drilling and boring machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 21,
                             at_risk = -1,
-                            currently_employed = "132.8",
-                            decade_change_percentage = -24.2f,
+                            currently_employed = 132.8m,
+                            decade_change_percentage = -24.2m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "38,060",
+                            industry = "-1",
+                            median_annual_wage = 38060m,
                             title = "Order clerks"
                         },
                         new
                         {
                             Id = 22,
                             at_risk = -1,
-                            currently_employed = "54.5",
-                            decade_change_percentage = -9.8f,
+                            currently_employed = 54.5m,
+                            decade_change_percentage = -9.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "33,160",
+                            industry = "-1",
+                            median_annual_wage = 33160m,
                             title = "Floral designers"
                         },
                         new
                         {
                             Id = 23,
                             at_risk = 1,
-                            currently_employed = "9.7",
-                            decade_change_percentage = -1.7f,
+                            currently_employed = 9.7m,
+                            decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "41,600",
+                            median_annual_wage = 41600m,
                             title = "Electronic equipment installers and repairers, motor vehicles"
                         },
                         new
                         {
                             Id = 24,
                             at_risk = -1,
-                            currently_employed = "5.4",
-                            decade_change_percentage = -1f,
+                            currently_employed = 5.4m,
+                            decade_change_percentage = -1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "63,920",
+                            industry = "-1",
+                            median_annual_wage = 63920m,
                             title = "Loading and moving machine operators, underground mining"
                         },
                         new
                         {
                             Id = 25,
                             at_risk = -1,
-                            currently_employed = "25.7",
-                            decade_change_percentage = -4.4f,
+                            currently_employed = 25.7m,
+                            decade_change_percentage = -4.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "43,560",
+                            industry = "-1",
+                            median_annual_wage = 43560m,
                             title = "Prepress technicians and workers"
                         },
                         new
                         {
                             Id = 26,
                             at_risk = -1,
-                            currently_employed = "11.1",
-                            decade_change_percentage = -1.8f,
+                            currently_employed = 11.1m,
+                            decade_change_percentage = -1.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,160",
+                            industry = "-1",
+                            median_annual_wage = 43160m,
                             title = "Coil winders, tapers, and finishers"
                         },
                         new
                         {
                             Id = 27,
                             at_risk = -1,
-                            currently_employed = "165.4",
-                            decade_change_percentage = -27.2f,
+                            currently_employed = 165.4m,
+                            decade_change_percentage = -27.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,630",
+                            industry = "-1",
+                            median_annual_wage = 49630m,
                             title = "Payroll and timekeeping clerks"
                         },
                         new
                         {
                             Id = 28,
                             at_risk = -1,
-                            currently_employed = "59.6",
-                            decade_change_percentage = -9.8f,
+                            currently_employed = 59.6m,
+                            decade_change_percentage = -9.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,200",
+                            industry = "-1",
+                            median_annual_wage = 47200m,
                             title = "Structural metal fabricators and fitters"
                         },
                         new
                         {
                             Id = 29,
                             at_risk = -1,
-                            currently_employed = "41.4",
-                            decade_change_percentage = -6.8f,
+                            currently_employed = 41.4m,
+                            decade_change_percentage = -6.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,970",
+                            industry = "-1",
+                            median_annual_wage = 36970m,
                             title = "Print binding and finishing workers"
                         },
                         new
                         {
                             Id = 30,
                             at_risk = -1,
-                            currently_employed = "91.1",
-                            decade_change_percentage = -14.6f,
+                            currently_employed = 91.1m,
+                            decade_change_percentage = -14.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,290",
+                            industry = "-1",
+                            median_annual_wage = 37290m,
                             title = "File clerks"
                         },
                         new
                         {
                             Id = 31,
                             at_risk = -1,
-                            currently_employed = "36.4",
-                            decade_change_percentage = -5.8f,
+                            currently_employed = 36.4m,
+                            decade_change_percentage = -5.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,100",
+                            industry = "-1",
+                            median_annual_wage = 31100m,
                             title = "Door-to-door sales workers, news and street vendors, and related workers"
                         },
                         new
                         {
                             Id = 32,
                             at_risk = -1,
-                            currently_employed = "6.9",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 6.9m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,530",
+                            industry = "-1",
+                            median_annual_wage = 31530m,
                             title = "Sewers, hand"
                         },
                         new
                         {
                             Id = 33,
                             at_risk = -1,
-                            currently_employed = "141.9",
-                            decade_change_percentage = -21.6f,
+                            currently_employed = 141.9m,
+                            decade_change_percentage = -21.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,740",
+                            industry = "-1",
+                            median_annual_wage = 31740m,
                             title = "Sewing machine operators"
                         },
                         new
                         {
                             Id = 34,
                             at_risk = -1,
-                            currently_employed = "33.9",
-                            decade_change_percentage = -5.1f,
+                            currently_employed = 33.9m,
+                            decade_change_percentage = -5.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "58,430",
+                            industry = "-1",
+                            median_annual_wage = 58430m,
                             title = "Aircraft structure, surfaces, rigging, and systems assemblers"
                         },
                         new
                         {
                             Id = 35,
                             at_risk = -1,
-                            currently_employed = "10.9",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 10.9m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,540",
+                            industry = "-1",
+                            median_annual_wage = 46540m,
                             title = "Forging machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 36,
                             at_risk = -1,
-                            currently_employed = "364.1",
-                            decade_change_percentage = -52.9f,
+                            currently_employed = 364.1m,
+                            decade_change_percentage = -52.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,380",
+                            industry = "-1",
+                            median_annual_wage = 36380m,
                             title = "Tellers"
                         },
                         new
                         {
                             Id = 37,
                             at_risk = -1,
-                            currently_employed = "46.6",
-                            decade_change_percentage = -6.7f,
+                            currently_employed = 46.6m,
+                            decade_change_percentage = -6.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,820",
+                            industry = "-1",
+                            median_annual_wage = 40820m,
                             title = "New accounts clerks"
                         },
                         new
                         {
                             Id = 38,
                             at_risk = -1,
-                            currently_employed = "31.6",
-                            decade_change_percentage = -4.5f,
+                            currently_employed = 31.6m,
+                            decade_change_percentage = -4.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,710",
+                            industry = "-1",
+                            median_annual_wage = 36710m,
                             title = "Office machine operators, except computer"
                         },
                         new
                         {
                             Id = 39,
                             at_risk = -1,
-                            currently_employed = "15.7",
-                            decade_change_percentage = -2.2f,
+                            currently_employed = 15.7m,
+                            decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,870",
+                            industry = "-1",
+                            median_annual_wage = 46870m,
                             title = "Milling and planing machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 40,
                             at_risk = -1,
-                            currently_employed = "742.0",
-                            decade_change_percentage = -101.6f,
+                            currently_employed = 742.0m,
+                            decade_change_percentage = -101.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,640",
+                            industry = "-1",
+                            median_annual_wage = 27640m,
                             title = "Cooks, fast food"
                         },
                         new
                         {
                             Id = 41,
                             at_risk = -1,
-                            currently_employed = "33.9",
-                            decade_change_percentage = -4.6f,
+                            currently_employed = 33.9m,
+                            decade_change_percentage = -4.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "34,280",
+                            industry = "-1",
+                            median_annual_wage = 34280m,
                             title = "Tailors, dressmakers, and custom sewers"
                         },
                         new
                         {
                             Id = 42,
                             at_risk = -1,
-                            currently_employed = "8.5",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 8.5m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "47,910",
+                            industry = "-1",
+                            median_annual_wage = 47910m,
                             title = "Desktop publishers"
                         },
                         new
                         {
                             Id = 43,
                             at_risk = -1,
-                            currently_employed = "42.2",
-                            decade_change_percentage = -5.3f,
+                            currently_employed = 42.2m,
+                            decade_change_percentage = -5.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "58,590",
+                            industry = "-1",
+                            median_annual_wage = 58590m,
                             title = "Adult basic education, adult secondary education, and english as a second language instructors"
                         },
                         new
                         {
                             Id = 44,
                             at_risk = -1,
-                            currently_employed = "32.2",
-                            decade_change_percentage = -4f,
+                            currently_employed = 32.2m,
+                            decade_change_percentage = -4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "93,060",
+                            industry = "-1",
+                            median_annual_wage = 93060m,
                             title = "Power plant operators"
                         },
                         new
                         {
                             Id = 45,
                             at_risk = -1,
-                            currently_employed = "6.4",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 6.4m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,280",
+                            industry = "-1",
+                            median_annual_wage = 36280m,
                             title = "Photographic process workers and processing machine operators"
                         },
                         new
                         {
                             Id = 46,
                             at_risk = -1,
-                            currently_employed = "2.3",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 2.3m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "64,180",
+                            industry = "-1",
+                            median_annual_wage = 64180m,
                             title = "Underground mining machine operators, all other"
                         },
                         new
                         {
                             Id = 47,
                             at_risk = -1,
-                            currently_employed = "21.1",
-                            decade_change_percentage = -2.6f,
+                            currently_employed = 21.1m,
+                            decade_change_percentage = -2.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,760",
+                            industry = "-1",
+                            median_annual_wage = 44760m,
                             title = "Meter readers, utilities"
                         },
                         new
                         {
                             Id = 48,
                             at_risk = -1,
-                            currently_employed = "1.6",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 1.6m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "52,330",
+                            industry = "-1",
+                            median_annual_wage = 52330m,
                             title = "Terrazzo workers and finishers"
                         },
                         new
                         {
                             Id = 49,
                             at_risk = -1,
-                            currently_employed = "14.8",
-                            decade_change_percentage = -1.7f,
+                            currently_employed = 14.8m,
+                            decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "79,460",
+                            industry = "-1",
+                            median_annual_wage = 79460m,
                             title = "Gas plant operators"
                         },
                         new
                         {
                             Id = 50,
                             at_risk = -1,
-                            currently_employed = "2,030.2",
-                            decade_change_percentage = -235.9f,
+                            currently_employed = 2030.2m,
+                            decade_change_percentage = -235.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "41,000",
+                            industry = "-1",
+                            median_annual_wage = 41000m,
                             title = "Secretaries and administrative assistants, except legal, medical, and executive"
                         },
                         new
                         {
                             Id = 51,
                             at_risk = -1,
-                            currently_employed = "28.0",
-                            decade_change_percentage = -3.2f,
+                            currently_employed = 28.0m,
+                            decade_change_percentage = -3.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "41,750",
+                            industry = "-1",
+                            median_annual_wage = 41750m,
                             title = "Broadcast announcers and radio disc jockeys"
                         },
                         new
                         {
                             Id = 52,
                             at_risk = -1,
-                            currently_employed = "115.0",
-                            decade_change_percentage = -13f,
+                            currently_employed = 115.0m,
+                            decade_change_percentage = -13m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "49,130",
+                            industry = "-1",
+                            median_annual_wage = 49130m,
                             title = "Postal service mail sorters, processors, and processing machine operators"
                         },
                         new
                         {
                             Id = 53,
                             at_risk = 0,
-                            currently_employed = "147.4",
-                            decade_change_percentage = -16.6f,
+                            currently_employed = 147.4m,
+                            decade_change_percentage = -16.6m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "97,800",
+                            median_annual_wage = 97800m,
                             title = "Computer programmers"
                         },
                         new
                         {
                             Id = 54,
                             at_risk = -1,
-                            currently_employed = "25.1",
-                            decade_change_percentage = -2.8f,
+                            currently_employed = 25.1m,
+                            decade_change_percentage = -2.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "45,240",
+                            industry = "-1",
+                            median_annual_wage = 45240m,
                             title = "Carpet installers"
                         },
                         new
                         {
                             Id = 55,
                             at_risk = -1,
-                            currently_employed = "18.2",
-                            decade_change_percentage = -2f,
+                            currently_employed = 18.2m,
+                            decade_change_percentage = -2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,400",
+                            industry = "-1",
+                            median_annual_wage = 47400m,
                             title = "Locksmiths and safe repairers"
                         },
                         new
                         {
                             Id = 56,
                             at_risk = -1,
-                            currently_employed = "92.7",
-                            decade_change_percentage = -10.2f,
+                            currently_employed = 92.7m,
+                            decade_change_percentage = -10.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,710",
+                            industry = "-1",
+                            median_annual_wage = 45710m,
                             title = "Paper goods machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 57,
                             at_risk = -1,
-                            currently_employed = "28.2",
-                            decade_change_percentage = -3.1f,
+                            currently_employed = 28.2m,
+                            decade_change_percentage = -3.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,310",
+                            industry = "-1",
+                            median_annual_wage = 46310m,
                             title = "Rolling machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 58,
                             at_risk = -1,
-                            currently_employed = "9.8",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 9.8m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "32,460",
+                            industry = "-1",
+                            median_annual_wage = 32460m,
                             title = "Shoe and leather workers and repairers"
                         },
                         new
                         {
                             Id = 59,
                             at_risk = -1,
-                            currently_employed = "184.8",
-                            decade_change_percentage = -20.1f,
+                            currently_employed = 184.8m,
+                            decade_change_percentage = -20.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,340",
+                            industry = "-1",
+                            median_annual_wage = 39340m,
                             title = "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 60,
                             at_risk = -1,
-                            currently_employed = "17.9",
-                            decade_change_percentage = -2f,
+                            currently_employed = 17.9m,
+                            decade_change_percentage = -2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "39,430",
+                            industry = "-1",
+                            median_annual_wage = 39430m,
                             title = "Helpers--brickmasons, blockmasons, stonemasons, and tile and marble setters"
                         },
                         new
                         {
                             Id = 61,
                             at_risk = -1,
-                            currently_employed = "3.3",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 3.3m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "33,060",
+                            industry = "-1",
+                            median_annual_wage = 33060m,
                             title = "Shoe machine operators and tenders"
                         },
                         new
                         {
                             Id = 62,
                             at_risk = -1,
-                            currently_employed = "96.4",
-                            decade_change_percentage = -10.4f,
+                            currently_employed = 96.4m,
+                            decade_change_percentage = -10.4m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "44,910",
+                            industry = "-1",
+                            median_annual_wage = 44910m,
                             title = "Computer, automated teller, and office machine repairers"
                         },
                         new
                         {
                             Id = 63,
                             at_risk = -1,
-                            currently_employed = "11.1",
-                            decade_change_percentage = -1.2f,
+                            currently_employed = 11.1m,
+                            decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,420",
+                            industry = "-1",
+                            median_annual_wage = 34420m,
                             title = "Textile cutting machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 64,
                             at_risk = -1,
-                            currently_employed = "17.8",
-                            decade_change_percentage = -1.9f,
+                            currently_employed = 17.8m,
+                            decade_change_percentage = -1.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,750",
+                            industry = "-1",
+                            median_annual_wage = 35750m,
                             title = "Textile knitting and weaving machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 65,
                             at_risk = -1,
-                            currently_employed = "3,345.8",
-                            decade_change_percentage = -348.1f,
+                            currently_employed = 3345.8m,
+                            decade_change_percentage = -348.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "28,240",
+                            industry = "-1",
+                            median_annual_wage = 28240m,
                             title = "Cashiers"
                         },
                         new
                         {
                             Id = 66,
                             at_risk = -1,
-                            currently_employed = "7.1",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 7.1m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "58,260",
+                            industry = "-1",
+                            median_annual_wage = 58260m,
                             title = "Layout workers, metal and plastic"
                         },
                         new
                         {
                             Id = 67,
                             at_risk = -1,
-                            currently_employed = "175.4",
-                            decade_change_percentage = -17.7f,
+                            currently_employed = 175.4m,
+                            decade_change_percentage = -17.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,700",
+                            industry = "-1",
+                            median_annual_wage = 38700m,
                             title = "Interviewers, except eligibility and loan"
                         },
                         new
                         {
                             Id = 68,
                             at_risk = -1,
-                            currently_employed = "209.7",
-                            decade_change_percentage = -20.1f,
+                            currently_employed = 209.7m,
+                            decade_change_percentage = -20.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,470",
+                            industry = "-1",
+                            median_annual_wage = 39470m,
                             title = "Bill and account collectors"
                         },
                         new
                         {
                             Id = 69,
                             at_risk = -1,
-                            currently_employed = "2.1",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 2.1m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "33,360",
+                            industry = "-1",
+                            median_annual_wage = 33360m,
                             title = "Motion picture projectionists"
                         },
                         new
                         {
                             Id = 70,
                             at_risk = -1,
-                            currently_employed = "75.0",
-                            decade_change_percentage = -7.1f,
+                            currently_employed = 75.0m,
+                            decade_change_percentage = -7.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,910",
+                            industry = "-1",
+                            median_annual_wage = 38910m,
                             title = "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 71,
                             at_risk = -1,
-                            currently_employed = "7.0",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 7.0m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "32,680",
+                            industry = "-1",
+                            median_annual_wage = 32680m,
                             title = "Textile bleaching and dyeing machine operators and tenders"
                         },
                         new
                         {
                             Id = 72,
                             at_risk = -1,
-                            currently_employed = "32.9",
-                            decade_change_percentage = -3.1f,
+                            currently_employed = 32.9m,
+                            decade_change_percentage = -3.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,900",
+                            industry = "-1",
+                            median_annual_wage = 37900m,
                             title = "Plating machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 73,
                             at_risk = -1,
-                            currently_employed = "19.7",
-                            decade_change_percentage = -1.9f,
+                            currently_employed = 19.7m,
+                            decade_change_percentage = -1.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,020",
+                            industry = "-1",
+                            median_annual_wage = 47020m,
                             title = "Lathe and turning machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 74,
                             at_risk = -1,
-                            currently_employed = "7.0",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 7.0m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,150",
+                            industry = "-1",
+                            median_annual_wage = 38150m,
                             title = "Musical instrument repairers and tuners"
                         },
                         new
                         {
                             Id = 75,
                             at_risk = -1,
-                            currently_employed = "6.5",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 6.5m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,160",
+                            industry = "-1",
+                            median_annual_wage = 49160m,
                             title = "Fallers"
                         },
                         new
                         {
                             Id = 76,
                             at_risk = -1,
-                            currently_employed = "193.0",
-                            decade_change_percentage = -17.9f,
+                            currently_employed = 193.0m,
+                            decade_change_percentage = -17.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,670",
+                            industry = "-1",
+                            median_annual_wage = 34670m,
                             title = "Helpers--production workers"
                         },
                         new
                         {
                             Id = 77,
                             at_risk = -1,
-                            currently_employed = "16.0",
-                            decade_change_percentage = -1.5f,
+                            currently_employed = 16.0m,
+                            decade_change_percentage = -1.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,900",
+                            industry = "-1",
+                            median_annual_wage = 40900m,
                             title = "Heat treating equipment setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 78,
                             at_risk = -1,
-                            currently_employed = "6.2",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 6.2m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,070",
+                            industry = "-1",
+                            median_annual_wage = 45070m,
                             title = "Pourers and casters, metal"
                         },
                         new
                         {
                             Id = 79,
                             at_risk = -1,
-                            currently_employed = "43.7",
-                            decade_change_percentage = -3.9f,
+                            currently_employed = 43.7m,
+                            decade_change_percentage = -3.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "54,680",
+                            industry = "-1",
+                            median_annual_wage = 54680m,
                             title = "Brokerage clerks"
                         },
                         new
                         {
                             Id = 80,
                             at_risk = -1,
-                            currently_employed = "11.3",
-                            decade_change_percentage = -1f,
+                            currently_employed = 11.3m,
+                            decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "32,270",
+                            industry = "-1",
+                            median_annual_wage = 32270m,
                             title = "Forest and conservation workers"
                         },
                         new
                         {
                             Id = 81,
                             at_risk = -1,
-                            currently_employed = "25.0",
-                            decade_change_percentage = -2.2f,
+                            currently_employed = 25.0m,
+                            decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "33,720",
+                            industry = "-1",
+                            median_annual_wage = 33720m,
                             title = "Textile winding, twisting, and drawing out machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 82,
                             at_risk = -1,
-                            currently_employed = "155.5",
-                            decade_change_percentage = -13.2f,
+                            currently_employed = 155.5m,
+                            decade_change_percentage = -13.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,350",
+                            industry = "-1",
+                            median_annual_wage = 39350m,
                             title = "Printing press operators"
                         },
                         new
                         {
                             Id = 83,
                             at_risk = -1,
-                            currently_employed = "62.7",
-                            decade_change_percentage = -5.3f,
+                            currently_employed = 62.7m,
+                            decade_change_percentage = -5.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "59,800",
+                            industry = "-1",
+                            median_annual_wage = 59800m,
                             title = "Tool and die makers"
                         },
                         new
                         {
                             Id = 84,
                             at_risk = -1,
-                            currently_employed = "5.5",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 5.5m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "41,940",
+                            industry = "-1",
+                            median_annual_wage = 41940m,
                             title = "Tool grinders, filers, and sharpeners"
                         },
                         new
                         {
                             Id = 85,
                             at_risk = -1,
-                            currently_employed = "862.9",
-                            decade_change_percentage = -72.2f,
+                            currently_employed = 862.9m,
+                            decade_change_percentage = -72.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,760",
+                            industry = "-1",
+                            median_annual_wage = 37760m,
                             title = "Shipping, receiving, and inventory clerks"
                         },
                         new
                         {
                             Id = 86,
                             at_risk = -1,
-                            currently_employed = "32.9",
-                            decade_change_percentage = -2.8f,
+                            currently_employed = 32.9m,
+                            decade_change_percentage = -2.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,920",
+                            industry = "-1",
+                            median_annual_wage = 44920m,
                             title = "Welding, soldering, and brazing machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 87,
                             at_risk = -1,
-                            currently_employed = "215.1",
-                            decade_change_percentage = -17.8f,
+                            currently_employed = 215.1m,
+                            decade_change_percentage = -17.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,660",
+                            industry = "-1",
+                            median_annual_wage = 38660m,
                             title = "Office and administrative support workers, all other"
                         },
                         new
                         {
                             Id = 88,
                             at_risk = -1,
-                            currently_employed = "280.0",
-                            decade_change_percentage = -23f,
+                            currently_employed = 280.0m,
+                            decade_change_percentage = -23m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "189,520",
+                            industry = "-1",
+                            median_annual_wage = 189520m,
                             title = "Chief executives"
                         },
                         new
                         {
                             Id = 89,
                             at_risk = -1,
-                            currently_employed = "19.7",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 19.7m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,280",
+                            industry = "-1",
+                            median_annual_wage = 50280m,
                             title = "Metal-refining furnace operators and tenders"
                         },
                         new
                         {
                             Id = 90,
                             at_risk = -1,
-                            currently_employed = "181.8",
-                            decade_change_percentage = -14.6f,
+                            currently_employed = 181.8m,
+                            decade_change_percentage = -14.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,760",
-                            title = ""
+                            industry = "-1",
+                            median_annual_wage = 46760m,
+                            title = "Computer numerically controlled tool operators"
                         },
                         new
                         {
                             Id = 91,
                             at_risk = -1,
-                            currently_employed = "21.4",
-                            decade_change_percentage = -1.7f,
+                            currently_employed = 21.4m,
+                            decade_change_percentage = -1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,340",
+                            industry = "-1",
+                            median_annual_wage = 38340m,
                             title = "Metal workers and plastic workers, all other"
                         },
                         new
                         {
                             Id = 92,
                             at_risk = -1,
-                            currently_employed = "18.7",
-                            decade_change_percentage = -1.5f,
+                            currently_employed = 18.7m,
+                            decade_change_percentage = -1.5m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "57,640",
+                            industry = "-1",
+                            median_annual_wage = 57640m,
                             title = "Drafters, all other"
                         },
                         new
                         {
                             Id = 93,
                             at_risk = -1,
-                            currently_employed = "14.3",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 14.3m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "32,640",
+                            industry = "-1",
+                            median_annual_wage = 32640m,
                             title = "Textile, apparel, and furnishings workers, all other"
                         },
                         new
                         {
                             Id = 94,
                             at_risk = -1,
-                            currently_employed = "494.4",
-                            decade_change_percentage = -38f,
+                            currently_employed = 494.4m,
+                            decade_change_percentage = -38m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,620",
+                            industry = "-1",
+                            median_annual_wage = 67620m,
                             title = "Buyers and purchasing agents"
                         },
                         new
                         {
                             Id = 95,
                             at_risk = -1,
-                            currently_employed = "65.3",
-                            decade_change_percentage = -4.9f,
+                            currently_employed = 65.3m,
+                            decade_change_percentage = -4.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,240",
+                            industry = "-1",
+                            median_annual_wage = 45240m,
                             title = "Procurement clerks"
                         },
                         new
                         {
                             Id = 96,
                             at_risk = -1,
-                            currently_employed = "1,500.4",
-                            decade_change_percentage = -111.8f,
+                            currently_employed = 1500.4m,
+                            decade_change_percentage = -111.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,280",
+                            industry = "-1",
+                            median_annual_wage = 37280m,
                             title = "Miscellaneous assemblers and fabricators"
                         },
                         new
                         {
                             Id = 97,
                             at_risk = -1,
-                            currently_employed = "378.5",
-                            decade_change_percentage = -28.6f,
+                            currently_employed = 378.5m,
+                            decade_change_percentage = -28.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,610",
+                            industry = "-1",
+                            median_annual_wage = 49610m,
                             title = "Correctional officers and jailers"
                         },
                         new
                         {
                             Id = 98,
                             at_risk = -1,
-                            currently_employed = "3.4",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 3.4m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,320",
+                            industry = "-1",
+                            median_annual_wage = 60320m,
                             title = "Fabric and apparel patternmakers"
                         },
                         new
                         {
                             Id = 99,
                             at_risk = -1,
-                            currently_employed = "111.4",
-                            decade_change_percentage = -8f,
+                            currently_employed = 111.4m,
+                            decade_change_percentage = -8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "58,450",
+                            industry = "-1",
+                            median_annual_wage = 58450m,
                             title = "Advertising sales agents"
                         },
                         new
                         {
                             Id = 100,
                             at_risk = -1,
-                            currently_employed = "49.6",
-                            decade_change_percentage = -3.6f,
+                            currently_employed = 49.6m,
+                            decade_change_percentage = -3.6m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "61,310",
+                            industry = "-1",
+                            median_annual_wage = 61310m,
                             title = "Mechanical drafters"
                         },
                         new
                         {
                             Id = 101,
                             at_risk = -1,
-                            currently_employed = "4.9",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 4.9m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,110",
+                            industry = "-1",
+                            median_annual_wage = 47110m,
                             title = "Logging workers, all other"
                         },
                         new
                         {
                             Id = 102,
                             at_risk = -1,
-                            currently_employed = "1,405.8",
-                            decade_change_percentage = -94f,
+                            currently_employed = 1405.8m,
+                            decade_change_percentage = -94m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,250",
+                            industry = "-1",
+                            median_annual_wage = 45250m,
                             title = "First-line supervisors of retail sales workers"
                         },
                         new
                         {
                             Id = 103,
                             at_risk = -1,
-                            currently_employed = "314.5",
-                            decade_change_percentage = -21f,
+                            currently_employed = 314.5m,
+                            decade_change_percentage = -21m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "54,250",
+                            industry = "-1",
+                            median_annual_wage = 54250m,
                             title = "Postal service mail carriers"
                         },
                         new
                         {
                             Id = 104,
                             at_risk = -1,
-                            currently_employed = "74.8",
-                            decade_change_percentage = -5f,
+                            currently_employed = 74.8m,
+                            decade_change_percentage = -5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "56,200",
+                            industry = "-1",
+                            median_annual_wage = 56200m,
                             title = "Postal service clerks"
                         },
                         new
                         {
                             Id = 105,
                             at_risk = -1,
-                            currently_employed = "13.0",
-                            decade_change_percentage = -0.9f,
+                            currently_employed = 13.0m,
+                            decade_change_percentage = -0.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "82,760",
+                            industry = "-1",
+                            median_annual_wage = 82760m,
                             title = "Postmasters and mail superintendents"
                         },
                         new
                         {
                             Id = 106,
                             at_risk = -1,
-                            currently_employed = "2,668.2",
-                            decade_change_percentage = -175.4f,
+                            currently_employed = 2668.2m,
+                            decade_change_percentage = -175.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,040",
+                            industry = "-1",
+                            median_annual_wage = 38040m,
                             title = "Office clerks, general"
                         },
                         new
                         {
                             Id = 107,
                             at_risk = -1,
-                            currently_employed = "26.9",
-                            decade_change_percentage = -1.8f,
+                            currently_employed = 26.9m,
+                            decade_change_percentage = -1.8m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "44,960",
+                            industry = "-1",
+                            median_annual_wage = 44960m,
                             title = "Audiovisual equipment installers and repairers"
                         },
                         new
                         {
                             Id = 108,
                             at_risk = -1,
-                            currently_employed = "124.8",
-                            decade_change_percentage = -7.9f,
+                            currently_employed = 124.8m,
+                            decade_change_percentage = -7.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,600",
+                            industry = "-1",
+                            median_annual_wage = 51600m,
                             title = "Water and wastewater treatment plant and system operators"
                         },
                         new
                         {
                             Id = 109,
                             at_risk = -1,
-                            currently_employed = "6.9",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 6.9m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "59,500",
+                            industry = "-1",
+                            median_annual_wage = 59500m,
                             title = "Fish and game wardens"
                         },
                         new
                         {
                             Id = 110,
                             at_risk = -1,
-                            currently_employed = "1,735.8",
-                            decade_change_percentage = -108.3f,
+                            currently_employed = 1735.8m,
+                            decade_change_percentage = -108.3m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "45,860",
+                            industry = "-1",
+                            median_annual_wage = 45860m,
                             title = "Bookkeeping, accounting, and auditing clerks"
                         },
                         new
                         {
                             Id = 111,
                             at_risk = -1,
-                            currently_employed = "137.4",
-                            decade_change_percentage = -8.4f,
+                            currently_employed = 137.4m,
+                            decade_change_percentage = -8.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,360",
+                            industry = "-1",
+                            median_annual_wage = 30360m,
                             title = "Cooks, short order"
                         },
                         new
                         {
                             Id = 112,
                             at_risk = -1,
-                            currently_employed = "78.6",
-                            decade_change_percentage = -4.8f,
+                            currently_employed = 78.6m,
+                            decade_change_percentage = -4.8m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "37,600",
+                            industry = "-1",
+                            median_annual_wage = 37600m,
                             title = "Library technicians"
                         },
                         new
                         {
                             Id = 113,
                             at_risk = -1,
-                            currently_employed = "13.5",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 13.5m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,210",
+                            industry = "-1",
+                            median_annual_wage = 50210m,
                             title = "Stonemasons"
                         },
                         new
                         {
                             Id = 114,
                             at_risk = -1,
-                            currently_employed = "6.0",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 6.0m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,700",
+                            industry = "-1",
+                            median_annual_wage = 38700m,
                             title = "Correspondence clerks"
                         },
                         new
                         {
                             Id = 115,
                             at_risk = -1,
-                            currently_employed = "82.9",
-                            decade_change_percentage = -4.8f,
+                            currently_employed = 82.9m,
+                            decade_change_percentage = -4.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,150",
+                            industry = "-1",
+                            median_annual_wage = 31150m,
                             title = "Library assistants, clerical"
                         },
                         new
                         {
                             Id = 116,
                             at_risk = -1,
-                            currently_employed = "16.4",
-                            decade_change_percentage = -1f,
+                            currently_employed = 16.4m,
+                            decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,830",
+                            industry = "-1",
+                            median_annual_wage = 44830m,
                             title = "Credit authorizers, checkers, and clerks"
                         },
                         new
                         {
                             Id = 117,
                             at_risk = -1,
-                            currently_employed = "19.4",
-                            decade_change_percentage = -1.1f,
+                            currently_employed = 19.4m,
+                            decade_change_percentage = -1.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,010",
+                            industry = "-1",
+                            median_annual_wage = 30010m,
                             title = "Gambling change persons and booth cashiers"
                         },
                         new
                         {
                             Id = 118,
                             at_risk = -1,
-                            currently_employed = "2,982.9",
-                            decade_change_percentage = -162.7f,
+                            currently_employed = 2982.9m,
+                            decade_change_percentage = -162.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,780",
+                            industry = "-1",
+                            median_annual_wage = 37780m,
                             title = "Customer service representatives"
                         },
                         new
                         {
                             Id = 119,
                             at_risk = -1,
-                            currently_employed = "120.2",
-                            decade_change_percentage = -6.6f,
+                            currently_employed = 120.2m,
+                            decade_change_percentage = -6.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,330",
+                            industry = "-1",
+                            median_annual_wage = 49330m,
                             title = "Chemical equipment operators and tenders"
                         },
                         new
                         {
                             Id = 120,
                             at_risk = -1,
-                            currently_employed = "34.0",
-                            decade_change_percentage = -1.9f,
+                            currently_employed = 34.0m,
+                            decade_change_percentage = -1.9m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "38,570",
+                            industry = "-1",
+                            median_annual_wage = 38570m,
                             title = "Cooks, private household"
                         },
                         new
                         {
                             Id = 121,
                             at_risk = -1,
-                            currently_employed = "12.2",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 12.2m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,720",
+                            industry = "-1",
+                            median_annual_wage = 31720m,
                             title = "Gambling cage workers"
                         },
                         new
                         {
                             Id = 122,
                             at_risk = -1,
-                            currently_employed = "199.4",
-                            decade_change_percentage = -10.5f,
+                            currently_employed = 199.4m,
+                            decade_change_percentage = -10.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "34,150",
+                            industry = "-1",
+                            median_annual_wage = 34150m,
                             title = "Farmworkers, farm, ranch, and aquacultural animals"
                         },
                         new
                         {
                             Id = 123,
                             at_risk = -1,
-                            currently_employed = "25.1",
-                            decade_change_percentage = -1.3f,
+                            currently_employed = 25.1m,
+                            decade_change_percentage = -1.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,490",
+                            industry = "-1",
+                            median_annual_wage = 37490m,
                             title = "Helpers--carpenters"
                         },
                         new
                         {
                             Id = 124,
                             at_risk = -1,
-                            currently_employed = "1,567.2",
-                            decade_change_percentage = -80.7f,
+                            currently_employed = 1567.2m,
+                            decade_change_percentage = -80.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "61,370",
+                            industry = "-1",
+                            median_annual_wage = 61370m,
                             title = "First-line supervisors of office and administrative support workers"
                         },
                         new
                         {
                             Id = 125,
                             at_risk = -1,
-                            currently_employed = "30.1",
-                            decade_change_percentage = -1.5f,
+                            currently_employed = 30.1m,
+                            decade_change_percentage = -1.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "32,550",
+                            industry = "-1",
+                            median_annual_wage = 32550m,
                             title = "Graders and sorters, agricultural products"
                         },
                         new
                         {
                             Id = 126,
                             at_risk = -1,
-                            currently_employed = "0.5",
-                            decade_change_percentage = 0f,
+                            currently_employed = 0.5m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,290",
+                            industry = "-1",
+                            median_annual_wage = 44290m,
                             title = "Patternmakers, wood"
                         },
                         new
                         {
                             Id = 127,
                             at_risk = -1,
-                            currently_employed = "9.6",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 9.6m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "101,650",
+                            industry = "-1",
+                            median_annual_wage = 101650m,
                             title = "Power distributors and dispatchers"
                         },
                         new
                         {
                             Id = 128,
                             at_risk = -1,
-                            currently_employed = "107.6",
-                            decade_change_percentage = -5.2f,
+                            currently_employed = 107.6m,
+                            decade_change_percentage = -5.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "45,930",
+                            industry = "-1",
+                            median_annual_wage = 45930m,
                             title = "Human resources assistants, except payroll and timekeeping"
                         },
                         new
                         {
                             Id = 129,
-                            at_risk = 1,
-                            currently_employed = "931.8",
-                            decade_change_percentage = -44.8f,
+                            at_risk = -1,
+                            currently_employed = 931.8m,
+                            decade_change_percentage = -44.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "2",
-                            median_annual_wage = "29,790",
+                            industry = "-1",
+                            median_annual_wage = 29790m,
                             title = "Food preparation workers"
                         },
                         new
                         {
                             Id = 130,
                             at_risk = -1,
-                            currently_employed = "72.8",
-                            decade_change_percentage = -3.4f,
+                            currently_employed = 72.8m,
+                            decade_change_percentage = -3.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,070",
+                            industry = "-1",
+                            median_annual_wage = 35070m,
                             title = "Mail clerks and mail machine operators, except postal service"
                         },
                         new
                         {
                             Id = 131,
                             at_risk = -1,
-                            currently_employed = "922.9",
-                            decade_change_percentage = -42.3f,
+                            currently_employed = 922.9m,
+                            decade_change_percentage = -42.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "75,760",
+                            industry = "-1",
+                            median_annual_wage = 75760m,
                             title = "Farmers, ranchers, and other agricultural managers"
                         },
                         new
                         {
                             Id = 132,
                             at_risk = -1,
-                            currently_employed = "35.4",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 35.4m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,050",
+                            industry = "-1",
+                            median_annual_wage = 46050m,
                             title = "Dental laboratory technicians"
                         },
                         new
                         {
                             Id = 133,
                             at_risk = -1,
-                            currently_employed = "38.0",
-                            decade_change_percentage = -1.7f,
+                            currently_employed = 38.0m,
+                            decade_change_percentage = -1.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "45,990",
+                            industry = "-1",
+                            median_annual_wage = 45990m,
                             title = "Pipelayers"
                         },
                         new
                         {
                             Id = 134,
                             at_risk = -1,
-                            currently_employed = "73.0",
-                            decade_change_percentage = -3.2f,
+                            currently_employed = 73.0m,
+                            decade_change_percentage = -3.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "78,850",
+                            industry = "-1",
+                            median_annual_wage = 78850m,
                             title = "Credit analysts"
                         },
                         new
                         {
                             Id = 135,
                             at_risk = -1,
-                            currently_employed = "36.6",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 36.6m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,000",
+                            industry = "-1",
+                            median_annual_wage = 46000m,
                             title = "Home appliance repairers"
                         },
                         new
                         {
                             Id = 136,
                             at_risk = -1,
-                            currently_employed = "18.9",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 18.9m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,650",
+                            industry = "-1",
+                            median_annual_wage = 51650m,
                             title = "Tire builders"
                         },
                         new
                         {
                             Id = 137,
                             at_risk = -1,
-                            currently_employed = "55.8",
-                            decade_change_percentage = -2.3f,
+                            currently_employed = 55.8m,
+                            decade_change_percentage = -2.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,880",
+                            industry = "-1",
+                            median_annual_wage = 39880m,
                             title = "Cutting and slicing machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 138,
                             at_risk = -1,
-                            currently_employed = "206.2",
-                            decade_change_percentage = -8.3f,
+                            currently_employed = 206.2m,
+                            decade_change_percentage = -8.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "48,300",
+                            industry = "-1",
+                            median_annual_wage = 48300m,
                             title = "Cement masons and concrete finishers"
                         },
                         new
                         {
                             Id = 139,
                             at_risk = -1,
-                            currently_employed = "122.1",
-                            decade_change_percentage = -4.9f,
+                            currently_employed = 122.1m,
+                            decade_change_percentage = -4.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "73,080",
+                            industry = "-1",
+                            median_annual_wage = 73080m,
                             title = "Editors"
                         },
                         new
                         {
                             Id = 140,
                             at_risk = -1,
-                            currently_employed = "13.7",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 13.7m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "66,920",
+                            industry = "-1",
+                            median_annual_wage = 66920m,
                             title = "Boilermakers"
                         },
                         new
                         {
                             Id = 141,
                             at_risk = -1,
-                            currently_employed = "8.4",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 8.4m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "28,940",
+                            industry = "-1",
+                            median_annual_wage = 28940m,
                             title = "Gambling and sports book writers and runners"
                         },
                         new
                         {
                             Id = 142,
                             at_risk = -1,
-                            currently_employed = "595.4",
-                            decade_change_percentage = -23f,
+                            currently_employed = 595.4m,
+                            decade_change_percentage = -23m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,900",
+                            industry = "-1",
+                            median_annual_wage = 43900m,
                             title = "Inspectors, testers, sorters, samplers, and weighers"
                         },
                         new
                         {
                             Id = 143,
                             at_risk = -1,
-                            currently_employed = "62.2",
-                            decade_change_percentage = -2.4f,
+                            currently_employed = 62.2m,
+                            decade_change_percentage = -2.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,810",
+                            industry = "-1",
+                            median_annual_wage = 48810m,
                             title = "First-line supervisors of security workers"
                         },
                         new
                         {
                             Id = 144,
                             at_risk = -1,
-                            currently_employed = "7.2",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 7.2m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "45,410",
+                            industry = "-1",
+                            median_annual_wage = 45410m,
                             title = "Proofreaders and copy markers"
                         },
                         new
                         {
                             Id = 145,
                             at_risk = -1,
-                            currently_employed = "49.0",
-                            decade_change_percentage = -1.8f,
+                            currently_employed = 49.0m,
+                            decade_change_percentage = -1.8m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "34,730",
+                            industry = "-1",
+                            median_annual_wage = 34730m,
                             title = "Medical transcriptionists"
                         },
                         new
                         {
                             Id = 146,
                             at_risk = -1,
-                            currently_employed = "36.4",
-                            decade_change_percentage = -1.4f,
+                            currently_employed = 36.4m,
+                            decade_change_percentage = -1.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,350",
+                            industry = "-1",
+                            median_annual_wage = 48350m,
                             title = "Excavating and loading machine and dragline operators, surface mining"
                         },
                         new
                         {
                             Id = 147,
                             at_risk = -1,
-                            currently_employed = "35.3",
-                            decade_change_percentage = -1.3f,
+                            currently_employed = 35.3m,
+                            decade_change_percentage = -1.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,400",
+                            industry = "-1",
+                            median_annual_wage = 46400m,
                             title = "Logging equipment operators"
                         },
                         new
                         {
                             Id = 148,
                             at_risk = -1,
-                            currently_employed = "8.8",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 8.8m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "60,410",
+                            industry = "-1",
+                            median_annual_wage = 60410m,
                             title = "Survey researchers"
                         },
                         new
                         {
                             Id = 149,
                             at_risk = -1,
-                            currently_employed = "167.9",
-                            decade_change_percentage = -6.2f,
+                            currently_employed = 167.9m,
+                            decade_change_percentage = -6.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,050",
+                            industry = "-1",
+                            median_annual_wage = 37050m,
                             title = "Molding, coremaking, and casting machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 150,
                             at_risk = -1,
-                            currently_employed = "62.4",
-                            decade_change_percentage = -2.2f,
+                            currently_employed = 62.4m,
+                            decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "29,880",
+                            industry = "-1",
+                            median_annual_wage = 29880m,
                             title = "School bus monitors"
                         },
                         new
                         {
                             Id = 151,
                             at_risk = -1,
-                            currently_employed = "13.5",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 13.5m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,370",
+                            industry = "-1",
+                            median_annual_wage = 35370m,
                             title = "Woodworkers, all other"
                         },
                         new
                         {
                             Id = 152,
                             at_risk = -1,
-                            currently_employed = "1.1",
-                            decade_change_percentage = 0f,
+                            currently_employed = 1.1m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,940",
+                            industry = "-1",
+                            median_annual_wage = 46940m,
                             title = "Model makers, wood"
                         },
                         new
                         {
                             Id = 153,
                             at_risk = -1,
-                            currently_employed = "72.5",
-                            decade_change_percentage = -2.5f,
+                            currently_employed = 72.5m,
+                            decade_change_percentage = -2.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,070",
+                            industry = "-1",
+                            median_annual_wage = 37070m,
                             title = "Helpers--electricians"
                         },
                         new
                         {
                             Id = 154,
                             at_risk = -1,
-                            currently_employed = "28.8",
-                            decade_change_percentage = -1f,
+                            currently_employed = 28.8m,
+                            decade_change_percentage = -1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,290",
+                            industry = "-1",
+                            median_annual_wage = 43290m,
                             title = "Crushing, grinding, and polishing machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 155,
                             at_risk = -1,
-                            currently_employed = "10.5",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 10.5m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "61,650",
+                            industry = "-1",
+                            median_annual_wage = 61650m,
                             title = "Lighting technicians"
                         },
                         new
                         {
                             Id = 156,
                             at_risk = -1,
-                            currently_employed = "58.5",
-                            decade_change_percentage = -1.9f,
+                            currently_employed = 58.5m,
+                            decade_change_percentage = -1.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "55,960",
+                            industry = "-1",
+                            median_annual_wage = 55960m,
                             title = "News analysts, reporters, and journalists"
                         },
                         new
                         {
                             Id = 157,
                             at_risk = -1,
-                            currently_employed = "5.5",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 5.5m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "115,870",
+                            industry = "-1",
+                            median_annual_wage = 115870m,
                             title = "Nuclear power reactor operators"
                         },
                         new
                         {
                             Id = 158,
                             at_risk = 1,
-                            currently_employed = "259.0",
-                            decade_change_percentage = -8.2f,
+                            currently_employed = 259.0m,
+                            decade_change_percentage = -8.2m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "46,080",
+                            median_annual_wage = 46080m,
                             title = "Insurance claims and policy processing clerks"
                         },
                         new
                         {
                             Id = 159,
                             at_risk = -1,
-                            currently_employed = "19.3",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 19.3m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "82,670",
+                            industry = "-1",
+                            median_annual_wage = 82670m,
                             title = "Chemical plant and system operators"
                         },
                         new
                         {
                             Id = 160,
                             at_risk = -1,
-                            currently_employed = "13.9",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 13.9m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "57,360",
+                            industry = "-1",
+                            median_annual_wage = 57360m,
                             title = "Continuous mining machine operators"
                         },
                         new
                         {
                             Id = 161,
                             at_risk = -1,
-                            currently_employed = "2,194.1",
-                            decade_change_percentage = -68.6f,
+                            currently_employed = 2194.1m,
+                            decade_change_percentage = -68.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,120",
+                            industry = "-1",
+                            median_annual_wage = 29120m,
                             title = "Waiters and waitresses"
                         },
                         new
                         {
                             Id = 162,
                             at_risk = -1,
-                            currently_employed = "329.0",
-                            decade_change_percentage = -10.3f,
+                            currently_employed = 329.0m,
+                            decade_change_percentage = -10.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "72,230",
+                            industry = "-1",
+                            median_annual_wage = 72230m,
                             title = "Claims adjusters, examiners, and investigators"
                         },
                         new
                         {
                             Id = 163,
                             at_risk = -1,
-                            currently_employed = "74.8",
-                            decade_change_percentage = -2.2f,
+                            currently_employed = 74.8m,
+                            decade_change_percentage = -2.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "49,690",
+                            industry = "-1",
+                            median_annual_wage = 49690m,
                             title = "Education and childcare administrators, preschool and daycare"
                         },
                         new
                         {
                             Id = 164,
                             at_risk = -1,
-                            currently_employed = "47.2",
-                            decade_change_percentage = -1.4f,
+                            currently_employed = 47.2m,
+                            decade_change_percentage = -1.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,140",
+                            industry = "-1",
+                            median_annual_wage = 47140m,
                             title = "Jewelers and precious stone and metal workers"
                         },
                         new
                         {
                             Id = 165,
                             at_risk = -1,
-                            currently_employed = "231.4",
-                            decade_change_percentage = -6.5f,
+                            currently_employed = 231.4m,
+                            decade_change_percentage = -6.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "71,200",
+                            industry = "-1",
+                            median_annual_wage = 71200m,
                             title = "Cost estimators"
                         },
                         new
                         {
                             Id = 166,
                             at_risk = -1,
-                            currently_employed = "55.6",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 55.6m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,950",
+                            industry = "-1",
+                            median_annual_wage = 39950m,
                             title = "Weighers, measurers, checkers, and samplers, recordkeeping"
                         },
                         new
                         {
                             Id = 167,
                             at_risk = -1,
-                            currently_employed = "43.7",
-                            decade_change_percentage = -1.2f,
+                            currently_employed = 43.7m,
+                            decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "33,270",
+                            industry = "-1",
+                            median_annual_wage = 33270m,
                             title = "Pharmacy aides"
                         },
                         new
                         {
                             Id = 168,
                             at_risk = -1,
-                            currently_employed = "58.5",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 58.5m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,310",
+                            industry = "-1",
+                            median_annual_wage = 63310m,
                             title = "First-line supervisors of correctional officers"
                         },
                         new
                         {
                             Id = 169,
                             at_risk = -1,
-                            currently_employed = "26.1",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 26.1m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "93,720",
+                            industry = "-1",
+                            median_annual_wage = 93720m,
                             title = "Electrical and electronics repairers, powerhouse, substation, and relay"
                         },
                         new
                         {
                             Id = 170,
                             at_risk = 0,
-                            currently_employed = "15.2",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 15.2m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Associate's degree",
-                            industry = "1,2",
-                            median_annual_wage = "60,570",
+                            industry = "1",
+                            median_annual_wage = 60570m,
                             title = "Electro-mechanical and mechatronics technologists and technicians"
                         },
                         new
                         {
                             Id = 171,
                             at_risk = -1,
-                            currently_employed = "257.7",
-                            decade_change_percentage = -6.6f,
+                            currently_employed = 257.7m,
+                            decade_change_percentage = -6.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "28,910",
+                            industry = "-1",
+                            median_annual_wage = 28910m,
                             title = "Hotel, motel, and resort desk clerks"
                         },
                         new
                         {
                             Id = 172,
                             at_risk = -1,
-                            currently_employed = "13.6",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 13.6m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "69,380",
+                            industry = "-1",
+                            median_annual_wage = 69380m,
                             title = "Insurance appraisers, auto damage"
                         },
                         new
                         {
                             Id = 173,
                             at_risk = -1,
-                            currently_employed = "31.5",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 31.5m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,600",
+                            industry = "-1",
+                            median_annual_wage = 39600m,
                             title = "Upholsterers"
                         },
                         new
                         {
                             Id = 174,
                             at_risk = 1,
-                            currently_employed = "125.5",
-                            decade_change_percentage = -3f,
+                            currently_employed = 125.5m,
+                            decade_change_percentage = -3m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "76,230",
+                            median_annual_wage = 76230m,
                             title = "Insurance underwriters"
                         },
                         new
                         {
                             Id = 175,
                             at_risk = -1,
-                            currently_employed = "447.1",
-                            decade_change_percentage = -10.2f,
+                            currently_employed = 447.1m,
+                            decade_change_percentage = -10.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,080",
+                            industry = "-1",
+                            median_annual_wage = 29080m,
                             title = "Dishwashers"
                         },
                         new
                         {
                             Id = 176,
                             at_risk = -1,
-                            currently_employed = "32.2",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 32.2m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "85,090",
+                            industry = "-1",
+                            median_annual_wage = 85090m,
                             title = "Petroleum pump system operators, refinery operators, and gaugers"
                         },
                         new
                         {
                             Id = 177,
                             at_risk = -1,
-                            currently_employed = "17.1",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 17.1m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,100",
+                            industry = "-1",
+                            median_annual_wage = 49100m,
                             title = "Bailiffs"
                         },
                         new
                         {
                             Id = 178,
                             at_risk = -1,
-                            currently_employed = "16.3",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 16.3m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,860",
+                            industry = "-1",
+                            median_annual_wage = 39860m,
                             title = "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers"
                         },
                         new
                         {
                             Id = 179,
                             at_risk = -1,
-                            currently_employed = "18.1",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 18.1m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "62,360",
+                            industry = "-1",
+                            median_annual_wage = 62360m,
                             title = "Tapers"
                         },
                         new
                         {
                             Id = 180,
                             at_risk = -1,
-                            currently_employed = "523.5",
-                            decade_change_percentage = -11.3f,
+                            currently_employed = 523.5m,
+                            decade_change_percentage = -11.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "33,000",
+                            industry = "-1",
+                            median_annual_wage = 33000m,
                             title = "Farmworkers and laborers, crop, nursery, and greenhouse"
                         },
                         new
                         {
                             Id = 181,
                             at_risk = -1,
-                            currently_employed = "364.4",
-                            decade_change_percentage = -8f,
+                            currently_employed = 364.4m,
+                            decade_change_percentage = -8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "82,850",
+                            industry = "-1",
+                            median_annual_wage = 82850m,
                             title = "First-line supervisors of non-retail sales workers"
                         },
                         new
                         {
                             Id = 182,
                             at_risk = -1,
-                            currently_employed = "16.2",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 16.2m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,280",
+                            industry = "-1",
+                            median_annual_wage = 63280m,
                             title = "Wellhead pumpers"
                         },
                         new
                         {
                             Id = 183,
                             at_risk = -1,
-                            currently_employed = "11.4",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 11.4m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,780",
+                            industry = "-1",
+                            median_annual_wage = 38780m,
                             title = "Adhesive bonding machine operators and tenders"
                         },
                         new
                         {
                             Id = 184,
                             at_risk = -1,
-                            currently_employed = "3,765.6",
-                            decade_change_percentage = -79.1f,
+                            currently_employed = 3765.6m,
+                            decade_change_percentage = -79.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,600",
+                            industry = "-1",
+                            median_annual_wage = 30600m,
                             title = "Retail salespersons"
                         },
                         new
                         {
                             Id = 185,
                             at_risk = -1,
-                            currently_employed = "3.9",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 3.9m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "59,990",
+                            industry = "-1",
+                            median_annual_wage = 59990m,
                             title = "Gas compressor and gas pumping station operators"
                         },
                         new
                         {
                             Id = 186,
                             at_risk = -1,
-                            currently_employed = "945.9",
-                            decade_change_percentage = -18.5f,
+                            currently_employed = 945.9m,
+                            decade_change_percentage = -18.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "28,520",
+                            industry = "-1",
+                            median_annual_wage = 28520m,
                             title = "Childcare workers"
                         },
                         new
                         {
                             Id = 187,
                             at_risk = -1,
-                            currently_employed = "9.7",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 9.7m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "53,450",
+                            industry = "-1",
+                            median_annual_wage = 53450m,
                             title = "Farm and home management educators"
                         },
                         new
                         {
                             Id = 188,
                             at_risk = -1,
-                            currently_employed = "105.7",
-                            decade_change_percentage = -2f,
+                            currently_employed = 105.7m,
+                            decade_change_percentage = -2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,810",
+                            industry = "-1",
+                            median_annual_wage = 38810m,
                             title = "Cabinetmakers and bench carpenters"
                         },
                         new
                         {
                             Id = 189,
                             at_risk = -1,
-                            currently_employed = "64.3",
-                            decade_change_percentage = -1.2f,
+                            currently_employed = 64.3m,
+                            decade_change_percentage = -1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,970",
+                            industry = "-1",
+                            median_annual_wage = 39970m,
                             title = "Extruding and drawing machine setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 190,
                             at_risk = -1,
-                            currently_employed = "6.6",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 6.6m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,600",
+                            industry = "-1",
+                            median_annual_wage = 51600m,
                             title = "Extraction workers, all other"
                         },
                         new
                         {
                             Id = 191,
                             at_risk = -1,
-                            currently_employed = "2.8",
-                            decade_change_percentage = 0f,
+                            currently_employed = 2.8m,
+                            decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "58,950",
+                            industry = "-1",
+                            median_annual_wage = 58950m,
                             title = "Hoist and winch operators"
                         },
                         new
                         {
                             Id = 192,
                             at_risk = -1,
-                            currently_employed = "39.2",
-                            decade_change_percentage = -0.7f,
+                            currently_employed = 39.2m,
+                            decade_change_percentage = -0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,690",
+                            industry = "-1",
+                            median_annual_wage = 39690m,
                             title = "Coin, vending, and amusement machine servicers and repairers"
                         },
                         new
                         {
                             Id = 193,
                             at_risk = -1,
-                            currently_employed = "7.4",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 7.4m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "48,880",
+                            industry = "-1",
+                            median_annual_wage = 48880m,
                             title = "Statistical assistants"
                         },
                         new
                         {
                             Id = 194,
                             at_risk = -1,
-                            currently_employed = "5.6",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 5.6m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,370",
+                            industry = "-1",
+                            median_annual_wage = 42370m,
                             title = "Log graders and scalers"
                         },
                         new
                         {
                             Id = 195,
                             at_risk = -1,
-                            currently_employed = "142.4",
-                            decade_change_percentage = -2.2f,
+                            currently_employed = 142.4m,
+                            decade_change_percentage = -2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "64,480",
+                            industry = "-1",
+                            median_annual_wage = 64480m,
                             title = "Construction and building inspectors"
                         },
                         new
                         {
                             Id = 196,
                             at_risk = -1,
-                            currently_employed = "9.0",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 9.0m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "41,570",
+                            industry = "-1",
+                            median_annual_wage = 41570m,
                             title = "Parking enforcement workers"
                         },
                         new
                         {
                             Id = 197,
                             at_risk = -1,
-                            currently_employed = "1,155.9",
-                            decade_change_percentage = -14.9f,
+                            currently_employed = 1155.9m,
+                            decade_change_percentage = -14.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,750",
+                            industry = "-1",
+                            median_annual_wage = 34750m,
                             title = "Security guards"
                         },
                         new
                         {
                             Id = 198,
                             at_risk = -1,
-                            currently_employed = "184.4",
-                            decade_change_percentage = -2.3f,
+                            currently_employed = 184.4m,
+                            decade_change_percentage = -2.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,060",
+                            industry = "-1",
+                            median_annual_wage = 29060m,
                             title = "Laundry and dry-cleaning workers"
                         },
                         new
                         {
                             Id = 199,
                             at_risk = -1,
-                            currently_employed = "60.0",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 60.0m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,480",
+                            industry = "-1",
+                            median_annual_wage = 39480m,
                             title = "Extruding, forming, pressing, and compacting machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 200,
                             at_risk = -1,
-                            currently_employed = "5.9",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 5.9m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "100,420",
+                            industry = "-1",
+                            median_annual_wage = 100420m,
                             title = "Nuclear technicians"
                         },
                         new
                         {
                             Id = 201,
                             at_risk = -1,
-                            currently_employed = "131.6",
-                            decade_change_percentage = -1.6f,
+                            currently_employed = 131.6m,
+                            decade_change_percentage = -1.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,930",
+                            industry = "-1",
+                            median_annual_wage = 36930m,
                             title = "Butchers and meat cutters"
                         },
                         new
                         {
                             Id = 202,
                             at_risk = -1,
-                            currently_employed = "17.6",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 17.6m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "60,670",
+                            industry = "-1",
+                            median_annual_wage = 60670m,
                             title = "Sound engineering technicians"
                         },
                         new
                         {
                             Id = 203,
                             at_risk = -1,
-                            currently_employed = "214.8",
-                            decade_change_percentage = -2.3f,
+                            currently_employed = 214.8m,
+                            decade_change_percentage = -2.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,830",
+                            industry = "-1",
+                            median_annual_wage = 44830m,
                             title = "Dispatchers, except police, fire, and ambulance"
                         },
                         new
                         {
                             Id = 204,
                             at_risk = -1,
-                            currently_employed = "39.9",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 39.9m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "60,700",
+                            industry = "-1",
+                            median_annual_wage = 60700m,
                             title = "Broadcast technicians"
                         },
                         new
                         {
                             Id = 205,
                             at_risk = -1,
-                            currently_employed = "659.6",
-                            decade_change_percentage = -6.6f,
+                            currently_employed = 659.6m,
+                            decade_change_percentage = -6.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "32,920",
+                            industry = "-1",
+                            median_annual_wage = 32920m,
                             title = "Packers and packagers, hand"
                         },
                         new
                         {
                             Id = 206,
                             at_risk = -1,
-                            currently_employed = "247.1",
-                            decade_change_percentage = -2.5f,
+                            currently_employed = 247.1m,
+                            decade_change_percentage = -2.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,490",
+                            industry = "-1",
+                            median_annual_wage = 46490m,
                             title = "Loan interviewers and clerks"
                         },
                         new
                         {
                             Id = 207,
                             at_risk = -1,
-                            currently_employed = "81.1",
-                            decade_change_percentage = -0.8f,
+                            currently_employed = 81.1m,
+                            decade_change_percentage = -0.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,240",
+                            industry = "-1",
+                            median_annual_wage = 35240m,
                             title = "Slaughterers and meat packers"
                         },
                         new
                         {
                             Id = 208,
                             at_risk = -1,
-                            currently_employed = "64.6",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 64.6m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,830",
+                            industry = "-1",
+                            median_annual_wage = 36830m,
                             title = "Woodworking machine setters, operators, and tenders, except sawing"
                         },
                         new
                         {
                             Id = 209,
                             at_risk = -1,
-                            currently_employed = "64.6",
-                            decade_change_percentage = -0.5f,
+                            currently_employed = 64.6m,
+                            decade_change_percentage = -0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "82,010",
+                            industry = "-1",
+                            median_annual_wage = 82010m,
                             title = "Labor relations specialists"
                         },
                         new
                         {
                             Id = 210,
                             at_risk = -1,
-                            currently_employed = "3.8",
-                            decade_change_percentage = 0f,
+                            currently_employed = 3.8m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,280",
+                            industry = "-1",
+                            median_annual_wage = 47280m,
                             title = "Bridge and lock tenders"
                         },
                         new
                         {
                             Id = 211,
                             at_risk = 0,
-                            currently_employed = "53.6",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 53.6m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
-                            median_annual_wage = "64,030",
+                            median_annual_wage = 64030m,
                             title = "Electrical and electronics repairers, commercial and industrial equipment"
                         },
                         new
                         {
                             Id = 212,
                             at_risk = -1,
-                            currently_employed = "35.2",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 35.2m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "39,840",
+                            industry = "-1",
+                            median_annual_wage = 39840m,
                             title = "Fence erectors"
                         },
                         new
                         {
                             Id = 213,
                             at_risk = -1,
-                            currently_employed = "19.2",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 19.2m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,960",
+                            industry = "-1",
+                            median_annual_wage = 37960m,
                             title = "Furniture finishers"
                         },
                         new
                         {
                             Id = 214,
                             at_risk = -1,
-                            currently_employed = "47.9",
-                            decade_change_percentage = -0.3f,
+                            currently_employed = 47.9m,
+                            decade_change_percentage = -0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "64,810",
+                            industry = "-1",
+                            median_annual_wage = 64810m,
                             title = "Control and valve installers and repairers, except mechanical door"
                         },
                         new
                         {
                             Id = 215,
                             at_risk = -1,
-                            currently_employed = "113.0",
-                            decade_change_percentage = -0.6f,
+                            currently_employed = 113.0m,
+                            decade_change_percentage = -0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "59,840",
+                            industry = "-1",
+                            median_annual_wage = 59840m,
                             title = "Career/technical education teachers, postsecondary"
                         },
                         new
                         {
                             Id = 216,
                             at_risk = -1,
-                            currently_employed = "27.3",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 27.3m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Fishing and hunting workers"
                         },
                         new
                         {
                             Id = 217,
                             at_risk = -1,
-                            currently_employed = "22.6",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 22.6m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,110",
+                            industry = "-1",
+                            median_annual_wage = 38110m,
                             title = "Fiberglass laminators and fabricators"
                         },
                         new
                         {
                             Id = 218,
                             at_risk = -1,
-                            currently_employed = "171.0",
-                            decade_change_percentage = -0.4f,
+                            currently_employed = 171.0m,
+                            decade_change_percentage = -0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "49,380",
+                            industry = "-1",
+                            median_annual_wage = 49380m,
                             title = "Directors, religious activities and education"
                         },
                         new
                         {
                             Id = 219,
                             at_risk = -1,
-                            currently_employed = "88.0",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 88.0m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,500",
+                            industry = "-1",
+                            median_annual_wage = 62500m,
                             title = "Career/technical education teachers, secondary school"
                         },
                         new
                         {
                             Id = 220,
                             at_risk = -1,
-                            currently_employed = "82.8",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 82.8m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,990",
+                            industry = "-1",
+                            median_annual_wage = 62990m,
                             title = "Special education teachers, middle school"
                         },
                         new
                         {
                             Id = 221,
                             at_risk = -1,
-                            currently_employed = "8.5",
-                            decade_change_percentage = 0f,
+                            currently_employed = 8.5m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,980",
+                            industry = "-1",
+                            median_annual_wage = 37980m,
                             title = "Etchers and engravers"
                         },
                         new
                         {
                             Id = 222,
                             at_risk = -1,
-                            currently_employed = "15.9",
-                            decade_change_percentage = 0f,
+                            currently_employed = 15.9m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "57,470",
+                            industry = "-1",
+                            median_annual_wage = 57470m,
                             title = "Plant and system operators, all other"
                         },
                         new
                         {
                             Id = 223,
                             at_risk = -1,
-                            currently_employed = "126.2",
-                            decade_change_percentage = -0.2f,
+                            currently_employed = 126.2m,
+                            decade_change_percentage = -0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "55,350",
+                            industry = "-1",
+                            median_annual_wage = 55350m,
                             title = "Sheet metal workers"
                         },
                         new
                         {
                             Id = 224,
                             at_risk = -1,
-                            currently_employed = "194.7",
-                            decade_change_percentage = -0.1f,
+                            currently_employed = 194.7m,
+                            decade_change_percentage = -0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,390",
+                            industry = "-1",
+                            median_annual_wage = 62390m,
                             title = "Special education teachers, kindergarten and elementary school"
                         },
                         new
                         {
                             Id = 225,
                             at_risk = -1,
-                            currently_employed = "11.1",
-                            decade_change_percentage = 0f,
+                            currently_employed = 11.1m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,630",
+                            industry = "-1",
+                            median_annual_wage = 62630m,
                             title = "Career/technical education teachers, middle school"
                         },
                         new
                         {
                             Id = 226,
                             at_risk = -1,
-                            currently_employed = "12.1",
-                            decade_change_percentage = 0f,
+                            currently_employed = 12.1m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "61,690",
+                            industry = "-1",
+                            median_annual_wage = 61690m,
                             title = "Precision instrument and equipment repairers, all other"
                         },
                         new
                         {
                             Id = 227,
                             at_risk = -1,
-                            currently_employed = "51.3",
-                            decade_change_percentage = 0f,
+                            currently_employed = 51.3m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,710",
+                            industry = "-1",
+                            median_annual_wage = 47710m,
                             title = "Transportation security screeners"
                         },
                         new
                         {
                             Id = 228,
                             at_risk = -1,
-                            currently_employed = "456.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 456.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,810",
+                            industry = "-1",
+                            median_annual_wage = 42810m,
                             title = "Billing and posting clerks"
                         },
                         new
                         {
                             Id = 229,
                             at_risk = -1,
-                            currently_employed = "6.2",
-                            decade_change_percentage = 0f,
+                            currently_employed = 6.2m,
+                            decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "46,060",
+                            industry = "-1",
+                            median_annual_wage = 46060m,
                             title = "Floor sanders and finishers"
                         },
                         new
                         {
                             Id = 230,
                             at_risk = -1,
-                            currently_employed = "13.5",
-                            decade_change_percentage = 0f,
+                            currently_employed = 13.5m,
+                            decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "38,270",
+                            industry = "-1",
+                            median_annual_wage = 38270m,
                             title = "Painting, coating, and decorating workers"
                         },
                         new
                         {
                             Id = 231,
                             at_risk = -1,
-                            currently_employed = "13.2",
-                            decade_change_percentage = 0f,
+                            currently_employed = 13.2m,
+                            decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "55,260",
+                            industry = "-1",
+                            median_annual_wage = 55260m,
                             title = "Rotary drill operators, oil and gas"
                         },
                         new
                         {
                             Id = 232,
                             at_risk = -1,
-                            currently_employed = "49.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 49.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,270",
+                            industry = "-1",
+                            median_annual_wage = 36270m,
                             title = "Sawing machine setters, operators, and tenders, wood"
                         },
                         new
                         {
                             Id = 233,
                             at_risk = -1,
-                            currently_employed = "39.5",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 39.5m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "50,140",
+                            industry = "-1",
+                            median_annual_wage = 50140m,
                             title = "Service unit operators, oil and gas"
                         },
                         new
                         {
                             Id = 234,
                             at_risk = -1,
-                            currently_employed = "1,298.9",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 1298.9m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "30,920",
+                            industry = "-1",
+                            median_annual_wage = 30920m,
                             title = "Teaching assistants, except postsecondary"
                         },
                         new
                         {
                             Id = 235,
                             at_risk = -1,
-                            currently_employed = "1,238.8",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 1238.8m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,960",
+                            industry = "-1",
+                            median_annual_wage = 29960m,
                             title = "Maids and housekeeping cleaners"
                         },
                         new
                         {
                             Id = 236,
                             at_risk = -1,
-                            currently_employed = "10.1",
-                            decade_change_percentage = 0f,
+                            currently_employed = 10.1m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "30,380",
+                            industry = "-1",
+                            median_annual_wage = 30380m,
                             title = "Ambulance drivers and attendants, except emergency medical technicians"
                         },
                         new
                         {
                             Id = 237,
                             at_risk = -1,
-                            currently_employed = "48.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 48.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "61,340",
+                            industry = "-1",
+                            median_annual_wage = 61340m,
                             title = "Crane and tower operators"
                         },
                         new
                         {
                             Id = 238,
                             at_risk = -1,
-                            currently_employed = "51.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 51.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "62,340",
+                            industry = "-1",
+                            median_annual_wage = 62340m,
                             title = "Legal support workers, all other"
                         },
                         new
                         {
                             Id = 239,
                             at_risk = 1,
-                            currently_employed = "100.7",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 100.7m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
                             industry = "1",
-                            median_annual_wage = "30,850",
+                            median_annual_wage = 30850m,
                             title = "Automotive and watercraft service attendants"
                         },
                         new
                         {
                             Id = 240,
                             at_risk = -1,
-                            currently_employed = "1.0",
-                            decade_change_percentage = 0f,
+                            currently_employed = 1.0m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,090",
+                            industry = "-1",
+                            median_annual_wage = 47090m,
                             title = "Dredge operators"
                         },
                         new
                         {
                             Id = 241,
                             at_risk = -1,
-                            currently_employed = "7.5",
-                            decade_change_percentage = 0f,
+                            currently_employed = 7.5m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "97,490",
+                            industry = "-1",
+                            median_annual_wage = 97490m,
                             title = "Mining and geological engineers, including mining safety engineers"
                         },
                         new
                         {
                             Id = 242,
                             at_risk = -1,
-                            currently_employed = "681.7",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 681.7m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,510",
+                            industry = "-1",
+                            median_annual_wage = 63510m,
                             title = "First-line supervisors of production and operating workers"
                         },
                         new
                         {
                             Id = 243,
                             at_risk = -1,
-                            currently_employed = "3.1",
-                            decade_change_percentage = 0f,
+                            currently_employed = 3.1m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "58,360",
+                            industry = "-1",
+                            median_annual_wage = 58360m,
                             title = "Hydrologic technicians"
                         },
                         new
                         {
                             Id = 244,
                             at_risk = -1,
-                            currently_employed = "16.2",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 16.2m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,530",
+                            industry = "-1",
+                            median_annual_wage = 44530m,
                             title = "Furnace, kiln, oven, drier, and kettle operators and tenders"
                         },
                         new
                         {
                             Id = 245,
                             at_risk = -1,
-                            currently_employed = "18.1",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 18.1m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "85,300",
+                            industry = "-1",
+                            median_annual_wage = 85300m,
                             title = "Nuclear medicine technologists"
                         },
                         new
                         {
                             Id = 246,
                             at_risk = -1,
-                            currently_employed = "1,068.8",
-                            decade_change_percentage = 3.9f,
+                            currently_employed = 1068.8m,
+                            decade_change_percentage = 3.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "33,960",
+                            industry = "-1",
+                            median_annual_wage = 33960m,
                             title = "Receptionists and information clerks"
                         },
                         new
                         {
                             Id = 247,
                             at_risk = -1,
-                            currently_employed = "2.2",
-                            decade_change_percentage = 0f,
+                            currently_employed = 2.2m,
+                            decade_change_percentage = 0m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "43,130",
+                            industry = "-1",
+                            median_annual_wage = 43130m,
                             title = "Models"
                         },
                         new
                         {
                             Id = 248,
                             at_risk = -1,
-                            currently_employed = "11.9",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 11.9m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "51,220",
+                            industry = "-1",
+                            median_annual_wage = 51220m,
                             title = "Derrick operators, oil and gas"
                         },
                         new
                         {
                             Id = 249,
                             at_risk = -1,
-                            currently_employed = "73.0",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 73.0m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "59,000",
+                            industry = "-1",
+                            median_annual_wage = 59000m,
                             title = "Brickmasons and blockmasons"
                         },
                         new
                         {
                             Id = 250,
                             at_risk = -1,
-                            currently_employed = "123.4",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 123.4m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "60,490",
+                            industry = "-1",
+                            median_annual_wage = 60490m,
                             title = "Kindergarten teachers, except special education"
                         },
                         new
                         {
                             Id = 251,
                             at_risk = -1,
-                            currently_employed = "153.2",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 153.2m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,560",
+                            industry = "-1",
+                            median_annual_wage = 63560m,
                             title = "Special education teachers, secondary school"
                         },
                         new
                         {
                             Id = 252,
-                            at_risk = 0,
-                            currently_employed = "357.5",
-                            decade_change_percentage = 1.6f,
+                            at_risk = -1,
+                            currently_employed = 357.5m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "2",
-                            median_annual_wage = "61,310",
+                            industry = "-1",
+                            median_annual_wage = 61310m,
                             title = "Food service managers"
                         },
                         new
                         {
                             Id = 253,
                             at_risk = -1,
-                            currently_employed = "412.8",
-                            decade_change_percentage = 2f,
+                            currently_employed = 412.8m,
+                            decade_change_percentage = 2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,720",
+                            industry = "-1",
+                            median_annual_wage = 27720m,
                             title = "Hosts and hostesses, restaurant, lounge, and coffee shop"
                         },
                         new
                         {
                             Id = 254,
                             at_risk = -1,
-                            currently_employed = "10.8",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 10.8m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,970",
+                            industry = "-1",
+                            median_annual_wage = 35970m,
                             title = "Gambling surveillance officers and gambling investigators"
                         },
                         new
                         {
                             Id = 255,
                             at_risk = -1,
-                            currently_employed = "31.5",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 31.5m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "41,520",
+                            industry = "-1",
+                            median_annual_wage = 41520m,
                             title = "Forest and conservation technicians"
                         },
                         new
                         {
                             Id = 256,
                             at_risk = 0,
-                            currently_employed = "41.1",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 41.1m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
                             industry = "1",
-                            median_annual_wage = "61,990",
+                            median_annual_wage = 61990m,
                             title = "Mechanical engineering technologists and technicians"
                         },
                         new
                         {
                             Id = 257,
                             at_risk = -1,
-                            currently_employed = "55.0",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 55.0m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "57,950",
+                            industry = "-1",
+                            median_annual_wage = 57950m,
                             title = "Tax examiners and collectors, and revenue agents"
                         },
                         new
                         {
                             Id = 258,
                             at_risk = -1,
-                            currently_employed = "75.8",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 75.8m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "39,370",
+                            industry = "-1",
+                            median_annual_wage = 39370m,
                             title = "Religious workers, all other"
                         },
                         new
                         {
                             Id = 259,
                             at_risk = -1,
-                            currently_employed = "107.1",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 107.1m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "59,820",
+                            industry = "-1",
+                            median_annual_wage = 59820m,
                             title = "Architectural and civil drafters"
                         },
                         new
                         {
                             Id = 260,
                             at_risk = -1,
-                            currently_employed = "139.9",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 139.9m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,210",
+                            industry = "-1",
+                            median_annual_wage = 39210m,
                             title = "Multiple machine tool setters, operators, and tenders, metal and plastic"
                         },
                         new
                         {
                             Id = 261,
                             at_risk = -1,
-                            currently_employed = "172.4",
-                            decade_change_percentage = 1f,
+                            currently_employed = 172.4m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,960",
+                            industry = "-1",
+                            median_annual_wage = 43960m,
                             title = "Coating, painting, and spraying machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 262,
                             at_risk = -1,
-                            currently_employed = "266.7",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 266.7m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "55,550",
+                            industry = "-1",
+                            median_annual_wage = 55550m,
                             title = "Clergy"
                         },
                         new
                         {
                             Id = 263,
                             at_risk = -1,
-                            currently_employed = "8.0",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 8.0m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "96,910",
+                            industry = "-1",
+                            median_annual_wage = 96910m,
                             title = "Marine engineers and naval architects"
                         },
                         new
                         {
                             Id = 264,
                             at_risk = -1,
-                            currently_employed = "23.6",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 23.6m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "73,210",
+                            industry = "-1",
+                            median_annual_wage = 73210m,
                             title = "Landscape architects"
                         },
                         new
                         {
                             Id = 265,
                             at_risk = -1,
-                            currently_employed = "1,344.3",
-                            decade_change_percentage = 9.1f,
+                            currently_employed = 1344.3m,
+                            decade_change_percentage = 9.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,230",
+                            industry = "-1",
+                            median_annual_wage = 63230m,
                             title = "Sales representatives, wholesale and manufacturing, except technical and scientific products"
                         },
                         new
                         {
                             Id = 266,
                             at_risk = -1,
-                            currently_employed = "1,425.0",
-                            decade_change_percentage = 10f,
+                            currently_employed = 1425.0m,
+                            decade_change_percentage = 10m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,690",
+                            industry = "-1",
+                            median_annual_wage = 61690m,
                             title = "Elementary school teachers, except special education"
                         },
                         new
                         {
                             Id = 267,
                             at_risk = -1,
-                            currently_employed = "13.1",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 13.1m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "30,350",
+                            industry = "-1",
+                            median_annual_wage = 30350m,
                             title = "Gambling service workers, all other"
                         },
                         new
                         {
                             Id = 268,
                             at_risk = -1,
-                            currently_employed = "7.2",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 7.2m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,110",
+                            industry = "-1",
+                            median_annual_wage = 43110m,
                             title = "Helpers--extraction workers"
                         },
                         new
                         {
                             Id = 269,
                             at_risk = -1,
-                            currently_employed = "29.7",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 29.7m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "74,570",
+                            industry = "-1",
+                            median_annual_wage = 74570m,
                             title = "Locomotive engineers"
                         },
                         new
                         {
                             Id = 270,
                             at_risk = -1,
-                            currently_employed = "26.5",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 26.5m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Surgeons, all other"
                         },
                         new
                         {
                             Id = 271,
                             at_risk = -1,
-                            currently_employed = "48.7",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 48.7m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,690",
+                            industry = "-1",
+                            median_annual_wage = 46690m,
                             title = "Hazardous materials removal workers"
                         },
                         new
                         {
                             Id = 272,
                             at_risk = 0,
-                            currently_employed = "102.5",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 102.5m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
                             industry = "1",
-                            median_annual_wage = "66,390",
+                            median_annual_wage = 66390m,
                             title = "Electrical and electronic engineering technologists and technicians"
                         },
                         new
                         {
                             Id = 273,
                             at_risk = -1,
-                            currently_employed = "625.5",
-                            decade_change_percentage = 5.1f,
+                            currently_employed = 625.5m,
+                            decade_change_percentage = 5.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,810",
+                            industry = "-1",
+                            median_annual_wage = 61810m,
                             title = "Middle school teachers, except special and career/technical education"
                         },
                         new
                         {
                             Id = 274,
                             at_risk = -1,
-                            currently_employed = "4.0",
-                            decade_change_percentage = 0f,
+                            currently_employed = 4.0m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "49,910",
+                            industry = "-1",
+                            median_annual_wage = 49910m,
                             title = "Embalmers"
                         },
                         new
                         {
                             Id = 275,
                             at_risk = -1,
-                            currently_employed = "21.8",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 21.8m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "64,240",
+                            industry = "-1",
+                            median_annual_wage = 64240m,
                             title = "Electrical and electronics drafters"
                         },
                         new
                         {
                             Id = 276,
                             at_risk = 1,
-                            currently_employed = "35.9",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 35.9m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "190,350",
+                            industry = "-1",
+                            median_annual_wage = 190350m,
                             title = "Pediatricians, general"
                         },
                         new
                         {
                             Id = 277,
                             at_risk = -1,
-                            currently_employed = "64.8",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 64.8m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "59,630",
+                            industry = "-1",
+                            median_annual_wage = 59630m,
                             title = "Civil engineering technologists and technicians"
                         },
                         new
                         {
                             Id = 278,
                             at_risk = -1,
-                            currently_employed = "291.6",
-                            decade_change_percentage = 2.5f,
+                            currently_employed = 291.6m,
+                            decade_change_percentage = 2.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "54,360",
+                            industry = "-1",
+                            median_annual_wage = 54360m,
                             title = "Bus and truck mechanics and diesel engine specialists"
                         },
                         new
                         {
                             Id = 279,
                             at_risk = -1,
-                            currently_employed = "956.3",
-                            decade_change_percentage = 8.6f,
+                            currently_employed = 956.3m,
+                            decade_change_percentage = 8.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,390",
+                            industry = "-1",
+                            median_annual_wage = 51390m,
                             title = "Carpenters"
                         },
                         new
                         {
                             Id = 280,
                             at_risk = 1,
-                            currently_employed = "0.8",
-                            decade_change_percentage = 0f,
+                            currently_employed = 0.8m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Pediatric surgeons"
                         },
                         new
                         {
                             Id = 281,
                             at_risk = 1,
-                            currently_employed = "10.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 10.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "148,720",
+                            industry = "-1",
+                            median_annual_wage = 148720m,
                             title = "Podiatrists"
                         },
                         new
                         {
                             Id = 282,
                             at_risk = -1,
-                            currently_employed = "75.6",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 75.6m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "29,120",
+                            industry = "-1",
+                            median_annual_wage = 29120m,
                             title = "Gambling dealers"
                         },
                         new
                         {
                             Id = 283,
                             at_risk = -1,
-                            currently_employed = "266.1",
-                            decade_change_percentage = 2.6f,
+                            currently_employed = 266.1m,
+                            decade_change_percentage = 2.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,800",
+                            industry = "-1",
+                            median_annual_wage = 35800m,
                             title = "Parts salespersons"
                         },
                         new
                         {
                             Id = 284,
                             at_risk = -1,
-                            currently_employed = "1,072.3",
-                            decade_change_percentage = 11.1f,
+                            currently_employed = 1072.3m,
+                            decade_change_percentage = 11.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,360",
+                            industry = "-1",
+                            median_annual_wage = 62360m,
                             title = "Secondary school teachers, except special and career/technical education"
                         },
                         new
                         {
                             Id = 285,
                             at_risk = -1,
-                            currently_employed = "2.4",
-                            decade_change_percentage = 0f,
+                            currently_employed = 2.4m,
+                            decade_change_percentage = 0m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,060",
+                            industry = "-1",
+                            median_annual_wage = 44060m,
                             title = "Camera and photographic equipment repairers"
                         },
                         new
                         {
                             Id = 286,
                             at_risk = -1,
-                            currently_employed = "1.5",
-                            decade_change_percentage = 0f,
+                            currently_employed = 1.5m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "88,900",
+                            industry = "-1",
+                            median_annual_wage = 88900m,
                             title = "Geographers"
                         },
                         new
                         {
                             Id = 287,
                             at_risk = -1,
-                            currently_employed = "13.2",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 13.2m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "94,990",
+                            industry = "-1",
+                            median_annual_wage = 94990m,
                             title = "Administrative law judges, adjudicators, and hearing officers"
                         },
                         new
                         {
                             Id = 288,
                             at_risk = -1,
-                            currently_employed = "4.9",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 4.9m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "56,670",
+                            industry = "-1",
+                            median_annual_wage = 56670m,
                             title = "Explosives workers, ordnance handling experts, and blasters"
                         },
                         new
                         {
                             Id = 289,
                             at_risk = -1,
-                            currently_employed = "13.8",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 13.8m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "122,480",
+                            industry = "-1",
+                            median_annual_wage = 122480m,
                             title = "Nuclear engineers"
                         },
                         new
                         {
                             Id = 290,
                             at_risk = -1,
-                            currently_employed = "21.3",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 21.3m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,810",
+                            industry = "-1",
+                            median_annual_wage = 36810m,
                             title = "Ophthalmic laboratory technicians"
                         },
                         new
                         {
                             Id = 291,
                             at_risk = -1,
-                            currently_employed = "34.2",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 34.2m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "68,180",
+                            industry = "-1",
+                            median_annual_wage = 68180m,
                             title = "Railroad conductors and yardmasters"
                         },
                         new
                         {
                             Id = 292,
                             at_risk = -1,
-                            currently_employed = "43.7",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 43.7m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,130",
+                            industry = "-1",
+                            median_annual_wage = 47130m,
                             title = "Financial clerks, all other"
                         },
                         new
                         {
                             Id = 293,
                             at_risk = -1,
-                            currently_employed = "51.8",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 51.8m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,940",
+                            industry = "-1",
+                            median_annual_wage = 62940m,
                             title = "Music directors and composers"
                         },
                         new
                         {
                             Id = 294,
                             at_risk = -1,
-                            currently_employed = "103.8",
-                            decade_change_percentage = 1.2f,
+                            currently_employed = 103.8m,
+                            decade_change_percentage = 1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,240",
+                            industry = "-1",
+                            median_annual_wage = 34240m,
                             title = "Tire repairers and changers"
                         },
                         new
                         {
                             Id = 295,
                             at_risk = -1,
-                            currently_employed = "300.4",
-                            decade_change_percentage = 3.3f,
+                            currently_employed = 300.4m,
+                            decade_change_percentage = 3.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "101,320",
+                            industry = "-1",
+                            median_annual_wage = 101320m,
                             title = "Education administrators, kindergarten through secondary"
                         },
                         new
                         {
                             Id = 296,
                             at_risk = -1,
-                            currently_employed = "12.2",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 12.2m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "67,540",
+                            industry = "-1",
+                            median_annual_wage = 67540m,
                             title = "Railroad brake, signal, and switch operators and locomotive firers"
                         },
                         new
                         {
                             Id = 297,
                             at_risk = -1,
-                            currently_employed = "6.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 6.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "81,300",
+                            industry = "-1",
+                            median_annual_wage = 81300m,
                             title = "Signal and track switch repairers"
                         },
                         new
                         {
                             Id = 298,
                             at_risk = -1,
-                            currently_employed = "22.8",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 22.8m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,070",
+                            industry = "-1",
+                            median_annual_wage = 51070m,
                             title = "Reinforcing iron and rebar workers"
                         },
                         new
                         {
                             Id = 299,
                             at_risk = -1,
-                            currently_employed = "41.6",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 41.6m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,030",
+                            industry = "-1",
+                            median_annual_wage = 40030m,
                             title = "Outdoor power equipment and other small engine mechanics"
                         },
                         new
                         {
                             Id = 300,
                             at_risk = -1,
-                            currently_employed = "70.1",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 70.1m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "74,280",
+                            industry = "-1",
+                            median_annual_wage = 74280m,
                             title = "English language and literature teachers, postsecondary"
                         },
                         new
                         {
                             Id = 301,
                             at_risk = 1,
-                            currently_employed = "153.3",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 153.3m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "47,670",
+                            median_annual_wage = 47670m,
                             title = "Automotive body and related repairers"
                         },
                         new
                         {
                             Id = 302,
                             at_risk = -1,
-                            currently_employed = "173.5",
-                            decade_change_percentage = 2.1f,
+                            currently_employed = 173.5m,
+                            decade_change_percentage = 2.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Musicians and singers"
                         },
                         new
                         {
                             Id = 303,
                             at_risk = -1,
-                            currently_employed = "9.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 9.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "87,300",
+                            industry = "-1",
+                            median_annual_wage = 87300m,
                             title = "Ship engineers"
                         },
                         new
                         {
                             Id = 304,
                             at_risk = -1,
-                            currently_employed = "13.9",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 13.9m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "50,980",
+                            industry = "-1",
+                            median_annual_wage = 50980m,
                             title = "Environmental engineering technologists and technicians"
                         },
                         new
                         {
                             Id = 305,
                             at_risk = -1,
-                            currently_employed = "22.8",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 22.8m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "79,400",
+                            industry = "-1",
+                            median_annual_wage = 79400m,
                             title = "History teachers, postsecondary"
                         },
                         new
                         {
                             Id = 306,
                             at_risk = -1,
-                            currently_employed = "62.2",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 62.2m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "81,500",
+                            industry = "-1",
+                            median_annual_wage = 81500m,
                             title = "School psychologists"
                         },
                         new
                         {
                             Id = 307,
                             at_risk = -1,
-                            currently_employed = "123.0",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 123.0m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,160",
+                            industry = "-1",
+                            median_annual_wage = 39160m,
                             title = "Reservation and transportation ticket agents and travel clerks"
                         },
                         new
                         {
                             Id = 308,
                             at_risk = -1,
-                            currently_employed = "2,382.9",
-                            decade_change_percentage = 29.9f,
+                            currently_employed = 2382.9m,
+                            decade_change_percentage = 29.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,990",
+                            industry = "-1",
+                            median_annual_wage = 31990m,
                             title = "Janitors and cleaners, except maids and housekeeping cleaners"
                         },
                         new
                         {
                             Id = 309,
                             at_risk = -1,
-                            currently_employed = "16.5",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 16.5m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,230",
+                            industry = "-1",
+                            median_annual_wage = 63230m,
                             title = "Rail-track laying and maintenance equipment operators"
                         },
                         new
                         {
                             Id = 310,
                             at_risk = -1,
-                            currently_employed = "23.0",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 23.0m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "132,250",
+                            industry = "-1",
+                            median_annual_wage = 132250m,
                             title = "Air traffic controllers"
                         },
                         new
                         {
                             Id = 311,
                             at_risk = -1,
-                            currently_employed = "24.7",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 24.7m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "76,030",
+                            industry = "-1",
+                            median_annual_wage = 76030m,
                             title = "Foreign language and literature teachers, postsecondary"
                         },
                         new
                         {
                             Id = 312,
                             at_risk = -1,
-                            currently_employed = "19.7",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 19.7m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "54,680",
+                            industry = "-1",
+                            median_annual_wage = 54680m,
                             title = "Riggers"
                         },
                         new
                         {
                             Id = 313,
                             at_risk = -1,
-                            currently_employed = "275.3",
-                            decade_change_percentage = 3.9f,
+                            currently_employed = 275.3m,
+                            decade_change_percentage = 3.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,490",
+                            industry = "-1",
+                            median_annual_wage = 35490m,
                             title = "Production workers, all other"
                         },
                         new
                         {
                             Id = 314,
                             at_risk = 1,
-                            currently_employed = "358.8",
-                            decade_change_percentage = 4.9f,
+                            currently_employed = 358.8m,
+                            decade_change_percentage = 4.9m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "41,270",
+                            median_annual_wage = 41270m,
                             title = "Bus drivers, school"
                         },
                         new
                         {
                             Id = 315,
                             at_risk = -1,
-                            currently_employed = "431.8",
-                            decade_change_percentage = 6.2f,
+                            currently_employed = 431.8m,
+                            decade_change_percentage = 6.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,540",
+                            industry = "-1",
+                            median_annual_wage = 47540m,
                             title = "Welders, cutters, solderers, and brazers"
                         },
                         new
                         {
                             Id = 316,
                             at_risk = -1,
-                            currently_employed = "8.7",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 8.7m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,080",
+                            industry = "-1",
+                            median_annual_wage = 36080m,
                             title = "Helpers--painters, paperhangers, plasterers, and stucco masons"
                         },
                         new
                         {
                             Id = 317,
                             at_risk = -1,
-                            currently_employed = "6.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 6.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "85,990",
+                            industry = "-1",
+                            median_annual_wage = 85990m,
                             title = "Hydrologists"
                         },
                         new
                         {
                             Id = 318,
                             at_risk = -1,
-                            currently_employed = "25.1",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 25.1m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "99,000",
+                            industry = "-1",
+                            median_annual_wage = 99000m,
                             title = "Elevator and escalator installers and repairers"
                         },
                         new
                         {
                             Id = 319,
                             at_risk = -1,
-                            currently_employed = "108.4",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 108.4m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,570",
+                            industry = "-1",
+                            median_annual_wage = 30570m,
                             title = "Parking attendants"
                         },
                         new
                         {
                             Id = 320,
                             at_risk = -1,
-                            currently_employed = "109.5",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 109.5m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,250",
+                            industry = "-1",
+                            median_annual_wage = 48250m,
                             title = "Tax preparers"
                         },
                         new
                         {
                             Id = 321,
                             at_risk = -1,
-                            currently_employed = "114.4",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 114.4m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "86,280",
+                            industry = "-1",
+                            median_annual_wage = 86280m,
                             title = "Detectives and criminal investigators"
                         },
                         new
                         {
                             Id = 322,
                             at_risk = -1,
-                            currently_employed = "114.0",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 114.0m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,410",
+                            industry = "-1",
+                            median_annual_wage = 43410m,
                             title = "Mixing and blending machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 323,
                             at_risk = -1,
-                            currently_employed = "195.4",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 195.4m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,500",
+                            industry = "-1",
+                            median_annual_wage = 44500m,
                             title = "Installation, maintenance, and repair workers, all other"
                         },
                         new
                         {
                             Id = 324,
                             at_risk = -1,
-                            currently_employed = "372.4",
-                            decade_change_percentage = 5.5f,
+                            currently_employed = 372.4m,
+                            decade_change_percentage = 5.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "46,090",
+                            industry = "-1",
+                            median_annual_wage = 46090m,
                             title = "Painters, construction and maintenance"
                         },
                         new
                         {
                             Id = 325,
-                            at_risk = 1,
-                            currently_employed = "3,410.1",
-                            decade_change_percentage = 50.4f,
+                            at_risk = -1,
+                            currently_employed = 3410.1m,
+                            decade_change_percentage = 50.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "2",
-                            median_annual_wage = "27,930",
+                            industry = "-1",
+                            median_annual_wage = 27930m,
                             title = "Fast food and counter workers"
                         },
                         new
                         {
                             Id = 326,
                             at_risk = -1,
-                            currently_employed = "13.3",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 13.3m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "53,930",
+                            industry = "-1",
+                            median_annual_wage = 53930m,
                             title = "Tank car, truck, and ship loaders"
                         },
                         new
                         {
                             Id = 327,
                             at_risk = -1,
-                            currently_employed = "19.4",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 19.4m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Orthopedic surgeons, except pediatric"
                         },
                         new
                         {
                             Id = 328,
                             at_risk = -1,
-                            currently_employed = "27.3",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 27.3m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,700",
+                            industry = "-1",
+                            median_annual_wage = 36700m,
                             title = "Food cooking machine operators and tenders"
                         },
                         new
                         {
                             Id = 329,
                             at_risk = -1,
-                            currently_employed = "28.3",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 28.3m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,820",
+                            industry = "-1",
+                            median_annual_wage = 37820m,
                             title = "Helpers, construction trades, all other"
                         },
                         new
                         {
                             Id = 330,
                             at_risk = -1,
-                            currently_employed = "106.6",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 106.6m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,650",
+                            industry = "-1",
+                            median_annual_wage = 27650m,
                             title = "Ushers, lobby attendants, and ticket takers"
                         },
                         new
                         {
                             Id = 331,
                             at_risk = -1,
-                            currently_employed = "116.4",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 116.4m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "50,440",
+                            industry = "-1",
+                            median_annual_wage = 50440m,
                             title = "Drywall and ceiling tile installers"
                         },
                         new
                         {
                             Id = 332,
                             at_risk = -1,
-                            currently_employed = "217.1",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 217.1m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,280",
+                            industry = "-1",
+                            median_annual_wage = 35280m,
                             title = "Couriers and messengers"
                         },
                         new
                         {
                             Id = 333,
                             at_risk = -1,
-                            currently_employed = "222.1",
-                            decade_change_percentage = 3.6f,
+                            currently_employed = 222.1m,
+                            decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "107,560",
+                            industry = "-1",
+                            median_annual_wage = 107560m,
                             title = "Industrial production managers"
                         },
                         new
                         {
                             Id = 334,
                             at_risk = 1,
-                            currently_employed = "782.2",
-                            decade_change_percentage = 12.8f,
+                            currently_employed = 782.2m,
+                            decade_change_percentage = 12.8m,
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
-                            median_annual_wage = "46,970",
+                            median_annual_wage = 46970m,
                             title = "Automotive service technicians and mechanics"
                         },
                         new
                         {
                             Id = 335,
                             at_risk = 1,
-                            currently_employed = "21.9",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 21.9m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "43,700",
+                            median_annual_wage = 43700m,
                             title = "Automotive glass installers and repairers"
                         },
                         new
                         {
                             Id = 336,
                             at_risk = -1,
-                            currently_employed = "27.2",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 27.2m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,590",
+                            industry = "-1",
+                            median_annual_wage = 50590m,
                             title = "Insulation workers, mechanical"
                         },
                         new
                         {
                             Id = 337,
                             at_risk = -1,
-                            currently_employed = "34.4",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 34.4m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "45,380",
+                            industry = "-1",
+                            median_annual_wage = 45380m,
                             title = "Insulation workers, floor, ceiling, and wall"
                         },
                         new
                         {
                             Id = 338,
                             at_risk = -1,
-                            currently_employed = "36.5",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 36.5m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "88,900",
+                            industry = "-1",
+                            median_annual_wage = 88900m,
                             title = "Social scientists and related workers, all other"
                         },
                         new
                         {
                             Id = 339,
                             at_risk = -1,
-                            currently_employed = "39.6",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 39.6m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "95,210",
+                            industry = "-1",
+                            median_annual_wage = 95210m,
                             title = "Captains, mates, and pilots of water vessels"
                         },
                         new
                         {
                             Id = 340,
                             at_risk = -1,
-                            currently_employed = "62.2",
-                            decade_change_percentage = 1f,
+                            currently_employed = 62.2m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,490",
+                            industry = "-1",
+                            median_annual_wage = 50490m,
                             title = "Title examiners, abstractors, and searchers"
                         },
                         new
                         {
                             Id = 341,
                             at_risk = -1,
-                            currently_employed = "11.2",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 11.2m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,720",
+                            industry = "-1",
+                            median_annual_wage = 35720m,
                             title = "Agricultural workers, all other"
                         },
                         new
                         {
                             Id = 342,
                             at_risk = -1,
-                            currently_employed = "17.1",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 17.1m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "43,370",
+                            industry = "-1",
+                            median_annual_wage = 43370m,
                             title = "Motorcycle mechanics"
                         },
                         new
                         {
                             Id = 343,
                             at_risk = -1,
-                            currently_employed = "71.6",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 71.6m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,500",
+                            industry = "-1",
+                            median_annual_wage = 60500m,
                             title = "Structural iron and steel workers"
                         },
                         new
                         {
                             Id = 344,
                             at_risk = -1,
-                            currently_employed = "4.1",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 4.1m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "46,010",
+                            industry = "-1",
+                            median_annual_wage = 46010m,
                             title = "Rock splitters, quarry"
                         },
                         new
                         {
                             Id = 345,
                             at_risk = -1,
-                            currently_employed = "23.8",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 23.8m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "62,240",
+                            industry = "-1",
+                            median_annual_wage = 62240m,
                             title = "Special education teachers, preschool"
                         },
                         new
                         {
                             Id = 346,
                             at_risk = -1,
-                            currently_employed = "30.9",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 30.9m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "127,830",
+                            industry = "-1",
+                            median_annual_wage = 127830m,
                             title = "Advertising and promotions managers"
                         },
                         new
                         {
                             Id = 347,
                             at_risk = -1,
-                            currently_employed = "84.8",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 84.8m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "39,990",
+                            industry = "-1",
+                            median_annual_wage = 39990m,
                             title = "Rehabilitation counselors"
                         },
                         new
                         {
                             Id = 348,
                             at_risk = -1,
-                            currently_employed = "148.0",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 148.0m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,250",
+                            industry = "-1",
+                            median_annual_wage = 61250m,
                             title = "Teachers and instructors, all other"
                         },
                         new
                         {
                             Id = 349,
                             at_risk = -1,
-                            currently_employed = "327.0",
-                            decade_change_percentage = 6.3f,
+                            currently_employed = 327.0m,
+                            decade_change_percentage = 6.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,510",
+                            industry = "-1",
+                            median_annual_wage = 48510m,
                             title = "Machinists"
                         },
                         new
                         {
                             Id = 350,
                             at_risk = -1,
-                            currently_employed = "5.9",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 5.9m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,020",
+                            industry = "-1",
+                            median_annual_wage = 37020m,
                             title = "Helpers--roofers"
                         },
                         new
                         {
                             Id = 351,
                             at_risk = -1,
-                            currently_employed = "14.1",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 14.1m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "44,720",
+                            industry = "-1",
+                            median_annual_wage = 44720m,
                             title = "Agricultural inspectors"
                         },
                         new
                         {
                             Id = 352,
                             at_risk = -1,
-                            currently_employed = "23.2",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 23.2m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "41,440",
+                            industry = "-1",
+                            median_annual_wage = 41440m,
                             title = "Pesticide handlers, sprayers, and applicators, vegetation"
                         },
                         new
                         {
                             Id = 353,
                             at_risk = -1,
-                            currently_employed = "32.3",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 32.3m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,890",
+                            industry = "-1",
+                            median_annual_wage = 44890m,
                             title = "Miscellaneous construction and related workers"
                         },
                         new
                         {
                             Id = 354,
                             at_risk = -1,
-                            currently_employed = "30.7",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 30.7m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "47,490",
+                            industry = "-1",
+                            median_annual_wage = 47490m,
                             title = "Sailors and marine oilers"
                         },
                         new
                         {
                             Id = 355,
                             at_risk = -1,
-                            currently_employed = "32.4",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 32.4m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "75,910",
+                            industry = "-1",
+                            median_annual_wage = 75910m,
                             title = "Commercial and industrial designers"
                         },
                         new
                         {
                             Id = 356,
                             at_risk = -1,
-                            currently_employed = "35.2",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 35.2m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "106,230",
+                            industry = "-1",
+                            median_annual_wage = 106230m,
                             title = "Healthcare diagnosing or treating practitioners, all other"
                         },
                         new
                         {
                             Id = 357,
                             at_risk = -1,
-                            currently_employed = "141.0",
-                            decade_change_percentage = 2.8f,
+                            currently_employed = 141.0m,
+                            decade_change_percentage = 2.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,070",
+                            industry = "-1",
+                            median_annual_wage = 35070m,
                             title = "Meat, poultry, and fish cutters and trimmers"
                         },
                         new
                         {
                             Id = 358,
                             at_risk = -1,
-                            currently_employed = "154.5",
-                            decade_change_percentage = 3.1f,
+                            currently_employed = 154.5m,
+                            decade_change_percentage = 3.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "47,920",
+                            industry = "-1",
+                            median_annual_wage = 47920m,
                             title = "Roofers"
                         },
                         new
                         {
                             Id = 359,
                             at_risk = -1,
-                            currently_employed = "6.5",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 6.5m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,320",
+                            industry = "-1",
+                            median_annual_wage = 45320m,
                             title = "Animal breeders"
                         },
                         new
                         {
                             Id = 360,
                             at_risk = -1,
-                            currently_employed = "25.4",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 25.4m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "107,970",
+                            industry = "-1",
+                            median_annual_wage = 107970m,
                             title = "Physical scientists, all other"
                         },
                         new
                         {
                             Id = 361,
                             at_risk = -1,
-                            currently_employed = "27.3",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 27.3m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "49,730",
+                            industry = "-1",
+                            median_annual_wage = 49730m,
                             title = "Plasterers and stucco masons"
                         },
                         new
                         {
                             Id = 362,
                             at_risk = -1,
-                            currently_employed = "434.5",
-                            decade_change_percentage = 8.9f,
+                            currently_employed = 434.5m,
+                            decade_change_percentage = 8.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "32,510",
+                            industry = "-1",
+                            median_annual_wage = 32510m,
                             title = "Cooks, institution and cafeteria"
                         },
                         new
                         {
                             Id = 363,
                             at_risk = -1,
-                            currently_employed = "2.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 2.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "112,110",
+                            industry = "-1",
+                            median_annual_wage = 112110m,
                             title = "Mathematicians"
                         },
                         new
                         {
                             Id = 364,
                             at_risk = -1,
-                            currently_employed = "2.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 2.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,280",
+                            industry = "-1",
+                            median_annual_wage = 42280m,
                             title = "Rail transportation workers, all other"
                         },
                         new
                         {
                             Id = 365,
                             at_risk = -1,
-                            currently_employed = "17.5",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 17.5m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "131,280",
+                            industry = "-1",
+                            median_annual_wage = 131280m,
                             title = "Compensation and benefits managers"
                         },
                         new
                         {
                             Id = 366,
                             at_risk = -1,
-                            currently_employed = "20.4",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 20.4m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,740",
+                            industry = "-1",
+                            median_annual_wage = 51740m,
                             title = "Earth drillers, except oil and gas"
                         },
                         new
                         {
                             Id = 367,
                             at_risk = -1,
-                            currently_employed = "16.3",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 16.3m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "39,520",
+                            industry = "-1",
+                            median_annual_wage = 39520m,
                             title = "Grounds maintenance workers, all other"
                         },
                         new
                         {
                             Id = 368,
                             at_risk = -1,
-                            currently_employed = "22.9",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 22.9m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Obstetricians and gynecologists"
                         },
                         new
                         {
                             Id = 369,
                             at_risk = -1,
-                            currently_employed = "29.6",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 29.6m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "151,030",
+                            industry = "-1",
+                            median_annual_wage = 151030m,
                             title = "Judges, magistrate judges, and magistrates"
                         },
                         new
                         {
                             Id = 370,
                             at_risk = -1,
-                            currently_employed = "36.4",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 36.4m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "72,110",
+                            industry = "-1",
+                            median_annual_wage = 72110m,
                             title = "Funeral home managers"
                         },
                         new
                         {
                             Id = 371,
                             at_risk = -1,
-                            currently_employed = "54.5",
-                            decade_change_percentage = 1.2f,
+                            currently_employed = 54.5m,
+                            decade_change_percentage = 1.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,720",
+                            industry = "-1",
+                            median_annual_wage = 48720m,
                             title = "Glaziers"
                         },
                         new
                         {
                             Id = 372,
                             at_risk = -1,
-                            currently_employed = "157.5",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 157.5m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,230",
+                            industry = "-1",
+                            median_annual_wage = 49230m,
                             title = "Eligibility interviewers, government programs"
                         },
                         new
                         {
                             Id = 373,
                             at_risk = -1,
-                            currently_employed = "16.3",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 16.3m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "57,490",
+                            industry = "-1",
+                            median_annual_wage = 57490m,
                             title = "Judicial law clerks"
                         },
                         new
                         {
                             Id = 374,
                             at_risk = -1,
-                            currently_employed = "47.8",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 47.8m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,340",
+                            industry = "-1",
+                            median_annual_wage = 36340m,
                             title = "Helpers--pipelayers, plumbers, pipefitters, and steamfitters"
                         },
                         new
                         {
                             Id = 375,
                             at_risk = -1,
-                            currently_employed = "145.3",
-                            decade_change_percentage = 3.3f,
+                            currently_employed = 145.3m,
+                            decade_change_percentage = 3.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "47,650",
+                            industry = "-1",
+                            median_annual_wage = 47650m,
                             title = "Educational instruction and library workers, all other"
                         },
                         new
                         {
                             Id = 376,
                             at_risk = -1,
-                            currently_employed = "482.7",
-                            decade_change_percentage = 10.9f,
+                            currently_employed = 482.7m,
+                            decade_change_percentage = 10.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,090",
+                            industry = "-1",
+                            median_annual_wage = 60090m,
                             title = "Plumbers, pipefitters, and steamfitters"
                         },
                         new
                         {
                             Id = 377,
                             at_risk = -1,
-                            currently_employed = "2.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 2.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "56,340",
+                            industry = "-1",
+                            median_annual_wage = 56340m,
                             title = "Rail yard engineers, dinkey operators, and hostlers"
                         },
                         new
                         {
                             Id = 378,
                             at_risk = -1,
-                            currently_employed = "11.3",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 11.3m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "64,220",
+                            industry = "-1",
+                            median_annual_wage = 64220m,
                             title = "Foresters"
                         },
                         new
                         {
                             Id = 379,
                             at_risk = -1,
-                            currently_employed = "15.9",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 15.9m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "89,530",
+                            industry = "-1",
+                            median_annual_wage = 89530m,
                             title = "Radiation therapists"
                         },
                         new
                         {
                             Id = 380,
                             at_risk = -1,
-                            currently_employed = "44.7",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 44.7m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,590",
+                            industry = "-1",
+                            median_annual_wage = 39590m,
                             title = "Molders, shapers, and casters, except metal and plastic"
                         },
                         new
                         {
                             Id = 381,
                             at_risk = -1,
-                            currently_employed = "173.4",
-                            decade_change_percentage = 4.1f,
+                            currently_employed = 173.4m,
+                            decade_change_percentage = 4.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,380",
+                            industry = "-1",
+                            median_annual_wage = 35380m,
                             title = "Merchandise displayers and window trimmers"
                         },
                         new
                         {
                             Id = 382,
                             at_risk = -1,
-                            currently_employed = "576.2",
-                            decade_change_percentage = 14f,
+                            currently_employed = 576.2m,
+                            decade_change_percentage = 14m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "73,140",
+                            industry = "-1",
+                            median_annual_wage = 73140m,
                             title = "First-line supervisors of mechanics, installers, and repairers"
                         },
                         new
                         {
                             Id = 383,
                             at_risk = -1,
-                            currently_employed = "17.1",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 17.1m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,200",
+                            industry = "-1",
+                            median_annual_wage = 37200m,
                             title = "Building cleaning workers, all other"
                         },
                         new
                         {
                             Id = 384,
                             at_risk = -1,
-                            currently_employed = "16.1",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 16.1m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,260",
+                            industry = "-1",
+                            median_annual_wage = 48260m,
                             title = "Electric motor, power tool, and related repairers"
                         },
                         new
                         {
                             Id = 385,
                             at_risk = -1,
-                            currently_employed = "16.6",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 16.6m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,160",
+                            industry = "-1",
+                            median_annual_wage = 42160m,
                             title = "Medical appliance technicians"
                         },
                         new
                         {
                             Id = 386,
                             at_risk = -1,
-                            currently_employed = "21.4",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 21.4m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "131,800",
+                            industry = "-1",
+                            median_annual_wage = 131800m,
                             title = "Petroleum engineers"
                         },
                         new
                         {
                             Id = 387,
                             at_risk = -1,
-                            currently_employed = "66.0",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 66.0m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,080",
+                            industry = "-1",
+                            median_annual_wage = 47080m,
                             title = "Tree trimmers and pruners"
                         },
                         new
                         {
                             Id = 388,
                             at_risk = -1,
-                            currently_employed = "72.6",
-                            decade_change_percentage = 1.8f,
+                            currently_employed = 72.6m,
+                            decade_change_percentage = 1.8m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "214,460",
+                            industry = "-1",
+                            median_annual_wage = 214460m,
                             title = "General internal medicine physicians"
                         },
                         new
                         {
                             Id = 389,
                             at_risk = -1,
-                            currently_employed = "96.5",
-                            decade_change_percentage = 2.4f,
+                            currently_employed = 96.5m,
+                            decade_change_percentage = 2.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,100",
+                            industry = "-1",
+                            median_annual_wage = 35100m,
                             title = "Helpers--installation, maintenance, and repair workers"
                         },
                         new
                         {
                             Id = 390,
                             at_risk = -1,
-                            currently_employed = "93.9",
-                            decade_change_percentage = 2.4f,
+                            currently_employed = 93.9m,
+                            decade_change_percentage = 2.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "59,860",
+                            industry = "-1",
+                            median_annual_wage = 59860m,
                             title = "Probation officers and correctional treatment specialists"
                         },
                         new
                         {
                             Id = 391,
                             at_risk = -1,
-                            currently_employed = "216.6",
-                            decade_change_percentage = 5.3f,
+                            currently_employed = 216.6m,
+                            decade_change_percentage = 5.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "66,490",
+                            industry = "-1",
+                            median_annual_wage = 66490m,
                             title = "Instructional coordinators"
                         },
                         new
                         {
                             Id = 392,
                             at_risk = -1,
-                            currently_employed = "339.9",
-                            decade_change_percentage = 8.3f,
+                            currently_employed = 339.9m,
+                            decade_change_percentage = 8.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "90,520",
+                            industry = "-1",
+                            median_annual_wage = 90520m,
                             title = "Network and computer systems administrators"
                         },
                         new
                         {
                             Id = 393,
                             at_risk = -1,
-                            currently_employed = "809.9",
-                            decade_change_percentage = 20.4f,
+                            currently_employed = 809.9m,
+                            decade_change_percentage = 20.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "74,080",
+                            industry = "-1",
+                            median_annual_wage = 74080m,
                             title = "First-line supervisors of construction trades and extraction workers"
                         },
                         new
                         {
                             Id = 394,
                             at_risk = -1,
-                            currently_employed = "5.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 5.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "80,710",
+                            industry = "-1",
+                            median_annual_wage = 80710m,
                             title = "Gambling managers"
                         },
                         new
                         {
                             Id = 395,
                             at_risk = -1,
-                            currently_employed = "19.2",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 19.2m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "75,390",
+                            industry = "-1",
+                            median_annual_wage = 75390m,
                             title = "Social sciences teachers, postsecondary, all other"
                         },
                         new
                         {
                             Id = 396,
                             at_risk = -1,
-                            currently_employed = "40.0",
-                            decade_change_percentage = 1f,
+                            currently_employed = 40.0m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Anesthesiologists"
                         },
                         new
                         {
                             Id = 397,
                             at_risk = -1,
-                            currently_employed = "230.9",
-                            decade_change_percentage = 6.1f,
+                            currently_employed = 230.9m,
+                            decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,810",
+                            industry = "-1",
+                            median_annual_wage = 50810m,
                             title = "First-line supervisors of landscaping, lawn service, and groundskeeping workers"
                         },
                         new
                         {
                             Id = 398,
                             at_risk = -1,
-                            currently_employed = "334.2",
-                            decade_change_percentage = 8.7f,
+                            currently_employed = 334.2m,
+                            decade_change_percentage = 8.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "132,750",
+                            industry = "-1",
+                            median_annual_wage = 132750m,
                             title = "Pharmacists"
                         },
                         new
                         {
                             Id = 399,
                             at_risk = -1,
-                            currently_employed = "5.8",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 5.8m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "212,740",
+                            industry = "-1",
+                            median_annual_wage = 212740m,
                             title = "Dentists, all other specialists"
                         },
                         new
                         {
                             Id = 400,
                             at_risk = -1,
-                            currently_employed = "16.5",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 16.5m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "64,990",
+                            industry = "-1",
+                            median_annual_wage = 64990m,
                             title = "Criminal justice and law enforcement teachers, postsecondary"
                         },
                         new
                         {
                             Id = 401,
                             at_risk = -1,
-                            currently_employed = "25.7",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 25.7m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "79,570",
+                            industry = "-1",
+                            median_annual_wage = 79570m,
                             title = "Transportation inspectors"
                         },
                         new
                         {
                             Id = 402,
                             at_risk = -1,
-                            currently_employed = "29.1",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 29.1m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "78,780",
+                            industry = "-1",
+                            median_annual_wage = 78780m,
                             title = "Philosophy and religion teachers, postsecondary"
                         },
                         new
                         {
                             Id = 403,
                             at_risk = -1,
-                            currently_employed = "56.6",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 56.6m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "54,490",
+                            industry = "-1",
+                            median_annual_wage = 54490m,
                             title = "First-line supervisors of farming, fishing, and forestry workers"
                         },
                         new
                         {
                             Id = 404,
                             at_risk = -1,
-                            currently_employed = "73.3",
-                            decade_change_percentage = 2f,
+                            currently_employed = 73.3m,
+                            decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,610",
+                            industry = "-1",
+                            median_annual_wage = 39610m,
                             title = "Opticians, dispensing"
                         },
                         new
                         {
                             Id = 405,
                             at_risk = -1,
-                            currently_employed = "161.1",
-                            decade_change_percentage = 4.3f,
+                            currently_employed = 161.1m,
+                            decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,720",
+                            industry = "-1",
+                            median_annual_wage = 44720m,
                             title = "Information and record clerks, all other"
                         },
                         new
                         {
                             Id = 406,
                             at_risk = -1,
-                            currently_employed = "380.8",
-                            decade_change_percentage = 10.4f,
+                            currently_employed = 380.8m,
+                            decade_change_percentage = 10.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,830",
+                            industry = "-1",
+                            median_annual_wage = 35830m,
                             title = "Counter and rental clerks"
                         },
                         new
                         {
                             Id = 407,
                             at_risk = -1,
-                            currently_employed = "437.6",
-                            decade_change_percentage = 11.6f,
+                            currently_employed = 437.6m,
+                            decade_change_percentage = 11.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "51,430",
+                            industry = "-1",
+                            median_annual_wage = 51430m,
                             title = "Operating engineers and other construction equipment operators"
                         },
                         new
                         {
                             Id = 408,
                             at_risk = -1,
-                            currently_employed = "21.3",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 21.3m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "63,560",
+                            industry = "-1",
+                            median_annual_wage = 63560m,
                             title = "Court reporters and simultaneous captioners"
                         },
                         new
                         {
                             Id = 409,
                             at_risk = -1,
-                            currently_employed = "31.3",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 31.3m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Emergency medicine physicians"
                         },
                         new
                         {
                             Id = 410,
                             at_risk = -1,
-                            currently_employed = "33.2",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 33.2m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,160",
+                            industry = "-1",
+                            median_annual_wage = 31160m,
                             title = "Funeral attendants"
                         },
                         new
                         {
                             Id = 411,
                             at_risk = -1,
-                            currently_employed = "36.5",
-                            decade_change_percentage = 1f,
+                            currently_employed = 36.5m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "58,230",
+                            industry = "-1",
+                            median_annual_wage = 58230m,
                             title = "Camera operators, television, video, and film"
                         },
                         new
                         {
                             Id = 412,
                             at_risk = -1,
-                            currently_employed = "33.5",
-                            decade_change_percentage = 1f,
+                            currently_employed = 33.5m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "67,120",
+                            industry = "-1",
+                            median_annual_wage = 67120m,
                             title = "Stationary engineers and boiler operators"
                         },
                         new
                         {
                             Id = 413,
                             at_risk = -1,
-                            currently_employed = "57.6",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 57.6m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "89,130",
+                            industry = "-1",
+                            median_annual_wage = 89130m,
                             title = "Education administrators, all other"
                         },
                         new
                         {
                             Id = 414,
                             at_risk = -1,
-                            currently_employed = "83.0",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 83.0m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,130",
+                            industry = "-1",
+                            median_annual_wage = 50130m,
                             title = "Security and fire alarm systems installers"
                         },
                         new
                         {
                             Id = 415,
                             at_risk = -1,
-                            currently_employed = "122.4",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 122.4m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "82,340",
+                            industry = "-1",
+                            median_annual_wage = 82340m,
                             title = "Electrical power-line installers and repairers"
                         },
                         new
                         {
                             Id = 416,
                             at_risk = -1,
-                            currently_employed = "3.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "41,430",
+                            industry = "-1",
+                            median_annual_wage = 41430m,
                             title = "Motorboat operators"
                         },
                         new
                         {
                             Id = 417,
                             at_risk = -1,
-                            currently_employed = "42.1",
-                            decade_change_percentage = 1.2f,
+                            currently_employed = 42.1m,
+                            decade_change_percentage = 1.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "43,590",
+                            industry = "-1",
+                            median_annual_wage = 43590m,
                             title = "Roustabouts, oil and gas"
                         },
                         new
                         {
                             Id = 418,
                             at_risk = -1,
-                            currently_employed = "43.9",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 43.9m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,950",
+                            industry = "-1",
+                            median_annual_wage = 63950m,
                             title = "Special education teachers, all other"
                         },
                         new
                         {
                             Id = 419,
                             at_risk = -1,
-                            currently_employed = "354.8",
-                            decade_change_percentage = 10.4f,
+                            currently_employed = 354.8m,
+                            decade_change_percentage = 10.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "65,740",
+                            industry = "-1",
+                            median_annual_wage = 65740m,
                             title = "Loan officers"
                         },
                         new
                         {
                             Id = 420,
                             at_risk = -1,
-                            currently_employed = "19.8",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 19.8m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "108,860",
+                            industry = "-1",
+                            median_annual_wage = 108860m,
                             title = "Law teachers, postsecondary"
                         },
                         new
                         {
                             Id = 421,
                             at_risk = -1,
-                            currently_employed = "19.1",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 19.1m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,430",
+                            industry = "-1",
+                            median_annual_wage = 67430m,
                             title = "Zoologists and wildlife biologists"
                         },
                         new
                         {
                             Id = 422,
                             at_risk = -1,
-                            currently_employed = "21.5",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 21.5m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,790",
+                            industry = "-1",
+                            median_annual_wage = 37790m,
                             title = "Food and tobacco roasting, baking, and drying machine operators and tenders"
                         },
                         new
                         {
                             Id = 423,
                             at_risk = -1,
-                            currently_employed = "42.1",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 42.1m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,930",
+                            industry = "-1",
+                            median_annual_wage = 60930m,
                             title = "Millwrights"
                         },
                         new
                         {
                             Id = 424,
                             at_risk = -1,
-                            currently_employed = "44.5",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 44.5m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,410",
+                            industry = "-1",
+                            median_annual_wage = 31410m,
                             title = "Physical therapist aides"
                         },
                         new
                         {
                             Id = 425,
                             at_risk = -1,
-                            currently_employed = "95.0",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 95.0m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,460",
+                            industry = "-1",
+                            median_annual_wage = 36460m,
                             title = "Protective service workers, all other"
                         },
                         new
                         {
                             Id = 426,
                             at_risk = -1,
-                            currently_employed = "141.2",
-                            decade_change_percentage = 4.3f,
+                            currently_employed = 141.2m,
+                            decade_change_percentage = 4.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "61,660",
+                            industry = "-1",
+                            median_annual_wage = 61660m,
                             title = "Librarians and media collections specialists"
                         },
                         new
                         {
                             Id = 427,
                             at_risk = -1,
-                            currently_employed = "170.6",
-                            decade_change_percentage = 5.1f,
+                            currently_employed = 170.6m,
+                            decade_change_percentage = 5.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,140",
+                            industry = "-1",
+                            median_annual_wage = 44140m,
                             title = "Court, municipal, and license clerks"
                         },
                         new
                         {
                             Id = 428,
                             at_risk = -1,
-                            currently_employed = "254.9",
-                            decade_change_percentage = 7.7f,
+                            currently_employed = 254.9m,
+                            decade_change_percentage = 7.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,440",
+                            industry = "-1",
+                            median_annual_wage = 44440m,
                             title = "First-line supervisors of housekeeping and janitorial workers"
                         },
                         new
                         {
                             Id = 429,
                             at_risk = -1,
-                            currently_employed = "330.9",
-                            decade_change_percentage = 10f,
+                            currently_employed = 330.9m,
+                            decade_change_percentage = 10m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "223,410",
+                            industry = "-1",
+                            median_annual_wage = 223410m,
                             title = "Physicians, all other"
                         },
                         new
                         {
                             Id = 430,
                             at_risk = -1,
-                            currently_employed = "3.5",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.5m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "64,540",
+                            industry = "-1",
+                            median_annual_wage = 64540m,
                             title = "Historians"
                         },
                         new
                         {
                             Id = 431,
                             at_risk = -1,
-                            currently_employed = "9.4",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 9.4m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "48,490",
+                            industry = "-1",
+                            median_annual_wage = 48490m,
                             title = "Geological technicians, except hydrologic technicians"
                         },
                         new
                         {
                             Id = 432,
                             at_risk = -1,
-                            currently_employed = "12.4",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 12.4m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Dermatologists"
                         },
                         new
                         {
                             Id = 433,
                             at_risk = -1,
-                            currently_employed = "18.0",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 18.0m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Cardiologists"
                         },
                         new
                         {
                             Id = 434,
                             at_risk = -1,
-                            currently_employed = "33.5",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 33.5m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "65,390",
+                            industry = "-1",
+                            median_annual_wage = 65390m,
                             title = "Designers, all other"
                         },
                         new
                         {
                             Id = 435,
                             at_risk = -1,
-                            currently_employed = "74.1",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 74.1m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "65,520",
+                            industry = "-1",
+                            median_annual_wage = 65520m,
                             title = "Engineering technologists and technicians, except drafters, all other"
                         },
                         new
                         {
                             Id = 436,
                             at_risk = -1,
-                            currently_employed = "95.0",
-                            decade_change_percentage = 3f,
+                            currently_employed = 95.0m,
+                            decade_change_percentage = 3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,310",
+                            industry = "-1",
+                            median_annual_wage = 38310m,
                             title = "Pest control workers"
                         },
                         new
                         {
                             Id = 437,
                             at_risk = -1,
-                            currently_employed = "137.9",
-                            decade_change_percentage = 4.3f,
+                            currently_employed = 137.9m,
+                            decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "96,290",
+                            industry = "-1",
+                            median_annual_wage = 96290m,
                             title = "First-line supervisors of police and detectives"
                         },
                         new
                         {
                             Id = 438,
                             at_risk = -1,
-                            currently_employed = "258.6",
-                            decade_change_percentage = 8.1f,
+                            currently_employed = 258.6m,
+                            decade_change_percentage = 8.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,300",
+                            industry = "-1",
+                            median_annual_wage = 30300m,
                             title = "Food servers, nonrestaurant"
                         },
                         new
                         {
                             Id = 439,
                             at_risk = -1,
-                            currently_employed = "3.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "64,310",
+                            industry = "-1",
+                            median_annual_wage = 64310m,
                             title = "Pile driver operators"
                         },
                         new
                         {
                             Id = 440,
                             at_risk = -1,
-                            currently_employed = "3.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "69,150",
+                            industry = "-1",
+                            median_annual_wage = 69150m,
                             title = "Transit and railroad police"
                         },
                         new
                         {
                             Id = 441,
                             at_risk = -1,
-                            currently_employed = "12.2",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 12.2m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "224,260",
+                            industry = "-1",
+                            median_annual_wage = 224260m,
                             title = "Neurologists"
                         },
                         new
                         {
                             Id = 442,
                             at_risk = -1,
-                            currently_employed = "20.2",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 20.2m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "33,390",
+                            industry = "-1",
+                            median_annual_wage = 33390m,
                             title = "Cooks, all other"
                         },
                         new
                         {
                             Id = 443,
                             at_risk = -1,
-                            currently_employed = "29.7",
-                            decade_change_percentage = 1f,
+                            currently_employed = 29.7m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "56,290",
+                            industry = "-1",
+                            median_annual_wage = 56290m,
                             title = "First-line supervisors of gambling services workers"
                         },
                         new
                         {
                             Id = 444,
                             at_risk = -1,
-                            currently_employed = "55.9",
-                            decade_change_percentage = 1.8f,
+                            currently_employed = 55.9m,
+                            decade_change_percentage = 1.8m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "77,420",
+                            industry = "-1",
+                            median_annual_wage = 77420m,
                             title = "Mathematical science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 445,
                             at_risk = -1,
-                            currently_employed = "58.8",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 58.8m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "50,840",
+                            industry = "-1",
+                            median_annual_wage = 50840m,
                             title = "Chemical technicians"
                         },
                         new
                         {
                             Id = 446,
                             at_risk = -1,
-                            currently_employed = "69.1",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 69.1m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "61,210",
+                            industry = "-1",
+                            median_annual_wage = 61210m,
                             title = "Industrial engineering technologists and technicians"
                         },
                         new
                         {
                             Id = 447,
                             at_risk = -1,
-                            currently_employed = "78.1",
-                            decade_change_percentage = 2.5f,
+                            currently_employed = 78.1m,
+                            decade_change_percentage = 2.5m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Actors"
                         },
                         new
                         {
                             Id = 448,
                             at_risk = -1,
-                            currently_employed = "123.9",
-                            decade_change_percentage = 3.9f,
+                            currently_employed = 123.9m,
+                            decade_change_percentage = 3.9m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "77,280",
+                            industry = "-1",
+                            median_annual_wage = 77280m,
                             title = "Art, drama, and music teachers, postsecondary"
                         },
                         new
                         {
                             Id = 449,
                             at_risk = -1,
-                            currently_employed = "146.4",
-                            decade_change_percentage = 4.7f,
+                            currently_employed = 146.4m,
+                            decade_change_percentage = 4.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "43,540",
+                            industry = "-1",
+                            median_annual_wage = 43540m,
                             title = "Refuse and recyclable material collectors"
                         },
                         new
                         {
                             Id = 450,
                             at_risk = -1,
-                            currently_employed = "354.7",
-                            decade_change_percentage = 11.4f,
+                            currently_employed = 354.7m,
+                            decade_change_percentage = 11.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,110",
+                            industry = "-1",
+                            median_annual_wage = 44110m,
                             title = "Self-enrichment teachers"
                         },
                         new
                         {
                             Id = 451,
                             at_risk = -1,
-                            currently_employed = "462.6",
-                            decade_change_percentage = 14.9f,
+                            currently_employed = 462.6m,
+                            decade_change_percentage = 14.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,980",
+                            industry = "-1",
+                            median_annual_wage = 49980m,
                             title = "Real estate sales agents"
                         },
                         new
                         {
                             Id = 452,
                             at_risk = -1,
-                            currently_employed = "11.8",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 11.8m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "79,180",
+                            industry = "-1",
+                            median_annual_wage = 79180m,
                             title = "Emergency management directors"
                         },
                         new
                         {
                             Id = 453,
                             at_risk = -1,
-                            currently_employed = "16.3",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 16.3m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "72,650",
+                            industry = "-1",
+                            median_annual_wage = 72650m,
                             title = "Recreation and fitness studies teachers, postsecondary"
                         },
                         new
                         {
                             Id = 454,
                             at_risk = -1,
-                            currently_employed = "24.9",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 24.9m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "76,700",
+                            industry = "-1",
+                            median_annual_wage = 76700m,
                             title = "Fashion designers"
                         },
                         new
                         {
                             Id = 455,
                             at_risk = -1,
-                            currently_employed = "51.6",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 51.6m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "82,260",
+                            industry = "-1",
+                            median_annual_wage = 82260m,
                             title = "Budget analysts"
                         },
                         new
                         {
                             Id = 456,
                             at_risk = -1,
-                            currently_employed = "64.2",
-                            decade_change_percentage = 2.1f,
+                            currently_employed = 64.2m,
+                            decade_change_percentage = 2.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,180",
+                            industry = "-1",
+                            median_annual_wage = 47180m,
                             title = "Surveying and mapping technicians"
                         },
                         new
                         {
                             Id = 457,
                             at_risk = 0,
-                            currently_employed = "170.3",
-                            decade_change_percentage = 5.7f,
+                            currently_employed = 170.3m,
+                            decade_change_percentage = 5.7m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "104,600",
+                            median_annual_wage = 104600m,
                             title = "Engineers, all other"
                         },
                         new
                         {
                             Id = 458,
                             at_risk = -1,
-                            currently_employed = "223.7",
-                            decade_change_percentage = 7.4f,
+                            currently_employed = 223.7m,
+                            decade_change_percentage = 7.4m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "36,680",
+                            industry = "-1",
+                            median_annual_wage = 36680m,
                             title = "Tutors"
                         },
                         new
                         {
                             Id = 459,
                             at_risk = -1,
-                            currently_employed = "270.9",
-                            decade_change_percentage = 8.9f,
+                            currently_employed = 270.9m,
+                            decade_change_percentage = 8.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "57,990",
+                            industry = "-1",
+                            median_annual_wage = 57990m,
                             title = "Graphic designers"
                         },
                         new
                         {
                             Id = 460,
                             at_risk = -1,
-                            currently_employed = "641.3",
-                            decade_change_percentage = 21.3f,
+                            currently_employed = 641.3m,
+                            decade_change_percentage = 21.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,380",
+                            industry = "-1",
+                            median_annual_wage = 29380m,
                             title = "Bartenders"
                         },
                         new
                         {
                             Id = 461,
                             at_risk = -1,
-                            currently_employed = "684.0",
-                            decade_change_percentage = 22.5f,
+                            currently_employed = 684.0m,
+                            decade_change_percentage = 22.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "65,790",
+                            industry = "-1",
+                            median_annual_wage = 65790m,
                             title = "Police and sheriff's patrol officers"
                         },
                         new
                         {
                             Id = 462,
                             at_risk = -1,
-                            currently_employed = "1,228.3",
-                            decade_change_percentage = 41f,
+                            currently_employed = 1228.3m,
+                            decade_change_percentage = 41m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "128,620",
+                            industry = "-1",
+                            median_annual_wage = 128620m,
                             title = "Managers, all other"
                         },
                         new
                         {
                             Id = 463,
                             at_risk = -1,
-                            currently_employed = "3.5",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.5m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "128,970",
+                            industry = "-1",
+                            median_annual_wage = 128970m,
                             title = "Medical dosimetrists"
                         },
                         new
                         {
                             Id = 464,
                             at_risk = -1,
-                            currently_employed = "14.0",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 14.0m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "69,760",
+                            industry = "-1",
+                            median_annual_wage = 69760m,
                             title = "Artists and related workers, all other"
                         },
                         new
                         {
                             Id = 465,
                             at_risk = -1,
-                            currently_employed = "13.5",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 13.5m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "59,720",
+                            industry = "-1",
+                            median_annual_wage = 59720m,
                             title = "Radio, cellular, and tower equipment installers and repairers"
                         },
                         new
                         {
                             Id = 466,
                             at_risk = -1,
-                            currently_employed = "17.3",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 17.3m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "69,490",
+                            industry = "-1",
+                            median_annual_wage = 69490m,
                             title = "Media and communication equipment workers, all other"
                         },
                         new
                         {
                             Id = 467,
                             at_risk = -1,
-                            currently_employed = "24.5",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 24.5m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "61,030",
+                            industry = "-1",
+                            median_annual_wage = 61030m,
                             title = "First-line supervisors of protective service workers, all other"
                         },
                         new
                         {
                             Id = 468,
                             at_risk = -1,
-                            currently_employed = "33.6",
-                            decade_change_percentage = 1.2f,
+                            currently_employed = 33.6m,
+                            decade_change_percentage = 1.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "76,250",
+                            industry = "-1",
+                            median_annual_wage = 76250m,
                             title = "Communications teachers, postsecondary"
                         },
                         new
                         {
                             Id = 469,
                             at_risk = -1,
-                            currently_employed = "44.4",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 44.4m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "48,090",
+                            industry = "-1",
+                            median_annual_wage = 48090m,
                             title = "Legislators"
                         },
                         new
                         {
                             Id = 470,
                             at_risk = -1,
-                            currently_employed = "55.6",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 55.6m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,250",
+                            industry = "-1",
+                            median_annual_wage = 46250m,
                             title = "Separating, filtering, clarifying, precipitating, and still machine setters, operators, and tenders"
                         },
                         new
                         {
                             Id = 471,
                             at_risk = -1,
-                            currently_employed = "99.5",
-                            decade_change_percentage = 3.4f,
+                            currently_employed = 99.5m,
+                            decade_change_percentage = 3.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,900",
+                            industry = "-1",
+                            median_annual_wage = 46900m,
                             title = "Public safety telecommunicators"
                         },
                         new
                         {
                             Id = 472,
                             at_risk = -1,
-                            currently_employed = "512.3",
-                            decade_change_percentage = 17.2f,
+                            currently_employed = 512.3m,
+                            decade_change_percentage = 17.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "35,330",
+                            industry = "-1",
+                            median_annual_wage = 35330m,
                             title = "Preschool teachers, except special education"
                         },
                         new
                         {
                             Id = 473,
                             at_risk = -1,
-                            currently_employed = "9.5",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 9.5m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "88,260",
+                            industry = "-1",
+                            median_annual_wage = 88260m,
                             title = "Subway and streetcar operators"
                         },
                         new
                         {
                             Id = 474,
                             at_risk = -1,
-                            currently_employed = "7.6",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 7.6m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,050",
+                            industry = "-1",
+                            median_annual_wage = 50050m,
                             title = "Traffic technicians"
                         },
                         new
                         {
                             Id = 475,
                             at_risk = -1,
-                            currently_employed = "20.2",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 20.2m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "33,960",
+                            industry = "-1",
+                            median_annual_wage = 33960m,
                             title = "Dietetic technicians"
                         },
                         new
                         {
                             Id = 476,
                             at_risk = -1,
-                            currently_employed = "25.9",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 25.9m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "80,720",
+                            industry = "-1",
+                            median_annual_wage = 80720m,
                             title = "Chemistry teachers, postsecondary"
                         },
                         new
                         {
                             Id = 477,
                             at_risk = -1,
-                            currently_employed = "26.1",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 26.1m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "38,800",
+                            industry = "-1",
+                            median_annual_wage = 38800m,
                             title = "Material moving workers, all other"
                         },
                         new
                         {
                             Id = 478,
                             at_risk = -1,
-                            currently_employed = "66.3",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 66.3m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,400",
+                            industry = "-1",
+                            median_annual_wage = 46400m,
                             title = "Travel agents"
                         },
                         new
                         {
                             Id = 479,
                             at_risk = -1,
-                            currently_employed = "127.2",
-                            decade_change_percentage = 4.4f,
+                            currently_employed = 127.2m,
+                            decade_change_percentage = 4.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "62,190",
+                            industry = "-1",
+                            median_annual_wage = 62190m,
                             title = "Real estate brokers"
                         },
                         new
                         {
                             Id = 480,
                             at_risk = -1,
-                            currently_employed = "180.2",
-                            decade_change_percentage = 6.3f,
+                            currently_employed = 180.2m,
+                            decade_change_percentage = 6.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "126,900",
+                            industry = "-1",
+                            median_annual_wage = 126900m,
                             title = "Computer network architects"
                         },
                         new
                         {
                             Id = 481,
                             at_risk = -1,
-                            currently_employed = "218.2",
-                            decade_change_percentage = 7.7f,
+                            currently_employed = 218.2m,
+                            decade_change_percentage = 7.7m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "99,940",
+                            industry = "-1",
+                            median_annual_wage = 99940m,
                             title = "Education administrators, postsecondary"
                         },
                         new
                         {
                             Id = 482,
                             at_risk = -1,
-                            currently_employed = "1,176.1",
-                            decade_change_percentage = 41.7f,
+                            currently_employed = 1176.1m,
+                            decade_change_percentage = 41.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "35,890",
+                            industry = "-1",
+                            median_annual_wage = 35890m,
                             title = "Landscaping and groundskeeping workers"
                         },
                         new
                         {
                             Id = 483,
                             at_risk = -1,
-                            currently_employed = "11.2",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 11.2m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "55,860",
+                            industry = "-1",
+                            median_annual_wage = 55860m,
                             title = "Pump operators, except wellhead pumpers"
                         },
                         new
                         {
                             Id = 484,
                             at_risk = -1,
-                            currently_employed = "13.6",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 13.6m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "97,770",
+                            industry = "-1",
+                            median_annual_wage = 97770m,
                             title = "Atmospheric, earth, marine, and space sciences teachers, postsecondary"
                         },
                         new
                         {
                             Id = 485,
                             at_risk = -1,
-                            currently_employed = "12.8",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 12.8m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "219,810",
+                            industry = "-1",
+                            median_annual_wage = 219810m,
                             title = "Ophthalmologists, except pediatric"
                         },
                         new
                         {
                             Id = 486,
                             at_risk = -1,
-                            currently_employed = "16.8",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 16.8m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "51,330",
+                            industry = "-1",
+                            median_annual_wage = 51330m,
                             title = "Recreational therapists"
                         },
                         new
                         {
                             Id = 487,
                             at_risk = -1,
-                            currently_employed = "20.1",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 20.1m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "62,510",
+                            industry = "-1",
+                            median_annual_wage = 62510m,
                             title = "Rail car repairers"
                         },
                         new
                         {
                             Id = 488,
                             at_risk = -1,
-                            currently_employed = "31.2",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 31.2m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Radiologists"
                         },
                         new
                         {
                             Id = 489,
                             at_risk = -1,
-                            currently_employed = "87.1",
-                            decade_change_percentage = 3.1f,
+                            currently_employed = 87.1m,
+                            decade_change_percentage = 3.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "80,150",
+                            industry = "-1",
+                            median_annual_wage = 80150m,
                             title = "First-line supervisors of firefighting and prevention workers"
                         },
                         new
                         {
                             Id = 490,
                             at_risk = -1,
-                            currently_employed = "262.8",
-                            decade_change_percentage = 9.4f,
+                            currently_employed = 262.8m,
+                            decade_change_percentage = 9.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "76,920",
+                            industry = "-1",
+                            median_annual_wage = 76920m,
                             title = "Postsecondary teachers, all other"
                         },
                         new
                         {
                             Id = 491,
                             at_risk = -1,
-                            currently_employed = "334.2",
-                            decade_change_percentage = 12f,
+                            currently_employed = 334.2m,
+                            decade_change_percentage = 12m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "51,680",
+                            industry = "-1",
+                            median_annual_wage = 51680m,
                             title = "Firefighters"
                         },
                         new
                         {
                             Id = 492,
                             at_risk = -1,
-                            currently_employed = "1,607.2",
-                            decade_change_percentage = 57.2f,
+                            currently_employed = 1607.2m,
+                            decade_change_percentage = 57.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,980",
+                            industry = "-1",
+                            median_annual_wage = 44980m,
                             title = "Maintenance and repair workers, general"
                         },
                         new
                         {
                             Id = 493,
                             at_risk = -1,
-                            currently_employed = "3.9",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.9m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "44,930",
+                            industry = "-1",
+                            median_annual_wage = 44930m,
                             title = "Paperhangers"
                         },
                         new
                         {
                             Id = 494,
                             at_risk = -1,
-                            currently_employed = "15.0",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 15.0m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "69,450",
+                            industry = "-1",
+                            median_annual_wage = 69450m,
                             title = "Fire inspectors and investigators"
                         },
                         new
                         {
                             Id = 495,
                             at_risk = -1,
-                            currently_employed = "15.0",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 15.0m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "78,970",
+                            industry = "-1",
+                            median_annual_wage = 78970m,
                             title = "Sociology teachers, postsecondary"
                         },
                         new
                         {
                             Id = 496,
                             at_risk = -1,
-                            currently_employed = "19.3",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 19.3m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "83,770",
+                            industry = "-1",
+                            median_annual_wage = 83770m,
                             title = "Political science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 497,
                             at_risk = -1,
-                            currently_employed = "22.0",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 22.0m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "100,660",
+                            industry = "-1",
+                            median_annual_wage = 100660m,
                             title = "Health and safety engineers, except mining safety engineers and inspectors"
                         },
                         new
                         {
                             Id = 498,
                             at_risk = -1,
-                            currently_employed = "24.5",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 24.5m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "51,570",
+                            industry = "-1",
+                            median_annual_wage = 51570m,
                             title = "Morticians, undertakers, and funeral arrangers"
                         },
                         new
                         {
                             Id = 499,
                             at_risk = -1,
-                            currently_employed = "42.3",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 42.3m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,270",
+                            industry = "-1",
+                            median_annual_wage = 47270m,
                             title = "Paving, surfacing, and tamping equipment operators"
                         },
                         new
                         {
                             Id = 500,
                             at_risk = -1,
-                            currently_employed = "44.7",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 44.7m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "79,540",
+                            industry = "-1",
+                            median_annual_wage = 79540m,
                             title = "Urban and regional planners"
                         },
                         new
                         {
                             Id = 501,
                             at_risk = -1,
-                            currently_employed = "58.9",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 58.9m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "63,020",
+                            industry = "-1",
+                            median_annual_wage = 63020m,
                             title = "Cardiovascular technologists and technicians"
                         },
                         new
                         {
                             Id = 502,
                             at_risk = -1,
-                            currently_employed = "74.3",
-                            decade_change_percentage = 2.8f,
+                            currently_employed = 74.3m,
+                            decade_change_percentage = 2.8m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "66,930",
+                            industry = "-1",
+                            median_annual_wage = 66930m,
                             title = "Education teachers, postsecondary"
                         },
                         new
                         {
                             Id = 503,
                             at_risk = -1,
-                            currently_employed = "108.0",
-                            decade_change_percentage = 4f,
+                            currently_employed = 108.0m,
+                            decade_change_percentage = 4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "211,300",
+                            industry = "-1",
+                            median_annual_wage = 211300m,
                             title = "Family medicine physicians"
                         },
                         new
                         {
                             Id = 504,
                             at_risk = -1,
-                            currently_employed = "151.2",
-                            decade_change_percentage = 5.6f,
+                            currently_employed = 151.2m,
+                            decade_change_percentage = 5.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "73,150",
+                            industry = "-1",
+                            median_annual_wage = 73150m,
                             title = "Writers and authors"
                         },
                         new
                         {
                             Id = 505,
                             at_risk = -1,
-                            currently_employed = "305.6",
-                            decade_change_percentage = 11.4f,
+                            currently_employed = 305.6m,
+                            decade_change_percentage = 11.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "97,710",
+                            industry = "-1",
+                            median_annual_wage = 97710m,
                             title = "Sales representatives, wholesale and manufacturing, technical and scientific products"
                         },
                         new
                         {
                             Id = 506,
                             at_risk = -1,
-                            currently_employed = "401.8",
-                            decade_change_percentage = 15f,
+                            currently_employed = 401.8m,
+                            decade_change_percentage = 15m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "31,000",
+                            industry = "-1",
+                            median_annual_wage = 31000m,
                             title = "Cleaners of vehicles and equipment"
                         },
                         new
                         {
                             Id = 507,
                             at_risk = -1,
-                            currently_employed = "796.6",
-                            decade_change_percentage = 29.9f,
+                            currently_employed = 796.6m,
+                            decade_change_percentage = 29.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "41,230",
+                            industry = "-1",
+                            median_annual_wage = 41230m,
                             title = "Industrial truck and tractor operators"
                         },
                         new
                         {
                             Id = 508,
                             at_risk = -1,
-                            currently_employed = "8.2",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 8.2m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "93,220",
+                            industry = "-1",
+                            median_annual_wage = 93220m,
                             title = "Architecture teachers, postsecondary"
                         },
                         new
                         {
                             Id = 509,
                             at_risk = -1,
-                            currently_employed = "14.4",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 14.4m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,250",
+                            industry = "-1",
+                            median_annual_wage = 36250m,
                             title = "Bicycle repairers"
                         },
                         new
                         {
                             Id = 510,
                             at_risk = -1,
-                            currently_employed = "14.0",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 14.0m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,190",
+                            industry = "-1",
+                            median_annual_wage = 37190m,
                             title = "Cleaning, washing, and metal pickling equipment operators and tenders"
                         },
                         new
                         {
                             Id = 511,
                             at_risk = -1,
-                            currently_employed = "14.8",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 14.8m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "103,930",
+                            industry = "-1",
+                            median_annual_wage = 103930m,
                             title = "Economics teachers, postsecondary"
                         },
                         new
                         {
                             Id = 512,
                             at_risk = -1,
-                            currently_employed = "16.2",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 16.2m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "86,550",
+                            industry = "-1",
+                            median_annual_wage = 86550m,
                             title = "Physics teachers, postsecondary"
                         },
                         new
                         {
                             Id = 513,
                             at_risk = -1,
-                            currently_employed = "80.0",
-                            decade_change_percentage = 3f,
+                            currently_employed = 80.0m,
+                            decade_change_percentage = 3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "50,290",
+                            industry = "-1",
+                            median_annual_wage = 50290m,
                             title = "Life, physical, and social science technicians, all other"
                         },
                         new
                         {
                             Id = 514,
                             at_risk = -1,
-                            currently_employed = "3.0",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.0m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,360",
+                            industry = "-1",
+                            median_annual_wage = 40360m,
                             title = "Crematory operators"
                         },
                         new
                         {
                             Id = 515,
                             at_risk = -1,
-                            currently_employed = "2.9",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 2.9m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "76,440",
+                            industry = "-1",
+                            median_annual_wage = 76440m,
                             title = "Family and consumer sciences teachers, postsecondary"
                         },
                         new
                         {
                             Id = 516,
                             at_risk = -1,
-                            currently_employed = "11.5",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 11.5m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "38,150",
+                            industry = "-1",
+                            median_annual_wage = 38150m,
                             title = "Craft artists"
                         },
                         new
                         {
                             Id = 517,
                             at_risk = -1,
-                            currently_employed = "11.9",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 11.9m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "80,910",
+                            industry = "-1",
+                            median_annual_wage = 80910m,
                             title = "Area, ethnic, and cultural studies teachers, postsecondary"
                         },
                         new
                         {
                             Id = 518,
                             at_risk = -1,
-                            currently_employed = "12.1",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 12.1m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,430",
+                            industry = "-1",
+                            median_annual_wage = 37430m,
                             title = "Transportation workers, all other"
                         },
                         new
                         {
                             Id = 519,
-                            at_risk = 1,
-                            currently_employed = "48.8",
-                            decade_change_percentage = 1.9f,
+                            at_risk = -1,
+                            currently_employed = 48.8m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "2",
-                            median_annual_wage = "34,710",
+                            industry = "-1",
+                            median_annual_wage = 34710m,
                             title = "Food processing workers, all other"
                         },
                         new
                         {
                             Id = 520,
                             at_risk = -1,
-                            currently_employed = "60.4",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 60.4m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "87,300",
+                            industry = "-1",
+                            median_annual_wage = 87300m,
                             title = "Biological scientists, all other"
                         },
                         new
                         {
                             Id = 521,
                             at_risk = -1,
-                            currently_employed = "91.7",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 91.7m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "211,790",
+                            industry = "-1",
+                            median_annual_wage = 211790m,
                             title = "Airline pilots, copilots, and flight engineers"
                         },
                         new
                         {
                             Id = 522,
                             at_risk = -1,
-                            currently_employed = "94.9",
-                            decade_change_percentage = 3.7f,
+                            currently_employed = 94.9m,
+                            decade_change_percentage = 3.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,590",
+                            industry = "-1",
+                            median_annual_wage = 61590m,
                             title = "Interior designers"
                         },
                         new
                         {
                             Id = 523,
                             at_risk = -1,
-                            currently_employed = "6.2",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 6.2m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "85,000",
+                            industry = "-1",
+                            median_annual_wage = 85000m,
                             title = "Anthropology and archeology teachers, postsecondary"
                         },
                         new
                         {
                             Id = 524,
                             at_risk = -1,
-                            currently_employed = "11.9",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 11.9m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "39,320",
+                            industry = "-1",
+                            median_annual_wage = 39320m,
                             title = "Animal control workers"
                         },
                         new
                         {
                             Id = 525,
                             at_risk = -1,
-                            currently_employed = "15.5",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 15.5m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "66,510",
+                            industry = "-1",
+                            median_annual_wage = 66510m,
                             title = "Social work teachers, postsecondary"
                         },
                         new
                         {
                             Id = 526,
                             at_risk = -1,
-                            currently_employed = "45.0",
-                            decade_change_percentage = 1.8f,
+                            currently_employed = 45.0m,
+                            decade_change_percentage = 1.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "34,770",
+                            industry = "-1",
+                            median_annual_wage = 34770m,
                             title = "Demonstrators and product promoters"
                         },
                         new
                         {
                             Id = 527,
                             at_risk = -1,
-                            currently_employed = "50.9",
-                            decade_change_percentage = 2.1f,
+                            currently_employed = 50.9m,
+                            decade_change_percentage = 2.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "103,910",
+                            industry = "-1",
+                            median_annual_wage = 103910m,
                             title = "Commercial pilots"
                         },
                         new
                         {
                             Id = 528,
                             at_risk = -1,
-                            currently_employed = "554.7",
-                            decade_change_percentage = 22.5f,
+                            currently_employed = 554.7m,
+                            decade_change_percentage = 22.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "130,600",
+                            industry = "-1",
+                            median_annual_wage = 130600m,
                             title = "Sales managers"
                         },
                         new
                         {
                             Id = 529,
                             at_risk = -1,
-                            currently_employed = "5.4",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 5.4m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "76,370",
+                            industry = "-1",
+                            median_annual_wage = 76370m,
                             title = "Library science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 530,
                             at_risk = -1,
-                            currently_employed = "13.5",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 13.5m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,630",
+                            industry = "-1",
+                            median_annual_wage = 34630m,
                             title = "Passenger attendants"
                         },
                         new
                         {
                             Id = 531,
                             at_risk = -1,
-                            currently_employed = "24.7",
-                            decade_change_percentage = 1f,
+                            currently_employed = 24.7m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "64,460",
+                            industry = "-1",
+                            median_annual_wage = 64460m,
                             title = "Conservation scientists"
                         },
                         new
                         {
                             Id = 532,
                             at_risk = -1,
-                            currently_employed = "94.1",
-                            decade_change_percentage = 3.8f,
+                            currently_employed = 94.1m,
+                            decade_change_percentage = 3.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "33,380",
+                            industry = "-1",
+                            median_annual_wage = 33380m,
                             title = "Crossing guards and flaggers"
                         },
                         new
                         {
                             Id = 533,
                             at_risk = -1,
-                            currently_employed = "148.9",
-                            decade_change_percentage = 6.1f,
+                            currently_employed = 148.9m,
+                            decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,170",
+                            industry = "-1",
+                            median_annual_wage = 40170m,
                             title = "Photographers"
                         },
                         new
                         {
                             Id = 534,
                             at_risk = -1,
-                            currently_employed = "201.5",
-                            decade_change_percentage = 8.2f,
+                            currently_employed = 201.5m,
+                            decade_change_percentage = 8.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "159,920",
+                            industry = "-1",
+                            median_annual_wage = 159920m,
                             title = "Architectural and engineering managers"
                         },
                         new
                         {
                             Id = 535,
                             at_risk = -1,
-                            currently_employed = "421.6",
-                            decade_change_percentage = 17.4f,
+                            currently_employed = 421.6m,
+                            decade_change_percentage = 17.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "35,250",
+                            industry = "-1",
+                            median_annual_wage = 35250m,
                             title = "Substitute teachers, short-term"
                         },
                         new
                         {
                             Id = 536,
                             at_risk = -1,
-                            currently_employed = "1,113.2",
-                            decade_change_percentage = 45.7f,
+                            currently_employed = 1113.2m,
+                            decade_change_percentage = 45.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "62,400",
+                            industry = "-1",
+                            median_annual_wage = 62400m,
                             title = "Sales representatives of services, except advertising, insurance, financial services, and travel"
                         },
                         new
                         {
                             Id = 537,
                             at_risk = -1,
-                            currently_employed = "1,174.8",
-                            decade_change_percentage = 48.7f,
+                            currently_employed = 1174.8m,
+                            decade_change_percentage = 48.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "75,990",
+                            industry = "-1",
+                            median_annual_wage = 75990m,
                             title = "Business operations specialists, all other"
                         },
                         new
                         {
                             Id = 538,
                             at_risk = -1,
-                            currently_employed = "1,361.3",
-                            decade_change_percentage = 56.5f,
+                            currently_employed = 1361.3m,
+                            decade_change_percentage = 56.5m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "35,760",
+                            industry = "-1",
+                            median_annual_wage = 35760m,
                             title = "Nursing assistants"
                         },
                         new
                         {
                             Id = 539,
                             at_risk = 1,
-                            currently_employed = "2,192.3",
-                            decade_change_percentage = 89.3f,
+                            currently_employed = 2192.3m,
+                            decade_change_percentage = 89.3m,
                             education_requirement = "Postsecondary nondegree award",
                             industry = "1",
-                            median_annual_wage = "49,920",
+                            median_annual_wage = 49920m,
                             title = "Heavy and tractor-trailer truck drivers"
                         },
                         new
                         {
                             Id = 540,
                             at_risk = -1,
-                            currently_employed = "8.0",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 8.0m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "63,940",
+                            industry = "-1",
+                            median_annual_wage = 63940m,
                             title = "Anthropologists and archeologists"
                         },
                         new
                         {
                             Id = 541,
                             at_risk = -1,
-                            currently_employed = "7.9",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 7.9m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "83,040",
+                            industry = "-1",
+                            median_annual_wage = 83040m,
                             title = "Environmental science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 542,
                             at_risk = -1,
-                            currently_employed = "23.8",
-                            decade_change_percentage = 1f,
+                            currently_employed = 23.8m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Disc jockeys, except radio"
                         },
                         new
                         {
                             Id = 543,
                             at_risk = -1,
-                            currently_employed = "45.5",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 45.5m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,520",
+                            industry = "-1",
+                            median_annual_wage = 34520m,
                             title = "Orderlies"
                         },
                         new
                         {
                             Id = 544,
                             at_risk = -1,
-                            currently_employed = "170.2",
-                            decade_change_percentage = 7.1f,
+                            currently_employed = 170.2m,
+                            decade_change_percentage = 7.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "38,050",
+                            industry = "-1",
+                            median_annual_wage = 38050m,
                             title = "Teaching assistants, postsecondary"
                         },
                         new
                         {
                             Id = 545,
                             at_risk = -1,
-                            currently_employed = "188.8",
-                            decade_change_percentage = 7.9f,
+                            currently_employed = 188.8m,
+                            decade_change_percentage = 7.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "103,320",
+                            industry = "-1",
+                            median_annual_wage = 103320m,
                             title = "Electrical engineers"
                         },
                         new
                         {
                             Id = 546,
                             at_risk = -1,
-                            currently_employed = "343.8",
-                            decade_change_percentage = 14.4f,
+                            currently_employed = 343.8m,
+                            decade_change_percentage = 14.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,780",
+                            industry = "-1",
+                            median_annual_wage = 27780m,
                             title = "Amusement and recreation attendants"
                         },
                         new
                         {
                             Id = 547,
                             at_risk = -1,
-                            currently_employed = "354.3",
-                            decade_change_percentage = 14.8f,
+                            currently_employed = 354.3m,
+                            decade_change_percentage = 14.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "59,200",
+                            industry = "-1",
+                            median_annual_wage = 59200m,
                             title = "Paralegals and legal assistants"
                         },
                         new
                         {
                             Id = 548,
                             at_risk = -1,
-                            currently_employed = "396.8",
-                            decade_change_percentage = 16.5f,
+                            currently_employed = 396.8m,
+                            decade_change_percentage = 16.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,630",
+                            industry = "-1",
+                            median_annual_wage = 50630m,
                             title = "Production, planning, and expediting clerks"
                         },
                         new
                         {
                             Id = 549,
                             at_risk = -1,
-                            currently_employed = "459.2",
-                            decade_change_percentage = 19.2f,
+                            currently_employed = 459.2m,
+                            decade_change_percentage = 19.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "29,120",
+                            industry = "-1",
+                            median_annual_wage = 29120m,
                             title = "Dining room and cafeteria attendants and bartender helpers"
                         },
                         new
                         {
                             Id = 550,
                             at_risk = -1,
-                            currently_employed = "3,507.8",
-                            decade_change_percentage = 147.3f,
+                            currently_employed = 3507.8m,
+                            decade_change_percentage = 147.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "98,100",
+                            industry = "-1",
+                            median_annual_wage = 98100m,
                             title = "General and operations managers"
                         },
                         new
                         {
                             Id = 551,
                             at_risk = -1,
-                            currently_employed = "20.8",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 20.8m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "75,450",
+                            industry = "-1",
+                            median_annual_wage = 75450m,
                             title = "Avionics technicians"
                         },
                         new
                         {
                             Id = 552,
                             at_risk = -1,
-                            currently_employed = "23.1",
-                            decade_change_percentage = 1f,
+                            currently_employed = 23.1m,
+                            decade_change_percentage = 1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "56,090",
+                            industry = "-1",
+                            median_annual_wage = 56090m,
                             title = "Personal service managers, all other"
                         },
                         new
                         {
                             Id = 553,
                             at_risk = -1,
-                            currently_employed = "25.8",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 25.8m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "65,000",
+                            industry = "-1",
+                            median_annual_wage = 65000m,
                             title = "Media and communication workers, all other"
                         },
                         new
                         {
                             Id = 554,
                             at_risk = -1,
-                            currently_employed = "68.7",
-                            decade_change_percentage = 3f,
+                            currently_employed = 68.7m,
+                            decade_change_percentage = 3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "53,640",
+                            industry = "-1",
+                            median_annual_wage = 53640m,
                             title = "Interpreters and translators"
                         },
                         new
                         {
                             Id = 555,
                             at_risk = -1,
-                            currently_employed = "85.4",
-                            decade_change_percentage = 3.7f,
+                            currently_employed = 85.4m,
+                            decade_change_percentage = 3.7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "30,840",
+                            industry = "-1",
+                            median_annual_wage = 30840m,
                             title = "Food preparation and serving related workers, all other"
                         },
                         new
                         {
                             Id = 556,
                             at_risk = -1,
-                            currently_employed = "140.2",
-                            decade_change_percentage = 6.1f,
+                            currently_employed = 140.2m,
+                            decade_change_percentage = 6.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "70,010",
+                            industry = "-1",
+                            median_annual_wage = 70010m,
                             title = "Aircraft mechanics and service technicians"
                         },
                         new
                         {
                             Id = 557,
                             at_risk = -1,
-                            currently_employed = "4.1",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 4.1m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "81,920",
+                            industry = "-1",
+                            median_annual_wage = 81920m,
                             title = "Geography teachers, postsecondary"
                         },
                         new
                         {
                             Id = 558,
                             at_risk = -1,
-                            currently_employed = "10.5",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 10.5m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "83,780",
+                            industry = "-1",
+                            median_annual_wage = 83780m,
                             title = "Atmospheric and space scientists"
                         },
                         new
                         {
                             Id = 559,
                             at_risk = -1,
-                            currently_employed = "11.3",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 11.3m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "62,050",
+                            industry = "-1",
+                            median_annual_wage = 62050m,
                             title = "Calibration technologists and technicians"
                         },
                         new
                         {
                             Id = 560,
                             at_risk = -1,
-                            currently_employed = "77.5",
-                            decade_change_percentage = 3.4f,
+                            currently_employed = 77.5m,
+                            decade_change_percentage = 3.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "131,350",
+                            industry = "-1",
+                            median_annual_wage = 131350m,
                             title = "Purchasing managers"
                         },
                         new
                         {
                             Id = 561,
                             at_risk = -1,
-                            currently_employed = "136.7",
-                            decade_change_percentage = 6f,
+                            currently_employed = 136.7m,
+                            decade_change_percentage = 6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "155,040",
+                            industry = "-1",
+                            median_annual_wage = 155040m,
                             title = "Dentists, general"
                         },
                         new
                         {
                             Id = 562,
                             at_risk = -1,
-                            currently_employed = "1,418.6",
-                            decade_change_percentage = 61.9f,
+                            currently_employed = 1418.6m,
+                            decade_change_percentage = 61.9m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "40,750",
+                            industry = "-1",
+                            median_annual_wage = 40750m,
                             title = "Construction laborers"
                         },
                         new
                         {
                             Id = 563,
                             at_risk = -1,
-                            currently_employed = "1,538.4",
-                            decade_change_percentage = 67.4f,
+                            currently_employed = 1538.4m,
+                            decade_change_percentage = 67.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "78,000",
+                            industry = "-1",
+                            median_annual_wage = 78000m,
                             title = "Accountants and auditors"
                         },
                         new
                         {
                             Id = 564,
                             at_risk = -1,
-                            currently_employed = "3.3",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 3.3m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "98,590",
+                            industry = "-1",
+                            median_annual_wage = 98590m,
                             title = "Sociologists"
                         },
                         new
                         {
                             Id = 565,
                             at_risk = -1,
-                            currently_employed = "7.2",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 7.2m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "174,360",
+                            industry = "-1",
+                            median_annual_wage = 174360m,
                             title = "Orthodontists"
                         },
                         new
                         {
                             Id = 566,
                             at_risk = -1,
-                            currently_employed = "17.6",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 17.6m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "41,760",
+                            industry = "-1",
+                            median_annual_wage = 41760m,
                             title = "Agricultural technicians"
                         },
                         new
                         {
                             Id = 567,
                             at_risk = -1,
-                            currently_employed = "136.8",
-                            decade_change_percentage = 6.1f,
+                            currently_employed = 136.8m,
+                            decade_change_percentage = 6.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,120",
+                            industry = "-1",
+                            median_annual_wage = 44120m,
                             title = "Sales and related workers, all other"
                         },
                         new
                         {
                             Id = 568,
                             at_risk = -1,
-                            currently_employed = "282.9",
-                            decade_change_percentage = 12.7f,
+                            currently_employed = 282.9m,
+                            decade_change_percentage = 12.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,580",
+                            industry = "-1",
+                            median_annual_wage = 38580m,
                             title = "Electrical, electronic, and electromechanical assemblers, except coil winders, tapers, and finishers"
                         },
                         new
                         {
                             Id = 569,
                             at_risk = -1,
-                            currently_employed = "505.8",
-                            decade_change_percentage = 22.9f,
+                            currently_employed = 505.8m,
+                            decade_change_percentage = 22.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "101,480",
+                            industry = "-1",
+                            median_annual_wage = 101480m,
                             title = "Construction managers"
                         },
                         new
                         {
                             Id = 570,
                             at_risk = -1,
-                            currently_employed = "2.4",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 2.4m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "128,330",
+                            industry = "-1",
+                            median_annual_wage = 128330m,
                             title = "Astronomers"
                         },
                         new
                         {
                             Id = 571,
                             at_risk = -1,
-                            currently_employed = "13.2",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 13.2m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Physicians, pathologists"
                         },
                         new
                         {
                             Id = 572,
                             at_risk = -1,
-                            currently_employed = "50.8",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 50.8m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,080",
+                            industry = "-1",
+                            median_annual_wage = 63080m,
                             title = "Surveyors"
                         },
                         new
                         {
                             Id = 573,
                             at_risk = -1,
-                            currently_employed = "78.1",
-                            decade_change_percentage = 3.6f,
+                            currently_employed = 78.1m,
+                            decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "132,360",
+                            industry = "-1",
+                            median_annual_wage = 132360m,
                             title = "Computer hardware engineers"
                         },
                         new
                         {
                             Id = 574,
                             at_risk = -1,
-                            currently_employed = "77.6",
-                            decade_change_percentage = 3.6f,
+                            currently_employed = 77.6m,
+                            decade_change_percentage = 3.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,560",
+                            industry = "-1",
+                            median_annual_wage = 61560m,
                             title = "Property appraisers and assessors"
                         },
                         new
                         {
                             Id = 575,
                             at_risk = -1,
-                            currently_employed = "127.0",
-                            decade_change_percentage = 5.8f,
+                            currently_employed = 127.0m,
+                            decade_change_percentage = 5.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "99,030",
+                            industry = "-1",
+                            median_annual_wage = 99030m,
                             title = "Facilities managers"
                         },
                         new
                         {
                             Id = 576,
                             at_risk = -1,
-                            currently_employed = "289.4",
-                            decade_change_percentage = 13.4f,
+                            currently_employed = 289.4m,
+                            decade_change_percentage = 13.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,680",
+                            industry = "-1",
+                            median_annual_wage = 31680m,
                             title = "Recreation workers"
                         },
                         new
                         {
                             Id = 577,
                             at_risk = -1,
-                            currently_employed = "377.5",
-                            decade_change_percentage = 17.2f,
+                            currently_employed = 377.5m,
+                            decade_change_percentage = 17.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "71,690",
+                            industry = "-1",
+                            median_annual_wage = 71690m,
                             title = "Compliance officers"
                         },
                         new
                         {
                             Id = 578,
                             at_risk = -1,
-                            currently_employed = "373.2",
-                            decade_change_percentage = 17.3f,
+                            currently_employed = 373.2m,
+                            decade_change_percentage = 17.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,750",
+                            industry = "-1",
+                            median_annual_wage = 36750m,
                             title = "Packaging and filling machine operators and tenders"
                         },
                         new
                         {
                             Id = 579,
                             at_risk = -1,
-                            currently_employed = "17.2",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 17.2m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "65,730",
+                            industry = "-1",
+                            median_annual_wage = 65730m,
                             title = "Soil and plant scientists"
                         },
                         new
                         {
                             Id = 580,
                             at_risk = -1,
-                            currently_employed = "19.9",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 19.9m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,050",
+                            industry = "-1",
+                            median_annual_wage = 37050m,
                             title = "Aircraft service attendants"
                         },
                         new
                         {
                             Id = 581,
                             at_risk = -1,
-                            currently_employed = "21.1",
-                            decade_change_percentage = 1f,
+                            currently_employed = 21.1m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "142,850",
+                            industry = "-1",
+                            median_annual_wage = 142850m,
                             title = "Physicists"
                         },
                         new
                         {
                             Id = 582,
                             at_risk = -1,
-                            currently_employed = "60.9",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 60.9m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "108,530",
+                            industry = "-1",
+                            median_annual_wage = 108530m,
                             title = "Sales engineers"
                         },
                         new
                         {
                             Id = 583,
                             at_risk = -1,
-                            currently_employed = "74.8",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 74.8m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "50,660",
+                            industry = "-1",
+                            median_annual_wage = 50660m,
                             title = "Audio and video technicians"
                         },
                         new
                         {
                             Id = 584,
                             at_risk = -1,
-                            currently_employed = "81.4",
-                            decade_change_percentage = 3.9f,
+                            currently_employed = 81.4m,
+                            decade_change_percentage = 3.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "49,650",
+                            industry = "-1",
+                            median_annual_wage = 49650m,
                             title = "Biological technicians"
                         },
                         new
                         {
                             Id = 585,
                             at_risk = -1,
-                            currently_employed = "601.1",
-                            decade_change_percentage = 28.1f,
+                            currently_employed = 601.1m,
+                            decade_change_percentage = 28.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "57,860",
+                            industry = "-1",
+                            median_annual_wage = 57860m,
                             title = "First-line supervisors of transportation and material moving workers, except aircraft cargo handling supervisors"
                         },
                         new
                         {
                             Id = 586,
                             at_risk = -1,
-                            currently_employed = "7.9",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 7.9m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "73,630",
+                            industry = "-1",
+                            median_annual_wage = 73630m,
                             title = "Electrical and electronics installers and repairers, transportation equipment"
                         },
                         new
                         {
                             Id = 587,
                             at_risk = -1,
-                            currently_employed = "10.1",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 10.1m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "85,860",
+                            industry = "-1",
+                            median_annual_wage = 85860m,
                             title = "Agricultural sciences teachers, postsecondary"
                         },
                         new
                         {
                             Id = 588,
                             at_risk = -1,
-                            currently_employed = "34.4",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 34.4m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "50,470",
+                            industry = "-1",
+                            median_annual_wage = 50470m,
                             title = "Social science research assistants"
                         },
                         new
                         {
                             Id = 589,
                             at_risk = -1,
-                            currently_employed = "86.3",
-                            decade_change_percentage = 4.2f,
+                            currently_employed = 86.3m,
+                            decade_change_percentage = 4.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "144,440",
+                            industry = "-1",
+                            median_annual_wage = 144440m,
                             title = "Natural sciences managers"
                         },
                         new
                         {
                             Id = 590,
                             at_risk = -1,
-                            currently_employed = "123.7",
-                            decade_change_percentage = 6f,
+                            currently_employed = 123.7m,
+                            decade_change_percentage = 6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "82,840",
+                            industry = "-1",
+                            median_annual_wage = 82840m,
                             title = "Architects, except landscape and naval"
                         },
                         new
                         {
                             Id = 591,
                             at_risk = -1,
-                            currently_employed = "3.8",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 3.8m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,060",
+                            industry = "-1",
+                            median_annual_wage = 37060m,
                             title = "Occupational therapy aides"
                         },
                         new
                         {
                             Id = 592,
                             at_risk = -1,
-                            currently_employed = "15.0",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 15.0m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "49,600",
+                            industry = "-1",
+                            median_annual_wage = 49600m,
                             title = "Airfield operations specialists"
                         },
                         new
                         {
                             Id = 593,
                             at_risk = -1,
-                            currently_employed = "32.4",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 32.4m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,160",
+                            industry = "-1",
+                            median_annual_wage = 37160m,
                             title = "Psychiatric aides"
                         },
                         new
                         {
                             Id = 594,
                             at_risk = -1,
-                            currently_employed = "218.8",
-                            decade_change_percentage = 10.8f,
+                            currently_employed = 218.8m,
+                            decade_change_percentage = 10.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "32,780",
+                            industry = "-1",
+                            median_annual_wage = 32780m,
                             title = "Bakers"
                         },
                         new
                         {
                             Id = 595,
                             at_risk = -1,
-                            currently_employed = "342.9",
-                            decade_change_percentage = 16.8f,
+                            currently_employed = 342.9m,
+                            decade_change_percentage = 16.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "57,380",
+                            industry = "-1",
+                            median_annual_wage = 57380m,
                             title = "Clinical laboratory technologists and technicians"
                         },
                         new
                         {
                             Id = 596,
-                            at_risk = 0,
-                            currently_employed = "1,221.7",
-                            decade_change_percentage = 60f,
+                            at_risk = -1,
+                            currently_employed = 1221.7m,
+                            decade_change_percentage = 60m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "2",
-                            median_annual_wage = "37,050",
+                            industry = "-1",
+                            median_annual_wage = 37050m,
                             title = "First-line supervisors of food preparation and serving workers"
                         },
                         new
                         {
                             Id = 597,
                             at_risk = -1,
-                            currently_employed = "4.9",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 4.9m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "239,200",
+                            industry = "-1",
+                            median_annual_wage = 239200m,
                             title = "Oral and maxillofacial surgeons"
                         },
                         new
                         {
                             Id = 598,
                             at_risk = -1,
-                            currently_employed = "6.9",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 6.9m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "50,990",
+                            industry = "-1",
+                            median_annual_wage = 50990m,
                             title = "Choreographers"
                         },
                         new
                         {
                             Id = 599,
                             at_risk = -1,
-                            currently_employed = "6.1",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 6.1m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,470",
+                            industry = "-1",
+                            median_annual_wage = 48470m,
                             title = "Costume attendants"
                         },
                         new
                         {
                             Id = 600,
                             at_risk = -1,
-                            currently_employed = "9.1",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 9.1m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "64,030",
+                            industry = "-1",
+                            median_annual_wage = 64030m,
                             title = "Arbitrators, mediators, and conciliators"
                         },
                         new
                         {
                             Id = 601,
                             at_risk = -1,
-                            currently_employed = "14.0",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 14.0m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "71,890",
+                            industry = "-1",
+                            median_annual_wage = 71890m,
                             title = "Cartographers and photogrammetrists"
                         },
                         new
                         {
                             Id = 602,
                             at_risk = -1,
-                            currently_employed = "326.3",
-                            decade_change_percentage = 16.2f,
+                            currently_employed = 326.3m,
+                            decade_change_percentage = 16.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "89,940",
+                            industry = "-1",
+                            median_annual_wage = 89940m,
                             title = "Civil engineers"
                         },
                         new
                         {
                             Id = 603,
                             at_risk = -1,
-                            currently_employed = "736.2",
-                            decade_change_percentage = 36.8f,
+                            currently_employed = 736.2m,
+                            decade_change_percentage = 36.8m,
                             education_requirement = "Some college, no degree",
-                            industry = "-",
-                            median_annual_wage = "57,890",
+                            industry = "-1",
+                            median_annual_wage = 57890m,
                             title = "Computer user support specialists"
                         },
                         new
                         {
                             Id = 604,
                             at_risk = -1,
-                            currently_employed = "7.1",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 7.1m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "42,890",
+                            industry = "-1",
+                            median_annual_wage = 42890m,
                             title = "Cooling and freezing equipment operators and tenders"
                         },
                         new
                         {
                             Id = 605,
                             at_risk = -1,
-                            currently_employed = "7.9",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 7.9m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "104,380",
+                            industry = "-1",
+                            median_annual_wage = 104380m,
                             title = "Materials scientists"
                         },
                         new
                         {
                             Id = 606,
                             at_risk = -1,
-                            currently_employed = "19.7",
-                            decade_change_percentage = 1f,
+                            currently_employed = 19.7m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "99,550",
+                            industry = "-1",
+                            median_annual_wage = 99550m,
                             title = "Bioengineers and biomedical engineers"
                         },
                         new
                         {
                             Id = 607,
                             at_risk = -1,
-                            currently_employed = "22.3",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 22.3m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "100,140",
+                            industry = "-1",
+                            median_annual_wage = 100140m,
                             title = "Materials engineers"
                         },
                         new
                         {
                             Id = 608,
                             at_risk = -1,
-                            currently_employed = "26.3",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 26.3m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "87,480",
+                            industry = "-1",
+                            median_annual_wage = 87480m,
                             title = "Geoscientists, except hydrologists and geographers"
                         },
                         new
                         {
                             Id = 609,
                             at_risk = -1,
-                            currently_employed = "33.7",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 33.7m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "107,390",
+                            industry = "-1",
+                            median_annual_wage = 107390m,
                             title = "Fundraising managers"
                         },
                         new
                         {
                             Id = 610,
                             at_risk = -1,
-                            currently_employed = "56.3",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 56.3m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "106,420",
+                            industry = "-1",
+                            median_annual_wage = 106420m,
                             title = "Psychologists, all other"
                         },
                         new
                         {
                             Id = 611,
                             at_risk = -1,
-                            currently_employed = "169.1",
-                            decade_change_percentage = 8.6f,
+                            currently_employed = 169.1m,
+                            decade_change_percentage = 8.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "59,440",
+                            industry = "-1",
+                            median_annual_wage = 59440m,
                             title = "Mobile heavy equipment mechanics, except engines"
                         },
                         new
                         {
                             Id = 612,
                             at_risk = -1,
-                            currently_employed = "1.5",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 1.5m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "96,500",
+                            industry = "-1",
+                            median_annual_wage = 96500m,
                             title = "Forestry and conservation science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 613,
                             at_risk = -1,
-                            currently_employed = "9.0",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 9.0m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "83,930",
+                            industry = "-1",
+                            median_annual_wage = 83930m,
                             title = "Life scientists, all other"
                         },
                         new
                         {
                             Id = 614,
                             at_risk = -1,
-                            currently_employed = "19.7",
-                            decade_change_percentage = 1f,
+                            currently_employed = 19.7m,
+                            decade_change_percentage = 1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "57,290",
+                            industry = "-1",
+                            median_annual_wage = 57290m,
                             title = "Surgical assistants"
                         },
                         new
                         {
                             Id = 615,
-                            at_risk = 0,
-                            currently_employed = "21.2",
-                            decade_change_percentage = 1.1f,
+                            at_risk = -1,
+                            currently_employed = 21.2m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Associate's degree",
-                            industry = "2",
-                            median_annual_wage = "47,860",
+                            industry = "-1",
+                            median_annual_wage = 47860m,
                             title = "Food science technicians"
                         },
                         new
                         {
                             Id = 616,
                             at_risk = -1,
-                            currently_employed = "20.9",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 20.9m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "81,990",
+                            industry = "-1",
+                            median_annual_wage = 81990m,
                             title = "Microbiologists"
                         },
                         new
                         {
                             Id = 617,
                             at_risk = -1,
-                            currently_employed = "29.1",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 29.1m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "57,560",
+                            industry = "-1",
+                            median_annual_wage = 57560m,
                             title = "Fine artists, including painters, sculptors, and illustrators"
                         },
                         new
                         {
                             Id = 618,
                             at_risk = -1,
-                            currently_employed = "44.4",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 44.4m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "60,160",
+                            industry = "-1",
+                            median_annual_wage = 60160m,
                             title = "Healthcare practitioners and technical workers, all other"
                         },
                         new
                         {
                             Id = 619,
                             at_risk = -1,
-                            currently_employed = "50.9",
-                            decade_change_percentage = 2.7f,
+                            currently_employed = 50.9m,
+                            decade_change_percentage = 2.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "78,810",
+                            industry = "-1",
+                            median_annual_wage = 78810m,
                             title = "Psychology teachers, postsecondary"
                         },
                         new
                         {
                             Id = 620,
                             at_risk = -1,
-                            currently_employed = "124.0",
-                            decade_change_percentage = 6.5f,
+                            currently_employed = 124.0m,
+                            decade_change_percentage = 6.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,190",
+                            industry = "-1",
+                            median_annual_wage = 61190m,
                             title = "Fundraisers"
                         },
                         new
                         {
                             Id = 621,
                             at_risk = -1,
-                            currently_employed = "191.6",
-                            decade_change_percentage = 10f,
+                            currently_employed = 191.6m,
+                            decade_change_percentage = 10m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "130,000",
+                            industry = "-1",
+                            median_annual_wage = 130000m,
                             title = "Human resources managers"
                         },
                         new
                         {
                             Id = 622,
                             at_risk = -1,
-                            currently_employed = "11.5",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 11.5m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Dancers"
                         },
                         new
                         {
                             Id = 623,
                             at_risk = -1,
-                            currently_employed = "26.6",
-                            decade_change_percentage = 1.4f,
+                            currently_employed = 26.6m,
+                            decade_change_percentage = 1.4m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "72,220",
+                            industry = "-1",
+                            median_annual_wage = 72220m,
                             title = "Acupuncturists"
                         },
                         new
                         {
                             Id = 624,
                             at_risk = -1,
-                            currently_employed = "42.0",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 42.0m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "84,760",
+                            industry = "-1",
+                            median_annual_wage = 84760m,
                             title = "Computer science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 625,
                             at_risk = -1,
-                            currently_employed = "174.4",
-                            decade_change_percentage = 9.2f,
+                            currently_employed = 174.4m,
+                            decade_change_percentage = 9.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "56,520",
+                            industry = "-1",
+                            median_annual_wage = 56520m,
                             title = "Chefs and head cooks"
                         },
                         new
                         {
                             Id = 626,
                             at_risk = -1,
-                            currently_employed = "355.3",
-                            decade_change_percentage = 18.9f,
+                            currently_employed = 355.3m,
+                            decade_change_percentage = 18.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "50,820",
+                            industry = "-1",
+                            median_annual_wage = 50820m,
                             title = "Child, family, and school social workers"
                         },
                         new
                         {
                             Id = 627,
                             at_risk = -1,
-                            currently_employed = "655.0",
-                            decade_change_percentage = 34.9f,
+                            currently_employed = 655.0m,
+                            decade_change_percentage = 34.9m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "54,620",
+                            industry = "-1",
+                            median_annual_wage = 54620m,
                             title = "Licensed practical and licensed vocational nurses"
                         },
                         new
                         {
                             Id = 628,
                             at_risk = -1,
-                            currently_employed = "2,988.5",
-                            decade_change_percentage = 158.8f,
+                            currently_employed = 2988.5m,
+                            decade_change_percentage = 158.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,110",
+                            industry = "-1",
+                            median_annual_wage = 36110m,
                             title = "Laborers and freight, stock, and material movers, hand"
                         },
                         new
                         {
                             Id = 629,
                             at_risk = -1,
-                            currently_employed = "5.2",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 5.2m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "27,260",
+                            industry = "-1",
+                            median_annual_wage = 27260m,
                             title = "Entertainment attendants and related workers, all other"
                         },
                         new
                         {
                             Id = 630,
                             at_risk = -1,
-                            currently_employed = "32.8",
-                            decade_change_percentage = 1.8f,
+                            currently_employed = 32.8m,
+                            decade_change_percentage = 1.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "47,320",
+                            industry = "-1",
+                            median_annual_wage = 47320m,
                             title = "Credit counselors"
                         },
                         new
                         {
                             Id = 631,
                             at_risk = -1,
-                            currently_employed = "66.7",
-                            decade_change_percentage = 3.6f,
+                            currently_employed = 66.7m,
+                            decade_change_percentage = 3.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "41,480",
+                            industry = "-1",
+                            median_annual_wage = 41480m,
                             title = "Medical equipment preparers"
                         },
                         new
                         {
                             Id = 632,
                             at_risk = -1,
-                            currently_employed = "98.3",
-                            decade_change_percentage = 5.3f,
+                            currently_employed = 98.3m,
+                            decade_change_percentage = 5.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "49,090",
+                            industry = "-1",
+                            median_annual_wage = 49090m,
                             title = "Paramedics"
                         },
                         new
                         {
                             Id = 633,
                             at_risk = -1,
-                            currently_employed = "109.2",
-                            decade_change_percentage = 5.9f,
+                            currently_employed = 109.2m,
+                            decade_change_percentage = 5.9m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "55,960",
+                            industry = "-1",
+                            median_annual_wage = 55960m,
                             title = "Surgical technologists"
                         },
                         new
                         {
                             Id = 634,
                             at_risk = 1,
-                            currently_employed = "156.4",
-                            decade_change_percentage = 8.4f,
+                            currently_employed = 156.4m,
+                            decade_change_percentage = 8.4m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "50,890",
+                            median_annual_wage = 50890m,
                             title = "Bus drivers, transit and intercity"
                         },
                         new
                         {
                             Id = 635,
                             at_risk = -1,
-                            currently_employed = "170.7",
-                            decade_change_percentage = 9.3f,
+                            currently_employed = 170.7m,
+                            decade_change_percentage = 9.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "36,680",
+                            industry = "-1",
+                            median_annual_wage = 36680m,
                             title = "Emergency medical technicians"
                         },
                         new
                         {
                             Id = 636,
                             at_risk = -1,
-                            currently_employed = "342.4",
-                            decade_change_percentage = 18.4f,
+                            currently_employed = 342.4m,
+                            decade_change_percentage = 18.4m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "60,140",
+                            industry = "-1",
+                            median_annual_wage = 60140m,
                             title = "Educational, guidance, and career counselors and advisors"
                         },
                         new
                         {
                             Id = 637,
                             at_risk = -1,
-                            currently_employed = "429.6",
-                            decade_change_percentage = 23.4f,
+                            currently_employed = 429.6m,
+                            decade_change_percentage = 23.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,670",
+                            industry = "-1",
+                            median_annual_wage = 60670m,
                             title = "Property, real estate, and community association managers"
                         },
                         new
                         {
                             Id = 638,
                             at_risk = -1,
-                            currently_employed = "51.5",
-                            decade_change_percentage = 2.8f,
+                            currently_employed = 51.5m,
+                            decade_change_percentage = 2.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "38,040",
+                            industry = "-1",
+                            median_annual_wage = 38040m,
                             title = "Machine feeders and offbearers"
                         },
                         new
                         {
                             Id = 639,
                             at_risk = -1,
-                            currently_employed = "63.6",
-                            decade_change_percentage = 3.5f,
+                            currently_employed = 63.6m,
+                            decade_change_percentage = 3.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "53,310",
+                            industry = "-1",
+                            median_annual_wage = 53310m,
                             title = "Maintenance workers, machinery"
                         },
                         new
                         {
                             Id = 640,
                             at_risk = -1,
-                            currently_employed = "222.8",
-                            decade_change_percentage = 12.2f,
+                            currently_employed = 222.8m,
+                            decade_change_percentage = 12.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "65,140",
+                            industry = "-1",
+                            median_annual_wage = 65140m,
                             title = "Radiologic technologists and technicians"
                         },
                         new
                         {
                             Id = 641,
                             at_risk = -1,
-                            currently_employed = "415.8",
-                            decade_change_percentage = 23f,
+                            currently_employed = 415.8m,
+                            decade_change_percentage = 23m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "51,390",
+                            industry = "-1",
+                            median_annual_wage = 51390m,
                             title = "Heating, air conditioning, and refrigeration mechanics and installers"
                         },
                         new
                         {
                             Id = 642,
                             at_risk = -1,
-                            currently_employed = "38.7",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 38.7m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,560",
+                            industry = "-1",
+                            median_annual_wage = 35560m,
                             title = "Concierges"
                         },
                         new
                         {
                             Id = 643,
                             at_risk = -1,
-                            currently_employed = "250.8",
-                            decade_change_percentage = 14f,
+                            currently_employed = 250.8m,
+                            decade_change_percentage = 14m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "103,330",
+                            industry = "-1",
+                            median_annual_wage = 103330m,
                             title = "Administrative services managers"
                         },
                         new
                         {
                             Id = 644,
                             at_risk = -1,
-                            currently_employed = "459.6",
-                            decade_change_percentage = 25.9f,
+                            currently_employed = 459.6m,
+                            decade_change_percentage = 25.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "37,790",
+                            industry = "-1",
+                            median_annual_wage = 37790m,
                             title = "Pharmacy technicians"
                         },
                         new
                         {
                             Id = 645,
                             at_risk = -1,
-                            currently_employed = "3,172.5",
-                            decade_change_percentage = 177.4f,
+                            currently_employed = 3172.5m,
+                            decade_change_percentage = 177.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "81,220",
+                            industry = "-1",
+                            median_annual_wage = 81220m,
                             title = "Registered nurses"
                         },
                         new
                         {
                             Id = 646,
                             at_risk = -1,
-                            currently_employed = "0.4",
-                            decade_change_percentage = 0f,
+                            currently_employed = 0.4m,
+                            decade_change_percentage = 0m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Prosthodontists"
                         },
                         new
                         {
                             Id = 647,
                             at_risk = -1,
-                            currently_employed = "2.8",
-                            decade_change_percentage = 0.2f,
+                            currently_employed = 2.8m,
+                            decade_change_percentage = 0.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "69,390",
+                            industry = "-1",
+                            median_annual_wage = 69390m,
                             title = "Animal scientists"
                         },
                         new
                         {
                             Id = 648,
                             at_risk = -1,
-                            currently_employed = "29.3",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 29.3m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,280",
+                            industry = "-1",
+                            median_annual_wage = 48280m,
                             title = "Motorboat mechanics and service technicians"
                         },
                         new
                         {
                             Id = 649,
                             at_risk = -1,
-                            currently_employed = "112.7",
-                            decade_change_percentage = 6.4f,
+                            currently_employed = 112.7m,
+                            decade_change_percentage = 6.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "40,420",
+                            industry = "-1",
+                            median_annual_wage = 40420m,
                             title = "Healthcare support workers, all other"
                         },
                         new
                         {
                             Id = 650,
                             at_risk = -1,
-                            currently_employed = "30.6",
-                            decade_change_percentage = 1.8f,
+                            currently_employed = 30.6m,
+                            decade_change_percentage = 1.8m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "36,890",
+                            industry = "-1",
+                            median_annual_wage = 36890m,
                             title = "Conveyor operators and tenders"
                         },
                         new
                         {
                             Id = 651,
                             at_risk = -1,
-                            currently_employed = "35.0",
-                            decade_change_percentage = 2f,
+                            currently_employed = 35.0m,
+                            decade_change_percentage = 2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "48,380",
+                            industry = "-1",
+                            median_annual_wage = 48380m,
                             title = "Environmental science and protection technicians, including health"
                         },
                         new
                         {
                             Id = 652,
                             at_risk = -1,
-                            currently_employed = "1.8",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 1.8m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,180",
+                            industry = "-1",
+                            median_annual_wage = 46180m,
                             title = "Communications equipment operators, all other"
                         },
                         new
                         {
                             Id = 653,
                             at_risk = -1,
-                            currently_employed = "10.1",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 10.1m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "139,280",
+                            industry = "-1",
+                            median_annual_wage = 139280m,
                             title = "Industrial-organizational psychologists"
                         },
                         new
                         {
                             Id = 654,
                             at_risk = -1,
-                            currently_employed = "72.0",
-                            decade_change_percentage = 4.3f,
+                            currently_employed = 72.0m,
+                            decade_change_percentage = 4.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "129,430",
+                            industry = "-1",
+                            median_annual_wage = 129430m,
                             title = "Public relations managers"
                         },
                         new
                         {
                             Id = 655,
                             at_risk = -1,
-                            currently_employed = "874.5",
-                            decade_change_percentage = 51.4f,
+                            currently_employed = 874.5m,
+                            decade_change_percentage = 51.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "64,240",
+                            industry = "-1",
+                            median_annual_wage = 64240m,
                             title = "Human resources specialists"
                         },
                         new
                         {
                             Id = 656,
                             at_risk = -1,
-                            currently_employed = "4.4",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 4.4m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "68,300",
+                            industry = "-1",
+                            median_annual_wage = 68300m,
                             title = "Commercial divers"
                         },
                         new
                         {
                             Id = 657,
                             at_risk = -1,
-                            currently_employed = "95.7",
-                            decade_change_percentage = 5.7f,
+                            currently_employed = 95.7m,
+                            decade_change_percentage = 5.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,720",
+                            industry = "-1",
+                            median_annual_wage = 35720m,
                             title = "Residential advisors"
                         },
                         new
                         {
                             Id = 658,
                             at_risk = -1,
-                            currently_employed = "38.3",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 38.3m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "52,120",
+                            industry = "-1",
+                            median_annual_wage = 52120m,
                             title = "Private detectives and investigators"
                         },
                         new
                         {
                             Id = 659,
                             at_risk = -1,
-                            currently_employed = "47.3",
-                            decade_change_percentage = 2.9f,
+                            currently_employed = 47.3m,
+                            decade_change_percentage = 2.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "96,530",
+                            industry = "-1",
+                            median_annual_wage = 96530m,
                             title = "Environmental engineers"
                         },
                         new
                         {
                             Id = 660,
                             at_risk = -1,
-                            currently_employed = "63.8",
-                            decade_change_percentage = 3.9f,
+                            currently_employed = 63.8m,
+                            decade_change_percentage = 3.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "126,880",
+                            industry = "-1",
+                            median_annual_wage = 126880m,
                             title = "Aerospace engineers"
                         },
                         new
                         {
                             Id = 661,
                             at_risk = -1,
-                            currently_employed = "80.5",
-                            decade_change_percentage = 4.9f,
+                            currently_employed = 80.5m,
+                            decade_change_percentage = 4.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "76,480",
+                            industry = "-1",
+                            median_annual_wage = 76480m,
                             title = "Environmental scientists and specialists, including health"
                         },
                         new
                         {
                             Id = 662,
                             at_risk = -1,
-                            currently_employed = "135.1",
-                            decade_change_percentage = 8.2f,
+                            currently_employed = 135.1m,
+                            decade_change_percentage = 8.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "105,180",
+                            industry = "-1",
+                            median_annual_wage = 105180m,
                             title = "Art directors"
                         },
                         new
                         {
                             Id = 663,
                             at_risk = -1,
-                            currently_employed = "136.0",
-                            decade_change_percentage = 8.3f,
+                            currently_employed = 136.0m,
+                            decade_change_percentage = 8.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "73,810",
+                            industry = "-1",
+                            median_annual_wage = 73810m,
                             title = "Financial specialists, all other"
                         },
                         new
                         {
                             Id = 664,
                             at_risk = -1,
-                            currently_employed = "297.1",
-                            decade_change_percentage = 18f,
+                            currently_employed = 297.1m,
+                            decade_change_percentage = 18m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,440",
+                            industry = "-1",
+                            median_annual_wage = 67440m,
                             title = "Public relations specialists"
                         },
                         new
                         {
                             Id = 665,
                             at_risk = -1,
-                            currently_employed = "4.1",
-                            decade_change_percentage = 0.3f,
+                            currently_employed = 4.1m,
+                            decade_change_percentage = 0.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "71,700",
+                            industry = "-1",
+                            median_annual_wage = 71700m,
                             title = "Mathematical science occupations, all other"
                         },
                         new
                         {
                             Id = 666,
                             at_risk = -1,
-                            currently_employed = "87.1",
-                            decade_change_percentage = 5.4f,
+                            currently_employed = 87.1m,
+                            decade_change_percentage = 5.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "80,670",
+                            industry = "-1",
+                            median_annual_wage = 80670m,
                             title = "Chemists"
                         },
                         new
                         {
                             Id = 667,
                             at_risk = -1,
-                            currently_employed = "113.5",
-                            decade_change_percentage = 7f,
+                            currently_employed = 113.5m,
+                            decade_change_percentage = 7m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,270",
+                            industry = "-1",
+                            median_annual_wage = 27270m,
                             title = "Lifeguards, ski patrol, and other recreational protective service workers"
                         },
                         new
                         {
                             Id = 668,
                             at_risk = 0,
-                            currently_employed = "881.3",
-                            decade_change_percentage = 54.7f,
+                            currently_employed = 881.3m,
+                            decade_change_percentage = 54.7m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "95,370",
+                            median_annual_wage = 95370m,
                             title = "Project management specialists"
                         },
                         new
                         {
                             Id = 669,
                             at_risk = -1,
-                            currently_employed = "1.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 1.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "83,260",
+                            industry = "-1",
+                            median_annual_wage = 83260m,
                             title = "Agricultural engineers"
                         },
                         new
                         {
                             Id = 670,
                             at_risk = -1,
-                            currently_employed = "17.6",
-                            decade_change_percentage = 1.1f,
+                            currently_employed = 17.6m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "113,940",
+                            industry = "-1",
+                            median_annual_wage = 113940m,
                             title = "Economists"
                         },
                         new
                         {
                             Id = 671,
                             at_risk = -1,
-                            currently_employed = "27.7",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 27.7m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "31,510",
+                            industry = "-1",
+                            median_annual_wage = 31510m,
                             title = "Baggage porters and bellhops"
                         },
                         new
                         {
                             Id = 672,
                             at_risk = -1,
-                            currently_employed = "173.7",
-                            decade_change_percentage = 11f,
+                            currently_employed = 173.7m,
+                            decade_change_percentage = 11m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "59,960",
+                            industry = "-1",
+                            median_annual_wage = 59960m,
                             title = "Telecommunications equipment installers and repairers, except line installers"
                         },
                         new
                         {
                             Id = 673,
                             at_risk = -1,
-                            currently_employed = "385.8",
-                            decade_change_percentage = 24.2f,
+                            currently_employed = 385.8m,
+                            decade_change_percentage = 24.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,080",
+                            industry = "-1",
+                            median_annual_wage = 63080m,
                             title = "Training and development specialists"
                         },
                         new
                         {
                             Id = 674,
                             at_risk = -1,
-                            currently_employed = "2,851.6",
-                            decade_change_percentage = 178.6f,
+                            currently_employed = 2851.6m,
+                            decade_change_percentage = 178.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,220",
+                            industry = "-1",
+                            median_annual_wage = 34220m,
                             title = "Stockers and order fillers"
                         },
                         new
                         {
                             Id = 675,
                             at_risk = -1,
-                            currently_employed = "8.2",
-                            decade_change_percentage = 0.5f,
+                            currently_employed = 8.2m,
+                            decade_change_percentage = 0.5m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "120,880",
+                            industry = "-1",
+                            median_annual_wage = 120880m,
                             title = "Nurse midwives"
                         },
                         new
                         {
                             Id = 676,
                             at_risk = -1,
-                            currently_employed = "762.6",
-                            decade_change_percentage = 49.2f,
+                            currently_employed = 762.6m,
+                            decade_change_percentage = 49.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,240",
+                            industry = "-1",
+                            median_annual_wage = 60240m,
                             title = "Electricians"
                         },
                         new
                         {
                             Id = 677,
                             at_risk = -1,
-                            currently_employed = "41.3",
-                            decade_change_percentage = 2.7f,
+                            currently_employed = 41.3m,
+                            decade_change_percentage = 2.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "120,000",
+                            industry = "-1",
+                            median_annual_wage = 120000m,
                             title = "Training and development managers"
                         },
                         new
                         {
                             Id = 678,
                             at_risk = -1,
-                            currently_employed = "103.0",
-                            decade_change_percentage = 6.7f,
+                            currently_employed = 103.0m,
+                            decade_change_percentage = 6.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "47,290",
+                            industry = "-1",
+                            median_annual_wage = 47290m,
                             title = "Community and social service specialists, all other"
                         },
                         new
                         {
                             Id = 679,
                             at_risk = -1,
-                            currently_employed = "6.2",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 6.2m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "128,020",
+                            industry = "-1",
+                            median_annual_wage = 128020m,
                             title = "Political scientists"
                         },
                         new
                         {
                             Id = 680,
                             at_risk = -1,
-                            currently_employed = "68.4",
-                            decade_change_percentage = 4.5f,
+                            currently_employed = 68.4m,
+                            decade_change_percentage = 4.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "61,420",
+                            industry = "-1",
+                            median_annual_wage = 61420m,
                             title = "Social workers, all other"
                         },
                         new
                         {
                             Id = 681,
                             at_risk = -1,
-                            currently_employed = "78.6",
-                            decade_change_percentage = 5.2f,
+                            currently_employed = 78.6m,
+                            decade_change_percentage = 5.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "66,450",
+                            industry = "-1",
+                            median_annual_wage = 66450m,
                             title = "Dietitians and nutritionists"
                         },
                         new
                         {
                             Id = 682,
                             at_risk = -1,
-                            currently_employed = "168.0",
-                            decade_change_percentage = 11.1f,
+                            currently_employed = 168.0m,
+                            decade_change_percentage = 11.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "44,990",
+                            industry = "-1",
+                            median_annual_wage = 44990m,
                             title = "Health technologists and technicians, all other"
                         },
                         new
                         {
                             Id = 683,
                             at_risk = -1,
-                            currently_employed = "358.2",
-                            decade_change_percentage = 23.7f,
+                            currently_employed = 358.2m,
+                            decade_change_percentage = 23.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "140,040",
+                            industry = "-1",
+                            median_annual_wage = 140040m,
                             title = "Marketing managers"
                         },
                         new
                         {
                             Id = 684,
                             at_risk = -1,
-                            currently_employed = "28.6",
-                            decade_change_percentage = 1.9f,
+                            currently_employed = 28.6m,
+                            decade_change_percentage = 1.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "226,880",
+                            industry = "-1",
+                            median_annual_wage = 226880m,
                             title = "Psychiatrists"
                         },
                         new
                         {
                             Id = 685,
                             at_risk = -1,
-                            currently_employed = "34.5",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 34.5m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "103,810",
+                            industry = "-1",
+                            median_annual_wage = 103810m,
                             title = "Biochemists and biophysicists"
                         },
                         new
                         {
                             Id = 686,
                             at_risk = -1,
-                            currently_employed = "50.8",
-                            decade_change_percentage = 3.4f,
+                            currently_employed = 50.8m,
+                            decade_change_percentage = 3.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "61,910",
+                            industry = "-1",
+                            median_annual_wage = 61910m,
                             title = "Lodging managers"
                         },
                         new
                         {
                             Id = 687,
                             at_risk = -1,
-                            currently_employed = "112.1",
-                            decade_change_percentage = 7.5f,
+                            currently_employed = 112.1m,
+                            decade_change_percentage = 7.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "60,580",
+                            industry = "-1",
+                            median_annual_wage = 60580m,
                             title = "Telecommunications line installers and repairers"
                         },
                         new
                         {
                             Id = 688,
                             at_risk = -1,
-                            currently_employed = "175.3",
-                            decade_change_percentage = 11.7f,
+                            currently_employed = 175.3m,
+                            decade_change_percentage = 11.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "85,320",
+                            industry = "-1",
+                            median_annual_wage = 85320m,
                             title = "Producers and directors"
                         },
                         new
                         {
                             Id = 689,
                             at_risk = -1,
-                            currently_employed = "696.6",
-                            decade_change_percentage = 46.6f,
+                            currently_employed = 696.6m,
+                            decade_change_percentage = 46.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,500",
+                            industry = "-1",
+                            median_annual_wage = 38500m,
                             title = "Medical secretaries and administrative assistants"
                         },
                         new
                         {
                             Id = 690,
                             at_risk = -1,
-                            currently_employed = "53.3",
-                            decade_change_percentage = 3.7f,
+                            currently_employed = 53.3m,
+                            decade_change_percentage = 3.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "79,960",
+                            industry = "-1",
+                            median_annual_wage = 79960m,
                             title = "Technical writers"
                         },
                         new
                         {
                             Id = 691,
                             at_risk = -1,
-                            currently_employed = "59.4",
-                            decade_change_percentage = 4.1f,
+                            currently_employed = 59.4m,
+                            decade_change_percentage = 4.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "48,340",
+                            industry = "-1",
+                            median_annual_wage = 48340m,
                             title = "Tile and stone setters"
                         },
                         new
                         {
                             Id = 692,
                             at_risk = -1,
-                            currently_employed = "99.9",
-                            decade_change_percentage = 6.9f,
+                            currently_employed = 99.9m,
+                            decade_change_percentage = 6.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "88,790",
+                            industry = "-1",
+                            median_annual_wage = 88790m,
                             title = "Business teachers, postsecondary"
                         },
                         new
                         {
                             Id = 693,
                             at_risk = -1,
-                            currently_employed = "371.0",
-                            decade_change_percentage = 25.7f,
+                            currently_employed = 371.0m,
+                            decade_change_percentage = 25.7m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "44,820",
+                            industry = "-1",
+                            median_annual_wage = 44820m,
                             title = "Dental assistants"
                         },
                         new
                         {
                             Id = 694,
                             at_risk = -1,
-                            currently_employed = "12.9",
-                            decade_change_percentage = 0.9f,
+                            currently_employed = 12.9m,
+                            decade_change_percentage = 0.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "30,210",
+                            industry = "-1",
+                            median_annual_wage = 30210m,
                             title = "Locker room, coatroom, and dressing room attendants"
                         },
                         new
                         {
                             Id = 695,
                             at_risk = -1,
-                            currently_employed = "63.1",
-                            decade_change_percentage = 4.4f,
+                            currently_employed = 63.1m,
+                            decade_change_percentage = 4.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "34,990",
+                            industry = "-1",
+                            median_annual_wage = 34990m,
                             title = "Barbers"
                         },
                         new
                         {
                             Id = 696,
                             at_risk = -1,
-                            currently_employed = "85.2",
-                            decade_change_percentage = 6f,
+                            currently_employed = 85.2m,
+                            decade_change_percentage = 6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "99,890",
+                            industry = "-1",
+                            median_annual_wage = 99890m,
                             title = "Database administrators"
                         },
                         new
                         {
                             Id = 697,
                             at_risk = -1,
-                            currently_employed = "98.2",
-                            decade_change_percentage = 6.9f,
+                            currently_employed = 98.2m,
+                            decade_change_percentage = 6.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,780",
+                            industry = "-1",
+                            median_annual_wage = 67780m,
                             title = "Compensation, benefits, and job analysis specialists"
                         },
                         new
                         {
                             Id = 698,
                             at_risk = -1,
-                            currently_employed = "177.9",
-                            decade_change_percentage = 12.5f,
+                            currently_employed = 177.9m,
+                            decade_change_percentage = 12.5m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "68,050",
+                            industry = "-1",
+                            median_annual_wage = 68050m,
                             title = "Computer network support specialists"
                         },
                         new
                         {
                             Id = 699,
                             at_risk = -1,
-                            currently_employed = "60.4",
-                            decade_change_percentage = 4.4f,
+                            currently_employed = 60.4m,
+                            decade_change_percentage = 4.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "59,990",
+                            industry = "-1",
+                            median_annual_wage = 59990m,
                             title = "Health education specialists"
                         },
                         new
                         {
                             Id = 700,
                             at_risk = -1,
-                            currently_employed = "110.9",
-                            decade_change_percentage = 7.9f,
+                            currently_employed = 110.9m,
+                            decade_change_percentage = 7.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "108,170",
+                            industry = "-1",
+                            median_annual_wage = 108170m,
                             title = "Electronics engineers, except computer"
                         },
                         new
                         {
                             Id = 701,
                             at_risk = -1,
-                            currently_employed = "27.8",
-                            decade_change_percentage = 2f,
+                            currently_employed = 27.8m,
+                            decade_change_percentage = 2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "59,990",
+                            industry = "-1",
+                            median_annual_wage = 59990m,
                             title = "Set and exhibit designers"
                         },
                         new
                         {
                             Id = 702,
                             at_risk = -1,
-                            currently_employed = "30.2",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 30.2m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "48,870",
+                            industry = "-1",
+                            median_annual_wage = 48870m,
                             title = "Floor layers, except carpet, wood, and hard tiles"
                         },
                         new
                         {
                             Id = 703,
                             at_risk = -1,
-                            currently_employed = "1.6",
-                            decade_change_percentage = 0.1f,
+                            currently_employed = 1.6m,
+                            decade_change_percentage = 0.1m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "49,330",
+                            industry = "-1",
+                            median_annual_wage = 49330m,
                             title = "Farm labor contractors"
                         },
                         new
                         {
                             Id = 704,
                             at_risk = -1,
-                            currently_employed = "29.5",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 29.5m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,610",
+                            industry = "-1",
+                            median_annual_wage = 45610m,
                             title = "Septic tank servicers and sewer pipe cleaners"
                         },
                         new
                         {
                             Id = 705,
                             at_risk = -1,
-                            currently_employed = "219.4",
-                            decade_change_percentage = 16.3f,
+                            currently_employed = 219.4m,
+                            decade_change_percentage = 16.3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "81,400",
+                            industry = "-1",
+                            median_annual_wage = 81400m,
                             title = "Dental hygienists"
                         },
                         new
                         {
                             Id = 706,
                             at_risk = -1,
-                            currently_employed = "482.2",
-                            decade_change_percentage = 35.6f,
+                            currently_employed = 482.2m,
+                            decade_change_percentage = 35.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,480",
+                            industry = "-1",
+                            median_annual_wage = 67480m,
                             title = "Securities, commodities, and financial services sales agents"
                         },
                         new
                         {
                             Id = 707,
-                            at_risk = 0,
-                            currently_employed = "15.3",
-                            decade_change_percentage = 1.1f,
+                            at_risk = -1,
+                            currently_employed = 15.3m,
+                            decade_change_percentage = 1.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "2",
-                            median_annual_wage = "79,860",
+                            industry = "-1",
+                            median_annual_wage = 79860m,
                             title = "Food scientists and technologists"
                         },
                         new
                         {
                             Id = 708,
                             at_risk = -1,
-                            currently_employed = "132.0",
-                            decade_change_percentage = 9.9f,
+                            currently_employed = 132.0m,
+                            decade_change_percentage = 9.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "52,560",
+                            industry = "-1",
+                            median_annual_wage = 52560m,
                             title = "Meeting, convention, and event planners"
                         },
                         new
                         {
                             Id = 709,
                             at_risk = -1,
-                            currently_employed = "826.3",
-                            decade_change_percentage = 62.4f,
+                            currently_employed = 826.3m,
+                            decade_change_percentage = 62.4m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "135,740",
+                            industry = "-1",
+                            median_annual_wage = 135740m,
                             title = "Lawyers"
                         },
                         new
                         {
                             Id = 710,
                             at_risk = -1,
-                            currently_employed = "317.2",
-                            decade_change_percentage = 24.2f,
+                            currently_employed = 317.2m,
+                            decade_change_percentage = 24.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "95,080",
+                            industry = "-1",
+                            median_annual_wage = 95080m,
                             title = "Financial and investment analysts"
                         },
                         new
                         {
                             Id = 711,
                             at_risk = -1,
-                            currently_employed = "41.4",
-                            decade_change_percentage = 3.2f,
+                            currently_employed = 41.4m,
+                            decade_change_percentage = 3.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "80,090",
+                            industry = "-1",
+                            median_annual_wage = 80090m,
                             title = "Magnetic resonance imaging technologists"
                         },
                         new
                         {
                             Id = 712,
                             at_risk = -1,
-                            currently_employed = "114.6",
-                            decade_change_percentage = 8.8f,
+                            currently_employed = 114.6m,
+                            decade_change_percentage = 8.8m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,660",
+                            industry = "-1",
+                            median_annual_wage = 44660m,
                             title = "First-line supervisors of entertainment and recreation workers, except gambling services"
                         },
                         new
                         {
                             Id = 713,
                             at_risk = -1,
-                            currently_employed = "139.4",
-                            decade_change_percentage = 10.8f,
+                            currently_employed = 139.4m,
+                            decade_change_percentage = 10.8m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "38,530",
+                            industry = "-1",
+                            median_annual_wage = 38530m,
                             title = "Phlebotomists"
                         },
                         new
                         {
                             Id = 714,
                             at_risk = 1,
-                            currently_employed = "541.0",
-                            decade_change_percentage = 41.9f,
+                            currently_employed = 541.0m,
+                            decade_change_percentage = 41.9m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "32,690",
+                            median_annual_wage = 32690m,
                             title = "Driver/sales workers"
                         },
                         new
                         {
                             Id = 715,
                             at_risk = -1,
-                            currently_employed = "555.8",
-                            decade_change_percentage = 42.8f,
+                            currently_employed = 555.8m,
+                            decade_change_percentage = 42.8m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "33,290",
+                            industry = "-1",
+                            median_annual_wage = 33290m,
                             title = "Hairdressers, hairstylists, and cosmetologists"
                         },
                         new
                         {
                             Id = 716,
                             at_risk = -1,
-                            currently_employed = "171.5",
-                            decade_change_percentage = 13.4f,
+                            currently_employed = 171.5m,
+                            decade_change_percentage = 13.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,580",
+                            industry = "-1",
+                            median_annual_wage = 36580m,
                             title = "Food batchmakers"
                         },
                         new
                         {
                             Id = 717,
                             at_risk = -1,
-                            currently_employed = "68.3",
-                            decade_change_percentage = 5.4f,
+                            currently_employed = 68.3m,
+                            decade_change_percentage = 5.4m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "33,210",
+                            industry = "-1",
+                            median_annual_wage = 33210m,
                             title = "Motor vehicle operators, all other"
                         },
                         new
                         {
                             Id = 718,
                             at_risk = -1,
-                            currently_employed = "151.2",
-                            decade_change_percentage = 12f,
+                            currently_employed = 151.2m,
+                            decade_change_percentage = 12m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,930",
+                            industry = "-1",
+                            median_annual_wage = 44930m,
                             title = "Highway maintenance workers"
                         },
                         new
                         {
                             Id = 719,
                             at_risk = 1,
-                            currently_employed = "536.8",
-                            decade_change_percentage = 42.5f,
+                            currently_employed = 536.8m,
+                            decade_change_percentage = 42.5m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "57,860",
+                            median_annual_wage = 57860m,
                             title = "Insurance sales agents"
                         },
                         new
                         {
                             Id = 720,
                             at_risk = -1,
-                            currently_employed = "24.6",
-                            decade_change_percentage = 2f,
+                            currently_employed = 24.6m,
+                            decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "44,690",
+                            industry = "-1",
+                            median_annual_wage = 44690m,
                             title = "Semiconductor processing technicians"
                         },
                         new
                         {
                             Id = 721,
                             at_risk = 1,
-                            currently_employed = "218.4",
-                            decade_change_percentage = 17.5f,
+                            currently_employed = 218.4m,
+                            decade_change_percentage = 17.5m,
                             education_requirement = "No formal educational credential",
                             industry = "1",
-                            median_annual_wage = "32,800",
+                            median_annual_wage = 32800m,
                             title = "Shuttle drivers and chauffeurs"
                         },
                         new
                         {
                             Id = 722,
                             at_risk = -1,
-                            currently_employed = "20.8",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 20.8m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "106,260",
+                            industry = "-1",
+                            median_annual_wage = 106260m,
                             title = "Chemical engineers"
                         },
                         new
                         {
                             Id = 723,
                             at_risk = -1,
-                            currently_employed = "45.6",
-                            decade_change_percentage = 3.7f,
+                            currently_employed = 45.6m,
+                            decade_change_percentage = 3.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,010",
+                            industry = "-1",
+                            median_annual_wage = 48010m,
                             title = "Farm equipment mechanics and service technicians"
                         },
                         new
                         {
                             Id = 724,
                             at_risk = -1,
-                            currently_employed = "53.6",
-                            decade_change_percentage = 4.3f,
+                            currently_employed = 53.6m,
+                            decade_change_percentage = 4.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,440",
+                            industry = "-1",
+                            median_annual_wage = 34440m,
                             title = "Tour and travel guides"
                         },
                         new
                         {
                             Id = 725,
                             at_risk = -1,
-                            currently_employed = "9.4",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 9.4m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "58,640",
+                            industry = "-1",
+                            median_annual_wage = 58640m,
                             title = "Archivists"
                         },
                         new
                         {
                             Id = 726,
                             at_risk = -1,
-                            currently_employed = "19.9",
-                            decade_change_percentage = 1.6f,
+                            currently_employed = 19.9m,
+                            decade_change_percentage = 1.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "82,530",
+                            industry = "-1",
+                            median_annual_wage = 82530m,
                             title = "Agents and business managers of artists, performers, and athletes"
                         },
                         new
                         {
                             Id = 727,
                             at_risk = -1,
-                            currently_employed = "26.5",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 26.5m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "0",
+                            industry = "-1",
+                            median_annual_wage = 0m,
                             title = "Entertainers and performers, sports and related workers, all other"
                         },
                         new
                         {
                             Id = 728,
                             at_risk = -1,
-                            currently_employed = "58.9",
-                            decade_change_percentage = 4.8f,
+                            currently_employed = 58.9m,
+                            decade_change_percentage = 4.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "102,120",
+                            industry = "-1",
+                            median_annual_wage = 102120m,
                             title = "Financial risk specialists"
                         },
                         new
                         {
                             Id = 729,
                             at_risk = -1,
-                            currently_employed = "89.3",
-                            decade_change_percentage = 7.4f,
+                            currently_employed = 89.3m,
+                            decade_change_percentage = 7.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "98,950",
+                            industry = "-1",
+                            median_annual_wage = 98950m,
                             title = "Special effects artists and animators"
                         },
                         new
                         {
                             Id = 730,
                             at_risk = -1,
-                            currently_employed = "177.7",
-                            decade_change_percentage = 14.6f,
+                            currently_employed = 177.7m,
+                            decade_change_percentage = 14.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "98,560",
+                            industry = "-1",
+                            median_annual_wage = 98560m,
                             title = "Transportation, storage, and distribution managers"
                         },
                         new
                         {
                             Id = 731,
                             at_risk = -1,
-                            currently_employed = "10.2",
-                            decade_change_percentage = 0.8f,
+                            currently_employed = 10.2m,
+                            decade_change_percentage = 0.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "74,410",
+                            industry = "-1",
+                            median_annual_wage = 74410m,
                             title = "Aerospace engineering and operations technologists and technicians"
                         },
                         new
                         {
                             Id = 732,
                             at_risk = -1,
-                            currently_employed = "26.4",
-                            decade_change_percentage = 2.2f,
+                            currently_employed = 26.4m,
+                            decade_change_percentage = 2.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "67,220",
+                            industry = "-1",
+                            median_annual_wage = 67220m,
                             title = "Entertainment and recreation managers, except gambling"
                         },
                         new
                         {
                             Id = 733,
                             at_risk = -1,
-                            currently_employed = "159.0",
-                            decade_change_percentage = 13.1f,
+                            currently_employed = 159.0m,
+                            decade_change_percentage = 13.1m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "43,680",
+                            industry = "-1",
+                            median_annual_wage = 43680m,
                             title = "First-line supervisors of personal service workers"
                         },
                         new
                         {
                             Id = 734,
                             at_risk = -1,
-                            currently_employed = "194.3",
-                            decade_change_percentage = 16.5f,
+                            currently_employed = 194.3m,
+                            decade_change_percentage = 16.5m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "47,180",
+                            industry = "-1",
+                            median_annual_wage = 47180m,
                             title = "Medical records specialists"
                         },
                         new
                         {
                             Id = 735,
                             at_risk = -1,
-                            currently_employed = "4.6",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 4.6m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "96,370",
+                            industry = "-1",
+                            median_annual_wage = 96370m,
                             title = "Makeup artists, theatrical and performance"
                         },
                         new
                         {
                             Id = 736,
                             at_risk = -1,
-                            currently_employed = "8.0",
-                            decade_change_percentage = 0.7f,
+                            currently_employed = 8.0m,
+                            decade_change_percentage = 0.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "53,490",
+                            industry = "-1",
+                            median_annual_wage = 53490m,
                             title = "Aircraft cargo handling supervisors"
                         },
                         new
                         {
                             Id = 737,
                             at_risk = -1,
-                            currently_employed = "62.4",
-                            decade_change_percentage = 5.3f,
+                            currently_employed = 62.4m,
+                            decade_change_percentage = 5.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "81,650",
+                            industry = "-1",
+                            median_annual_wage = 81650m,
                             title = "Biological science teachers, postsecondary"
                         },
                         new
                         {
                             Id = 738,
                             at_risk = -1,
-                            currently_employed = "64.0",
-                            decade_change_percentage = 5.5f,
+                            currently_employed = 64.0m,
+                            decade_change_percentage = 5.5m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "37,780",
+                            industry = "-1",
+                            median_annual_wage = 37780m,
                             title = "Agricultural equipment operators"
                         },
                         new
                         {
                             Id = 739,
                             at_risk = -1,
-                            currently_employed = "415.1",
-                            decade_change_percentage = 35.6f,
+                            currently_employed = 415.1m,
+                            decade_change_percentage = 35.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "38,520",
+                            industry = "-1",
+                            median_annual_wage = 38520m,
                             title = "Social and human service assistants"
                         },
                         new
                         {
                             Id = 740,
                             at_risk = -1,
-                            currently_employed = "196.9",
-                            decade_change_percentage = 17.1f,
+                            currently_employed = 196.9m,
+                            decade_change_percentage = 17.1m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "31,130",
+                            industry = "-1",
+                            median_annual_wage = 31130m,
                             title = "Manicurists and pedicurists"
                         },
                         new
                         {
                             Id = 741,
                             at_risk = -1,
-                            currently_employed = "43.4",
-                            decade_change_percentage = 3.8f,
+                            currently_employed = 43.4m,
+                            decade_change_percentage = 3.8m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "125,590",
+                            industry = "-1",
+                            median_annual_wage = 125590m,
                             title = "Optometrists"
                         },
                         new
                         {
                             Id = 742,
                             at_risk = -1,
-                            currently_employed = "55.0",
-                            decade_change_percentage = 4.9f,
+                            currently_employed = 55.0m,
+                            decade_change_percentage = 4.9m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "75,380",
+                            industry = "-1",
+                            median_annual_wage = 75380m,
                             title = "Chiropractors"
                         },
                         new
                         {
                             Id = 743,
                             at_risk = -1,
-                            currently_employed = "49.4",
-                            decade_change_percentage = 4.5f,
+                            currently_employed = 49.4m,
+                            decade_change_percentage = 4.5m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "203,090",
+                            industry = "-1",
+                            median_annual_wage = 203090m,
                             title = "Nurse anesthetists"
                         },
                         new
                         {
                             Id = 744,
                             at_risk = -1,
-                            currently_employed = "14.0",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 14.0m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "94,270",
+                            industry = "-1",
+                            median_annual_wage = 94270m,
                             title = "Athletes and sports competitors"
                         },
                         new
                         {
                             Id = 745,
                             at_risk = -1,
-                            currently_employed = "82.0",
-                            decade_change_percentage = 7.5f,
+                            currently_employed = 82.0m,
+                            decade_change_percentage = 7.5m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "38,060",
+                            industry = "-1",
+                            median_annual_wage = 38060m,
                             title = "Skincare specialists"
                         },
                         new
                         {
                             Id = 746,
                             at_risk = -1,
-                            currently_employed = "178.4",
-                            decade_change_percentage = 16.2f,
+                            currently_employed = 178.4m,
+                            decade_change_percentage = 16.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "74,240",
+                            industry = "-1",
+                            median_annual_wage = 74240m,
                             title = "Social and community service managers"
                         },
                         new
                         {
                             Id = 747,
                             at_risk = -1,
-                            currently_employed = "275.2",
-                            decade_change_percentage = 25.3f,
+                            currently_employed = 275.2m,
+                            decade_change_percentage = 25.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "44,890",
+                            industry = "-1",
+                            median_annual_wage = 44890m,
                             title = "Coaches and scouts"
                         },
                         new
                         {
                             Id = 748,
                             at_risk = -1,
-                            currently_employed = "45.5",
-                            decade_change_percentage = 4.2f,
+                            currently_employed = 45.5m,
+                            decade_change_percentage = 4.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "103,550",
+                            industry = "-1",
+                            median_annual_wage = 103550m,
                             title = "Engineering teachers, postsecondary"
                         },
                         new
                         {
                             Id = 749,
                             at_risk = -1,
-                            currently_employed = "51.0",
-                            decade_change_percentage = 4.8f,
+                            currently_employed = 51.0m,
+                            decade_change_percentage = 4.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,520",
+                            industry = "-1",
+                            median_annual_wage = 63520m,
                             title = "Film and video editors"
                         },
                         new
                         {
                             Id = 750,
                             at_risk = -1,
-                            currently_employed = "28.0",
-                            decade_change_percentage = 2.7f,
+                            currently_employed = 28.0m,
+                            decade_change_percentage = 2.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "47,010",
+                            industry = "-1",
+                            median_annual_wage = 47010m,
                             title = "Mechanical door repairers"
                         },
                         new
                         {
                             Id = 751,
                             at_risk = -1,
-                            currently_employed = "191.4",
-                            decade_change_percentage = 18.4f,
+                            currently_employed = 191.4m,
+                            decade_change_percentage = 18.4m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "60,280",
+                            industry = "-1",
+                            median_annual_wage = 60280m,
                             title = "Healthcare social workers"
                         },
                         new
                         {
                             Id = 752,
                             at_risk = -1,
-                            currently_employed = "531.4",
-                            decade_change_percentage = 51.1f,
+                            currently_employed = 531.4m,
+                            decade_change_percentage = 51.1m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "102,240",
+                            industry = "-1",
+                            median_annual_wage = 102240m,
                             title = "Computer systems analysts"
                         },
                         new
                         {
                             Id = 753,
                             at_risk = -1,
-                            currently_employed = "20.4",
-                            decade_change_percentage = 2f,
+                            currently_employed = 20.4m,
+                            decade_change_percentage = 2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "36,010",
+                            industry = "-1",
+                            median_annual_wage = 36010m,
                             title = "Umpires, referees, and other sports officials"
                         },
                         new
                         {
                             Id = 754,
                             at_risk = -1,
-                            currently_employed = "95.9",
-                            decade_change_percentage = 9.3f,
+                            currently_employed = 95.9m,
+                            decade_change_percentage = 9.3m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,860",
+                            industry = "-1",
+                            median_annual_wage = 46860m,
                             title = "Cargo and freight agents"
                         },
                         new
                         {
                             Id = 755,
                             at_risk = -1,
-                            currently_employed = "107.1",
-                            decade_change_percentage = 10.4f,
+                            currently_employed = 107.1m,
+                            decade_change_percentage = 10.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "37,380",
+                            industry = "-1",
+                            median_annual_wage = 37380m,
                             title = "Psychiatric technicians"
                         },
                         new
                         {
                             Id = 756,
                             at_risk = -1,
-                            currently_employed = "449.4",
-                            decade_change_percentage = 43.8f,
+                            currently_employed = 449.4m,
+                            decade_change_percentage = 43.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "98,740",
+                            industry = "-1",
+                            median_annual_wage = 98740m,
                             title = "Computer occupations, all other"
                         },
                         new
                         {
                             Id = 757,
                             at_risk = -1,
-                            currently_employed = "987.6",
-                            decade_change_percentage = 95.7f,
+                            currently_employed = 987.6m,
+                            decade_change_percentage = 95.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "95,290",
+                            industry = "-1",
+                            median_annual_wage = 95290m,
                             title = "Management analysts"
                         },
                         new
                         {
                             Id = 758,
                             at_risk = -1,
-                            currently_employed = "17.7",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 17.7m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,030",
+                            industry = "-1",
+                            median_annual_wage = 45030m,
                             title = "Recreational vehicle service technicians"
                         },
                         new
                         {
                             Id = 759,
                             at_risk = -1,
-                            currently_employed = "119.0",
-                            decade_change_percentage = 11.6f,
+                            currently_employed = 119.0m,
+                            decade_change_percentage = 11.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "99,930",
+                            industry = "-1",
+                            median_annual_wage = 99930m,
                             title = "Medical scientists, except epidemiologists"
                         },
                         new
                         {
                             Id = 760,
                             at_risk = -1,
-                            currently_employed = "14.4",
-                            decade_change_percentage = 1.4f,
+                            currently_employed = 14.4m,
+                            decade_change_percentage = 1.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "47,270",
+                            industry = "-1",
+                            median_annual_wage = 47270m,
                             title = "Museum technicians and conservators"
                         },
                         new
                         {
                             Id = 761,
                             at_risk = -1,
-                            currently_employed = "64.0",
-                            decade_change_percentage = 6.4f,
+                            currently_employed = 64.0m,
+                            decade_change_percentage = 6.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "134,870",
+                            industry = "-1",
+                            median_annual_wage = 134870m,
                             title = "Database architects"
                         },
                         new
                         {
                             Id = 762,
                             at_risk = -1,
-                            currently_employed = "286.1",
-                            decade_change_percentage = 28.5f,
+                            currently_employed = 286.1m,
+                            decade_change_percentage = 28.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "96,310",
+                            industry = "-1",
+                            median_annual_wage = 96310m,
                             title = "Mechanical engineers"
                         },
                         new
                         {
                             Id = 763,
                             at_risk = -1,
-                            currently_employed = "24.7",
-                            decade_change_percentage = 2.5f,
+                            currently_employed = 24.7m,
+                            decade_change_percentage = 2.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "57,970",
+                            industry = "-1",
+                            median_annual_wage = 57970m,
                             title = "Occupational health and safety technicians"
                         },
                         new
                         {
                             Id = 764,
                             at_risk = -1,
-                            currently_employed = "16.5",
-                            decade_change_percentage = 1.7f,
+                            currently_employed = 16.5m,
+                            decade_change_percentage = 1.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "51,350",
+                            industry = "-1",
+                            median_annual_wage = 51350m,
                             title = "Exercise physiologists"
                         },
                         new
                         {
                             Id = 765,
                             at_risk = -1,
-                            currently_employed = "14.4",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 14.4m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "82,680",
+                            industry = "-1",
+                            median_annual_wage = 82680m,
                             title = "Audiologists"
                         },
                         new
                         {
                             Id = 766,
                             at_risk = -1,
-                            currently_employed = "113.5",
-                            decade_change_percentage = 12f,
+                            currently_employed = 113.5m,
+                            decade_change_percentage = 12m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "51,240",
+                            industry = "-1",
+                            median_annual_wage = 51240m,
                             title = "Mental health and substance abuse social workers"
                         },
                         new
                         {
                             Id = 767,
                             at_risk = -1,
-                            currently_employed = "13.9",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 13.9m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "60,380",
+                            industry = "-1",
+                            median_annual_wage = 60380m,
                             title = "Curators"
                         },
                         new
                         {
                             Id = 768,
                             at_risk = -1,
-                            currently_employed = "11.3",
-                            decade_change_percentage = 1.3f,
+                            currently_employed = 11.3m,
+                            decade_change_percentage = 1.3m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "27,860",
+                            industry = "-1",
+                            median_annual_wage = 27860m,
                             title = "Shampooers"
                         },
                         new
                         {
                             Id = 769,
                             at_risk = -1,
-                            currently_employed = "67.5",
-                            decade_change_percentage = 7.7f,
+                            currently_employed = 67.5m,
+                            decade_change_percentage = 7.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "90,130",
+                            industry = "-1",
+                            median_annual_wage = 90130m,
                             title = "Clinical and counseling psychologists"
                         },
                         new
                         {
                             Id = 770,
                             at_risk = -1,
-                            currently_employed = "111.1",
-                            decade_change_percentage = 12.6f,
+                            currently_employed = 111.1m,
+                            decade_change_percentage = 12.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "63,760",
+                            industry = "-1",
+                            median_annual_wage = 63760m,
                             title = "Flight attendants"
                         },
                         new
                         {
                             Id = 771,
                             at_risk = -1,
-                            currently_employed = "139.6",
-                            decade_change_percentage = 16.1f,
+                            currently_employed = 139.6m,
+                            decade_change_percentage = 16.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "93,180",
+                            industry = "-1",
+                            median_annual_wage = 93180m,
                             title = "Occupational therapists"
                         },
                         new
                         {
                             Id = 772,
                             at_risk = 1,
-                            currently_employed = "1,164.6",
-                            decade_change_percentage = 133.8f,
+                            currently_employed = 1164.6m,
+                            decade_change_percentage = 133.8m,
                             education_requirement = "High school diploma or equivalent",
                             industry = "1",
-                            median_annual_wage = "40,410",
+                            median_annual_wage = 40410m,
                             title = "Light truck drivers"
                         },
                         new
                         {
                             Id = 773,
                             at_risk = -1,
-                            currently_employed = "327.3",
-                            decade_change_percentage = 38.4f,
+                            currently_employed = 327.3m,
+                            decade_change_percentage = 38.4m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "96,350",
+                            industry = "-1",
+                            median_annual_wage = 96350m,
                             title = "Industrial engineers"
                         },
                         new
                         {
                             Id = 774,
                             at_risk = -1,
-                            currently_employed = "42.3",
-                            decade_change_percentage = 5.2f,
+                            currently_employed = 42.3m,
+                            decade_change_percentage = 5.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "60,800",
+                            industry = "-1",
+                            median_annual_wage = 60800m,
                             title = "Therapists, all other"
                         },
                         new
                         {
                             Id = 775,
                             at_risk = -1,
-                            currently_employed = "133.1",
-                            decade_change_percentage = 16.7f,
+                            currently_employed = 133.1m,
+                            decade_change_percentage = 16.7m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "70,540",
+                            industry = "-1",
+                            median_annual_wage = 70540m,
                             title = "Respiratory therapists"
                         },
                         new
                         {
                             Id = 776,
                             at_risk = -1,
-                            currently_employed = "18.5",
-                            decade_change_percentage = 2.3f,
+                            currently_employed = 18.5m,
+                            decade_change_percentage = 2.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "63,740",
+                            industry = "-1",
+                            median_annual_wage = 63740m,
                             title = "Forensic science technicians"
                         },
                         new
                         {
                             Id = 777,
                             at_risk = -1,
-                            currently_employed = "66.5",
-                            decade_change_percentage = 8.4f,
+                            currently_employed = 66.5m,
+                            decade_change_percentage = 8.4m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "38,860",
+                            industry = "-1",
+                            median_annual_wage = 38860m,
                             title = "Ophthalmic medical technicians"
                         },
                         new
                         {
                             Id = 778,
                             at_risk = -1,
-                            currently_employed = "327.6",
-                            decade_change_percentage = 42f,
+                            currently_employed = 327.6m,
+                            decade_change_percentage = 42m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "95,390",
+                            industry = "-1",
+                            median_annual_wage = 95390m,
                             title = "Personal financial advisors"
                         },
                         new
                         {
                             Id = 779,
                             at_risk = -1,
-                            currently_employed = "66.4",
-                            decade_change_percentage = 8.8f,
+                            currently_employed = 66.4m,
+                            decade_change_percentage = 8.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "57,860",
+                            industry = "-1",
+                            median_annual_wage = 57860m,
                             title = "Medical equipment repairers"
                         },
                         new
                         {
                             Id = 780,
                             at_risk = -1,
-                            currently_employed = "113.8",
-                            decade_change_percentage = 15.2f,
+                            currently_employed = 113.8m,
+                            decade_change_percentage = 15.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "78,570",
+                            industry = "-1",
+                            median_annual_wage = 78570m,
                             title = "Occupational health and safety specialists"
                         },
                         new
                         {
                             Id = 781,
                             at_risk = -1,
-                            currently_employed = "868.6",
-                            decade_change_percentage = 116.6f,
+                            currently_employed = 868.6m,
+                            decade_change_percentage = 116.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "68,230",
+                            industry = "-1",
+                            median_annual_wage = 68230m,
                             title = "Market research analysts and marketing specialists"
                         },
                         new
                         {
                             Id = 782,
                             at_risk = -1,
-                            currently_employed = "329.5",
-                            decade_change_percentage = 45.2f,
+                            currently_employed = 329.5m,
+                            decade_change_percentage = 45.2m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,380",
+                            industry = "-1",
+                            median_annual_wage = 45380m,
                             title = "Exercise trainers and group fitness instructors"
                         },
                         new
                         {
                             Id = 783,
                             at_risk = -1,
-                            currently_employed = "764.4",
-                            decade_change_percentage = 105.9f,
+                            currently_employed = 764.4m,
+                            decade_change_percentage = 105.9m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "38,270",
+                            industry = "-1",
+                            median_annual_wage = 38270m,
                             title = "Medical assistants"
                         },
                         new
                         {
                             Id = 784,
                             at_risk = -1,
-                            currently_employed = "33.8",
-                            decade_change_percentage = 4.8f,
+                            currently_employed = 33.8m,
+                            decade_change_percentage = 4.8m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "53,840",
+                            industry = "-1",
+                            median_annual_wage = 53840m,
                             title = "Athletic trainers"
                         },
                         new
                         {
                             Id = 785,
                             at_risk = -1,
-                            currently_employed = "67.2",
-                            decade_change_percentage = 9.4f,
+                            currently_employed = 67.2m,
+                            decade_change_percentage = 9.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "46,190",
+                            industry = "-1",
+                            median_annual_wage = 46190m,
                             title = "Community health workers"
                         },
                         new
                         {
                             Id = 786,
                             at_risk = -1,
-                            currently_employed = "83.8",
-                            decade_change_percentage = 12f,
+                            currently_employed = 83.8m,
+                            decade_change_percentage = 12m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "81,350",
+                            industry = "-1",
+                            median_annual_wage = 81350m,
                             title = "Diagnostic medical sonographers"
                         },
                         new
                         {
                             Id = 787,
                             at_risk = -1,
-                            currently_employed = "10.2",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 10.2m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "59,020",
+                            industry = "-1",
+                            median_annual_wage = 59020m,
                             title = "Hearing aid specialists"
                         },
                         new
                         {
                             Id = 788,
                             at_risk = -1,
-                            currently_employed = "2.4",
-                            decade_change_percentage = 0.4f,
+                            currently_employed = 2.4m,
+                            decade_change_percentage = 0.4m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "48,110",
+                            industry = "-1",
+                            median_annual_wage = 48110m,
                             title = "Forest fire inspectors and prevention specialists"
                         },
                         new
                         {
                             Id = 789,
                             at_risk = -1,
-                            currently_employed = "71.2",
-                            decade_change_percentage = 10.6f,
+                            currently_employed = 71.2m,
+                            decade_change_percentage = 10.6m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "56,570",
+                            industry = "-1",
+                            median_annual_wage = 56570m,
                             title = "Marriage and family therapists"
                         },
                         new
                         {
                             Id = 790,
                             at_risk = -1,
-                            currently_employed = "402.2",
-                            decade_change_percentage = 59.9f,
+                            currently_employed = 402.2m,
+                            decade_change_percentage = 59.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "59,830",
+                            industry = "-1",
+                            median_annual_wage = 59830m,
                             title = "Industrial machinery mechanics"
                         },
                         new
                         {
                             Id = 791,
                             at_risk = -1,
-                            currently_employed = "246.8",
-                            decade_change_percentage = 37.3f,
+                            currently_employed = 246.8m,
+                            decade_change_percentage = 37.3m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "97,720",
+                            industry = "-1",
+                            median_annual_wage = 97720m,
                             title = "Physical therapists"
                         },
                         new
                         {
                             Id = 792,
                             at_risk = -1,
-                            currently_employed = "117.9",
-                            decade_change_percentage = 17.9f,
+                            currently_employed = 117.9m,
+                            decade_change_percentage = 17.9m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "83,240",
+                            industry = "-1",
+                            median_annual_wage = 83240m,
                             title = "Web and digital interface designers"
                         },
                         new
                         {
                             Id = 793,
                             at_risk = -1,
-                            currently_employed = "9.5",
-                            decade_change_percentage = 1.5f,
+                            currently_employed = 9.5m,
+                            decade_change_percentage = 1.5m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "77,070",
+                            industry = "-1",
+                            median_annual_wage = 77070m,
                             title = "Orthotists and prosthetists"
                         },
                         new
                         {
                             Id = 794,
                             at_risk = -1,
-                            currently_employed = "557.4",
-                            decade_change_percentage = 86f,
+                            currently_employed = 557.4m,
+                            decade_change_percentage = 86m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "164,070",
+                            industry = "-1",
+                            median_annual_wage = 164070m,
                             title = "Computer and information systems managers"
                         },
                         new
                         {
                             Id = 795,
                             at_risk = -1,
-                            currently_employed = "339.0",
-                            decade_change_percentage = 52.5f,
+                            currently_employed = 339.0m,
+                            decade_change_percentage = 52.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "29,530",
+                            industry = "-1",
+                            median_annual_wage = 29530m,
                             title = "Animal caretakers"
                         },
                         new
                         {
                             Id = 796,
                             at_risk = -1,
-                            currently_employed = "28.5",
-                            decade_change_percentage = 4.6f,
+                            currently_employed = 28.5m,
+                            decade_change_percentage = 4.6m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "60,800",
+                            industry = "-1",
+                            median_annual_wage = 60800m,
                             title = "Computer numerically controlled tool programmers"
                         },
                         new
                         {
                             Id = 797,
                             at_risk = -1,
-                            currently_employed = "54.1",
-                            decade_change_percentage = 8.7f,
+                            currently_employed = 54.1m,
+                            decade_change_percentage = 8.7m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "35,620",
+                            industry = "-1",
+                            median_annual_wage = 35620m,
                             title = "Animal trainers"
                         },
                         new
                         {
                             Id = 798,
                             at_risk = -1,
-                            currently_employed = "792.6",
-                            decade_change_percentage = 126.6f,
+                            currently_employed = 792.6m,
+                            decade_change_percentage = 126.6m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "139,790",
+                            industry = "-1",
+                            median_annual_wage = 139790m,
                             title = "Financial managers"
                         },
                         new
                         {
                             Id = 799,
                             at_risk = -1,
-                            currently_employed = "3.5",
-                            decade_change_percentage = 0.6f,
+                            currently_employed = 3.5m,
+                            decade_change_percentage = 0.6m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "89,990",
+                            industry = "-1",
+                            median_annual_wage = 89990m,
                             title = "Genetic counselors"
                         },
                         new
                         {
                             Id = 800,
                             at_risk = -1,
-                            currently_employed = "37.9",
-                            decade_change_percentage = 6.2f,
+                            currently_employed = 37.9m,
+                            decade_change_percentage = 6.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "58,250",
+                            industry = "-1",
+                            median_annual_wage = 58250m,
                             title = "Health information technologists and medical registrars"
                         },
                         new
                         {
                             Id = 801,
                             at_risk = -1,
-                            currently_employed = "98.8",
-                            decade_change_percentage = 16.7f,
+                            currently_employed = 98.8m,
+                            decade_change_percentage = 16.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "78,580",
+                            industry = "-1",
+                            median_annual_wage = 78580m,
                             title = "Web developers"
                         },
                         new
                         {
                             Id = 802,
                             at_risk = -1,
-                            currently_employed = "68.2",
-                            decade_change_percentage = 11.7f,
+                            currently_employed = 68.2m,
+                            decade_change_percentage = 11.7m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "43,390",
+                            industry = "-1",
+                            median_annual_wage = 43390m,
                             title = "Counselors, all other"
                         },
                         new
                         {
                             Id = 803,
                             at_risk = -1,
-                            currently_employed = "85.9",
-                            decade_change_percentage = 15.6f,
+                            currently_employed = 85.9m,
+                            decade_change_percentage = 15.6m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "78,580",
+                            industry = "-1",
+                            median_annual_wage = 78580m,
                             title = "Nursing instructors and teachers, postsecondary"
                         },
                         new
                         {
                             Id = 804,
                             at_risk = -1,
-                            currently_employed = "134.3",
-                            decade_change_percentage = 24.6f,
+                            currently_employed = 134.3m,
+                            decade_change_percentage = 24.6m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "49,860",
+                            industry = "-1",
+                            median_annual_wage = 49860m,
                             title = "Massage therapists"
                         },
                         new
                         {
                             Id = 805,
                             at_risk = -1,
-                            currently_employed = "208.7",
-                            decade_change_percentage = 38.3f,
+                            currently_employed = 208.7m,
+                            decade_change_percentage = 38.3m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "77,520",
+                            industry = "-1",
+                            median_annual_wage = 77520m,
                             title = "Logisticians"
                         },
                         new
                         {
                             Id = 806,
                             at_risk = -1,
-                            currently_employed = "388.2",
-                            decade_change_percentage = 71.5f,
+                            currently_employed = 388.2m,
+                            decade_change_percentage = 71.5m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "49,710",
+                            industry = "-1",
+                            median_annual_wage = 49710m,
                             title = "Substance abuse, behavioral disorder, and mental health counselors"
                         },
                         new
                         {
                             Id = 807,
                             at_risk = -1,
-                            currently_employed = "262.8",
-                            decade_change_percentage = 50.2f,
+                            currently_employed = 262.8m,
+                            decade_change_percentage = 50.2m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "100,300",
+                            industry = "-1",
+                            median_annual_wage = 100300m,
                             title = "Health specialties teachers, postsecondary"
                         },
                         new
                         {
                             Id = 808,
                             at_risk = -1,
-                            currently_employed = "171.4",
-                            decade_change_percentage = 33.1f,
+                            currently_employed = 171.4m,
+                            decade_change_percentage = 33.1m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "84,140",
+                            industry = "-1",
+                            median_annual_wage = 84140m,
                             title = "Speech-language pathologists"
                         },
                         new
                         {
                             Id = 809,
                             at_risk = -1,
-                            currently_employed = "65.6",
-                            decade_change_percentage = 12.8f,
+                            currently_employed = 65.6m,
+                            decade_change_percentage = 12.8m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "82,210",
+                            industry = "-1",
+                            median_annual_wage = 82210m,
                             title = "Financial examiners"
                         },
                         new
                         {
                             Id = 810,
                             at_risk = -1,
-                            currently_employed = "89.5",
-                            decade_change_percentage = 17.7f,
+                            currently_employed = 89.5m,
+                            decade_change_percentage = 17.7m,
                             education_requirement = "Doctoral or professional degree",
-                            industry = "-",
-                            median_annual_wage = "103,260",
+                            industry = "-1",
+                            median_annual_wage = 103260m,
                             title = "Veterinarians"
                         },
                         new
                         {
                             Id = 811,
                             at_risk = 0,
-                            currently_employed = "200.8",
-                            decade_change_percentage = 40.8f,
+                            currently_employed = 200.8m,
+                            decade_change_percentage = 40.8m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "99,620",
+                            median_annual_wage = 99620m,
                             title = "Software quality assurance analysts and testers"
                         },
                         new
                         {
                             Id = 812,
                             at_risk = -1,
-                            currently_employed = "1,361.2",
-                            decade_change_percentage = 277.6f,
+                            currently_employed = 1361.2m,
+                            decade_change_percentage = 277.6m,
                             education_requirement = "No formal educational credential",
-                            industry = "-",
-                            median_annual_wage = "34,110",
+                            industry = "-1",
+                            median_annual_wage = 34110m,
                             title = "Cooks, restaurant"
                         },
                         new
                         {
                             Id = 813,
                             at_risk = -1,
-                            currently_employed = "87.0",
-                            decade_change_percentage = 17.9f,
+                            currently_employed = 87.0m,
+                            decade_change_percentage = 17.9m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,670",
+                            industry = "-1",
+                            median_annual_wage = 34670m,
                             title = "Personal care and service workers, all other"
                         },
                         new
                         {
                             Id = 814,
                             at_risk = -1,
-                            currently_employed = "114.8",
-                            decade_change_percentage = 23.5f,
+                            currently_employed = 114.8m,
+                            decade_change_percentage = 23.5m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "34,740",
+                            industry = "-1",
+                            median_annual_wage = 34740m,
                             title = "Veterinary assistants and laboratory animal caretakers"
                         },
                         new
                         {
                             Id = 815,
                             at_risk = -1,
-                            currently_employed = "122.9",
-                            decade_change_percentage = 25.2f,
+                            currently_employed = 122.9m,
+                            decade_change_percentage = 25.2m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "38,240",
+                            industry = "-1",
+                            median_annual_wage = 38240m,
                             title = "Veterinary technologists and technicians"
                         },
                         new
                         {
                             Id = 816,
                             at_risk = -1,
-                            currently_employed = "177.3",
-                            decade_change_percentage = 36.4f,
+                            currently_employed = 177.3m,
+                            decade_change_percentage = 36.4m,
                             education_requirement = "No formal educational credential",
                             industry = "1",
-                            median_annual_wage = "30,670",
+                            median_annual_wage = 30670m,
                             title = "Taxi drivers"
                         },
                         new
                         {
                             Id = 817,
                             at_risk = -1,
-                            currently_employed = "3,715.5",
-                            decade_change_percentage = 804.6f,
+                            currently_employed = 3715.5m,
+                            decade_change_percentage = 804.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "30,180",
+                            industry = "-1",
+                            median_annual_wage = 30180m,
                             title = "Home health and personal care aides"
                         },
                         new
                         {
                             Id = 818,
                             at_risk = -1,
-                            currently_employed = "29.4",
-                            decade_change_percentage = 6.6f,
+                            currently_employed = 29.4m,
+                            decade_change_percentage = 6.6m,
                             education_requirement = "High school diploma or equivalent",
-                            industry = "-",
-                            median_annual_wage = "45,230",
+                            industry = "-1",
+                            median_annual_wage = 45230m,
                             title = "Solar photovoltaic installers"
                         },
                         new
                         {
                             Id = 819,
                             at_risk = -1,
-                            currently_employed = "109.9",
-                            decade_change_percentage = 24.7f,
+                            currently_employed = 109.9m,
+                            decade_change_percentage = 24.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "85,720",
+                            industry = "-1",
+                            median_annual_wage = 85720m,
                             title = "Operations research analysts"
                         },
                         new
                         {
                             Id = 820,
                             at_risk = -1,
-                            currently_employed = "36.5",
-                            decade_change_percentage = 8.3f,
+                            currently_employed = 36.5m,
+                            decade_change_percentage = 8.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "136,620",
+                            industry = "-1",
+                            median_annual_wage = 136620m,
                             title = "Computer and information research scientists"
                         },
                         new
                         {
                             Id = 821,
                             at_risk = -1,
-                            currently_employed = "30.0",
-                            decade_change_percentage = 7f,
+                            currently_employed = 30.0m,
+                            decade_change_percentage = 7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "113,990",
+                            industry = "-1",
+                            median_annual_wage = 113990m,
                             title = "Actuaries"
                         },
                         new
                         {
                             Id = 822,
                             at_risk = -1,
-                            currently_employed = "45.1",
-                            decade_change_percentage = 10.8f,
+                            currently_employed = 45.1m,
+                            decade_change_percentage = 10.8m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "64,250",
+                            industry = "-1",
+                            median_annual_wage = 64250m,
                             title = "Occupational therapy assistants"
                         },
                         new
                         {
                             Id = 823,
                             at_risk = 0,
-                            currently_employed = "1,594.5",
-                            decade_change_percentage = 410.4f,
+                            currently_employed = 1594.5m,
+                            decade_change_percentage = 410.4m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "127,260",
+                            median_annual_wage = 127260m,
                             title = "Software developers"
                         },
                         new
                         {
                             Id = 824,
                             at_risk = -1,
-                            currently_employed = "100.7",
-                            decade_change_percentage = 26.3f,
+                            currently_employed = 100.7m,
+                            decade_change_percentage = 26.3m,
                             education_requirement = "Associate's degree",
-                            industry = "-",
-                            median_annual_wage = "62,770",
+                            industry = "-1",
+                            median_annual_wage = 62770m,
                             title = "Physical therapist assistants"
                         },
                         new
                         {
                             Id = 825,
                             at_risk = -1,
-                            currently_employed = "148.0",
-                            decade_change_percentage = 39.3f,
+                            currently_employed = 148.0m,
+                            decade_change_percentage = 39.3m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "126,010",
+                            industry = "-1",
+                            median_annual_wage = 126010m,
                             title = "Physician assistants"
                         },
                         new
                         {
                             Id = 826,
                             at_risk = -1,
-                            currently_employed = "10.0",
-                            decade_change_percentage = 2.7f,
+                            currently_employed = 10.0m,
+                            decade_change_percentage = 2.7m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "78,520",
+                            industry = "-1",
+                            median_annual_wage = 78520m,
                             title = "Epidemiologists"
                         },
                         new
                         {
                             Id = 827,
                             at_risk = -1,
-                            currently_employed = "509.5",
-                            decade_change_percentage = 144.7f,
+                            currently_employed = 509.5m,
+                            decade_change_percentage = 144.7m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "104,830",
+                            industry = "-1",
+                            median_annual_wage = 104830m,
                             title = "Medical and health services managers"
                         },
                         new
                         {
                             Id = 828,
                             at_risk = -1,
-                            currently_employed = "168.9",
-                            decade_change_percentage = 53.2f,
+                            currently_employed = 168.9m,
+                            decade_change_percentage = 53.2m,
                             education_requirement = "Bachelor's degree",
-                            industry = "-",
-                            median_annual_wage = "112,000",
+                            industry = "-1",
+                            median_annual_wage = 112000m,
                             title = "Information security analysts"
                         },
                         new
                         {
                             Id = 829,
                             at_risk = -1,
-                            currently_employed = "33.3",
-                            decade_change_percentage = 10.5f,
+                            currently_employed = 33.3m,
+                            decade_change_percentage = 10.5m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "98,920",
+                            industry = "-1",
+                            median_annual_wage = 98920m,
                             title = "Statisticians"
                         },
                         new
                         {
                             Id = 830,
                             at_risk = 0,
-                            currently_employed = "168.9",
-                            decade_change_percentage = 59.4f,
+                            currently_employed = 168.9m,
+                            decade_change_percentage = 59.4m,
                             education_requirement = "Bachelor's degree",
                             industry = "1",
-                            median_annual_wage = "103,500",
+                            median_annual_wage = 103500m,
                             title = "Data scientists"
                         },
                         new
                         {
                             Id = 831,
                             at_risk = -1,
-                            currently_employed = "266.3",
-                            decade_change_percentage = 118.6f,
+                            currently_employed = 266.3m,
+                            decade_change_percentage = 118.6m,
                             education_requirement = "Master's degree",
-                            industry = "-",
-                            median_annual_wage = "121,610",
+                            industry = "-1",
+                            median_annual_wage = 121610m,
                             title = "Nurse practitioners"
                         },
                         new
                         {
                             Id = 832,
                             at_risk = -1,
-                            currently_employed = "11.2",
-                            decade_change_percentage = 5f,
+                            currently_employed = 11.2m,
+                            decade_change_percentage = 5m,
                             education_requirement = "Postsecondary nondegree award",
-                            industry = "-",
-                            median_annual_wage = "57,320",
+                            industry = "-1",
+                            median_annual_wage = 57320m,
                             title = "Wind turbine service technicians"
                         });
                 });
