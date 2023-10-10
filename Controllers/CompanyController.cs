@@ -28,8 +28,6 @@ namespace sikho_backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Company>>> GetCompany()
         {
-            // CustomCsvReader reader = new CustomCsvReader();
-            // reader.readOccupationData();
           
             return  await _context.Companies.ToListAsync();
         }

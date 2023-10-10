@@ -47,20 +47,7 @@ namespace sikho_backend.Models
             }
 
            
-            // List<Occupation> occupations = new();
-            // var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
-            // {
-            //     HasHeaderRecord = true,
-            //     TrimOptions = TrimOptions.Trim,
-            //     MissingFieldFound = null,
-            //     HeaderValidated = null
-            // };
-
-            // string projectRootPath = _hostingEnvironment.ContentRootPath;
-            // using var reader = new StreamReader(projectRootPath+ "/Data/EmploymentProjections.csv");
-            // using var csv = new CsvReader(reader, conf);
-          
-            // var records = csv.GetRecords<Occupation>().ToList();
+           
             using (StreamReader r = new StreamReader("Data/EmploymentProjections.json")){
                 string mockJson = r.ReadToEnd();
                 var options = new JsonSerializerOptions()
@@ -71,10 +58,8 @@ namespace sikho_backend.Models
 
                 var occupationsData = JsonSerializer.Deserialize<List<Occupation>>(mockJson, options);
                   for(var i = 0;i <occupationsData.Count; i++){
-               
-                occupationsData[i].Id = i+1;
-                occupationsData[i].title = occupationsData[i].title.Split('*')[0].Trim();
-                Console.WriteLine($"the id is {occupationsData[i].Id}");
+                        occupationsData[i].Id = i+1;
+                        occupationsData[i].title = occupationsData[i].title.Split('*')[0].Trim();
             
                   }
                 modelBuilder.Entity<Occupation>().HasData(occupationsData);
