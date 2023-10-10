@@ -33,6 +33,7 @@ namespace sikho_backend.Controllers
         }
 
         // GET: api/Company/5
+        // fetch with id
         [HttpGet("{id}")]
         public async Task<ActionResult<Company>> GetCompany(int id)
         {
