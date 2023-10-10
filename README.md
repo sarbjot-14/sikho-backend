@@ -2,9 +2,11 @@
 
 Web App to show progress of automation across different industries.
 
-Demo: https://sikho.vercel.app/
+Live App: https://sikho-fullstack.vercel.app/
+Demo: https://youtu.be/P_h8hO0skTk?si=-9DiJFBQ3O1U51_M
 
-## Frontend:
+
+## Frontend Code:
 https://github.com/sarbjot-14/Sikho/blob/main/README.md
 
 ## Tech Stack
@@ -17,6 +19,14 @@ https://github.com/sarbjot-14/Sikho/blob/main/README.md
 - **ORM** :
   - Entity Framework
 
+## Deployment
+
+- **Azure Web App**
+  - used azure web app to deploy the .net api
+- **Azure Database**
+  - use Azure database service to deploy sql database
+- **CI/CD**
+  - used Github Actions to deploy app to Azure on push      
   
 ## Run
 ```
